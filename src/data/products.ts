@@ -17,6 +17,7 @@ export type Product = {
   cons: string[];
   buttonText: string;
   imageType: string;
+  image?: string;
   icon: string;
   legalNote: string;
 };
@@ -55,6 +56,7 @@ export const products: Product[] = [
     cons: ['Nicht jedes Baby toleriert Kopfhörer', 'Kein Ersatz für ruhige Pausen', 'Passform sorgfältig prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'baby-earmuffs',
+    image: '/product-images/baby-gehoerschutz.webp',
     icon: 'ear',
     legalNote: 'Herstellerangaben zu Alter, Passform und Anwendung beachten.'
   },
@@ -77,6 +79,7 @@ export const products: Product[] = [
     cons: ['Polsterung kann dünn sein', 'Muss regelmäßig gereinigt werden', 'Nicht zu groß für Flugzeugtoiletten wählen'],
     buttonText: 'Produkt ansehen',
     imageType: 'changing-mat',
+    image: '/product-images/faltbare-wickelunterlage.webp',
     icon: 'mat',
     legalNote: 'Nur als Unterlage verwenden und Baby nie unbeaufsichtigt lassen.'
   },
@@ -99,6 +102,7 @@ export const products: Product[] = [
     cons: ['Zu viel Stauraum verleitet zum Überpacken', 'Tragekomfort vorher testen', 'Nicht jede Tasche passt unter jeden Flugzeugsitz'],
     buttonText: 'Produkt ansehen',
     imageType: 'packing-cubes',
+    image: '/product-images/wickelrucksack.webp',
     icon: 'bag',
     legalNote: 'Airline-Vorgaben für Handgepäckmaße separat prüfen.'
   },
@@ -121,6 +125,7 @@ export const products: Product[] = [
     cons: ['Kein Ersatz für medizinische Beratung', 'Baby-Medikamente müssen individuell ergänzt werden', 'Inhalt vor jeder Reise prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'first-aid-box',
+    image: '/product-images/kleine-reiseapotheke-box.webp',
     icon: 'cross',
     legalNote: 'Medikamente, Dosierungen und Notfallfragen immer mit Kinderarzt oder Apotheke klären.'
   },
@@ -143,6 +148,7 @@ export const products: Product[] = [
     cons: ['Nur mit passender Steckdose nutzbar', 'Nicht flexibel wie ein Akku-Licht', 'Bei Auslandsreisen Adapter prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'night-light',
+    image: '/product-images/kompaktes-reise-nachtlicht.webp',
     icon: 'night',
     legalNote: 'Elektrische Geräte nur nach Herstellerhinweisen und außerhalb der Reichweite des Babys nutzen.'
   },
@@ -165,6 +171,7 @@ export const products: Product[] = [
     cons: ['Akku muss geladen sein', 'Zu helles Licht kann stören', 'Nicht ins Babybett legen'],
     buttonText: 'Produkt ansehen',
     imageType: 'night-light',
+    image: '/product-images/nachtlicht-hotel.webp',
     icon: 'light',
     legalNote: 'Elektrische Produkte nur nach Herstellerhinweisen und außerhalb der Reichweite des Babys nutzen.'
   },
@@ -187,6 +194,7 @@ export const products: Product[] = [
     cons: ['Ersetzt keine Schattenpausen', 'Nicht dicht über dem Baby abschließen', 'Kann je nach Wagen anders sitzen'],
     buttonText: 'Produkt ansehen',
     imageType: 'stroller-sunshade',
+    image: '/product-images/kinderwagen-sonnenschutz.webp',
     icon: 'sunshade',
     legalNote: 'Bei Hitze regelmäßig Temperatur und Luftzirkulation im Kinderwagen prüfen.'
   },
@@ -209,6 +217,7 @@ export const products: Product[] = [
     cons: ['Kein Ersatz für Schatten und Pausen', 'Akkulaufzeit variiert', 'Fingerabstand genau prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'stroller-fan',
+    image: '/product-images/kinderwagen-ventilator.webp',
     icon: 'fan',
     legalNote: 'Ventilator sicher befestigen und niemals direkt in Reichweite kleiner Hände platzieren.'
   },
@@ -231,6 +240,7 @@ export const products: Product[] = [
     cons: ['Muss sauber abschließen', 'Nicht jedes Modell passt gleich gut', 'Baby weiter im Blick behalten'],
     buttonText: 'Produkt ansehen',
     imageType: 'mosquito-net',
+    image: '/product-images/moskitonetz-kinderwagen.webp',
     icon: 'net',
     legalNote: 'Nur so nutzen, dass Atmung, Sicht und Luftzirkulation nicht eingeschränkt werden.'
   },
@@ -253,6 +263,7 @@ export const products: Product[] = [
     cons: ['Kann den Schwerpunkt beeinflussen', 'Nicht für schwere Lasten gedacht', 'Kompatibilität prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'stroller-organizer',
+    image: '/product-images/kinderwagen-organizer.webp',
     icon: 'organizer',
     legalNote: 'Kinderwagen nicht durch zu viel Gewicht am Schieber instabil machen.'
   },
@@ -275,6 +286,7 @@ export const products: Product[] = [
     cons: ['Nicht dauerhaft geschlossen lassen', 'Bei Wärme auf Luft achten', 'Universal passt nicht immer perfekt'],
     buttonText: 'Produkt ansehen',
     imageType: 'rain-cover',
+    image: '/product-images/regen-windschutz-buggy.webp',
     icon: 'rain',
     legalNote: 'Regenschutz nur mit ausreichender Belüftung und regelmäßiger Kontrolle nutzen.'
   },
@@ -297,6 +309,7 @@ export const products: Product[] = [
     cons: ['Zusätzliches Gepäck', 'Nicht jedes Hotelzimmer hat genug Platz', 'Sicherheitsangaben genau beachten'],
     buttonText: 'Produkt ansehen',
     imageType: 'travel-crib',
+    image: '/product-images/reisebett.webp',
     icon: 'bed',
     legalNote: 'Nur nach Montage- und Altershinweisen des Herstellers verwenden.'
   },
@@ -319,6 +332,7 @@ export const products: Product[] = [
     cons: ['Zusätzliches Gewicht', 'Reinigung und Hygiene beachten', 'Temperatur immer prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'bottle-warmer',
+    image: '/product-images/usb-flaschenwaermer.webp',
     icon: 'bottle',
     legalNote: 'Babynahrung nach Hersteller- und Hygienevorgaben zubereiten; Temperatur immer prüfen.'
   },
@@ -341,6 +355,7 @@ export const products: Product[] = [
     cons: ['Begrenzt Stauraum', 'Nicht für lange Tagesausflüge allein', 'Regelmäßig auffüllen'],
     buttonText: 'Produkt ansehen',
     imageType: 'changing-mat',
+    image: '/product-images/reise-wickelorganizer.webp',
     icon: 'pouch',
     legalNote: 'Baby beim Wickeln immer sichern und nie unbeaufsichtigt lassen.'
   },
@@ -363,6 +378,7 @@ export const products: Product[] = [
     cons: ['Für Flugreisen eher sperrig', 'Nur unter ständiger Aufsicht', 'Standfläche vor Ort prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'travel-crib',
+    image: '/product-images/faltbare-babybadewanne.webp',
     icon: 'bath',
     legalNote: 'Baby beim Baden nie unbeaufsichtigt lassen; Wassertemperatur und Standfestigkeit immer prüfen.'
   },
@@ -385,6 +401,7 @@ export const products: Product[] = [
     cons: ['Babys ziehen Hüte manchmal aus', 'Ersetzt keine Schattenpausen', 'Größe muss gut sitzen'],
     buttonText: 'Produkt ansehen',
     imageType: 'beach-tent',
+    image: '/product-images/baby-uv-hut.webp',
     icon: 'hat',
     legalNote: 'Sonnenschutz für Babys immer mit Schatten, Kleidung und fachlicher Empfehlung kombinieren.'
   },
@@ -407,6 +424,7 @@ export const products: Product[] = [
     cons: ['Windstabilität beachten', 'Nicht als unbeaufsichtigter Schlafplatz', 'Kann im Koffer sperrig sein'],
     buttonText: 'Produkt ansehen',
     imageType: 'beach-tent',
+    image: '/product-images/baby-strandmuschel.webp',
     icon: 'tent',
     legalNote: 'Baby im Strandzelt immer beaufsichtigen und auf Hitze sowie Luftzirkulation achten.'
   },
@@ -429,6 +447,7 @@ export const products: Product[] = [
     cons: ['Falten vorher üben', 'Bei Wind gut sichern', 'Kein vollständiger Sonnenschutz allein'],
     buttonText: 'Produkt ansehen',
     imageType: 'beach-tent',
+    image: '/product-images/uv-schutz-zelt-baby.webp',
     icon: 'shade',
     legalNote: 'UV-Zelt ersetzt keine Aufsicht, passende Kleidung und Pausen außerhalb starker Sonne.'
   },
@@ -451,6 +470,7 @@ export const products: Product[] = [
     cons: ['Nicht jedes Kind akzeptiert eine Brille', 'Passform ist entscheidend', 'Nicht als alleiniger Schutz verstehen'],
     buttonText: 'Produkt ansehen',
     imageType: 'beach-tent',
+    image: '/product-images/baby-sonnenbrille.webp',
     icon: 'glasses',
     legalNote: 'Sonnenbrillen nur passend zur Altersangabe und ohne Druckstellen verwenden.'
   },
@@ -473,6 +493,7 @@ export const products: Product[] = [
     cons: ['Nicht für Flüssigkeitstransport gedacht', 'Muss ausgelüftet werden', 'Größe passend wählen'],
     buttonText: 'Produkt ansehen',
     imageType: 'packing-cubes',
+    image: '/product-images/wetbag-nasse-kleidung.webp',
     icon: 'drop',
     legalNote: 'Nasse Textilien zeitnah waschen oder trocknen, um Gerüche und Feuchtigkeit zu vermeiden.'
   },
@@ -495,6 +516,7 @@ export const products: Product[] = [
     cons: ['Zu viele Beutel machen es unübersichtlich', 'Kompression kann Falten erzeugen', 'Qualität der Reißverschlüsse prüfen'],
     buttonText: 'Produkt ansehen',
     imageType: 'packing-cubes',
+    image: '/product-images/packing-cubes-baby-kleidung.webp',
     icon: 'cube',
     legalNote: 'Nur als Organisationshilfe; Gepäckgewicht und Airline-Regeln separat prüfen.'
   },
@@ -517,6 +539,7 @@ export const products: Product[] = [
     cons: ['Vor Reise auf Dichtigkeit prüfen', 'Nicht zu heiß befüllen', 'Regelmäßig gründlich reinigen'],
     buttonText: 'Produkt ansehen',
     imageType: 'thermos-bottle',
+    image: '/product-images/thermosflasche.webp',
     icon: 'thermos',
     legalNote: 'Temperatur vor dem Füttern oder Trinken immer prüfen.'
   },
@@ -539,6 +562,7 @@ export const products: Product[] = [
     cons: ['Nicht offen liegen lassen', 'Zu voll gepackt wird sie unhandlich', 'Sensible Dokumente bewusst sichern'],
     buttonText: 'Produkt ansehen',
     imageType: 'document-organizer',
+    image: '/product-images/reisedokumententasche-familie.webp',
     icon: 'document',
     legalNote: 'Wichtige Dokumente zusätzlich digital oder separat sichern, wenn sinnvoll.'
   },
@@ -561,6 +585,7 @@ export const products: Product[] = [
     cons: ['Muss nachgefüllt werden', 'Nicht jede Tüchergröße passt', 'Regelmäßig reinigen'],
     buttonText: 'Produkt ansehen',
     imageType: 'changing-mat',
+    image: '/product-images/feuchttuecher-spender-unterwegs.webp',
     icon: 'wipe',
     legalNote: 'Feuchttücher hautverträglich auswählen und Packung sauber verschließen.'
   },
@@ -583,6 +608,7 @@ export const products: Product[] = [
     cons: ['Flüssigkeiten zusätzlich sichern', 'Nicht überfüllen', 'Nach Auslaufen sofort reinigen'],
     buttonText: 'Produkt ansehen',
     imageType: 'packing-cubes',
+    image: '/product-images/kulturtasche-babyartikel.webp',
     icon: 'toiletry',
     legalNote: 'Flüssigkeiten für Flugreisen nach aktuellen Sicherheitsregeln packen.'
   }
