@@ -70,15 +70,31 @@ Die Produktdaten liegen zentral in:
 src/data/products.ts
 ```
 
+Meine Amazon-PartnerNet Tracking-ID lautet:
+
+```text
+epic05e-21
+```
+
+Neue Amazon-Links müssen diese ID enthalten, in der Regel als Parameter `tag=epic05e-21`. Eine kurze Anleitung ist auch auf der Website unter `/produkt-links-eintragen/` verfügbar.
+
 Jedes Produkt hat aktuell:
 
 ```ts
-affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER'
+affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+affiliateStatus: 'placeholder'
 ```
 
-Diesen Platzhalter ersetzt du später durch deinen echten Amazon-Partnerlink. Die Buttons sind bereits mit `rel="sponsored nofollow noopener"` markiert und zusätzlich sichtbar als Werbung/Affiliate-Link gekennzeichnet.
+Diesen Link ersetzt du später durch deinen echten Amazon-Partnerlink. Die Buttons sind bereits mit `rel="sponsored nofollow noopener"` markiert und zusätzlich sichtbar als Werbung/Affiliate-Link gekennzeichnet.
 
-Solange ein Produkt noch den Platzhalter enthält, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Link noch nicht eingetragen`.
+Solange `affiliateStatus: 'placeholder'` gesetzt ist, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Link noch nicht eingetragen`.
+
+Erst wenn der echte Link eingetragen und der Status bewusst auf `ready` gesetzt wurde, öffnet der Button den Affiliate-Link:
+
+```ts
+affiliateUrl: 'https://www.amazon.de/...&tag=epic05e-21',
+affiliateStatus: 'ready'
+```
 
 ## Neue Produkte ergänzen
 
@@ -95,6 +111,7 @@ In `src/data/products.ts` ein weiteres Objekt in das `products`-Array einfügen.
   pros: ['Pro 1', 'Pro 2'],
   cons: ['Hinweis 1', 'Hinweis 2'],
   affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+  affiliateStatus: 'placeholder',
   buttonText: 'Produkt ansehen'
 }
 ```

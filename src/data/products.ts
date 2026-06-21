@@ -8,8 +8,15 @@ export type Product = {
   pros: string[];
   cons: string[];
   affiliateUrl: string;
+  affiliateStatus: 'placeholder' | 'ready';
   buttonText: string;
 };
+
+export const amazonTrackingId = 'epic05e-21';
+
+export function isAffiliateLinkReady(product: Product) {
+  return product.affiliateStatus === 'ready' && product.affiliateUrl.startsWith('http');
+}
 
 export const products: Product[] = [
   {
@@ -23,6 +30,7 @@ export const products: Product[] = [
     pros: ['Schafft mobilen Schatten', 'Passt oft an verschiedene Wagenmodelle', 'Klein im Gepäck'],
     cons: ['Sitz und Befestigung vor der Reise testen', 'Ersetzt keinen UV-Schutz durch Kleidung'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Sonnenschutz ansehen'
   },
   {
@@ -36,6 +44,7 @@ export const products: Product[] = [
     pros: ['Sehr einfach mitzunehmen', 'Hilft auch im Kinderwagen', 'Keine Technik, keine Akkus'],
     cons: ['Größe muss gut sitzen', 'Babys ziehen Hüte manchmal aus'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'UV-Hut ansehen'
   },
   {
@@ -49,6 +58,7 @@ export const products: Product[] = [
     pros: ['Angenehm bei Hitze', 'Auch im Hotelzimmer nutzbar', 'Leicht nachzuladen'],
     cons: ['Fingerabstand und Schutzgitter genau prüfen', 'Akkulaufzeit variiert je nach Stufe'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Ventilator ansehen'
   },
   {
@@ -62,6 +72,7 @@ export const products: Product[] = [
     pros: ['Kleines Packmaß', 'Kann auch beim Mittagsschlaf helfen', 'Meist universell nutzbar'],
     cons: ['Muss dicht abschließen', 'Nicht jedes Netz passt auf jeden Wagen gleich gut'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Moskitonetz ansehen'
   },
   {
@@ -75,6 +86,7 @@ export const products: Product[] = [
     pros: ['Sehr alltagstauglich', 'Oft mit Fächern für Windeln', 'Nimmt wenig Platz weg'],
     cons: ['Polsterung kann dünner sein', 'Regelmäßig reinigen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Wickelunterlage ansehen'
   },
   {
@@ -88,6 +100,7 @@ export const products: Product[] = [
     pros: ['Gute Übersicht unterwegs', 'Kann Handgepäck ersetzen', 'Unisex-Designs verfügbar'],
     cons: ['Zu große Modelle verleiten zum Überpacken', 'Reißverschlüsse und Tragekomfort prüfen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Wickelrucksack ansehen'
   },
   {
@@ -101,6 +114,7 @@ export const products: Product[] = [
     pros: ['Hilft in sehr lauten Situationen', 'Klein im Handgepäck', 'Auch außerhalb des Urlaubs nutzbar'],
     cons: ['Nicht jedes Baby akzeptiert ihn', 'Passform und Altersangabe genau beachten'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Gehörschutz ansehen'
   },
   {
@@ -114,6 +128,7 @@ export const products: Product[] = [
     pros: ['Sehr beruhigend in fremder Umgebung', 'Kein grelles Deckenlicht nötig', 'Klein und leicht'],
     cons: ['Akku vor dem Schlafengehen laden', 'Sehr helle Modelle meiden'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Nachtlicht ansehen'
   },
   {
@@ -127,6 +142,7 @@ export const products: Product[] = [
     pros: ['Flexibler Einsatz', 'Kann Wartezeiten entspannen', 'Leicht zu verstauen'],
     cons: ['Erwärmt oft langsamer als ein Wasserbad', 'Leistung hängt von Stromquelle und Flasche ab'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Flaschenwärmer ansehen'
   },
   {
@@ -140,6 +156,7 @@ export const products: Product[] = [
     pros: ['Mehr Unabhängigkeit', 'Auch tagsüber als Ruheplatz nutzbar', 'Viele leichte Modelle verfügbar'],
     cons: ['Zusätzliches Gepäck', 'Matratze und Sicherheitshinweise sorgfältig prüfen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Reisebett ansehen'
   },
   {
@@ -153,6 +170,7 @@ export const products: Product[] = [
     pros: ['Deutlich angenehmer als nur ein Handtuch', 'Gut für Pausen', 'Viele Modelle mit UV-Schutzstoff'],
     cons: ['Windstabilität beachten', 'Nicht als Schlafplatz ohne Aufsicht nutzen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Strandmuschel ansehen'
   },
   {
@@ -166,6 +184,7 @@ export const products: Product[] = [
     pros: ['Sehr vielseitig', 'Hilft bei unplanbaren Wartezeiten', 'Auch nach der Babyzeit nutzbar'],
     cons: ['Auslaufsicherheit vor Reisebeginn testen', 'Nicht zu groß wählen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Thermosflasche ansehen'
   },
   {
@@ -179,6 +198,7 @@ export const products: Product[] = [
     pros: ['Sehr praktisch im Alltag', 'Vermeidet Suchen in großen Taschen', 'Oft mit Becherfach'],
     cons: ['Nicht zu schwer beladen', 'Kann je nach Wagen den Schwerpunkt beeinflussen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Organizer ansehen'
   },
   {
@@ -192,6 +212,7 @@ export const products: Product[] = [
     pros: ['Gibt Sicherheit bei Wetterwechsel', 'Oft sehr leicht', 'Nützlich auch daheim'],
     cons: ['Belüftung muss ausreichend sein', 'Passform vor Abreise testen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Wetterschutz ansehen'
   },
   {
@@ -205,6 +226,7 @@ export const products: Product[] = [
     pros: ['Macht Kontrolle vor Abreise einfacher', 'Kann dauerhaft gepackt bleiben', 'Gut beschriftbar'],
     cons: ['Inhalt muss altersgerecht mit Kinderarzt oder Apotheke abgestimmt werden', 'Keine Medikamente lose einpacken'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
+    affiliateStatus: 'placeholder',
     buttonText: 'Reiseapotheke-Box ansehen'
   }
 ];

@@ -1,5 +1,5 @@
 ---
-import type { Product } from '../data/products';
+import { isAffiliateLinkReady, type Product } from '../data/products';
 
 const { products } = Astro.props as { products: Product[] };
 ---
@@ -18,7 +18,7 @@ const { products } = Astro.props as { products: Product[] };
     </thead>
     <tbody>
       {products.map((product) => {
-        const hasAffiliateLink = product.affiliateUrl.startsWith('http');
+        const hasAffiliateLink = isAffiliateLinkReady(product);
         return (
           <tr>
             <td data-label="Produktbereich">

@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { amazonTrackingId } from '../data/products';
+---
+
+<Layout
+  title="Produktlinks eintragen"
+  description="Anleitung zum Eintragen echter Amazon-Affiliate-Links mit der Tracking-ID epic05e-21 in BabyReiseHelfer."
+>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Affiliate-Verwaltung</p>
+      <h1>Produktlinks eintragen</h1>
+      <p>So werden später echte Amazon-Partnerlinks zentral und kontrolliert in die Produktdaten eingetragen.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <aside class="notice-box">
+        <h2>Amazon-Tracking-ID</h2>
+        <p>
+          Meine Amazon-PartnerNet Tracking-ID lautet <code>{amazonTrackingId}</code>. Neue Amazon-Links müssen diese ID enthalten.
+        </p>
+      </aside>
+
+      <h2>Zentrale Datei</h2>
+      <p>
+        Alle Produktlinks liegen in <code>src/data/products.ts</code>. Dort wird pro Produkt entschieden, ob der Button noch deaktiviert bleibt oder den echten Affiliate-Link öffnet.
+      </p>
+
+      <h2>Status-Regel</h2>
+      <dl class="legal-list">
+        <div>
+          <dt><code>affiliateStatus: 'placeholder'</code></dt>
+          <dd>Der Button bleibt deaktiviert und öffnet keinen Amazon-Link.</dd>
+        </div>
+        <div>
+          <dt><code>affiliateStatus: 'ready'</code></dt>
+          <dd>Der Button öffnet <code>affiliateUrl</code>, sofern die URL mit <code>http</code> beginnt.</dd>
+        </div>
+      </dl>
+
+      <h2>Beispiel</h2>
+      <pre class="code-sample"><code>{
+`{
+  id: 'kinderwagen-sonnenschutz',
+  title: 'Kinderwagen-Sonnenschutz',
+  affiliateUrl: 'https://www.amazon.de/...&tag=${amazonTrackingId}',
+  affiliateStatus: 'ready',
+  buttonText: 'Sonnenschutz ansehen'
+}`}</code></pre>
+
+      <h2>Vor dem Aktivieren prüfen</h2>
+      <ul class="check-list">
+        <li>Der Link enthält <code>tag={amazonTrackingId}</code>.</li>
+        <li>Es werden keine Amazon-Preise, Amazon-Sternebewertungen oder Amazon-Produktbilder übernommen.</li>
+        <li>Der Produkttext bleibt neutral und macht keine falschen Testsieger-Behauptungen.</li>
+        <li>Nach dem Ändern lokal <code>npm run build</code> ausführen.</li>
+      </ul>
+    </div>
+  </section>
+</Layout>

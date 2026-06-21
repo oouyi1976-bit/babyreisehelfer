@@ -9,6 +9,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/',
     '/impressum/',
     '/datenschutz/',
+    '/produkt-links-eintragen/',
     ...categories.map((category) => `/${category.slug}/`),
     ...articles.map((article) => `/ratgeber/${article.id}/`)
   ];

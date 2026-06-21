@@ -1,8 +1,8 @@
 ---
-import type { Product } from '../data/products';
+import { isAffiliateLinkReady, type Product } from '../data/products';
 
 const { product, compact = false } = Astro.props as { product: Product; compact?: boolean };
-const hasAffiliateLink = product.affiliateUrl.startsWith('http');
+const hasAffiliateLink = isAffiliateLinkReady(product);
 ---
 
 <article class:list={['product-card', { 'product-card--compact': compact }]}>
