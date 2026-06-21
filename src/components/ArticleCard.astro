@@ -1,0 +1,17 @@
+---
+const { article } = Astro.props;
+const date = new Intl.DateTimeFormat('de-DE', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric'
+}).format(article.data.date);
+---
+
+<article class="article-card">
+  <a href={`/ratgeber/${article.id}/`} class="article-card__link">
+    <span class="article-card__meta">{date} · {article.data.readingTime} Min.</span>
+    <h2>{article.data.title}</h2>
+    <p>{article.data.excerpt}</p>
+    <span class="article-card__cta">Ratgeber lesen</span>
+  </a>
+</article>

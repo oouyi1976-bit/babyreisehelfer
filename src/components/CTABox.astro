@@ -1,0 +1,16 @@
+---
+const {
+  title = 'Bereit für die nächste Familienreise?',
+  text = 'Starte mit einer klaren Packliste und wahle nur die Helfer, die zu eurer Reise wirklich passen.',
+  href = '/packlisten/',
+  buttonText = 'Packlisten ansehen'
+} = Astro.props;
+---
+
+<section class="cta-box">
+  <div>
+    <h2>{title}</h2>
+    <p>{text}</p>
+  </div>
+  <a class="button" href={href}>{buttonText}</a>
+</section>

@@ -1,0 +1,97 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ProductComparisonTable from '../components/ProductComparisonTable.astro';
+import CTABox from '../components/CTABox.astro';
+import { categories, type SiteCategory } from '../data/categories';
+import { products } from '../data/products';
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category }
+  }));
+}
+
+const { category } = Astro.props as { category: SiteCategory };
+const allArticles = await getCollection('ratgeber');
+const articles = allArticles
+  .filter((article) => article.data.category === category.slug)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const categoryProducts = products.filter(
+  (product) =>
+    category.productCategories.includes(product.category) ||
+    category.featuredProductIds.includes(product.id)
+);
+
+const categorySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `${category.title} | BabyReiseHelfer`,
+  description: category.description,
+  url: new URL(`/${category.slug}/`, Astro.site).href
+};
+---
+
+<Layout title={category.title} description={category.description} jsonLd={categorySchema}>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Kategorie</p>
+      <h1>{category.title}</h1>
+      <p>{category.intro}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Produktideen</p>
+          <h2>Praktische Helfer für diese Reisephase</h2>
+        </div>
+        <p>Alle Links sind als Affiliate-Links gekennzeichnet. Preise und Bewertungen werden bewusst nicht angezeigt.</p>
+      </div>
+
+      <div class="product-grid">
+        {categoryProducts.slice(0, 6).map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  {categoryProducts.length > 2 && (
+    <section class="section section--soft">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Vergleich</p>
+          <h2>Welche Produktart passt zu euch?</h2>
+        </div>
+        <ProductComparisonTable products={categoryProducts.slice(0, 5)} />
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Ratgeber</p>
+        <h2>Passende Artikel</h2>
+      </div>
+      <div class="article-grid">
+        {articles.length ? articles.map((article) => <ArticleCard article={article} />) : (
+          <p>Zu dieser Kategorie folgen bald weitere Ratgeber.</p>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <div class="container section">
+    <CTABox
+      title="Noch nicht sicher, was mit muss?"
+      text="Die Packlisten fassen die wichtigsten Baby-Reisehelfer nach Situation zusammen und helfen beim Priorisieren."
+      href="/packlisten/"
+      buttonText="Packlisten öffnen"
+    />
+  </div>
+</Layout>

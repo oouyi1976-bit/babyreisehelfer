@@ -1,0 +1,44 @@
+---
+import { categories } from '../data/categories';
+---
+
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div>
+      <a class="brand brand--footer" href="/" aria-label="BabyReiseHelfer Startseite">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span>
+          <span class="brand__name">BabyReiseHelfer</span>
+          <span class="brand__tagline">Praktische Reiseideen für Eltern</span>
+        </span>
+      </a>
+      <p>
+        Unabhängiger Ratgeber mit Produktideen, Packlisten und Kaufkriterien für Urlaub mit Baby.
+      </p>
+    </div>
+
+    <div>
+      <h2>Rubriken</h2>
+      <ul>
+        {categories.map((category) => (
+          <li><a href={`/${category.slug}/`}>{category.title}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h2>Hinweise</h2>
+      <ul>
+        <li><a href="/impressum/">Impressum</a></li>
+        <li><a href="/datenschutz/">Datenschutz</a></li>
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>
+      © {new Date().getFullYear()} BabyReiseHelfer. Inhalte ersetzen keine medizinische, rechtliche oder sicherheitstechnische Beratung.
+    </p>
+  </div>
+</footer>

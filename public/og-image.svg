@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="BabyReiseHelfer">
+  <rect width="1200" height="630" fill="#fbf8f1"/>
+  <rect x="70" y="70" width="1060" height="490" rx="34" fill="#eef7f6"/>
+  <circle cx="920" cy="178" r="70" fill="#f0b56b"/>
+  <path d="M760 390h210c28 0 50-22 50-50V235H850c-50 0-90 40-90 90v65Z" fill="#8dc7bd"/>
+  <circle cx="805" cy="435" r="34" fill="#24413d"/>
+  <circle cx="980" cy="435" r="34" fill="#24413d"/>
+  <rect x="730" y="285" width="110" height="80" rx="18" fill="#ffffff"/>
+  <text x="115" y="225" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#1d2b2a">BabyReiseHelfer</text>
+  <text x="115" y="305" font-family="Arial, sans-serif" font-size="34" fill="#48615c">Packlisten, Produktideen und Ratgeber</text>
+  <text x="115" y="360" font-family="Arial, sans-serif" font-size="34" fill="#48615c">fur entspannte Reisen mit Baby</text>
+</svg>

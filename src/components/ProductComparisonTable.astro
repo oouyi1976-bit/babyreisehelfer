@@ -1,0 +1,48 @@
+---
+import type { Product } from '../data/products';
+
+const { products } = Astro.props as { products: Product[] };
+---
+
+<div class="comparison-table" role="region" aria-label="Produktvergleich" tabindex="0">
+  <table>
+    <caption>Produktideen im neutralen Vergleich</caption>
+    <thead>
+      <tr>
+        <th>Produktbereich</th>
+        <th>Ideal für</th>
+        <th>Vorteile</th>
+        <th>Worauf achten?</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {products.map((product) => {
+        const affiliateHref = product.affiliateUrl.startsWith('http') ? product.affiliateUrl : '#affiliate-link-eintragen';
+        return (
+          <tr>
+            <td data-label="Produktbereich">
+              <strong>{product.title}</strong>
+              <span>Werbung / Affiliate-Link</span>
+            </td>
+            <td data-label="Ideal für">{product.idealFor}</td>
+            <td data-label="Vorteile">{product.pros.slice(0, 2).join(' · ')}</td>
+            <td data-label="Worauf achten?">{product.cons[0]}</td>
+            <td data-label="Link">
+              <a
+                href={affiliateHref}
+                target={affiliateHref.startsWith('http') ? '_blank' : undefined}
+                rel="sponsored nofollow noopener"
+                data-affiliate-link
+                data-product-id={product.id}
+                data-product-title={product.title}
+              >
+                Ansehen
+              </a>
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>

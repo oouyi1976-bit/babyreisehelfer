@@ -1,0 +1,40 @@
+---
+import type { Product } from '../data/products';
+
+const { product, compact = false } = Astro.props as { product: Product; compact?: boolean };
+const affiliateHref = product.affiliateUrl.startsWith('http') ? product.affiliateUrl : '#affiliate-link-eintragen';
+---
+
+<article class:list={['product-card', { 'product-card--compact': compact }]}>
+  <div class={`product-card__visual product-card__visual--${product.category}`} aria-hidden="true">
+    <span></span>
+  </div>
+
+  <div class="product-card__body">
+    <div class="product-card__topline">
+      <span>Werbung / Affiliate-Link</span>
+    </div>
+    <h3>{product.title}</h3>
+    <p>{product.shortDescription}</p>
+
+    {!compact && (
+      <ul class="check-list">
+        {product.benefits.slice(0, 3).map((benefit) => (
+          <li>{benefit}</li>
+        ))}
+      </ul>
+    )}
+
+    <a
+      class="button button--affiliate"
+      href={affiliateHref}
+      target={affiliateHref.startsWith('http') ? '_blank' : undefined}
+      rel="sponsored nofollow noopener"
+      data-affiliate-link
+      data-product-id={product.id}
+      data-product-title={product.title}
+    >
+      {product.buttonText}
+    </a>
+  </div>
+</article>

@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ProductComparisonTable from '../components/ProductComparisonTable.astro';
+import CTABox from '../components/CTABox.astro';
+import { categories } from '../data/categories';
+import { getProductsByIds, products } from '../data/products';
+
+const articles = (await getCollection('ratgeber'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 6);
+
+const featuredCategories = categories.slice(0, 4);
+const topProducts = getProductsByIds([
+  'kinderwagen-sonnenschutz',
+  'faltbare-wickelunterlage',
+  'nachtlicht-hotel',
+  'baby-strandmuschel',
+  'baby-gehoerschutz',
+  'kleine-reiseapotheke-box'
+]);
+
+const comparisonProducts = products.filter((product) =>
+  ['kinderwagen-ventilator', 'usb-flaschenwaermer', 'reisebett', 'thermosflasche'].includes(product.id)
+);
+---
+
+<Layout
+  title="Baby-Reiseprodukte, Packlisten und Ratgeber"
+  description="BabyReiseHelfer bietet praktische Packlisten, neutrale Produktideen und Ratgeber für Urlaub, Flugzeug, Hotel, Strand und Kinderwagen mit Baby."
+>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">BabyReiseHelfer</p>
+        <h1>Baby-Reiseprodukte, die im Urlaub wirklich helfen</h1>
+        <p class="hero__subtitle">
+          Praktische Packlisten, Produktideen und Ratgeber für Flugzeug, Hotel, Strand und Kinderwagen.
+        </p>
+        <div class="hero__actions">
+          <a class="button" href="/packlisten/">Packlisten starten</a>
+          <a class="button button--secondary" href="/fliegen-mit-baby/">Flugtipps lesen</a>
+        </div>
+      </div>
+
+      <div class="travel-scene" aria-label="Illustration mit Kinderwagen, Koffer und Sonnenschutz">
+        <span class="travel-scene__sun"></span>
+        <span class="travel-scene__stroller"></span>
+        <span class="travel-scene__suitcase"></span>
+        <span class="travel-scene__bottle"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Schnell einsteigen</p>
+        <h2>Ratgeber nach Reisesituation</h2>
+      </div>
+      <div class="category-grid">
+        {featuredCategories.map((category) => <CategoryCard category={category} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Produktbereiche</p>
+          <h2>Helfer, die typische Reisemomente leichter machen</h2>
+        </div>
+        <p>
+          Keine Preise, keine Amazon-Sterne und keine erfundenen Testsieger. Die Karten zeigen neutrale Produktideen mit Kaufkriterien.
+        </p>
+      </div>
+      <div class="product-grid">
+        {topProducts.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Vergleich ohne Preis-Chaos</p>
+        <h2>Top-Produktbereiche auf einen Blick</h2>
+      </div>
+      <ProductComparisonTable products={comparisonProducts} />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Aktuelle Ratgeber</p>
+          <h2>Planen, packen, entspannter reisen</h2>
+        </div>
+        <a class="text-link" href="/packlisten/">Alle Packlisten ansehen</a>
+      </div>
+      <div class="article-grid">
+        {articles.map((article) => <ArticleCard article={article} />)}
+      </div>
+    </div>
+  </section>
+
+  <div class="container section">
+    <CTABox
+      title="Lieber weniger, aber besser packen"
+      text="Die Packlisten helfen dir, Babyprodukte nach Reisesituation zu sortieren: Flug, Hotel, Strand, Kinderwagen und Reiseapotheke."
+      href="/packlisten/"
+      buttonText="Zu den Packlisten"
+    />
+  </div>
+</Layout>

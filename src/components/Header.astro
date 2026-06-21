@@ -1,0 +1,21 @@
+---
+import { categories } from '../data/categories';
+---
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="BabyReiseHelfer Startseite">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span>
+        <span class="brand__name">BabyReiseHelfer</span>
+        <span class="brand__tagline">Ratgeber für entspannte Familienreisen</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      {categories.map((category) => (
+        <a href={`/${category.slug}/`}>{category.navLabel}</a>
+      ))}
+    </nav>
+  </div>
+</header>

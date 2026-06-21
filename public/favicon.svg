@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BabyReiseHelfer Logo">
+  <rect width="64" height="64" rx="14" fill="#eef7f6"/>
+  <circle cx="27" cy="27" r="12" fill="#8dc7bd"/>
+  <path d="M18 45c4-8 18-8 22 0" fill="none" stroke="#24413d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M40 23h9l-5 8h8" fill="none" stroke="#f0b56b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
