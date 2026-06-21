@@ -1,33 +1,63 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { isLegalProfileComplete, legalProfile } from '../data/legal';
+
+const legalComplete = isLegalProfileComplete();
 ---
 
 <Layout
   title="Impressum"
-  description="Platzhalter-Impressum für BabyReiseHelfer. Bitte vor Veröffentlichung mit korrekten Anbieterangaben ersetzen."
+  description="Anbieterkennzeichnung und Kontaktangaben von BabyReiseHelfer."
 >
   <section class="page-hero">
     <div class="container page-hero__inner">
       <p class="eyebrow">Rechtliches</p>
       <h1>Impressum</h1>
-      <p>Diese Seite ist als Platzhalter angelegt und muss vor der Veroffentlichung rechtlich korrekt ausgefullt werden.</p>
+      <p>Anbieterkennzeichnung und Kontaktinformationen für BabyReiseHelfer.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container narrow">
-      <h2>Angaben gemäß § 5 TMG</h2>
-      <p>
-        Name / Firma<br />
-        Straße und Hausnummer<br />
-        PLZ Ort<br />
-        Land
-      </p>
+      <h2>Anbieterkennzeichnung</h2>
+      {legalComplete ? (
+        <dl class="legal-list">
+          <div>
+            <dt>Betreibername</dt>
+            <dd>{legalProfile.operatorName}</dd>
+          </div>
+          <div>
+            <dt>Ladungsfähige Anschrift</dt>
+            <dd>
+              {legalProfile.addressLines.map((line) => (
+                <>{line}<br /></>
+              ))}
+            </dd>
+          </div>
+          <div>
+            <dt>E-Mail</dt>
+            <dd><a class="text-link" href={`mailto:${legalProfile.email}`}>{legalProfile.email}</a></dd>
+          </div>
+        </dl>
+      ) : (
+        <aside class="notice-box">
+          <h2>Betreiberangaben fehlen noch</h2>
+          <p>
+            Für eine vollständige Anbieterkennzeichnung müssen Betreibername, ladungsfähige Anschrift und E-Mail-Adresse in <code>src/data/legal.ts</code> eingetragen werden. Es wurden bewusst keine erfundenen Kontaktdaten veröffentlicht.
+          </p>
+        </aside>
+      )}
+
       <h2>Kontakt</h2>
-      <p>E-Mail: deine-mail@example.com</p>
+      {legalProfile.email ? (
+        <p>E-Mail: <a class="text-link" href={`mailto:${legalProfile.email}`}>{legalProfile.email}</a></p>
+      ) : (
+        <p>Eine Kontakt-E-Mail-Adresse ist noch nicht eingetragen.</p>
+      )}
+
       <h2>Hinweis</h2>
       <p>
-        Bitte lasse Impressum, Datenschutz, Affiliate-Kennzeichnung und steuerliche Angaben vor dem Livegang fachkundig prüfen.
+        Impressum, Datenschutz, Affiliate-Kennzeichnung und steuerliche Angaben sollten vor dauerhaftem kommerziellem Betrieb fachkundig geprüft werden.
       </p>
     </div>
   </section>

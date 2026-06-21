@@ -41,6 +41,26 @@ npm run preview
 
 Die Domain in `astro.config.mjs` steht aktuell auf `https://babyreisehelfer.pages.dev`. Wenn du später eine eigene Domain nutzt, passe den Wert `site` dort sowie die Sitemap-URL in `public/robots.txt` an.
 
+## Betreiberangaben für Impressum eintragen
+
+Die Anbieterkennzeichnung wird zentral gepflegt in:
+
+```text
+src/data/legal.ts
+```
+
+Trage dort Betreibername, ladungsfähige Anschrift und E-Mail-Adresse ein:
+
+```ts
+export const legalProfile = {
+  operatorName: 'Dein rechtlicher Betreibername',
+  addressLines: ['Straße Hausnummer', 'PLZ Ort', 'Land'],
+  email: 'kontakt@deine-domain.de'
+};
+```
+
+Solange diese Angaben leer sind, veröffentlicht die Impressumsseite keine erfundenen Kontaktdaten und weist sichtbar darauf hin, dass die Anbieterkennzeichnung noch ergänzt werden muss.
+
 ## Amazon-Affiliate-Links eintragen
 
 Die Produktdaten liegen zentral in:
@@ -56,6 +76,8 @@ affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER'
 ```
 
 Diesen Platzhalter ersetzt du später durch deinen echten Amazon-Partnerlink. Die Buttons sind bereits mit `rel="sponsored nofollow noopener"` markiert und zusätzlich sichtbar als Werbung/Affiliate-Link gekennzeichnet.
+
+Solange ein Produkt noch den Platzhalter enthält, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Link noch nicht eingetragen`.
 
 ## Neue Produkte ergänzen
 
@@ -144,4 +166,4 @@ Bitte vor Veröffentlichung fachkundig prüfen:
 - keine Anzeige von Amazon-Preisen, Amazon-Bewertungen oder Amazon-Produktbildern ohne zulässige API-Nutzung
 - medizinische Aussagen in Reiseapotheke-Artikeln
 
-Die vorhandenen Seiten `Impressum` und `Datenschutz` sind bewusst nur Platzhalter.
+Die vorhandenen Seiten `Impressum` und `Datenschutz` sind vorbereitete Basistexte. Trage vor dauerhaftem kommerziellem Betrieb deine echten Betreiberangaben in `src/data/legal.ts` ein und lasse die Rechtstexte fachkundig prüfen.

@@ -165,6 +165,21 @@ ul {
   background: #2f6f65;
 }
 
+.button--disabled {
+  width: 100%;
+  border-color: #c7d3cf;
+  background: #eef3f1;
+  color: #55706a;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.button--disabled:hover,
+.button--disabled:focus-visible {
+  transform: none;
+  box-shadow: none;
+}
+
 .text-link {
   color: #276d84;
   font-weight: 800;
@@ -797,6 +812,12 @@ ul {
   text-underline-offset: 4px;
 }
 
+.placeholder-link {
+  display: inline-block;
+  color: #6f7f7b;
+  font-weight: 800;
+}
+
 .article-card {
   border: 1px solid var(--color-line);
   border-radius: var(--radius);
@@ -981,6 +1002,52 @@ ul {
 .pros-cons h3 {
   margin-top: 0;
   margin-bottom: 12px;
+}
+
+.legal-list {
+  display: grid;
+  gap: 16px;
+  margin: 18px 0 28px;
+}
+
+.legal-list div {
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 14px;
+}
+
+.legal-list dt {
+  color: var(--color-ink);
+  font-weight: 850;
+}
+
+.legal-list dd {
+  margin: 4px 0 0;
+  color: #3f5450;
+}
+
+.notice-box {
+  display: grid;
+  gap: 10px;
+  border: 1px solid #f0dcc2;
+  border-left: 5px solid var(--color-sun);
+  border-radius: var(--radius);
+  background: #fff8ec;
+  color: #60462a;
+  margin: 18px 0 28px;
+  padding: 18px;
+}
+
+.notice-box h2 {
+  font-size: 1.15rem;
+}
+
+.notice-box p {
+  color: #60462a;
+}
+
+.notice-box code {
+  color: #47331f;
+  font-weight: 800;
 }
 
 .site-footer {

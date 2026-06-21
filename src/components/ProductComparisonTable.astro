@@ -18,7 +18,7 @@ const { products } = Astro.props as { products: Product[] };
     </thead>
     <tbody>
       {products.map((product) => {
-        const affiliateHref = product.affiliateUrl.startsWith('http') ? product.affiliateUrl : '#affiliate-link-eintragen';
+        const hasAffiliateLink = product.affiliateUrl.startsWith('http');
         return (
           <tr>
             <td data-label="Produktbereich">
@@ -29,16 +29,20 @@ const { products } = Astro.props as { products: Product[] };
             <td data-label="Vorteile">{product.pros.slice(0, 2).join(' · ')}</td>
             <td data-label="Worauf achten?">{product.cons[0]}</td>
             <td data-label="Link">
-              <a
-                href={affiliateHref}
-                target={affiliateHref.startsWith('http') ? '_blank' : undefined}
-                rel="sponsored nofollow noopener"
-                data-affiliate-link
-                data-product-id={product.id}
-                data-product-title={product.title}
-              >
-                Ansehen
-              </a>
+              {hasAffiliateLink ? (
+                <a
+                  href={product.affiliateUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  data-affiliate-link
+                  data-product-id={product.id}
+                  data-product-title={product.title}
+                >
+                  Ansehen
+                </a>
+              ) : (
+                <span class="placeholder-link">Link noch nicht eingetragen</span>
+              )}
             </td>
           </tr>
         );
