@@ -170,6 +170,41 @@ tags:
 
 Der Dateiname wird zur URL, zum Beispiel `/ratgeber/mein-neuer-artikel/`.
 
+## Marketing-Content für Social Media
+
+Die Social-Media-Drafts liegen unter:
+
+```text
+marketing/
+  pinterest/
+  instagram/
+  tiktok/
+  calendar/
+```
+
+Enthalten sind:
+
+- `marketing/pinterest/pins.json` und `marketing/pinterest/pins.md`: Pinterest-Pin-Ideen für alle Ratgeber
+- `marketing/instagram/posts.json` und `marketing/instagram/posts.md`: Instagram-Carousel-Drafts mit Captions und Hashtags
+- `marketing/tiktok/scripts.json` und `marketing/tiktok/scripts.md`: TikTok/Reels-Skripte mit Hooks, Szenen und Voiceover
+- `marketing/calendar/30-day-plan.md`: 30-Tage-Plan mit Pinterest, Instagram und TikTok/Reels
+
+Die Inhalte sind bewusst Drafts. Vor Veröffentlichung bitte manuell prüfen:
+
+- Ziel-URL zeigt auf BabyReiseHelfer und nicht direkt auf Amazon-Affiliate-Links
+- keine Amazon-Bilder, Preise, Sternebewertungen oder Rezensionen verwenden
+- keine Markenlogos, Wasserzeichen oder Plattform-UI in Bildmaterial übernehmen
+- medizinische Inhalte wie Reiseapotheke neutral und vorsichtig formulieren
+- Plattformregeln und aktuelle API-Regeln prüfen
+
+Optional vorbereitet ist:
+
+```text
+scripts/pinterest-post-draft.ts
+```
+
+Das Script zeigt standardmäßig nur an, welche Pins gepostet würden. Echtes Pinterest-Posting darf erst erfolgen, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist und die nötigen Environment Variables vorhanden sind. Tokens gehören niemals ins Repository.
+
 ## Klick-Tracking
 
 Affiliate-Buttons lösen clientseitig diese Funktion aus:

@@ -1,0 +1,446 @@
+{
+  "generatedFor": "BabyReiseHelfer",
+  "note": "Drafts only. Keine automatische Veröffentlichung.",
+  "scripts": [
+    {
+      "id": "packliste-mallorca-mit-baby-reel",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
+      "durationSeconds": "20-35",
+      "hook": "Mallorca mit Baby geplant? Diese Dinge würde ich zuerst packen.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Mallorca mit Baby geplant? Diese Dinge würde ich zuerst packen."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Handgepäck für den ersten Reisetag",
+          "overlay": "Handgepäck für den ersten Reisetag"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Sonnenschutz und Schatten einplanen",
+          "overlay": "Sonnenschutz und Schatten einplanen"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Hotel-Basics vorher klären",
+          "overlay": "Hotel-Basics vorher klären"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Mallorca mit Baby geplant? Diese Dinge würde ich zuerst packen. Handgepäck für den ersten Reisetag. Sonnenschutz und Schatten einplanen. Hotel-Basics vorher klären. Reiseapotheke klein und geordnet. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Mallorca mit Baby geplant? Diese Dinge würde ich zuerst packen.",
+        "Handgepäck für den ersten Reisetag",
+        "Sonnenschutz und Schatten einplanen",
+        "Hotel-Basics vorher klären",
+        "Reiseapotheke klein und geordnet",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Packliste Mallorca mit Baby: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#mallorcaMitBaby",
+        "#packliste",
+        "#familienurlaub",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Zur kompletten Packliste auf BabyReiseHelfer"
+    },
+    {
+      "id": "fliegen-mit-baby-dinge-reel",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
+      "durationSeconds": "20-35",
+      "hook": "Fliegst du bald mit Baby? Diese 5 Dinge gehören nach oben ins Handgepäck.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Fliegst du bald mit Baby? Diese 5 Dinge gehören nach oben ins Handgepäck."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Wickelbeutel separat packen",
+          "overlay": "Wickelbeutel separat packen"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Wechselkleidung für Baby und Eltern",
+          "overlay": "Wechselkleidung für Baby und Eltern"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Druckausgleich flexibel planen",
+          "overlay": "Druckausgleich flexibel planen"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Fliegst du bald mit Baby? Diese 5 Dinge gehören nach oben ins Handgepäck. Wickelbeutel separat packen. Wechselkleidung für Baby und Eltern. Druckausgleich flexibel planen. Ruhige Helfer für Wartezeiten. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Fliegst du bald mit Baby? Diese 5 Dinge gehören nach oben ins Handgepäck.",
+        "Wickelbeutel separat packen",
+        "Wechselkleidung für Baby und Eltern",
+        "Druckausgleich flexibel planen",
+        "Ruhige Helfer für Wartezeiten",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Fliegen mit Baby: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#fliegenmitbaby",
+        "#babyreise",
+        "#handgepäck",
+        "#reisenmitbaby",
+        "#familienreise",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Die komplette Flug-Packliste auf BabyReiseHelfer lesen"
+    },
+    {
+      "id": "kinderwagen-im-sommer-reel",
+      "articleSlug": "kinderwagen-im-sommer",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
+      "durationSeconds": "20-35",
+      "hook": "Bitte kein dichtes Tuch über den Kinderwagen. Das ist im Sommer wichtig.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Bitte kein dichtes Tuch über den Kinderwagen. Das ist im Sommer wichtig."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Sonnenschutz vorher am Wagen testen",
+          "overlay": "Sonnenschutz vorher am Wagen testen"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Ventilator nur sicher befestigt nutzen",
+          "overlay": "Ventilator nur sicher befestigt nutzen"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Moskitonetz luftig und passend wählen",
+          "overlay": "Moskitonetz luftig und passend wählen"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Bitte kein dichtes Tuch über den Kinderwagen. Das ist im Sommer wichtig. Sonnenschutz vorher am Wagen testen. Ventilator nur sicher befestigt nutzen. Moskitonetz luftig und passend wählen. Pausen im Schatten einplanen. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Bitte kein dichtes Tuch über den Kinderwagen. Das ist im Sommer wichtig.",
+        "Sonnenschutz vorher am Wagen testen",
+        "Ventilator nur sicher befestigt nutzen",
+        "Moskitonetz luftig und passend wählen",
+        "Pausen im Schatten einplanen",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Kinderwagen im Sommer: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#kinderwagen",
+        "#sommermitbaby",
+        "#sonnenschutzbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Mehr Sommer-Tipps auf BabyReiseHelfer lesen"
+    },
+    {
+      "id": "baby-im-hotel-reel",
+      "articleSlug": "baby-im-hotel",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "durationSeconds": "20-35",
+      "hook": "Hotel mit Baby? Diese drei Dinge machen die Nacht oft entspannter.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Hotel mit Baby? Diese drei Dinge machen die Nacht oft entspannter."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Reisebett oder Hotelbett prüfen",
+          "overlay": "Reisebett oder Hotelbett prüfen"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Nachtlicht statt Deckenlampe",
+          "overlay": "Nachtlicht statt Deckenlampe"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Fläschchen-Routine planen",
+          "overlay": "Fläschchen-Routine planen"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Hotel mit Baby? Diese drei Dinge machen die Nacht oft entspannter. Reisebett oder Hotelbett prüfen. Nachtlicht statt Deckenlampe. Fläschchen-Routine planen. Vertraute Kleinigkeiten einpacken. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Hotel mit Baby? Diese drei Dinge machen die Nacht oft entspannter.",
+        "Reisebett oder Hotelbett prüfen",
+        "Nachtlicht statt Deckenlampe",
+        "Fläschchen-Routine planen",
+        "Vertraute Kleinigkeiten einpacken",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Baby im Hotel: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#hotelmitbaby",
+        "#reisenmitbaby",
+        "#babyreise",
+        "#reisebett",
+        "#familienurlaub",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Hotel-Checkliste auf BabyReiseHelfer ansehen"
+    },
+    {
+      "id": "baby-reiseapotheke-reel",
+      "articleSlug": "baby-reiseapotheke",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
+      "durationSeconds": "20-35",
+      "hook": "Baby-Reiseapotheke packen? Bitte nicht erst am Abend vor dem Flug.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Baby-Reiseapotheke packen? Bitte nicht erst am Abend vor dem Flug."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Alles in eine kleine Tasche",
+          "overlay": "Alles in eine kleine Tasche"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Fieberthermometer und Basics",
+          "overlay": "Fieberthermometer und Basics"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Medikamente in Originalverpackung",
+          "overlay": "Medikamente in Originalverpackung"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Baby-Reiseapotheke packen? Bitte nicht erst am Abend vor dem Flug. Alles in eine kleine Tasche. Fieberthermometer und Basics. Medikamente in Originalverpackung. Ablaufdaten vor der Reise prüfen. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Baby-Reiseapotheke packen? Bitte nicht erst am Abend vor dem Flug.",
+        "Alles in eine kleine Tasche",
+        "Fieberthermometer und Basics",
+        "Medikamente in Originalverpackung",
+        "Ablaufdaten vor der Reise prüfen",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Baby-Reiseapotheke: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#reiseapotheke",
+        "#babyreise",
+        "#reisenmitbaby",
+        "#packliste",
+        "#familienurlaub",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Die Reiseapotheken-Liste auf BabyReiseHelfer prüfen"
+    },
+    {
+      "id": "urlaub-am-strand-mit-baby-reel",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "durationSeconds": "20-35",
+      "hook": "Strand mit Baby? Plane zuerst Schatten, nicht Spielzeug.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Strand mit Baby? Plane zuerst Schatten, nicht Spielzeug."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Schatten zuerst organisieren",
+          "overlay": "Schatten zuerst organisieren"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: UV-Hut und Kleidung kombinieren",
+          "overlay": "UV-Hut und Kleidung kombinieren"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Wickeln sandfrei vorbereiten",
+          "overlay": "Wickeln sandfrei vorbereiten"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Strand mit Baby? Plane zuerst Schatten, nicht Spielzeug. Schatten zuerst organisieren. UV-Hut und Kleidung kombinieren. Wickeln sandfrei vorbereiten. Trinken und Temperatur im Blick. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Strand mit Baby? Plane zuerst Schatten, nicht Spielzeug.",
+        "Schatten zuerst organisieren",
+        "UV-Hut und Kleidung kombinieren",
+        "Wickeln sandfrei vorbereiten",
+        "Trinken und Temperatur im Blick",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Strandurlaub mit Baby: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#strandmitbaby",
+        "#uvschutz",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Strand-Checkliste auf BabyReiseHelfer lesen"
+    },
+    {
+      "id": "wickeln-unterwegs-reel",
+      "articleSlug": "wickeln-unterwegs",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
+      "durationSeconds": "20-35",
+      "hook": "Wickeln unterwegs wird leichter, wenn du nicht die ganze Tasche ausräumen musst.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Wickeln unterwegs wird leichter, wenn du nicht die ganze Tasche ausräumen musst."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Wickelbeutel separat packen",
+          "overlay": "Wickelbeutel separat packen"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Kompakte Unterlage einplanen",
+          "overlay": "Kompakte Unterlage einplanen"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Wechselbody nicht vergessen",
+          "overlay": "Wechselbody nicht vergessen"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Wickeln unterwegs wird leichter, wenn du nicht die ganze Tasche ausräumen musst. Wickelbeutel separat packen. Kompakte Unterlage einplanen. Wechselbody nicht vergessen. Kleine Müllbeutel mitnehmen. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Wickeln unterwegs wird leichter, wenn du nicht die ganze Tasche ausräumen musst.",
+        "Wickelbeutel separat packen",
+        "Kompakte Unterlage einplanen",
+        "Wechselbody nicht vergessen",
+        "Kleine Müllbeutel mitnehmen",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Wickeln unterwegs: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#wickelnunterwegs",
+        "#babyreise",
+        "#fliegenmitbaby",
+        "#wickeltasche",
+        "#reisenmitbaby",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Wickel-Setup auf BabyReiseHelfer ansehen"
+    },
+    {
+      "id": "kinderwagen-zubehoer-urlaub-reel",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
+      "durationSeconds": "20-35",
+      "hook": "Nicht jedes Kinderwagen-Zubehör muss mit in den Urlaub. Diese Teile lösen echte Probleme.",
+      "scenes": [
+        {
+          "scene": 1,
+          "shot": "Schneller Einstieg mit Koffer, Tasche oder Reise-Setup",
+          "overlay": "Nicht jedes Kinderwagen-Zubehör muss mit in den Urlaub. Diese Teile lösen echte Probleme."
+        },
+        {
+          "scene": 2,
+          "shot": "Nahaufnahme: Sonnenschutz für seitliche Sonne",
+          "overlay": "Sonnenschutz für seitliche Sonne"
+        },
+        {
+          "scene": 3,
+          "shot": "Zweiter wichtiger Punkt: Organizer nicht zu schwer beladen",
+          "overlay": "Organizer nicht zu schwer beladen"
+        },
+        {
+          "scene": 4,
+          "shot": "Dritter praktischer Punkt: Regenschutz mit Belüftung nutzen",
+          "overlay": "Regenschutz mit Belüftung nutzen"
+        },
+        {
+          "scene": 5,
+          "shot": "Kurzer Blick auf Handy oder Website-Screenshot der Ratgeberseite ohne Amazon-Links",
+          "overlay": "Komplette Liste auf BabyReiseHelfer"
+        }
+      ],
+      "voiceover": "Nicht jedes Kinderwagen-Zubehör muss mit in den Urlaub. Diese Teile lösen echte Probleme. Sonnenschutz für seitliche Sonne. Organizer nicht zu schwer beladen. Regenschutz mit Belüftung nutzen. Mückennetz für Abendstunden. Die komplette Übersicht findest du im Ratgeber auf BabyReiseHelfer.",
+      "textOverlays": [
+        "Nicht jedes Kinderwagen-Zubehör muss mit in den Urlaub. Diese Teile lösen echte Probleme.",
+        "Sonnenschutz für seitliche Sonne",
+        "Organizer nicht zu schwer beladen",
+        "Regenschutz mit Belüftung nutzen",
+        "Mückennetz für Abendstunden",
+        "Mehr auf BabyReiseHelfer"
+      ],
+      "caption": "Kinderwagen-Zubehör im Urlaub: kurz speichern und später in Ruhe auf BabyReiseHelfer nachlesen.",
+      "hashtags": [
+        "#kinderwagenzubehör",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#buggy",
+        "#familienreise",
+        "#reisetipps",
+        "#elternhacks",
+        "#packliste"
+      ],
+      "callToAction": "Zubehör-Check auf BabyReiseHelfer lesen"
+    }
+  ]
+}
