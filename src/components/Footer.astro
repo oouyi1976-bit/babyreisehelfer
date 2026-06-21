@@ -5,11 +5,19 @@ import { categories } from '../data/categories';
 <footer class="site-footer" id="ueber-uns">
   <div class="container site-footer__grid">
     <div class="site-footer__brand">
-      <a class="brand brand--footer" href="/" aria-label="BabyReiseHelfer Startseite">
-        <span class="brand__mark" aria-hidden="true"></span>
-        <span>
-          <span class="brand__name">BabyReiseHelfer</span>
-        </span>
+      <a class="site-logo site-logo--footer" href="/" aria-label="BabyReiseHelfer Startseite">
+        <picture class="site-logo__picture">
+          <source srcset="/brand/babyreisehelfer-logo.webp" type="image/webp" />
+          <img
+            src="/brand/babyreisehelfer-logo.png"
+            alt="BabyReiseHelfer"
+            class="site-logo__image"
+            width="936"
+            height="163"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
       </a>
       <p>
         Warmes Affiliate-Magazin für Baby-Reiseprodukte, Packlisten und ehrliche Kaufkriterien rund um Flugzeug, Hotel, Strand und Kinderwagen.

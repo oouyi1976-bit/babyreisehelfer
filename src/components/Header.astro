@@ -10,11 +10,19 @@ const navItems = [
 
 <header class="site-header">
   <div class="container site-header__shell">
-    <a class="brand" href="/" aria-label="BabyReiseHelfer Startseite">
-      <span class="brand__mark" aria-hidden="true"></span>
-      <span>
-        <span class="brand__name">BabyReiseHelfer</span>
-      </span>
+    <a class="site-logo" href="/" aria-label="BabyReiseHelfer Startseite">
+      <picture class="site-logo__picture">
+        <source srcset="/brand/babyreisehelfer-logo.webp" type="image/webp" />
+        <img
+          src="/brand/babyreisehelfer-logo.png"
+          alt="BabyReiseHelfer"
+          class="site-logo__image"
+          width="936"
+          height="163"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </picture>
     </a>
 
     <nav class="site-nav" aria-label="Hauptnavigation">
