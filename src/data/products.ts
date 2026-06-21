@@ -44,10 +44,10 @@ export const products: Product[] = [
     category: 'kinderwagen-zubehoer',
     shortDescription:
       'Kompakter Akku-Ventilator mit flexibler Befestigung für warme Tage, Wartezeiten und stickige Wege.',
-    idealFor: 'Sommerurlaub, Wartezeiten am Gate und Spaziergange ohne Wind',
+    idealFor: 'Sommerurlaub, Wartezeiten am Gate und Spaziergänge ohne Wind',
     benefits: ['Mobiler Luftstrom', 'Wiederaufladbar per USB', 'Flexibel positionierbar'],
     pros: ['Angenehm bei Hitze', 'Auch im Hotelzimmer nutzbar', 'Leicht nachzuladen'],
-    cons: ['Fingerabstand und Schutzgitter genau prufen', 'Akkulaufzeit variiert je nach Stufe'],
+    cons: ['Fingerabstand und Schutzgitter genau prüfen', 'Akkulaufzeit variiert je nach Stufe'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Ventilator ansehen'
   },
@@ -57,9 +57,9 @@ export const products: Product[] = [
     category: 'kinderwagen-zubehoer',
     shortDescription:
       'Feines Netz für Buggy, Kinderwagen oder Reisebett, das abends und in mückenreichen Regionen helfen kann.',
-    idealFor: 'Abendessen draussen, Seen, Camping, tropischere Urlaubsorte',
-    benefits: ['Sehr leicht', 'Ohne Wirkstoffe', 'Schnell ubergezogen'],
-    pros: ['Kleines Packmass', 'Kann auch beim Mittagsschlaf helfen', 'Meist universell nutzbar'],
+    idealFor: 'Abendessen draußen, Seen, Camping, tropischere Urlaubsorte',
+    benefits: ['Sehr leicht', 'Ohne Wirkstoffe', 'Schnell übergezogen'],
+    pros: ['Kleines Packmaß', 'Kann auch beim Mittagsschlaf helfen', 'Meist universell nutzbar'],
     cons: ['Muss dicht abschließen', 'Nicht jedes Netz passt auf jeden Wagen gleich gut'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Moskitonetz ansehen'
@@ -70,10 +70,10 @@ export const products: Product[] = [
     category: 'wickeln-unterwegs',
     shortDescription:
       'Abwischbare, faltbare Unterlage für Flughafen, Raststätten, Strandtasche und kurze Ausflüge.',
-    idealFor: 'Wickeln im Flugzeug, unterwegs im Restaurant oder auf Tagesausflugen',
+    idealFor: 'Wickeln im Flugzeug, unterwegs im Restaurant oder auf Tagesausflügen',
     benefits: ['Hygienischer Untergrund', 'Passt in viele Taschen', 'Schnell abwischbar'],
     pros: ['Sehr alltagstauglich', 'Oft mit Fächern für Windeln', 'Nimmt wenig Platz weg'],
-    cons: ['Polsterung kann dunner sein', 'Regelmassig reinigen'],
+    cons: ['Polsterung kann dünner sein', 'Regelmäßig reinigen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Wickelunterlage ansehen'
   },
@@ -83,8 +83,8 @@ export const products: Product[] = [
     category: 'wickeln-unterwegs',
     shortDescription:
       'Rucksack mit Fächern für Windeln, Wechselkleidung, Flaschen, Snacks und Reisedokumente.',
-    idealFor: 'Flugreisen, Mietwagen, Tagesausfluge und Familien, die die Hande frei haben wollen',
-    benefits: ['Viele Facher', 'Bequem zu tragen', 'Besser organisiert als ein Shopper'],
+    idealFor: 'Flugreisen, Mietwagen, Tagesausflüge und Familien, die die Hände frei haben wollen',
+    benefits: ['Viele Fächer', 'Bequem zu tragen', 'Besser organisiert als ein Shopper'],
     pros: ['Gute Übersicht unterwegs', 'Kann Handgepäck ersetzen', 'Unisex-Designs verfügbar'],
     cons: ['Zu große Modelle verleiten zum Überpacken', 'Reißverschlüsse und Tragekomfort prüfen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
@@ -97,8 +97,8 @@ export const products: Product[] = [
     shortDescription:
       'Weicher Gehörschutz für laute Umgebungen wie Flughafen, Events oder ungewöhnlich laute Reiseorte.',
     idealFor: 'Flughafen, Transferbus, laute Hotelshows oder Stadtfeste',
-    benefits: ['Kann Reizuberflutung reduzieren', 'Weich gepolstert', 'Verstellbar je nach Modell'],
-    pros: ['Hilft in sehr lauten Situationen', 'Klein im Handgepack', 'Auch ausserhalb des Urlaubs nutzbar'],
+    benefits: ['Kann Reizüberflutung reduzieren', 'Weich gepolstert', 'Verstellbar je nach Modell'],
+    pros: ['Hilft in sehr lauten Situationen', 'Klein im Handgepäck', 'Auch außerhalb des Urlaubs nutzbar'],
     cons: ['Nicht jedes Baby akzeptiert ihn', 'Passform und Altersangabe genau beachten'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Gehörschutz ansehen'
@@ -110,7 +110,7 @@ export const products: Product[] = [
     shortDescription:
       'Kleines, dimmbares Licht für nächtliches Stillen, Fläschchen, Wickeln und fremde Hotelzimmer.',
     idealFor: 'Hotelzimmer, Ferienwohnung und dunkle Flure',
-    benefits: ['Sanftes Licht', 'Hilft bei nachtlicher Orientierung', 'Oft per USB ladbar'],
+    benefits: ['Sanftes Licht', 'Hilft bei nächtlicher Orientierung', 'Oft per USB ladbar'],
     pros: ['Sehr beruhigend in fremder Umgebung', 'Kein grelles Deckenlicht nötig', 'Klein und leicht'],
     cons: ['Akku vor dem Schlafengehen laden', 'Sehr helle Modelle meiden'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
@@ -137,7 +137,7 @@ export const products: Product[] = [
       'Faltbares Babybett für Ferienwohnungen, Hotels ohne passendes Bett oder Familienbesuche.',
     idealFor: 'Längere Aufenthalte, Ferienhaus, Großelternbesuch und unsichere Hotelbetten',
     benefits: ['Eigener Schlafplatz', 'Planbarer als Hotel-Ausstattung', 'Kann vertraut riechen'],
-    pros: ['Mehr Unabhangigkeit', 'Auch tagsuber als Ruheplatz nutzbar', 'Viele leichte Modelle verfugbar'],
+    pros: ['Mehr Unabhängigkeit', 'Auch tagsüber als Ruheplatz nutzbar', 'Viele leichte Modelle verfügbar'],
     cons: ['Zusätzliches Gepäck', 'Matratze und Sicherheitshinweise sorgfältig prüfen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Reisebett ansehen'
@@ -151,7 +151,7 @@ export const products: Product[] = [
     idealFor: 'Strandurlaub, Badesee, Picknick und Poolbereich',
     benefits: ['Schattiger Rückzugsort', 'Schnell aufgebaut', 'Schützt vor Wind und Sand'],
     pros: ['Deutlich angenehmer als nur ein Handtuch', 'Gut für Pausen', 'Viele Modelle mit UV-Schutzstoff'],
-    cons: ['Windstabilitat beachten', 'Nicht als Schlafplatz ohne Aufsicht nutzen'],
+    cons: ['Windstabilität beachten', 'Nicht als Schlafplatz ohne Aufsicht nutzen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Strandmuschel ansehen'
   },
@@ -174,7 +174,7 @@ export const products: Product[] = [
     category: 'kinderwagen-zubehoer',
     shortDescription:
       'Kleine Tasche am Schieber für Schnuller, Tücher, Trinkflasche, Handy und Tickets.',
-    idealFor: 'Flughafen, Promenade, Zoo, Stadtbummel und Tagesausfluge',
+    idealFor: 'Flughafen, Promenade, Zoo, Stadtbummel und Tagesausflüge',
     benefits: ['Wichtige Kleinigkeiten griffbereit', 'Mehr Ordnung am Wagen', 'Schnell abnehmbar'],
     pros: ['Sehr praktisch im Alltag', 'Vermeidet Suchen in großen Taschen', 'Oft mit Becherfach'],
     cons: ['Nicht zu schwer beladen', 'Kann je nach Wagen den Schwerpunkt beeinflussen'],
@@ -187,10 +187,10 @@ export const products: Product[] = [
     category: 'kinderwagen-zubehoer',
     shortDescription:
       'Transparenter Schutz gegen Wind, kurzen Regen und kühle Abendluft im Urlaub.',
-    idealFor: 'Wechselhaftes Wetter, Kustenorte, Städtetrips und Abendspaziergange',
+    idealFor: 'Wechselhaftes Wetter, Küstenorte, Städtetrips und Abendspaziergänge',
     benefits: ['Schützt vor Wind', 'Hilft bei kurzem Regen', 'Klein zusammenfaltbar'],
-    pros: ['Gibt Sicherheit bei Wetterwechsel', 'Oft sehr leicht', 'Nutzlich auch daheim'],
-    cons: ['Beluftung muss ausreichend sein', 'Passform vor Abreise testen'],
+    pros: ['Gibt Sicherheit bei Wetterwechsel', 'Oft sehr leicht', 'Nützlich auch daheim'],
+    cons: ['Belüftung muss ausreichend sein', 'Passform vor Abreise testen'],
     affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
     buttonText: 'Wetterschutz ansehen'
   },
@@ -199,7 +199,7 @@ export const products: Product[] = [
     title: 'Kleine Reiseapotheke-Box',
     category: 'baby-reiseapotheke',
     shortDescription:
-      'Kompakte Box, um Fieberthermometer, Pflaster, Nasentropfen und wichtige Basics sauber zu bundeln.',
+      'Kompakte Box, um Fieberthermometer, Pflaster, Nasentropfen und wichtige Basics sauber zu bündeln.',
     idealFor: 'Packlisten, Flugreisen, Ferienwohnung und Ausflüge',
     benefits: ['Alles an einem Ort', 'Schnell im Handgepäck gefunden', 'Schützt kleine Tuben und Fläschchen'],
     pros: ['Macht Kontrolle vor Abreise einfacher', 'Kann dauerhaft gepackt bleiben', 'Gut beschriftbar'],

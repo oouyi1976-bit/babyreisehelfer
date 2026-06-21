@@ -39,7 +39,7 @@ npm run preview
 5. Output directory: `dist`
 6. Deploy starten.
 
-Die Domain in `astro.config.mjs` steht aktuell auf `https://babyreisehelfer.de`. Wenn du eine andere Domain nutzt, passe den Wert `site` dort sowie die Sitemap-URL in `public/robots.txt` an.
+Die Domain in `astro.config.mjs` steht aktuell auf `https://babyreisehelfer.pages.dev`. Wenn du später eine eigene Domain nutzt, passe den Wert `site` dort sowie die Sitemap-URL in `public/robots.txt` an.
 
 ## Amazon-Affiliate-Links eintragen
 

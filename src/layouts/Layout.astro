@@ -20,7 +20,7 @@ const {
   jsonLd?: JsonLd;
 };
 
-const site = Astro.site ?? new URL('https://babyreisehelfer.de');
+const site = Astro.site ?? new URL('https://babyreisehelfer.pages.dev');
 const canonicalUrl = new URL(canonical ?? Astro.url.pathname, site);
 const pageTitle = title.includes('BabyReiseHelfer') ? title : `${title} | BabyReiseHelfer`;
 const websiteSchema = {

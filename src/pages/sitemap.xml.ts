@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import { categories } from '../data/categories';
 
 export const GET: APIRoute = async ({ site }) => {
-  const baseUrl = (site ?? new URL('https://babyreisehelfer.de')).toString().replace(/\/$/, '');
+  const baseUrl = (site ?? new URL('https://babyreisehelfer.pages.dev')).toString().replace(/\/$/, '');
   const articles = await getCollection('ratgeber');
   const paths = [
     '/',

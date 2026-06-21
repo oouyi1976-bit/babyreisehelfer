@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://babyreisehelfer.de/sitemap.xml
+Sitemap: https://babyreisehelfer.pages.dev/sitemap.xml
