@@ -47,7 +47,7 @@ import { amazonTrackingId } from '../data/products';
         </div>
         <div>
           <dt><code>affiliateStatus: 'ready'</code></dt>
-          <dd>Der Button öffnet <code>affiliateUrl</code>, sofern die URL mit <code>http</code> beginnt.</dd>
+          <dd>Der Button öffnet <code>affiliateUrl</code>, wenn die URL auf <code>amazon.de</code> zeigt und <code>tag={amazonTrackingId}</code> enthält.</dd>
         </div>
       </dl>
 
@@ -60,6 +60,7 @@ import { amazonTrackingId } from '../data/products';
   amazonProductUrl: 'https://www.amazon.de/dp/B0D6YZWGNM',
   affiliateUrl: 'https://www.amazon.de/dp/B0D6YZWGNM?tag=${amazonTrackingId}',
   affiliateStatus: 'ready',
+  imageType: 'stroller-sunshade',
   buttonText: 'Produkt ansehen'
 }`}</code></pre>
 

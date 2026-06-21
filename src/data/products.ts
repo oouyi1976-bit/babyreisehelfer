@@ -54,7 +54,7 @@ export const products: Product[] = [
     pros: ['Leicht mitzunehmen', 'Flexibles Kopfband', 'Auch außerhalb von Flugreisen nutzbar'],
     cons: ['Nicht jedes Baby toleriert Kopfhörer', 'Kein Ersatz für ruhige Pausen', 'Passform sorgfältig prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'baby-earmuffs',
     icon: 'ear',
     legalNote: 'Herstellerangaben zu Alter, Passform und Anwendung beachten.'
   },
@@ -76,7 +76,7 @@ export const products: Product[] = [
     pros: ['Sehr alltagstauglich', 'Gut für Flugreisen', 'Hilft bei wenig Platz'],
     cons: ['Polsterung kann dünn sein', 'Muss regelmäßig gereinigt werden', 'Nicht zu groß für Flugzeugtoiletten wählen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'changing-mat',
     icon: 'mat',
     legalNote: 'Nur als Unterlage verwenden und Baby nie unbeaufsichtigt lassen.'
   },
@@ -98,7 +98,7 @@ export const products: Product[] = [
     pros: ['Gute Übersicht unterwegs', 'Praktisch mit Kinderwagen', 'Auch nach der Babyzeit nutzbar'],
     cons: ['Zu viel Stauraum verleitet zum Überpacken', 'Tragekomfort vorher testen', 'Nicht jede Tasche passt unter jeden Flugzeugsitz'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'packing-cubes',
     icon: 'bag',
     legalNote: 'Airline-Vorgaben für Handgepäckmaße separat prüfen.'
   },
@@ -120,7 +120,7 @@ export const products: Product[] = [
     pros: ['Robuste Organisationslösung', 'Gutes Format für Ausflüge', 'Kann dauerhaft gepackt bleiben'],
     cons: ['Kein Ersatz für medizinische Beratung', 'Baby-Medikamente müssen individuell ergänzt werden', 'Inhalt vor jeder Reise prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'first-aid-box',
     icon: 'cross',
     legalNote: 'Medikamente, Dosierungen und Notfallfragen immer mit Kinderarzt oder Apotheke klären.'
   },
@@ -142,7 +142,7 @@ export const products: Product[] = [
     pros: ['Gut für feste Steckdosenplätze', 'Nimmt kaum Platz weg', 'Praktisch für Hotelnächte'],
     cons: ['Nur mit passender Steckdose nutzbar', 'Nicht flexibel wie ein Akku-Licht', 'Bei Auslandsreisen Adapter prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'night-light',
     icon: 'night',
     legalNote: 'Elektrische Geräte nur nach Herstellerhinweisen und außerhalb der Reichweite des Babys nutzen.'
   },
@@ -164,7 +164,7 @@ export const products: Product[] = [
     pros: ['Klein und leicht', 'Auch daheim nutzbar', 'Praktisch für nächtliches Wickeln'],
     cons: ['Akku muss geladen sein', 'Zu helles Licht kann stören', 'Nicht ins Babybett legen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'night-light',
     icon: 'light',
     legalNote: 'Elektrische Produkte nur nach Herstellerhinweisen und außerhalb der Reichweite des Babys nutzen.'
   },
@@ -186,7 +186,7 @@ export const products: Product[] = [
     pros: ['Praktisch bei tief stehender Sonne', 'Passt zu vielen Wagen', 'Nimmt wenig Platz weg'],
     cons: ['Ersetzt keine Schattenpausen', 'Nicht dicht über dem Baby abschließen', 'Kann je nach Wagen anders sitzen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'stroller-sunshade',
     icon: 'sunshade',
     legalNote: 'Bei Hitze regelmäßig Temperatur und Luftzirkulation im Kinderwagen prüfen.'
   },
@@ -208,7 +208,7 @@ export const products: Product[] = [
     pros: ['Kann bei Hitze angenehmer sein', 'Auch am Reisebettumfeld nutzbar', 'Leicht nachzuladen'],
     cons: ['Kein Ersatz für Schatten und Pausen', 'Akkulaufzeit variiert', 'Fingerabstand genau prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'stroller-fan',
     icon: 'fan',
     legalNote: 'Ventilator sicher befestigen und niemals direkt in Reichweite kleiner Hände platzieren.'
   },
@@ -230,7 +230,7 @@ export const products: Product[] = [
     pros: ['Kleines Packmaß', 'Gut für Abendstunden', 'Meist universell nutzbar'],
     cons: ['Muss sauber abschließen', 'Nicht jedes Modell passt gleich gut', 'Baby weiter im Blick behalten'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'mosquito-net',
     icon: 'net',
     legalNote: 'Nur so nutzen, dass Atmung, Sicht und Luftzirkulation nicht eingeschränkt werden.'
   },
@@ -252,7 +252,7 @@ export const products: Product[] = [
     pros: ['Vermeidet Suchen', 'Kompakter als eine große Tasche', 'Für Tickets und Handy praktisch'],
     cons: ['Kann den Schwerpunkt beeinflussen', 'Nicht für schwere Lasten gedacht', 'Kompatibilität prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'stroller-organizer',
     icon: 'organizer',
     legalNote: 'Kinderwagen nicht durch zu viel Gewicht am Schieber instabil machen.'
   },
@@ -274,7 +274,7 @@ export const products: Product[] = [
     pros: ['Nützlich bei Wetterwechsel', 'Schnell montierbar', 'Auch zuhause einsetzbar'],
     cons: ['Nicht dauerhaft geschlossen lassen', 'Bei Wärme auf Luft achten', 'Universal passt nicht immer perfekt'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'rain-cover',
     icon: 'rain',
     legalNote: 'Regenschutz nur mit ausreichender Belüftung und regelmäßiger Kontrolle nutzen.'
   },
@@ -296,7 +296,7 @@ export const products: Product[] = [
     pros: ['Mehr Unabhängigkeit', 'Auch als Ruheplatz nutzbar', 'Geeignet für längere Reisen'],
     cons: ['Zusätzliches Gepäck', 'Nicht jedes Hotelzimmer hat genug Platz', 'Sicherheitsangaben genau beachten'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'travel-crib',
     icon: 'bed',
     legalNote: 'Nur nach Montage- und Altershinweisen des Herstellers verwenden.'
   },
@@ -318,7 +318,7 @@ export const products: Product[] = [
     pros: ['Flexibler als ein stationäres Gerät', 'Hilfreich im Hotel', 'Praktisch bei langen Wegen'],
     cons: ['Zusätzliches Gewicht', 'Reinigung und Hygiene beachten', 'Temperatur immer prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'bottle-warmer',
     icon: 'bottle',
     legalNote: 'Babynahrung nach Hersteller- und Hygienevorgaben zubereiten; Temperatur immer prüfen.'
   },
@@ -340,7 +340,7 @@ export const products: Product[] = [
     pros: ['Kompakter als ein voller Rucksack', 'Gut für kurze Wege', 'Kann zuhause vorbereitet werden'],
     cons: ['Begrenzt Stauraum', 'Nicht für lange Tagesausflüge allein', 'Regelmäßig auffüllen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'changing-mat',
     icon: 'pouch',
     legalNote: 'Baby beim Wickeln immer sichern und nie unbeaufsichtigt lassen.'
   },
@@ -362,7 +362,7 @@ export const products: Product[] = [
     pros: ['Praktisch bei Ferienwohnungen', 'Platzsparender als starre Wannen', 'Kann längere Aufenthalte erleichtern'],
     cons: ['Für Flugreisen eher sperrig', 'Nur unter ständiger Aufsicht', 'Standfläche vor Ort prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'travel-crib',
     icon: 'bath',
     legalNote: 'Baby beim Baden nie unbeaufsichtigt lassen; Wassertemperatur und Standfestigkeit immer prüfen.'
   },
@@ -384,7 +384,7 @@ export const products: Product[] = [
     pros: ['Einfach mitzunehmen', 'Keine Technik', 'Gute Ergänzung zu Schatten'],
     cons: ['Babys ziehen Hüte manchmal aus', 'Ersetzt keine Schattenpausen', 'Größe muss gut sitzen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'beach-tent',
     icon: 'hat',
     legalNote: 'Sonnenschutz für Babys immer mit Schatten, Kleidung und fachlicher Empfehlung kombinieren.'
   },
@@ -406,7 +406,7 @@ export const products: Product[] = [
     pros: ['Praktisch für Pausen', 'Besser als nur ein Handtuch', 'Kompakt für Tagesausflüge'],
     cons: ['Windstabilität beachten', 'Nicht als unbeaufsichtigter Schlafplatz', 'Kann im Koffer sperrig sein'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'beach-tent',
     icon: 'tent',
     legalNote: 'Baby im Strandzelt immer beaufsichtigen und auf Hitze sowie Luftzirkulation achten.'
   },
@@ -428,7 +428,7 @@ export const products: Product[] = [
     pros: ['Gut für geplante Pausen', 'Flexibler als ein fester Schirm', 'Kann auch im Garten dienen'],
     cons: ['Falten vorher üben', 'Bei Wind gut sichern', 'Kein vollständiger Sonnenschutz allein'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'beach-tent',
     icon: 'shade',
     legalNote: 'UV-Zelt ersetzt keine Aufsicht, passende Kleidung und Pausen außerhalb starker Sonne.'
   },
@@ -450,7 +450,7 @@ export const products: Product[] = [
     pros: ['Flexible Fassung', 'Für aktive Ausflüge gedacht', 'Kann am Strand praktisch sein'],
     cons: ['Nicht jedes Kind akzeptiert eine Brille', 'Passform ist entscheidend', 'Nicht als alleiniger Schutz verstehen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'beach-tent',
     icon: 'glasses',
     legalNote: 'Sonnenbrillen nur passend zur Altersangabe und ohne Druckstellen verwenden.'
   },
@@ -472,7 +472,7 @@ export const products: Product[] = [
     pros: ['Sehr vielseitig', 'Hilft bei Wickel- und Strandpannen', 'Auch für Schwimmsachen nutzbar'],
     cons: ['Nicht für Flüssigkeitstransport gedacht', 'Muss ausgelüftet werden', 'Größe passend wählen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'packing-cubes',
     icon: 'drop',
     legalNote: 'Nasse Textilien zeitnah waschen oder trocknen, um Gerüche und Feuchtigkeit zu vermeiden.'
   },
@@ -494,7 +494,7 @@ export const products: Product[] = [
     pros: ['Sehr hilfreich im Hotel', 'Erleichtert gemeinsames Packen', 'Auch für Elternkleidung nutzbar'],
     cons: ['Zu viele Beutel machen es unübersichtlich', 'Kompression kann Falten erzeugen', 'Qualität der Reißverschlüsse prüfen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'packing-cubes',
     icon: 'cube',
     legalNote: 'Nur als Organisationshilfe; Gepäckgewicht und Airline-Regeln separat prüfen.'
   },
@@ -516,7 +516,7 @@ export const products: Product[] = [
     pros: ['Vielseitig', 'Hilft bei langen Wegen', 'Kompakter als große Isolierkannen'],
     cons: ['Vor Reise auf Dichtigkeit prüfen', 'Nicht zu heiß befüllen', 'Regelmäßig gründlich reinigen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'thermos-bottle',
     icon: 'thermos',
     legalNote: 'Temperatur vor dem Füttern oder Trinken immer prüfen.'
   },
@@ -538,7 +538,7 @@ export const products: Product[] = [
     pros: ['Praktisch für Familien', 'Auch für Versicherungsunterlagen geeignet', 'Passt ins Handgepäck'],
     cons: ['Nicht offen liegen lassen', 'Zu voll gepackt wird sie unhandlich', 'Sensible Dokumente bewusst sichern'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'document-organizer',
     icon: 'document',
     legalNote: 'Wichtige Dokumente zusätzlich digital oder separat sichern, wenn sinnvoll.'
   },
@@ -560,7 +560,7 @@ export const products: Product[] = [
     pros: ['Praktisch im Handgepäck', 'Gut für kurze Wege', 'Kann im Organizer bleiben'],
     cons: ['Muss nachgefüllt werden', 'Nicht jede Tüchergröße passt', 'Regelmäßig reinigen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'changing-mat',
     icon: 'wipe',
     legalNote: 'Feuchttücher hautverträglich auswählen und Packung sauber verschließen.'
   },
@@ -582,7 +582,7 @@ export const products: Product[] = [
     pros: ['Ordnet Bad-Basics', 'Passt zur Packliste', 'Auch für Elternartikel nutzbar'],
     cons: ['Flüssigkeiten zusätzlich sichern', 'Nicht überfüllen', 'Nach Auslaufen sofort reinigen'],
     buttonText: 'Produkt ansehen',
-    imageType: 'css-icon',
+    imageType: 'packing-cubes',
     icon: 'toiletry',
     legalNote: 'Flüssigkeiten für Flugreisen nach aktuellen Sicherheitsregeln packen.'
   }

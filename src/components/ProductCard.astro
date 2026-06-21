@@ -1,19 +1,13 @@
 ---
 import { isAffiliateLinkReady, type Product } from '../data/products';
+import ProductVisual from './ProductVisual.astro';
 
 const { product, compact = false } = Astro.props as { product: Product; compact?: boolean };
 const hasAffiliateLink = isAffiliateLinkReady(product);
 ---
 
 <article class:list={['product-card', { 'product-card--compact': compact }]}>
-  <div
-    class={`product-card__visual product-card__visual--${product.category}`}
-    data-image-type={product.imageType}
-    data-icon={product.icon}
-    aria-hidden="true"
-  >
-    <span></span>
-  </div>
+  <ProductVisual product={product} />
 
   <div class="product-card__body">
     <div class="product-card__topline">

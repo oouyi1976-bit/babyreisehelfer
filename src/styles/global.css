@@ -628,64 +628,165 @@ ul {
   box-shadow: 0 10px 26px rgba(36, 65, 61, 0.06);
 }
 
-.product-card__visual {
+.product-visual {
+  --pv-bg: #eaf5f6;
+  --pv-ground: #f8ecd8;
+  --pv-fill: #7ea7bc;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #ef8068;
+  --pv-dark: #274159;
+  --pv-line: #274159;
+  --pv-white: #fffdf8;
   position: relative;
-  min-height: 142px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0)),
-    var(--color-blue);
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  min-height: 152px;
+  border-bottom: 1px solid rgba(234, 223, 206, 0.72);
+  background: var(--pv-bg);
 }
 
-.product-card__visual span,
-.product-card__visual span::before,
-.product-card__visual span::after {
-  position: absolute;
-  content: "";
+.product-visual svg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.product-card__visual span {
-  inset: 28px auto auto 50%;
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
-  background: var(--color-white);
-  transform: translateX(-50%);
-  box-shadow: 0 12px 20px rgba(29, 43, 42, 0.12);
+.pv-bg {
+  fill: var(--pv-bg);
 }
 
-.product-card__visual span::before {
-  inset: 18px;
-  border-radius: 999px;
-  background: var(--color-green-strong);
+.pv-ground {
+  fill: var(--pv-ground);
 }
 
-.product-card__visual span::after {
-  bottom: -18px;
-  left: 13px;
-  width: 46px;
-  height: 9px;
-  border-radius: 999px;
-  background: rgba(29, 43, 42, 0.18);
+.pv-sun {
+  display: none;
+  fill: #f6b75d;
 }
 
-.product-card__visual--strand-sonne {
-  background: linear-gradient(135deg, #fff3d7, #d9edf5);
+.pv-fill {
+  fill: var(--pv-fill);
 }
 
-.product-card__visual--hotel-mit-baby {
-  background: linear-gradient(135deg, #eef7f6, #f2eadc);
+.pv-fill--soft {
+  fill: var(--pv-fill-soft);
 }
 
-.product-card__visual--wickeln-unterwegs {
-  background: linear-gradient(135deg, #f8e5dd, #eef7f6);
+.pv-accent {
+  fill: var(--pv-accent);
+  stroke: var(--pv-accent);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-.product-card__visual--fliegen-mit-baby {
-  background: linear-gradient(135deg, #d9edf5, #ffffff);
+.pv-dark {
+  fill: var(--pv-dark);
 }
 
-.product-card__visual--baby-reiseapotheke {
-  background: linear-gradient(135deg, #f8e5dd, #ffffff);
+.pv-white {
+  fill: var(--pv-white);
+  stroke: var(--pv-white);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pv-line {
+  fill: none;
+  stroke: var(--pv-line);
+  stroke-width: 7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pv-line--warm {
+  stroke: var(--pv-accent);
+}
+
+.pv-net {
+  opacity: 0.34;
+  stroke-width: 4;
+}
+
+.pv-rain {
+  stroke: #5d9fbe;
+}
+
+.pv-rain-shell {
+  fill: rgba(255, 253, 248, 0.54);
+  stroke: rgba(39, 65, 89, 0.28);
+  stroke-width: 5;
+}
+
+.product-visual--stroller-sunshade,
+.product-visual--beach-tent {
+  --pv-bg: #dceef7;
+  --pv-ground: #f7e7c4;
+  --pv-fill: #8fae8a;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #f6b75d;
+}
+
+.product-visual--stroller-sunshade .pv-sun,
+.product-visual--beach-tent .pv-sun {
+  display: block;
+}
+
+.product-visual--changing-mat,
+.product-visual--first-aid-box {
+  --pv-bg: #f7e7df;
+  --pv-ground: #e9f1e6;
+  --pv-fill: #9fbfba;
+  --pv-fill-soft: #fff6e9;
+  --pv-accent: #ef654f;
+}
+
+.product-visual--night-light {
+  --pv-bg: #ddebf5;
+  --pv-ground: #f2eadc;
+  --pv-fill: #7ea7bc;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #f6b75d;
+}
+
+.product-visual--baby-earmuffs,
+.product-visual--document-organizer {
+  --pv-bg: #e8f3f7;
+  --pv-ground: #f7ead8;
+  --pv-fill: #7ea7bc;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #ef8068;
+}
+
+.product-visual--stroller-fan,
+.product-visual--mosquito-net,
+.product-visual--stroller-organizer,
+.product-visual--rain-cover {
+  --pv-bg: #e7f2ec;
+  --pv-ground: #f5ead6;
+  --pv-fill: #8fae8a;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #7ea7bc;
+}
+
+.product-visual--bottle-warmer,
+.product-visual--travel-crib,
+.product-visual--thermos-bottle {
+  --pv-bg: #f4ebdc;
+  --pv-ground: #dceef7;
+  --pv-fill: #8fae8a;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #ef8068;
+}
+
+.product-visual--packing-cubes {
+  --pv-bg: #f1eadf;
+  --pv-ground: #e5f0f2;
+  --pv-fill: #7ea7bc;
+  --pv-fill-soft: #e9f1e6;
+  --pv-accent: #ef8068;
 }
 
 .product-card__body {
@@ -747,8 +848,8 @@ ul {
   padding: 10px 12px;
 }
 
-.product-card--compact .product-card__visual {
-  min-height: 104px;
+.product-card--compact .product-visual {
+  min-height: 116px;
 }
 
 .check-list,
@@ -1924,24 +2025,6 @@ h2 {
   transition:
     transform 180ms ease,
     box-shadow 180ms ease;
-}
-
-.product-card__visual {
-  min-height: 150px;
-  background:
-    radial-gradient(circle at 78% 22%, rgba(255, 253, 248, 0.86), transparent 26%),
-    linear-gradient(135deg, var(--color-blue-soft), var(--color-cream-2));
-}
-
-.product-card__visual span {
-  width: 84px;
-  height: 84px;
-  border-radius: 26px;
-}
-
-.product-card__visual span::before {
-  inset: 20px;
-  background: var(--color-sage);
 }
 
 .product-card__body {

@@ -1,0 +1,231 @@
+---
+import type { Product } from '../data/products';
+
+const { product } = Astro.props as { product: Product };
+
+const iconToVisual: Record<string, string> = {
+  sunshade: 'stroller-sunshade',
+  mat: 'changing-mat',
+  pouch: 'changing-mat',
+  wipe: 'changing-mat',
+  night: 'night-light',
+  light: 'night-light',
+  tent: 'beach-tent',
+  shade: 'beach-tent',
+  hat: 'beach-tent',
+  glasses: 'beach-tent',
+  ear: 'baby-earmuffs',
+  cross: 'first-aid-box',
+  fan: 'stroller-fan',
+  bottle: 'bottle-warmer',
+  bed: 'travel-crib',
+  thermos: 'thermos-bottle',
+  cube: 'packing-cubes',
+  bag: 'packing-cubes',
+  drop: 'packing-cubes',
+  toiletry: 'packing-cubes',
+  bath: 'travel-crib',
+  document: 'document-organizer',
+  net: 'mosquito-net',
+  organizer: 'stroller-organizer',
+  rain: 'rain-cover'
+};
+
+const visualType = product.imageType && product.imageType !== 'css-icon'
+  ? product.imageType
+  : iconToVisual[product.icon] ?? 'fallback';
+---
+
+<div class={`product-visual product-visual--${visualType}`} role="img" aria-label={`${product.title} Illustration`}>
+  <svg viewBox="0 0 320 190" aria-hidden="true" focusable="false">
+    <rect class="pv-bg" x="0" y="0" width="320" height="190" rx="0"></rect>
+    <circle class="pv-sun" cx="258" cy="43" r="25"></circle>
+    <path class="pv-ground" d="M36 151 C74 135 104 159 144 148 C189 136 224 148 284 137 L284 177 L36 177 Z"></path>
+
+    {visualType === 'stroller-sunshade' && (
+      <g class="pv-scene">
+        <path class="pv-accent" d="M92 82 C111 52 161 47 192 77 L185 96 C159 83 126 84 100 100 Z"></path>
+        <path class="pv-line" d="M103 99 C128 83 158 83 184 97"></path>
+        <path class="pv-line" d="M124 91 L116 131"></path>
+        <path class="pv-line" d="M166 91 L174 131"></path>
+        <path class="pv-fill pv-fill--soft" d="M101 129 H203 C197 151 181 161 151 161 H127 C113 161 102 148 101 129 Z"></path>
+        <path class="pv-line" d="M204 129 C225 124 239 114 247 96"></path>
+        <circle class="pv-dark" cx="126" cy="163" r="12"></circle>
+        <circle class="pv-dark" cx="185" cy="163" r="12"></circle>
+        <circle class="pv-white" cx="126" cy="163" r="5"></circle>
+        <circle class="pv-white" cx="185" cy="163" r="5"></circle>
+      </g>
+    )}
+
+    {visualType === 'changing-mat' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="85" y="82" width="134" height="72" rx="18"></rect>
+        <path class="pv-line" d="M129 83 V154"></path>
+        <rect class="pv-white" x="98" y="96" width="46" height="24" rx="10"></rect>
+        <rect class="pv-accent" x="156" y="101" width="50" height="16" rx="8"></rect>
+        <rect class="pv-fill pv-fill--soft" x="172" y="54" width="60" height="42" rx="13"></rect>
+        <path class="pv-line" d="M184 75 H221"></path>
+        <circle class="pv-accent" cx="113" cy="136" r="8"></circle>
+        <circle class="pv-accent" cx="195" cy="136" r="8"></circle>
+      </g>
+    )}
+
+    {visualType === 'night-light' && (
+      <g class="pv-scene">
+        <path class="pv-fill" d="M124 145 H197 L189 77 C186 55 135 55 132 77 Z"></path>
+        <rect class="pv-dark" x="117" y="143" width="88" height="16" rx="8"></rect>
+        <circle class="pv-accent" cx="161" cy="92" r="27"></circle>
+        <path class="pv-white" d="M170 72 C156 77 151 95 161 108 C146 103 140 84 151 71 C157 65 164 65 170 72 Z"></path>
+        <path class="pv-line" d="M93 78 L100 84 L93 90 L86 84 Z"></path>
+        <path class="pv-line" d="M229 62 L235 68 L229 74 L223 68 Z"></path>
+        <circle class="pv-white" cx="222" cy="119" r="5"></circle>
+      </g>
+    )}
+
+    {visualType === 'beach-tent' && (
+      <g class="pv-scene">
+        <path class="pv-accent" d="M77 148 C96 89 135 61 177 59 C218 58 241 94 252 148 Z"></path>
+        <path class="pv-fill" d="M105 148 C119 106 145 84 176 81 C207 79 226 104 236 148 Z"></path>
+        <path class="pv-white" d="M137 148 C147 119 160 105 178 103 C197 101 208 120 214 148 Z"></path>
+        <path class="pv-line" d="M77 148 H252"></path>
+        <path class="pv-line" d="M176 61 V148"></path>
+        <path class="pv-line" d="M53 158 C85 150 106 164 135 157 C166 150 193 166 235 155 C254 151 270 153 286 159"></path>
+      </g>
+    )}
+
+    {visualType === 'baby-earmuffs' && (
+      <g class="pv-scene">
+        <path class="pv-line" d="M104 99 C112 54 208 54 216 99"></path>
+        <rect class="pv-fill" x="80" y="91" width="52" height="68" rx="22"></rect>
+        <rect class="pv-fill" x="188" y="91" width="52" height="68" rx="22"></rect>
+        <circle class="pv-white" cx="160" cy="124" r="38"></circle>
+        <circle class="pv-accent" cx="146" cy="119" r="4"></circle>
+        <circle class="pv-accent" cx="174" cy="119" r="4"></circle>
+        <path class="pv-line" d="M145 139 C154 146 166 146 175 139"></path>
+        <path class="pv-dark" d="M63 59 L118 78 L93 88 L84 116 L75 87 L49 76 Z"></path>
+      </g>
+    )}
+
+    {visualType === 'first-aid-box' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="83" y="82" width="143" height="76" rx="18"></rect>
+        <path class="pv-line" d="M82 110 H226"></path>
+        <rect class="pv-dark" x="132" y="60" width="47" height="25" rx="10"></rect>
+        <path class="pv-white" d="M151 105 H163 V119 H177 V131 H163 V145 H151 V131 H137 V119 H151 Z"></path>
+        <rect class="pv-accent" x="222" y="99" width="26" height="58" rx="10"></rect>
+        <rect class="pv-white" x="228" y="108" width="14" height="22" rx="4"></rect>
+      </g>
+    )}
+
+    {visualType === 'stroller-fan' && (
+      <g class="pv-scene">
+        <path class="pv-line" d="M91 115 C121 92 165 94 193 121"></path>
+        <path class="pv-fill pv-fill--soft" d="M94 124 H194 C190 148 170 160 138 160 H117 C103 160 93 146 94 124 Z"></path>
+        <path class="pv-line" d="M204 123 C226 118 241 107 249 91"></path>
+        <circle class="pv-dark" cx="119" cy="162" r="11"></circle>
+        <circle class="pv-dark" cx="177" cy="162" r="11"></circle>
+        <circle class="pv-fill" cx="224" cy="78" r="26"></circle>
+        <circle class="pv-white" cx="224" cy="78" r="8"></circle>
+        <path class="pv-line" d="M224 52 V104 M198 78 H250 M205 60 L243 96 M243 60 L205 96"></path>
+      </g>
+    )}
+
+    {visualType === 'bottle-warmer' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="113" y="84" width="94" height="76" rx="19"></rect>
+        <rect class="pv-white" x="129" y="52" width="62" height="99" rx="21"></rect>
+        <rect class="pv-accent" x="139" y="39" width="42" height="22" rx="10"></rect>
+        <path class="pv-line" d="M143 88 H177 M143 103 H177 M143 118 H177"></path>
+        <path class="pv-line pv-line--warm" d="M90 70 C77 82 77 96 90 108 M226 70 C239 82 239 96 226 108"></path>
+      </g>
+    )}
+
+    {visualType === 'travel-crib' && (
+      <g class="pv-scene">
+        <rect class="pv-fill pv-fill--soft" x="73" y="87" width="174" height="70" rx="18"></rect>
+        <path class="pv-line" d="M87 101 H233 M88 101 L76 157 M232 101 L246 157"></path>
+        <path class="pv-line" d="M103 107 V151 M128 107 V151 M153 107 V151 M178 107 V151 M203 107 V151 M226 107 V151"></path>
+        <rect class="pv-white" x="111" y="69" width="54" height="29" rx="14"></rect>
+        <path class="pv-accent" d="M174 75 C199 68 220 77 230 98 C206 104 188 96 174 75 Z"></path>
+      </g>
+    )}
+
+    {visualType === 'thermos-bottle' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="112" y="52" width="62" height="108" rx="22"></rect>
+        <rect class="pv-dark" x="124" y="35" width="38" height="24" rx="10"></rect>
+        <path class="pv-white" d="M127 90 H159 M127 107 H159"></path>
+        <rect class="pv-white" x="184" y="78" width="45" height="80" rx="18"></rect>
+        <rect class="pv-accent" x="193" y="62" width="27" height="22" rx="10"></rect>
+        <path class="pv-line" d="M195 113 H218 M195 127 H218"></path>
+      </g>
+    )}
+
+    {visualType === 'packing-cubes' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="79" y="78" width="162" height="82" rx="20"></rect>
+        <path class="pv-line" d="M124 78 V62 H196 V78"></path>
+        <rect class="pv-white" x="95" y="96" width="53" height="43" rx="12"></rect>
+        <rect class="pv-accent" x="157" y="92" width="66" height="30" rx="12"></rect>
+        <rect class="pv-fill pv-fill--soft" x="161" y="128" width="58" height="22" rx="10"></rect>
+        <circle class="pv-dark" cx="112" cy="160" r="7"></circle>
+        <circle class="pv-dark" cx="210" cy="160" r="7"></circle>
+      </g>
+    )}
+
+    {visualType === 'document-organizer' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="79" y="83" width="154" height="78" rx="18"></rect>
+        <path class="pv-line" d="M100 101 H213"></path>
+        <rect class="pv-white" x="109" y="57" width="53" height="78" rx="12" transform="rotate(-7 135 96)"></rect>
+        <path class="pv-accent" d="M119 80 H151 M119 96 H146 M119 112 H139"></path>
+        <rect class="pv-white" x="181" y="69" width="62" height="36" rx="12" transform="rotate(8 212 87)"></rect>
+        <path class="pv-line" d="M193 84 H229 M196 94 H221"></path>
+      </g>
+    )}
+
+    {visualType === 'mosquito-net' && (
+      <g class="pv-scene">
+        <path class="pv-fill pv-fill--soft" d="M84 138 C91 83 123 57 162 57 C204 57 229 88 238 138 Z"></path>
+        <path class="pv-line" d="M94 130 C121 113 198 113 228 130"></path>
+        <path class="pv-line pv-net" d="M108 89 L218 132 M137 64 L232 119 M96 118 L202 57 M123 136 L229 76"></path>
+        <path class="pv-fill" d="M98 134 H218 C211 153 195 162 163 162 H127 C112 162 101 151 98 134 Z"></path>
+        <circle class="pv-dark" cx="125" cy="163" r="11"></circle>
+        <circle class="pv-dark" cx="188" cy="163" r="11"></circle>
+      </g>
+    )}
+
+    {visualType === 'stroller-organizer' && (
+      <g class="pv-scene">
+        <path class="pv-line" d="M82 86 H238"></path>
+        <rect class="pv-fill" x="111" y="82" width="98" height="74" rx="18"></rect>
+        <path class="pv-line" d="M131 84 V65 M189 84 V65"></path>
+        <rect class="pv-white" x="126" y="100" width="30" height="39" rx="10"></rect>
+        <rect class="pv-accent" x="166" y="95" width="28" height="48" rx="10"></rect>
+        <circle class="pv-dark" cx="103" cy="158" r="9"></circle>
+        <circle class="pv-dark" cx="217" cy="158" r="9"></circle>
+      </g>
+    )}
+
+    {visualType === 'rain-cover' && (
+      <g class="pv-scene">
+        <path class="pv-fill pv-rain-shell" d="M82 136 C91 82 124 61 163 61 C205 61 231 88 241 136 Z"></path>
+        <path class="pv-line" d="M92 128 C122 111 202 111 232 128"></path>
+        <path class="pv-fill" d="M98 134 H220 C214 153 196 162 164 162 H127 C112 162 101 151 98 134 Z"></path>
+        <circle class="pv-dark" cx="126" cy="163" r="11"></circle>
+        <circle class="pv-dark" cx="189" cy="163" r="11"></circle>
+        <path class="pv-line pv-rain" d="M73 63 L66 79 M103 50 L96 66 M245 58 L238 74 M274 80 L267 96"></path>
+      </g>
+    )}
+
+    {visualType === 'fallback' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="84" y="80" width="111" height="80" rx="20"></rect>
+        <path class="pv-line" d="M113 80 V63 H166 V80"></path>
+        <rect class="pv-white" x="204" y="73" width="48" height="76" rx="12"></rect>
+        <path class="pv-line" d="M215 94 H239 M215 112 H239 M215 130 H231"></path>
+        <path class="pv-accent" d="M138 122 C128 108 104 116 106 135 C108 154 138 162 138 162 C138 162 168 154 170 135 C172 116 148 108 138 122 Z"></path>
+      </g>
+    )}
+  </svg>
+</div>

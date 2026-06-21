@@ -130,11 +130,13 @@ In `src/data/products.ts` ein weiteres Objekt in das `products`-Array einfügen.
   pros: ['Pro 1', 'Pro 2'],
   cons: ['Hinweis 1', 'Hinweis 2'],
   buttonText: 'Produkt ansehen',
-  imageType: 'css-icon',
+  imageType: 'stroller-sunshade',
   icon: 'passender-icon-name',
   legalNote: 'Kurzer Hinweis zu Sicherheit, Herstellerangaben oder fachlicher Prüfung'
 }
 ```
+
+`imageType` steuert die eigene Produktillustration in `src/components/ProductVisual.astro`. Verfügbare Visual-Typen sind unter anderem `stroller-sunshade`, `changing-mat`, `night-light`, `beach-tent`, `baby-earmuffs`, `first-aid-box`, `stroller-fan`, `bottle-warmer`, `travel-crib`, `thermos-bottle`, `packing-cubes`, `document-organizer`, `mosquito-net`, `stroller-organizer` und `rain-cover`.
 
 Wenn das Produkt auf Kategorie-Seiten erscheinen soll, prüfe zusätzlich `src/data/categories.ts`.
 
