@@ -54,6 +54,7 @@ Trage dort Betreibername, ladungsfähige Anschrift und E-Mail-Adresse ein:
 ```ts
 export const legalProfile = {
   operatorName: 'Dein rechtlicher Betreibername',
+  ownerName: 'Dein Name',
   addressLines: ['Straße Hausnummer', 'PLZ Ort', 'Land'],
   email: 'kontakt@deine-domain.de'
 };

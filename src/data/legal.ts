@@ -1,11 +1,13 @@
 export type LegalProfile = {
   operatorName: string;
+  ownerName: string;
   addressLines: string[];
   email: string;
 };
 
 export const legalProfile: LegalProfile = {
-  operatorName: '',
+  operatorName: 'Epic Technic MB',
+  ownerName: 'Benjamin Bagandi',
   addressLines: [],
   email: ''
 };
