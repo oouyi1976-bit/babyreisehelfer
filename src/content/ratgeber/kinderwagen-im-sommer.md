@@ -3,6 +3,7 @@ title: "Kinderwagen im Sommer: Sonnenschutz, Ventilator und Moskitonetz"
 description: "Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz."
 excerpt: "Sommerzubehör für den Kinderwagen sollte Schatten schaffen, Luft lassen und sicher befestigt sein."
 category: "kinderwagen-zubehoer"
+image: "/article-images/kinderwagen-im-sommer.webp"
 date: 2026-06-20
 readingTime: 7
 featuredProductIds:

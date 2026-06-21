@@ -5,10 +5,16 @@ const { category } = Astro.props as { category: SiteCategory };
 ---
 
 <a class="category-card" href={`/${category.slug}/`}>
-  <span class={`category-card__icon category-card__icon--${category.slug}`} aria-hidden="true"></span>
+  <span class="category-card__media">
+    <img src={category.image} alt="" width="1200" height="750" loading="lazy" decoding="async" />
+    <span class={`category-card__icon category-card__icon--${category.slug}`} aria-hidden="true"></span>
+  </span>
   <span class="category-card__content">
     <strong>{category.title}</strong>
-    <span>{category.description}</span>
+    <span>{category.homeDescription}</span>
+    <span class="category-card__chips" aria-label="Themen">
+      {category.highlights.map((highlight) => <span>{highlight}</span>)}
+    </span>
+    <span class="category-card__arrow">Entdecken <span aria-hidden="true">→</span></span>
   </span>
-  <span class="category-card__arrow" aria-hidden="true">→</span>
 </a>

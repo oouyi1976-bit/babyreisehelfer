@@ -13,6 +13,7 @@ const ratgeber = defineCollection({
     description: z.string(),
     excerpt: z.string(),
     category: z.string(),
+    image: z.string().optional(),
     date: z.coerce.date(),
     readingTime: z.number(),
     featuredProductIds: z.array(z.string()).default([]),

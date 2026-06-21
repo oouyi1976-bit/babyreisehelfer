@@ -3,6 +3,7 @@ title: "Baby im Hotel: Reisebett, Nachtlicht und Flaschenwärmer"
 description: "So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten."
 excerpt: "Im Hotel helfen vor allem kleine Dinge: sanftes Licht, ein planbarer Schlafplatz und einfache Lösungen für Fläschchen."
 category: "hotel-mit-baby"
+image: "/article-images/baby-im-hotel.webp"
 date: 2026-06-20
 readingTime: 7
 featuredProductIds:

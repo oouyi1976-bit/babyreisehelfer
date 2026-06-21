@@ -3,6 +3,7 @@ title: "Kinderwagen-Zubehör für den Urlaub: Was lohnt sich wirklich?"
 description: "Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet."
 excerpt: "Nicht jedes Kinderwagen-Zubehör muss mit. Sinnvoll ist, was ein echtes Reiseproblem löst."
 category: "kinderwagen-zubehoer"
+image: "/article-images/kinderwagen-zubehoer-urlaub.webp"
 date: 2026-06-20
 readingTime: 8
 featuredProductIds:

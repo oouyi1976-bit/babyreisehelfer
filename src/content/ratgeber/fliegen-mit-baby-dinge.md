@@ -3,6 +3,7 @@ title: "Fliegen mit Baby: Diese Dinge machen den Flug entspannter"
 description: "Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast."
 excerpt: "Ein guter Flug mit Baby entsteht weniger durch perfekte Produkte als durch gute Vorbereitung und schnell erreichbare Basics."
 category: "fliegen-mit-baby"
+image: "/article-images/fliegen-mit-baby-dinge.webp"
 date: 2026-06-20
 readingTime: 7
 featuredProductIds:

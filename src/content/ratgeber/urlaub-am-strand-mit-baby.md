@@ -3,6 +3,7 @@ title: "Urlaub am Strand mit Baby: Schatten, UV-Schutz und praktische Helfer"
 description: "Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren."
 excerpt: "Ein Strandtag mit Baby gelingt am besten kurz, schattig und gut vorbereitet."
 category: "strand-sonne"
+image: "/article-images/urlaub-am-strand-mit-baby.webp"
 date: 2026-06-20
 readingTime: 8
 featuredProductIds:

@@ -3,6 +3,9 @@ export type SiteCategory = {
   title: string;
   navLabel: string;
   description: string;
+  homeDescription: string;
+  highlights: string[];
+  image: string;
   intro: string;
   productCategories: string[];
   featuredProductIds: string[];
@@ -15,6 +18,9 @@ export const categories: SiteCategory[] = [
     navLabel: 'Fliegen',
     description:
       'Ruhige Flugtage mit Baby: hilfreiche Produkte, Packtipps und kleine Routinen für Flughafen und Kabine.',
+    homeDescription: 'Alles für entspannte Flugtage mit Baby - von Vorbereitung bis Kabine.',
+    highlights: ['Flugzeug', 'Flughafen', 'Handgepäck'],
+    image: '/category-images/fliegen-mit-baby.webp',
     intro:
       'Vom Boarding bis zur Landung zählt vor allem, dass wichtige Dinge schnell griffbereit sind. Diese Rubrik sammelt Produktideen und Ratgeber für entspanntere Flugreisen mit Baby.',
     productCategories: ['fliegen-mit-baby', 'wickeln-unterwegs', 'baby-reiseapotheke'],
@@ -32,6 +38,9 @@ export const categories: SiteCategory[] = [
     navLabel: 'Kinderwagen',
     description:
       'Sonnenschutz, Organizer, Ventilator, Mückenschutz und Wetterschutz für Buggy und Kinderwagen.',
+    homeDescription: 'Praktische Helfer für Sonne, Wind, Mücken und Spaziergänge.',
+    highlights: ['Sonnenschutz', 'Organizer', 'Wetterschutz'],
+    image: '/category-images/kinderwagen-zubehoer.webp',
     intro:
       'Gutes Kinderwagen-Zubehör ist leicht, sicher befestigt und löst ein echtes Reiseproblem. Hier findest du neutrale Empfehlungen, worauf du vor dem Kauf achten solltest.',
     productCategories: ['kinderwagen-zubehoer', 'strand-sonne'],
@@ -49,6 +58,9 @@ export const categories: SiteCategory[] = [
     navLabel: 'Hotel',
     description:
       'Praktische Helfer für ruhige Nächte, Fläschchen, Schlafplatz und kleine Routinen im Hotelzimmer.',
+    homeDescription: 'Kleine Helfer für ruhige Nächte, Fläschchen und Schlafplatz.',
+    highlights: ['Reisebett', 'Nachtlicht', 'Flaschenwärmer'],
+    image: '/category-images/hotel-mit-baby.webp',
     intro:
       'Im Hotel sind kleine, verlässliche Helfer oft wichtiger als viel Gepäck. Diese Kategorie zeigt, was im Zimmer wirklich Komfort bringt.',
     productCategories: ['hotel-mit-baby'],
@@ -66,6 +78,9 @@ export const categories: SiteCategory[] = [
     navLabel: 'Strand',
     description:
       'Schatten, UV-Schutz, Trinkflaschen und Hitzeschutz für Strandtage mit Baby.',
+    homeDescription: 'Schatten, UV-Schutz und clevere Basics für warme Tage.',
+    highlights: ['UV-Schutz', 'Strandmuschel', 'Trinkflasche'],
+    image: '/category-images/strand-sonne.webp',
     intro:
       'Sonne, Wind und Sand machen Urlaubstage wunderschön, aber auch anstrengend. Hier geht es um Schutz, Schatten und einfache Helfer für warme Reiseziele.',
     productCategories: ['strand-sonne', 'kinderwagen-zubehoer'],
@@ -83,6 +98,9 @@ export const categories: SiteCategory[] = [
     navLabel: 'Packlisten',
     description:
       'Übersichtliche Packlisten für Flug, Hotel, Strand, Kinderwagen und Reiseapotheke.',
+    homeDescription: 'Übersichtliche Listen für Flug, Hotel, Strand und Kinderwagen.',
+    highlights: ['Abhaken', 'Koffer', 'Reiseapotheke'],
+    image: '/category-images/packlisten.webp',
     intro:
       'Eine gute Packliste verhindert zu viel Gepäck und vergessene Kleinigkeiten. Hier findest du strukturierte Listen für verschiedene Reisesituationen mit Baby.',
     productCategories: ['packlisten', 'baby-reiseapotheke', 'wickeln-unterwegs'],

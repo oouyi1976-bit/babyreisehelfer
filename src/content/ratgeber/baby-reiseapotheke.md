@@ -3,6 +3,7 @@ title: "Baby-Reiseapotheke: Was gehört in die Tasche?"
 description: "Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern."
 excerpt: "Eine Baby-Reiseapotheke sollte übersichtlich, altersgerecht und vor der Reise fachlich abgestimmt sein."
 category: "packlisten"
+image: "/article-images/baby-reiseapotheke.webp"
 date: 2026-06-20
 readingTime: 7
 featuredProductIds:

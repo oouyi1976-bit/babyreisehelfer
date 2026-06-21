@@ -8,15 +8,21 @@ const date = new Intl.DateTimeFormat('de-DE', {
   month: 'long',
   year: 'numeric'
 }).format(article.data.date);
+const image = article.data.image ?? '/article-images/fallback-babyreise.webp';
 ---
 
 <article class="article-card">
   <a href={`/ratgeber/${article.id}/`} class="article-card__link">
-    <span class={`article-card__visual article-card__visual--${article.data.category}`} aria-hidden="true"></span>
+    <span class="article-card__media">
+      <img src={image} alt="" width="1200" height="750" loading="lazy" decoding="async" />
+    </span>
     <span class="article-card__category">{category?.title ?? 'Ratgeber'}</span>
     <h2>{article.data.title}</h2>
     <p>{article.data.excerpt}</p>
-    <span class="article-card__meta">{date} · {article.data.readingTime} Min.</span>
+    <span class="article-card__meta">
+      <span>{date}</span>
+      <span>{article.data.readingTime} Min.</span>
+    </span>
     <span class="article-card__cta">Ratgeber lesen</span>
   </a>
 </article>

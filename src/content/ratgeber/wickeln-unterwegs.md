@@ -3,6 +3,7 @@ title: "Wickeln unterwegs: Die besten Helfer für Reise und Flugzeug"
 description: "Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug."
 excerpt: "Wickeln unterwegs klappt am besten mit kleinen Modulen statt einer vollgestopften Tasche."
 category: "fliegen-mit-baby"
+image: "/article-images/wickeln-unterwegs.webp"
 date: 2026-06-20
 readingTime: 6
 featuredProductIds:

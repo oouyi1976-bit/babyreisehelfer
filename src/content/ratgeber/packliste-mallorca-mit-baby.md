@@ -3,6 +3,7 @@ title: "Packliste Mallorca mit Baby: Was braucht man wirklich?"
 description: "Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten."
 excerpt: "Mallorca ist mit Baby gut machbar, wenn Schatten, Flüssigkeit, Schlaf und Wickeln unterwegs gut geplant sind."
 category: "packlisten"
+image: "/article-images/packliste-mallorca-mit-baby.webp"
 date: 2026-06-20
 readingTime: 8
 featuredProductIds:
