@@ -1,21 +1,28 @@
 ---
-import { categories } from '../data/categories';
+const navItems = [
+  { label: 'Packlisten', href: '/packlisten/' },
+  { label: 'Ratgeber', href: '/#ratgeber' },
+  { label: 'Produkte', href: '/#produkte' },
+  { label: 'Reiseziele', href: '/#reiseziele' },
+  { label: 'Über uns', href: '/#ueber-uns' }
+];
 ---
 
 <header class="site-header">
-  <div class="container site-header__inner">
+  <div class="container site-header__shell">
     <a class="brand" href="/" aria-label="BabyReiseHelfer Startseite">
       <span class="brand__mark" aria-hidden="true"></span>
       <span>
         <span class="brand__name">BabyReiseHelfer</span>
-        <span class="brand__tagline">Ratgeber für entspannte Familienreisen</span>
       </span>
     </a>
 
     <nav class="site-nav" aria-label="Hauptnavigation">
-      {categories.map((category) => (
-        <a href={`/${category.slug}/`}>{category.navLabel}</a>
+      {navItems.map((item) => (
+        <a href={item.href}>{item.label}</a>
       ))}
     </nav>
+
+    <a class="header-cta" href="/packlisten/">Packliste starten</a>
   </div>
 </header>

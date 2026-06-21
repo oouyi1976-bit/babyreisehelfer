@@ -2,23 +2,22 @@
 import { categories } from '../data/categories';
 ---
 
-<footer class="site-footer">
+<footer class="site-footer" id="ueber-uns">
   <div class="container site-footer__grid">
-    <div>
+    <div class="site-footer__brand">
       <a class="brand brand--footer" href="/" aria-label="BabyReiseHelfer Startseite">
         <span class="brand__mark" aria-hidden="true"></span>
         <span>
           <span class="brand__name">BabyReiseHelfer</span>
-          <span class="brand__tagline">Praktische Reiseideen für Eltern</span>
         </span>
       </a>
       <p>
-        Unabhängiger Ratgeber mit Produktideen, Packlisten und Kaufkriterien für Urlaub mit Baby.
+        Warmes Affiliate-Magazin für Baby-Reiseprodukte, Packlisten und ehrliche Kaufkriterien rund um Flugzeug, Hotel, Strand und Kinderwagen.
       </p>
     </div>
 
     <div>
-      <h2>Rubriken</h2>
+      <h2>Entdecken</h2>
       <ul>
         {categories.map((category) => (
           <li><a href={`/${category.slug}/`}>{category.title}</a></li>
@@ -27,18 +26,38 @@ import { categories } from '../data/categories';
     </div>
 
     <div>
-      <h2>Hinweise</h2>
+      <h2>Über uns</h2>
+      <ul>
+        <li><a href="/#produkte">Empfohlene Produkte</a></li>
+        <li><a href="/#ratgeber">Ratgeber & Inspiration</a></li>
+        <li><a href="/#reiseziele">Tipps & Vergleiche</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Rechtliches</h2>
       <ul>
         <li><a href="/impressum/">Impressum</a></li>
         <li><a href="/datenschutz/">Datenschutz</a></li>
         <li><a href="/sitemap.xml">Sitemap</a></li>
       </ul>
     </div>
+
+    <aside class="footer-newsletter" aria-label="Newsletter Hinweis">
+      <h2>Bleib auf dem Laufenden</h2>
+      <p>Neue Packlisten und Ratgeber-Updates sind bald als Newsletter verfügbar.</p>
+      <form>
+        <input type="email" placeholder="Newsletter bald verfügbar" disabled />
+        <button type="button" disabled>Bald verfügbar</button>
+      </form>
+    </aside>
   </div>
 
   <div class="container site-footer__bottom">
     <p>
-      © {new Date().getFullYear()} BabyReiseHelfer. Inhalte ersetzen keine medizinische, rechtliche oder sicherheitstechnische Beratung.
+      Hinweis: Wir verlinken auf ausgewählte Produkte. Bei einem Kauf über unsere Links erhalten wir ggf. eine kleine Provision – für dich bleibt der Preis gleich.
+      Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
     </p>
+    <p>© {new Date().getFullYear()} BabyReiseHelfer. Inhalte ersetzen keine medizinische, rechtliche oder sicherheitstechnische Beratung.</p>
   </div>
 </footer>

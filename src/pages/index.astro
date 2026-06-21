@@ -4,28 +4,23 @@ import Layout from '../layouts/Layout.astro';
 import CategoryCard from '../components/CategoryCard.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import ProductCard from '../components/ProductCard.astro';
-import ProductComparisonTable from '../components/ProductComparisonTable.astro';
-import CTABox from '../components/CTABox.astro';
+import HeroVisual from '../components/HeroVisual.astro';
+import TrustBar from '../components/TrustBar.astro';
+import TipsCompareSection from '../components/TipsCompareSection.astro';
 import { categories } from '../data/categories';
-import { getProductsByIds, products } from '../data/products';
+import { getProductsByIds } from '../data/products';
 
 const articles = (await getCollection('ratgeber'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 6);
+  .slice(0, 4);
 
-const featuredCategories = categories.slice(0, 4);
+const featuredCategories = categories;
 const topProducts = getProductsByIds([
   'kinderwagen-sonnenschutz',
   'faltbare-wickelunterlage',
   'nachtlicht-hotel',
-  'baby-strandmuschel',
-  'baby-gehoerschutz',
-  'kleine-reiseapotheke-box'
+  'baby-strandmuschel'
 ]);
-
-const comparisonProducts = products.filter((product) =>
-  ['kinderwagen-ventilator', 'usb-flaschenwaermer', 'reisebett', 'thermosflasche'].includes(product.id)
-);
 ---
 
 <Layout
@@ -36,30 +31,27 @@ const comparisonProducts = products.filter((product) =>
     <div class="container hero__grid">
       <div class="hero__content">
         <p class="eyebrow">BabyReiseHelfer</p>
-        <h1>Baby-Reiseprodukte, die im Urlaub wirklich helfen</h1>
+        <h1>Baby-Reiseprodukte, die im Urlaub <span>wirklich</span> helfen</h1>
         <p class="hero__subtitle">
-          Praktische Packlisten, Produktideen und Ratgeber für Flugzeug, Hotel, Strand und Kinderwagen.
+          Praktische Packlisten, clevere Produktideen und ehrliche Ratgeber für entspannte Reisen mit Baby – ob im Flugzeug, im Hotel, am Strand oder mit dem Kinderwagen unterwegs.
         </p>
         <div class="hero__actions">
-          <a class="button" href="/packlisten/">Packlisten starten</a>
-          <a class="button button--secondary" href="/fliegen-mit-baby/">Flugtipps lesen</a>
+          <a class="button" href="/packlisten/">Packlisten entdecken</a>
+          <a class="button button--secondary" href="#ratgeber">Ratgeber lesen</a>
         </div>
       </div>
 
-      <div class="travel-scene" aria-label="Illustration mit Kinderwagen, Koffer und Sonnenschutz">
-        <span class="travel-scene__sun"></span>
-        <span class="travel-scene__stroller"></span>
-        <span class="travel-scene__suitcase"></span>
-        <span class="travel-scene__bottle"></span>
-      </div>
+      <HeroVisual />
     </div>
   </section>
 
-  <section class="section">
+  <TrustBar />
+
+  <section class="section" id="kategorien">
     <div class="container">
       <div class="section__header">
         <p class="eyebrow">Schnell einsteigen</p>
-        <h2>Ratgeber nach Reisesituation</h2>
+        <h2>Kategorien für jede Reisephase</h2>
       </div>
       <div class="category-grid">
         {featuredCategories.map((category) => <CategoryCard category={category} />)}
@@ -67,12 +59,12 @@ const comparisonProducts = products.filter((product) =>
     </div>
   </section>
 
-  <section class="section section--soft">
+  <section class="section section--soft" id="produkte">
     <div class="container">
       <div class="section__header section__header--split">
         <div>
-          <p class="eyebrow">Produktbereiche</p>
-          <h2>Helfer, die typische Reisemomente leichter machen</h2>
+          <p class="eyebrow">Empfohlene Produkte</p>
+          <h2>Hochwertig sortierte Produktideen ohne Shop-Gefühl</h2>
         </div>
         <p>
           Keine Preise, keine Amazon-Sterne und keine erfundenen Testsieger. Die Karten zeigen neutrale Produktideen mit Kaufkriterien.
@@ -84,22 +76,12 @@ const comparisonProducts = products.filter((product) =>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section__header">
-        <p class="eyebrow">Vergleich ohne Preis-Chaos</p>
-        <h2>Top-Produktbereiche auf einen Blick</h2>
-      </div>
-      <ProductComparisonTable products={comparisonProducts} />
-    </div>
-  </section>
-
-  <section class="section section--soft">
+  <section class="section" id="ratgeber">
     <div class="container">
       <div class="section__header section__header--split">
         <div>
-          <p class="eyebrow">Aktuelle Ratgeber</p>
-          <h2>Planen, packen, entspannter reisen</h2>
+          <p class="eyebrow">Ratgeber & Inspiration</p>
+          <h2>Planen, packen und entspannter losfahren</h2>
         </div>
         <a class="text-link" href="/packlisten/">Alle Packlisten ansehen</a>
       </div>
@@ -109,12 +91,5 @@ const comparisonProducts = products.filter((product) =>
     </div>
   </section>
 
-  <div class="container section">
-    <CTABox
-      title="Lieber weniger, aber besser packen"
-      text="Die Packlisten helfen dir, Babyprodukte nach Reisesituation zu sortieren: Flug, Hotel, Strand, Kinderwagen und Reiseapotheke."
-      href="/packlisten/"
-      buttonText="Zu den Packlisten"
-    />
-  </div>
+  <TipsCompareSection />
 </Layout>

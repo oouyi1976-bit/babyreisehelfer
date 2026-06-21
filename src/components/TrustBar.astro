@@ -1,0 +1,38 @@
+---
+const badges = [
+  {
+    icon: 'check',
+    title: 'Keine Fake-Testsieger',
+    text: 'Neutrale Kaufkriterien statt großer Versprechen'
+  },
+  {
+    icon: 'tag',
+    title: 'Keine Amazon-Preise',
+    text: 'Keine Preise oder Sterne aus fremden Quellen'
+  },
+  {
+    icon: 'list',
+    title: 'Praktische Packlisten',
+    text: 'Schnell sortiert nach Flug, Hotel und Strand'
+  },
+  {
+    icon: 'sun',
+    title: 'Für Flug, Hotel & Strand',
+    text: 'Reiseideen für echte Alltagssituationen'
+  }
+];
+---
+
+<section class="trust-bar" aria-label="Vertrauenshinweise">
+  <div class="container trust-bar__inner">
+    {badges.map((badge) => (
+      <div class="trust-item">
+        <span class={`trust-item__icon trust-item__icon--${badge.icon}`} aria-hidden="true"></span>
+        <span>
+          <strong>{badge.title}</strong>
+          <small>{badge.text}</small>
+        </span>
+      </div>
+    ))}
+  </div>
+</section>

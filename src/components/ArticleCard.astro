@@ -1,5 +1,8 @@
 ---
+import { getCategoryBySlug } from '../data/categories';
+
 const { article } = Astro.props;
+const category = getCategoryBySlug(article.data.category);
 const date = new Intl.DateTimeFormat('de-DE', {
   day: '2-digit',
   month: 'long',
@@ -9,9 +12,11 @@ const date = new Intl.DateTimeFormat('de-DE', {
 
 <article class="article-card">
   <a href={`/ratgeber/${article.id}/`} class="article-card__link">
-    <span class="article-card__meta">{date} · {article.data.readingTime} Min.</span>
+    <span class={`article-card__visual article-card__visual--${article.data.category}`} aria-hidden="true"></span>
+    <span class="article-card__category">{category?.title ?? 'Ratgeber'}</span>
     <h2>{article.data.title}</h2>
     <p>{article.data.excerpt}</p>
+    <span class="article-card__meta">{date} · {article.data.readingTime} Min.</span>
     <span class="article-card__cta">Ratgeber lesen</span>
   </a>
 </article>

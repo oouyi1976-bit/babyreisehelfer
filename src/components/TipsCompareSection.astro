@@ -1,0 +1,41 @@
+---
+const items = [
+  {
+    icon: 'scale',
+    title: 'Produkte vergleichen',
+    text: 'Schnell erkennen, welcher Helfer zu Flug, Hotel oder Strand passt.'
+  },
+  {
+    icon: 'idea',
+    title: 'Clever reisen',
+    text: 'Ruhige Routinen, weniger Gepäck und bessere Vorbereitung unterwegs.'
+  },
+  {
+    icon: 'checklist',
+    title: 'Richtig packen',
+    text: 'Klare Listen für Handgepäck, Kinderwagen, Reiseapotheke und Hotel.'
+  }
+];
+---
+
+<section class="tips-compare" id="reiseziele">
+  <div class="container tips-compare__inner">
+    <div class="tips-compare__intro">
+      <p class="eyebrow">Tipps & Vergleiche</p>
+      <h2>Weniger suchen, besser entscheiden</h2>
+      <p>
+        Produktideen, Packlisten und Ratgeber sind so sortiert, dass du schnell erkennst, was euch auf Reisen wirklich entlastet.
+      </p>
+    </div>
+
+    <div class="tips-compare__grid">
+      {items.map((item) => (
+        <article class="tips-compare__item">
+          <span class={`tips-compare__icon tips-compare__icon--${item.icon}`} aria-hidden="true"></span>
+          <h3>{item.title}</h3>
+          <p>{item.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
