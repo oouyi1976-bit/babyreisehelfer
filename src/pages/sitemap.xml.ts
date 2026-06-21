@@ -7,6 +7,7 @@ export const GET: APIRoute = async ({ site }) => {
   const articles = await getCollection('ratgeber');
   const paths = [
     '/',
+    '/produkte/',
     '/impressum/',
     '/datenschutz/',
     '/produkt-links-eintragen/',

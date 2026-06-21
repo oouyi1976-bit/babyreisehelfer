@@ -6,10 +6,12 @@ category: "packlisten"
 date: 2026-06-20
 readingTime: 8
 featuredProductIds:
+  - packing-cubes-baby-kleidung
   - baby-uv-hut
   - baby-strandmuschel
   - thermosflasche
   - kleine-reiseapotheke-box
+  - reisedokumententasche-familie
 tags:
   - Mallorca
   - Packliste

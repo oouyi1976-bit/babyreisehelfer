@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard.astro';
 import ProductComparisonTable from '../components/ProductComparisonTable.astro';
 import CTABox from '../components/CTABox.astro';
 import { categories, type SiteCategory } from '../data/categories';
-import { products } from '../data/products';
+import { getProductsByIds, products, type Product } from '../data/products';
 
 export function getStaticPaths() {
   return categories.map((category) => ({
@@ -20,10 +20,12 @@ const allArticles = await getCollection('ratgeber');
 const articles = allArticles
   .filter((article) => article.data.category === category.slug)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
-const categoryProducts = products.filter(
-  (product) =>
-    category.productCategories.includes(product.category) ||
-    category.featuredProductIds.includes(product.id)
+const featuredProducts = getProductsByIds(category.featuredProductIds);
+const relatedProducts = products.filter(
+  (product) => category.productCategories.includes(product.category) && !category.featuredProductIds.includes(product.id)
+);
+const categoryProducts = [...featuredProducts, ...relatedProducts].filter(
+  (product, index, list): product is Product => list.findIndex((item) => item.id === product.id) === index
 );
 
 const categorySchema = {

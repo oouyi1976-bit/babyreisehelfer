@@ -9,7 +9,8 @@ featuredProductIds:
   - wickelrucksack
   - faltbare-wickelunterlage
   - baby-gehoerschutz
-  - thermosflasche
+  - reisedokumententasche-familie
+  - kompaktes-reise-nachtlicht
 tags:
   - Flugzeug
   - Handgepäck

@@ -78,23 +78,36 @@ epic05e-21
 
 Neue Amazon-Links müssen diese ID enthalten, in der Regel als Parameter `tag=epic05e-21`. Eine kurze Anleitung ist auch auf der Website unter `/produkt-links-eintragen/` verfügbar.
 
-Jedes Produkt hat aktuell:
+Jedes Produkt hat diese Linkfelder:
 
 ```ts
-affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
-affiliateStatus: 'placeholder'
+amazonSearchTerm: 'Zamboo Universal Sonnensegel UV 50 Kinderwagen Sonnenschutz',
+amazonProductUrl: 'https://www.amazon.de/dp/B0D6YZWGNM',
+affiliateUrl: 'https://www.amazon.de/dp/B0D6YZWGNM?tag=epic05e-21',
+affiliateStatus: 'ready'
 ```
 
-Diesen Link ersetzt du später durch deinen echten Amazon-Partnerlink. Die Buttons sind bereits mit `rel="sponsored nofollow noopener"` markiert und zusätzlich sichtbar als Werbung/Affiliate-Link gekennzeichnet.
+Die Buttons sind mit `rel="sponsored nofollow noopener"` markiert und sichtbar als Werbung/Affiliate-Link gekennzeichnet.
 
 Solange `affiliateStatus: 'placeholder'` gesetzt ist, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Link noch nicht eingetragen`.
 
-Erst wenn der echte Link eingetragen und der Status bewusst auf `ready` gesetzt wurde, öffnet der Button den Affiliate-Link:
+Erst wenn ein echter Amazon.de-Link mit Tracking-ID geprüft wurde und der Status bewusst auf `ready` gesetzt wurde, öffnet der Button den Affiliate-Link:
 
 ```ts
 affiliateUrl: 'https://www.amazon.de/...&tag=epic05e-21',
 affiliateStatus: 'ready'
 ```
+
+Wichtig: Der Link muss `tag=epic05e-21` enthalten. Ohne diese Tracking-ID wird der Button im Code nicht als bereit behandelt.
+
+Amazon-Regeln für die Produktpflege:
+
+- keine Amazon-Produktbilder kopieren oder einbinden
+- keine Amazon-Preise anzeigen
+- keine Amazon-Sternebewertungen anzeigen
+- keine Rezensionstexte kopieren
+- keine Behauptungen wie `bester`, `Testsieger` oder `Nr. 1` ohne eigenen belegbaren Test
+- Produkttexte neutral formulieren und Sicherheits-/Herstellerhinweise respektieren
 
 ## Neue Produkte ergänzen
 
@@ -105,14 +118,21 @@ In `src/data/products.ts` ein weiteres Objekt in das `products`-Array einfügen.
   id: 'eindeutige-produkt-id',
   title: 'Produktname',
   category: 'kategorie-slug',
+  amazonSearchTerm: 'Suchbegriff für spätere Kontrolle',
+  amazonProductUrl: 'https://www.amazon.de/dp/ASIN',
+  affiliateUrl: 'https://www.amazon.de/dp/ASIN?tag=epic05e-21',
+  affiliateStatus: 'ready',
   shortDescription: 'Kurze Beschreibung',
   idealFor: 'Ideale Nutzungssituation',
+  whyItFits: 'Warum das Produkt zur Nische passt',
+  whatToLookFor: ['Worauf achten 1', 'Worauf achten 2'],
   benefits: ['Vorteil 1', 'Vorteil 2'],
   pros: ['Pro 1', 'Pro 2'],
   cons: ['Hinweis 1', 'Hinweis 2'],
-  affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER',
-  affiliateStatus: 'placeholder',
-  buttonText: 'Produkt ansehen'
+  buttonText: 'Produkt ansehen',
+  imageType: 'css-icon',
+  icon: 'passender-icon-name',
+  legalNote: 'Kurzer Hinweis zu Sicherheit, Herstellerangaben oder fachlicher Prüfung'
 }
 ```
 

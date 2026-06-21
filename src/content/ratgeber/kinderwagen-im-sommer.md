@@ -10,6 +10,7 @@ featuredProductIds:
   - kinderwagen-ventilator
   - moskitonetz-kinderwagen
   - baby-uv-hut
+  - wetbag-nasse-kleidung
 tags:
   - Kinderwagen
   - Sommer

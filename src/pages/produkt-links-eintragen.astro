@@ -26,8 +26,18 @@ import { amazonTrackingId } from '../data/products';
 
       <h2>Zentrale Datei</h2>
       <p>
-        Alle Produktlinks liegen in <code>src/data/products.ts</code>. Dort wird pro Produkt entschieden, ob der Button noch deaktiviert bleibt oder den echten Affiliate-Link öffnet.
+        Alle Produktdaten und Produktlinks liegen in <code>src/data/products.ts</code>. Dort wird pro Produkt entschieden, ob der Button noch deaktiviert bleibt oder den echten Affiliate-Link öffnet.
       </p>
+
+      <h2>Workflow</h2>
+      <ol class="number-list">
+        <li>Amazon-Produkt fachlich prüfen: Passt es zur Nische, löst es ein echtes Reiseproblem und wirkt es für Babys nicht riskant?</li>
+        <li>Produktseite als sauberen Amazon.de-Link notieren, am besten im Format <code>https://www.amazon.de/dp/ASIN</code>.</li>
+        <li>Affiliate-Link mit Tracking-ID verwenden: <code>?tag={amazonTrackingId}</code>.</li>
+        <li>Link in <code>src/data/products.ts</code> bei <code>amazonProductUrl</code> und <code>affiliateUrl</code> pflegen.</li>
+        <li><code>affiliateStatus</code> erst auf <code>ready</code> setzen, wenn der Affiliate-Link geprüft ist.</li>
+        <li>Änderung zu GitHub pushen. Cloudflare Pages deployed danach automatisch neu.</li>
+      </ol>
 
       <h2>Status-Regel</h2>
       <dl class="legal-list">
@@ -45,10 +55,12 @@ import { amazonTrackingId } from '../data/products';
       <pre class="code-sample"><code>{
 `{
   id: 'kinderwagen-sonnenschutz',
-  title: 'Kinderwagen-Sonnenschutz',
-  affiliateUrl: 'https://www.amazon.de/...&tag=${amazonTrackingId}',
+  title: 'Zamboo Universal Sonnensegel UV 50+',
+  amazonSearchTerm: 'Zamboo Universal Sonnensegel UV 50 Kinderwagen Sonnenschutz',
+  amazonProductUrl: 'https://www.amazon.de/dp/B0D6YZWGNM',
+  affiliateUrl: 'https://www.amazon.de/dp/B0D6YZWGNM?tag=${amazonTrackingId}',
   affiliateStatus: 'ready',
-  buttonText: 'Sonnenschutz ansehen'
+  buttonText: 'Produkt ansehen'
 }`}</code></pre>
 
       <h2>Vor dem Aktivieren prüfen</h2>

@@ -1,0 +1,65 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ProductComparisonTable from '../components/ProductComparisonTable.astro';
+import { categories } from '../data/categories';
+import { getProductsByIds, products } from '../data/products';
+
+const productGroups = categories.map((category) => ({
+  category,
+  products: getProductsByIds(category.featuredProductIds)
+}));
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Empfohlene Produktideen | BabyReiseHelfer',
+  description:
+    'Neutrale Produktideen für Babyreisen, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten.',
+  url: new URL('/produkte/', Astro.site).href
+};
+---
+
+<Layout
+  title="Empfohlene Produktideen"
+  description="Konkrete, neutral eingeordnete Amazon-Produktideen für Babyreisen, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten."
+  jsonLd={productSchema}
+>
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Produkte</p>
+      <h1>Empfohlene Produktideen für Reisen mit Baby</h1>
+      <p>
+        Konkrete Amazon.de-Produktlinks, aber ohne Preise, ohne Sternebewertungen, ohne Amazon-Bilder und ohne erfundene Testsieger.
+      </p>
+    </div>
+  </section>
+
+  {productGroups.map((group) => (
+    <section class="section">
+      <div class="container">
+        <div class="section__header section__header--split">
+          <div>
+            <p class="eyebrow">{group.category.navLabel}</p>
+            <h2>{group.category.title}</h2>
+          </div>
+          <p>{group.category.description}</p>
+        </div>
+
+        <div class="product-grid">
+          {group.products.map((product) => <ProductCard product={product} />)}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Gesamtvergleich</p>
+        <h2>Alle Produkte kurz eingeordnet</h2>
+      </div>
+      <ProductComparisonTable products={products} />
+    </div>
+  </section>
+</Layout>

@@ -8,7 +8,9 @@ readingTime: 6
 featuredProductIds:
   - faltbare-wickelunterlage
   - wickelrucksack
+  - reise-wickelorganizer
   - kinderwagen-organizer
+  - feuchttuecher-spender-unterwegs
 tags:
   - Wickeln
   - Flugzeug

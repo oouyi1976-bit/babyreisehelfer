@@ -7,9 +7,10 @@ date: 2026-06-20
 readingTime: 8
 featuredProductIds:
   - baby-strandmuschel
+  - uv-schutz-zelt-baby
   - baby-uv-hut
-  - faltbare-wickelunterlage
-  - thermosflasche
+  - baby-sonnenbrille
+  - wetbag-nasse-kleidung
 tags:
   - Strand
   - UV-Schutz

@@ -6,7 +6,12 @@ const hasAffiliateLink = isAffiliateLinkReady(product);
 ---
 
 <article class:list={['product-card', { 'product-card--compact': compact }]}>
-  <div class={`product-card__visual product-card__visual--${product.category}`} aria-hidden="true">
+  <div
+    class={`product-card__visual product-card__visual--${product.category}`}
+    data-image-type={product.imageType}
+    data-icon={product.icon}
+    aria-hidden="true"
+  >
     <span></span>
   </div>
 
@@ -17,6 +22,17 @@ const hasAffiliateLink = isAffiliateLinkReady(product);
     <h3>{product.title}</h3>
     <p>{product.shortDescription}</p>
 
+    <dl class="product-card__facts">
+      <div>
+        <dt>Ideal für</dt>
+        <dd>{product.idealFor}</dd>
+      </div>
+      <div>
+        <dt>Worauf achten?</dt>
+        <dd>{product.whatToLookFor[0]}</dd>
+      </div>
+    </dl>
+
     {!compact && (
       <ul class="check-list">
         {product.benefits.slice(0, 3).map((benefit) => (
@@ -24,6 +40,8 @@ const hasAffiliateLink = isAffiliateLinkReady(product);
         ))}
       </ul>
     )}
+
+    {!compact && <p class="product-card__note">{product.legalNote}</p>}
 
     {hasAffiliateLink ? (
       <a

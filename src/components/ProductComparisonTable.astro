@@ -27,7 +27,7 @@ const { products } = Astro.props as { products: Product[] };
             </td>
             <td data-label="Ideal für">{product.idealFor}</td>
             <td data-label="Vorteile">{product.pros.slice(0, 2).join(' · ')}</td>
-            <td data-label="Worauf achten?">{product.cons[0]}</td>
+            <td data-label="Worauf achten?">{product.whatToLookFor.slice(0, 2).join(' · ')}</td>
             <td data-label="Link">
               {hasAffiliateLink ? (
                 <a

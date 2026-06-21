@@ -8,7 +8,8 @@ readingTime: 7
 featuredProductIds:
   - kleine-reiseapotheke-box
   - thermosflasche
-  - baby-uv-hut
+  - feuchttuecher-spender-unterwegs
+  - kulturtasche-babyartikel
 tags:
   - Reiseapotheke
   - Gesundheit

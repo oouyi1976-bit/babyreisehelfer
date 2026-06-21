@@ -7,9 +7,10 @@ date: 2026-06-20
 readingTime: 7
 featuredProductIds:
   - reisebett
-  - nachtlicht-hotel
   - usb-flaschenwaermer
-  - thermosflasche
+  - reise-wickelorganizer
+  - nachtlicht-hotel
+  - faltbare-babybadewanne
 tags:
   - Hotel
   - Schlaf

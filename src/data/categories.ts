@@ -18,7 +18,13 @@ export const categories: SiteCategory[] = [
     intro:
       'Vom Boarding bis zur Landung zählt vor allem, dass wichtige Dinge schnell griffbereit sind. Diese Rubrik sammelt Produktideen und Ratgeber für entspanntere Flugreisen mit Baby.',
     productCategories: ['fliegen-mit-baby', 'wickeln-unterwegs', 'baby-reiseapotheke'],
-    featuredProductIds: ['baby-gehoerschutz', 'faltbare-wickelunterlage', 'wickelrucksack']
+    featuredProductIds: [
+      'baby-gehoerschutz',
+      'faltbare-wickelunterlage',
+      'wickelrucksack',
+      'kleine-reiseapotheke-box',
+      'kompaktes-reise-nachtlicht'
+    ]
   },
   {
     slug: 'kinderwagen-zubehoer',
@@ -29,7 +35,13 @@ export const categories: SiteCategory[] = [
     intro:
       'Gutes Kinderwagen-Zubehör ist leicht, sicher befestigt und löst ein echtes Reiseproblem. Hier findest du neutrale Empfehlungen, worauf du vor dem Kauf achten solltest.',
     productCategories: ['kinderwagen-zubehoer', 'strand-sonne'],
-    featuredProductIds: ['kinderwagen-sonnenschutz', 'kinderwagen-ventilator', 'moskitonetz-kinderwagen']
+    featuredProductIds: [
+      'kinderwagen-sonnenschutz',
+      'kinderwagen-ventilator',
+      'moskitonetz-kinderwagen',
+      'kinderwagen-organizer',
+      'regen-windschutz-buggy'
+    ]
   },
   {
     slug: 'hotel-mit-baby',
@@ -40,7 +52,13 @@ export const categories: SiteCategory[] = [
     intro:
       'Im Hotel sind kleine, verlässliche Helfer oft wichtiger als viel Gepäck. Diese Kategorie zeigt, was im Zimmer wirklich Komfort bringt.',
     productCategories: ['hotel-mit-baby'],
-    featuredProductIds: ['nachtlicht-hotel', 'usb-flaschenwaermer', 'reisebett']
+    featuredProductIds: [
+      'reisebett',
+      'usb-flaschenwaermer',
+      'reise-wickelorganizer',
+      'nachtlicht-hotel',
+      'faltbare-babybadewanne'
+    ]
   },
   {
     slug: 'strand-sonne',
@@ -51,7 +69,13 @@ export const categories: SiteCategory[] = [
     intro:
       'Sonne, Wind und Sand machen Urlaubstage wunderschön, aber auch anstrengend. Hier geht es um Schutz, Schatten und einfache Helfer für warme Reiseziele.',
     productCategories: ['strand-sonne', 'kinderwagen-zubehoer'],
-    featuredProductIds: ['baby-strandmuschel', 'baby-uv-hut', 'thermosflasche']
+    featuredProductIds: [
+      'baby-uv-hut',
+      'baby-strandmuschel',
+      'uv-schutz-zelt-baby',
+      'baby-sonnenbrille',
+      'wetbag-nasse-kleidung'
+    ]
   },
   {
     slug: 'packlisten',
@@ -62,7 +86,13 @@ export const categories: SiteCategory[] = [
     intro:
       'Eine gute Packliste verhindert zu viel Gepäck und vergessene Kleinigkeiten. Hier findest du strukturierte Listen für verschiedene Reisesituationen mit Baby.',
     productCategories: ['packlisten', 'baby-reiseapotheke', 'wickeln-unterwegs'],
-    featuredProductIds: ['kleine-reiseapotheke-box', 'faltbare-wickelunterlage', 'thermosflasche']
+    featuredProductIds: [
+      'packing-cubes-baby-kleidung',
+      'thermosflasche',
+      'reisedokumententasche-familie',
+      'feuchttuecher-spender-unterwegs',
+      'kulturtasche-babyartikel'
+    ]
   }
 ];
 
