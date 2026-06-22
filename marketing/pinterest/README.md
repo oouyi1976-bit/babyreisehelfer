@@ -1,28 +1,45 @@
-# Pinterest-Drafts
+# Pinterest-System für BabyReiseHelfer
 
-Diese Dateien sind nur Vorlagen. Sie veröffentlichen nichts automatisch.
+Diese Dateien sind eine sichere erste Automationsbasis. Sie erzeugen und verwalten Pin-Drafts, veröffentlichen aber nichts automatisch.
 
 ## Dateien
 
-- `pins.json`: strukturierte Pinterest-Pin-Ideen für die vorhandenen Ratgeber
-- `pins.md`: lesbare Arbeitsfassung für manuelle Planung und Canva
+- `pins.json`: strukturierte Pin-Drafts mit Status, Ziel-URL, Board, Texten, Keywords und Bildprompt
+- `pins.md`: gut lesbare Arbeitsübersicht für manuelle Planung und Canva
+- `boards.md`: sinnvolle Pinterest-Board-Ideen für die BabyReiseHelfer-Nische
+- `30-day-plan.md`: ein manueller 30-Tage-Plan mit einem Pin pro Tag
+- `../../scripts/generate-pinterest-content.ts`: erzeugt die Pin-Daten aus lokalen Vorlagen und vorhandenen Artikeln
+- `../../scripts/pinterest-post-dry-run.ts`: zeigt geprüfte Pins mit `status: "ready"` an, postet aber nie
 
-## Sicherer Workflow
+## Manueller Workflow
 
-1. Pin-Idee aus `pins.json` oder `pins.md` auswählen.
-2. Bild in Canva oder einem anderen Tool manuell erstellen.
-3. Prüfen: keine Amazon-Bilder, keine Preise, keine Sternebewertungen, keine Markenlogos.
-4. Ziel-URL auf die passende BabyReiseHelfer-Ratgeberseite setzen.
-5. Pin manuell veröffentlichen oder später über eine freigegebene API-Automation posten.
+1. Pin in `pins.md` oder `pins.json` auswählen.
+2. Bild in Canva oder einem ähnlichen Tool erstellen.
+3. Prüfen: keine Amazon-Bilder, keine Preise, keine Sternebewertungen, keine Logos, keine Wasserzeichen.
+4. Ziel-URL prüfen: Sie soll auf BabyReiseHelfer zeigen, nicht direkt auf Amazon.
+5. Pin im Pinterest-Business-Konto manuell einplanen.
+6. Nach Veröffentlichung den Status in `pins.json` optional auf `scheduled` oder `published` ändern.
 
-## Spätere Pinterest-API-Nutzung
+## Pinterest Business und Scheduling
 
-Pinterest bietet eine offizielle API für Pins und Boards. Vor Automatisierung bitte die aktuellen Pinterest Developer Docs und Plattformregeln prüfen:
+Nutze ein Pinterest-Business-Konto, damit du Zugriff auf Analytics, Profilfunktionen und die nativen Planungsfunktionen hast. Laut Pinterest-Hilfe können Standard-Pins im Business-Konto aktuell bis zu 30 Tage im Voraus geplant werden; außerdem nennt Pinterest ein Limit von bis zu 10 zukünftig geplanten Pins und weist darauf hin, dass das Bild/Video nach dem Planen nicht mehr geändert werden kann.
 
-- https://developers.pinterest.com/docs/api/v5/
-- https://developers.pinterest.com/docs/api/v5/pins-create/
+Planungsempfehlung für BabyReiseHelfer:
 
-Keine Tokens oder Passwörter ins Repository schreiben. Nutze ausschließlich Environment Variables:
+- Lieber regelmäßig wenige gute Pins einplanen als viele ähnliche Pins auf einmal.
+- Jeden Pin vorab visuell prüfen, besonders Overlay-Text und mobile Lesbarkeit.
+- Ähnliche Themen auf verschiedene Boards verteilen, aber nicht denselben Link spamartig wiederholen.
+- Bei medizinischen Themen wie Reiseapotheke vorsichtig formulieren und keine Heilversprechen machen.
+
+## Warum nicht direkt Amazon-Affiliate-Links posten?
+
+Pinterest soll primär Besucher auf BabyReiseHelfer-Ratgeber, Packlisten und Kategorien führen. Das ist sauberer für Nutzer, besser für Vertrauen und vermeidet Affiliate-Spam. Amazon-Affiliate-Links bleiben zentral auf der Website gepflegt, inklusive Affiliate-Hinweis, Produktkontext und rechtlichen Informationen.
+
+## Spätere API-Automatisierung
+
+Pinterest bietet eine offizielle API für Pins und Boards. Vor echter Automatisierung müssen die aktuellen Developer-Dokumente, App-Freigaben, Scopes und Plattformregeln geprüft werden.
+
+Mögliche Environment Variables:
 
 ```bash
 export PINTEREST_ACCESS_TOKEN="..."
@@ -30,5 +47,16 @@ export PINTEREST_BOARD_ID="..."
 export ENABLE_PINTEREST_POSTING="false"
 ```
 
-Das vorbereitete Script `scripts/pinterest-post-draft.ts` zeigt standardmäßig nur an, welche Pins gepostet würden. Echtes Posting ist nur möglich, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist und alle Pflichtwerte vorhanden sind.
+Wichtig:
 
+- Keine Tokens oder Passwörter ins Repository schreiben.
+- `ENABLE_PINTEREST_POSTING` bleibt standardmäßig `false`.
+- Das aktuelle Script `pinterest-post-dry-run.ts` veröffentlicht bewusst nichts, auch wenn `ENABLE_PINTEREST_POSTING=true` gesetzt wäre.
+- Vor echter API-Veröffentlichung braucht es ein separates, geprüftes Posting-Script mit Pinterest-App, gültigem Access Token und geeigneten Scopes.
+
+## Nützliche offizielle Quellen
+
+- Pinterest Scheduling: https://help.pinterest.com/en/business/article/schedule-pins
+- Pinterest Business Account: https://help.pinterest.com/en/business/article/get-a-business-account
+- Pinterest API v5: https://developers.pinterest.com/docs/api/v5/
+- Pins erstellen per API: https://developers.pinterest.com/docs/api/v5/pins-create/

@@ -1,22 +1,27 @@
 {
-  "generatedFor": "BabyReiseHelfer",
-  "note": "Drafts only. Manuell prüfen, nicht automatisch veröffentlichen.",
+  "generatedAt": "2026-06-22T15:33:58.930Z",
+  "siteUrl": "https://babyreisehelfer.pages.dev",
+  "statusDefault": "draft",
+  "notes": [
+    "Diese Pins sind lokale Drafts.",
+    "Keine automatische Veröffentlichung.",
+    "Keine direkten Amazon-Affiliate-Links in Pinterest-Pins."
+  ],
   "pins": [
     {
-      "id": "packliste-mallorca-mit-baby-pin-1",
-      "articleSlug": "packliste-mallorca-mit-baby",
-      "pinTitle": "Packliste Mallorca mit Baby: Diese Dinge helfen wirklich",
-      "pinDescription": "Schatten, Flug, Hotel, Strand und Reiseapotheke sinnvoll packen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Packliste Mallorca mit Baby\", premium magazine look, open suitcase with baby clothes, sun hat, beach tent bag and checklist on a bright cream table, warm Mediterranean light, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Urlaub mit Baby & Packlisten",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Packliste Mallorca mit Baby: Was wirklich mit sollte",
+      "pinDescription": "Eine ruhige Mallorca-Packliste für Babyurlaub: Schatten, Kleidung, Flug, Hotel und Reiseapotheke sinnvoll vorbereiten. Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Mallorca Packliste",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mallorca Packliste\", premium clean magazine look for BabyReiseHelfer, offener Koffer mit Babybody, Sonnenhut, Windeln, Checkliste und weichem Sommerlicht, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
       "keywords": [
         "Packliste Mallorca Baby",
         "Urlaub mit Baby",
-        "Baby Strandurlaub",
         "Mallorca mit Baby",
-        "Reisen mit Baby"
+        "Baby Packliste"
       ],
       "hashtags": [
         "#babyreise",
@@ -25,23 +30,24 @@
         "#packliste",
         "#familienurlaub"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
     },
     {
-      "id": "packliste-mallorca-mit-baby-pin-2",
-      "articleSlug": "packliste-mallorca-mit-baby",
-      "pinTitle": "Packliste Mallorca mit Baby: Was gehört auf die Packliste?",
-      "pinDescription": "Schatten, Flug, Hotel, Strand und Reiseapotheke sinnvoll packen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Packliste Mallorca mit Baby\", premium magazine look, open suitcase with baby clothes, sun hat, beach tent bag and checklist on a bright cream table, warm Mediterranean light, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Urlaub mit Baby & Packlisten",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Mallorca mit Baby: Diese Packliste spart Sucherei",
+      "pinDescription": "Speicherbare Packidee für Mallorca mit Baby, damit Handgepäck, Strandtasche und Hotel-Basics übersichtlich bleiben. Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Weniger suchen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Weniger suchen\", premium clean magazine look for BabyReiseHelfer, ordentliche Packing Cubes mit Baby-Kleidung und kleiner Kulturtasche auf hellem Untergrund, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
       "keywords": [
         "Packliste Mallorca Baby",
         "Urlaub mit Baby",
-        "Baby Strandurlaub",
         "Mallorca mit Baby",
-        "Reisen mit Baby"
+        "Baby Packliste"
       ],
       "hashtags": [
         "#babyreise",
@@ -50,23 +56,24 @@
         "#packliste",
         "#familienurlaub"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
     },
     {
-      "id": "packliste-mallorca-mit-baby-pin-3",
-      "articleSlug": "packliste-mallorca-mit-baby",
-      "pinTitle": "Packliste Mallorca mit Baby: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Schatten, Flug, Hotel, Strand und Reiseapotheke sinnvoll packen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Packliste Mallorca mit Baby\", premium magazine look, open suitcase with baby clothes, sun hat, beach tent bag and checklist on a bright cream table, warm Mediterranean light, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Urlaub mit Baby & Packlisten",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Babyurlaub auf Mallorca: Die wichtigsten Basics",
+      "pinDescription": "Praktische Übersicht für warme Reisetage mit Baby: Sonnenschutz, Wickeln, Schlafen und die ersten 24 Stunden planen. Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Die Basics",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Die Basics\", premium clean magazine look for BabyReiseHelfer, cremefarbene Reise-Checkliste neben Babyhut, Musselintuch und kleiner Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
       "keywords": [
         "Packliste Mallorca Baby",
         "Urlaub mit Baby",
-        "Baby Strandurlaub",
         "Mallorca mit Baby",
-        "Reisen mit Baby"
+        "Baby Packliste"
       ],
       "hashtags": [
         "#babyreise",
@@ -75,23 +82,24 @@
         "#packliste",
         "#familienurlaub"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
     },
     {
-      "id": "packliste-mallorca-mit-baby-pin-4",
-      "articleSlug": "packliste-mallorca-mit-baby",
-      "pinTitle": "Packliste Mallorca mit Baby: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Schatten, Flug, Hotel, Strand und Reiseapotheke sinnvoll packen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Packliste Mallorca mit Baby\", premium magazine look, open suitcase with baby clothes, sun hat, beach tent bag and checklist on a bright cream table, warm Mediterranean light, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Urlaub mit Baby & Packlisten",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Was packen für Mallorca mit Baby?",
+      "pinDescription": "Orientierung für Eltern, die nicht zu viel einpacken wollen: Was hilft im Flugzeug, im Hotel und am Strand? Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Was packen?",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Was packen?\", premium clean magazine look for BabyReiseHelfer, Baby-Reisegepäck als ruhiges Flatlay mit Koffer, Dokumententasche und Thermosflasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
       "keywords": [
         "Packliste Mallorca Baby",
         "Urlaub mit Baby",
-        "Baby Strandurlaub",
         "Mallorca mit Baby",
-        "Reisen mit Baby"
+        "Baby Packliste"
       ],
       "hashtags": [
         "#babyreise",
@@ -100,23 +108,24 @@
         "#packliste",
         "#familienurlaub"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
     },
     {
-      "id": "packliste-mallorca-mit-baby-pin-5",
-      "articleSlug": "packliste-mallorca-mit-baby",
-      "pinTitle": "Packliste Mallorca mit Baby: Der schnelle Check vor der Reise",
-      "pinDescription": "Schatten, Flug, Hotel, Strand und Reiseapotheke sinnvoll packen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Packliste Mallorca mit Baby\", premium magazine look, open suitcase with baby clothes, sun hat, beach tent bag and checklist on a bright cream table, warm Mediterranean light, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Urlaub mit Baby & Packlisten",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Mallorca-Packliste Baby: Erstflug, Hotel und Strand",
+      "pinDescription": "Eine realistische Packstruktur für Mallorca: Handgepäck, Hotelzimmer, Strandtage und Reiseapotheke getrennt planen. Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Flug Hotel Strand",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Flug Hotel Strand\", premium clean magazine look for BabyReiseHelfer, dreigeteilte Pin-Komposition mit Flugzeugfenster, Hotelbett und Strandmuschel als dezente Fotoideen, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
       "keywords": [
         "Packliste Mallorca Baby",
         "Urlaub mit Baby",
-        "Baby Strandurlaub",
         "Mallorca mit Baby",
-        "Reisen mit Baby"
+        "Baby Packliste"
       ],
       "hashtags": [
         "#babyreise",
@@ -125,882 +134,1439 @@
         "#packliste",
         "#familienurlaub"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
     },
     {
-      "id": "fliegen-mit-baby-dinge-pin-1",
-      "articleSlug": "fliegen-mit-baby-dinge",
-      "pinTitle": "Fliegen mit Baby: Diese Dinge helfen wirklich",
-      "pinDescription": "Handgepäck, Wickeln, Druckausgleich und kleine Reisehelfer griffbereit planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "packliste-mallorca-mit-baby-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/packliste-mallorca-mit-baby/",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Baby-Reiseplanung für Mallorca: Kleiner Check vor dem Abflug",
+      "pinDescription": "Kurz vor der Reise prüfen: Schatten, Trinkzubehör, Windeln, Schlafplatz, Dokumente und erste Versorgung am Ankunftstag. Passend zum BabyReiseHelfer-Ratgeber: Praktische Packliste für Mallorca mit Baby: Kleidung, Sonnenschutz, Flugzeug, Hotel, Strand und Reiseapotheke sinnvoll vorbereiten.",
+      "overlayText": "Check vor Abflug",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Check vor Abflug\", premium clean magazine look for BabyReiseHelfer, Hand mit Stift auf Checkliste, daneben Baby-Sonnenhut und Reisepasshülle, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Packliste Mallorca mit Baby",
+      "keywords": [
+        "Packliste Mallorca Baby",
+        "Urlaub mit Baby",
+        "Mallorca mit Baby",
+        "Baby Packliste"
+      ],
+      "hashtags": [
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#mallorcaMitBaby",
+        "#packliste",
+        "#familienurlaub"
+      ],
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "packliste-mallorca-mit-baby",
+      "category": "packlisten"
+    },
+    {
+      "id": "fliegen-mit-baby-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Fliegen mit Baby\", premium magazine look, bright airplane seat by window with diaper backpack, baby blanket, earmuffs and travel pouch, calm premium magazine look, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
       "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Fliegen mit Baby: Was gehört griffbereit ins Handgepäck?",
+      "pinDescription": "Handgepäck-Ideen für den Flug mit Baby: Wickeln, Wechselkleidung, Nahrung, Dokumente und kleine Ruhehelfer. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Handgepäck griffbereit",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Handgepäck griffbereit\", premium clean magazine look for BabyReiseHelfer, Flugzeug-Sitz mit geordnetem Wickelrucksack, Feuchttüchern und kleinem Beutel, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
       "keywords": [
         "Fliegen mit Baby",
-        "Baby Handgepäck",
-        "Flugzeug Baby",
-        "Wickeln im Flugzeug",
-        "Baby Reise Tipps"
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
       ],
       "hashtags": [
         "#fliegenmitbaby",
         "#babyreise",
         "#handgepäck",
-        "#reisenmitbaby",
-        "#familienreise"
+        "#flugzeugmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
     },
     {
-      "id": "fliegen-mit-baby-dinge-pin-2",
-      "articleSlug": "fliegen-mit-baby-dinge",
-      "pinTitle": "Fliegen mit Baby: Was gehört auf die Packliste?",
-      "pinDescription": "Handgepäck, Wickeln, Druckausgleich und kleine Reisehelfer griffbereit planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "fliegen-mit-baby-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Fliegen mit Baby\", premium magazine look, bright airplane seat by window with diaper backpack, baby blanket, earmuffs and travel pouch, calm premium magazine look, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
       "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Baby im Flugzeug: 7 Dinge, die den Ablauf leichter machen",
+      "pinDescription": "Keine perfekte Flugreise, aber weniger Chaos: So planst du Wickeln, Schlafen, Druckausgleich und Ordnung in der Kabine. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Ruhiger fliegen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Ruhiger fliegen\", premium clean magazine look for BabyReiseHelfer, helles Flatlay mit Bordkarte, Baby-Gehörschutz, Wickelunterlage und Wechselbody, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
       "keywords": [
         "Fliegen mit Baby",
-        "Baby Handgepäck",
-        "Flugzeug Baby",
-        "Wickeln im Flugzeug",
-        "Baby Reise Tipps"
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
       ],
       "hashtags": [
         "#fliegenmitbaby",
         "#babyreise",
         "#handgepäck",
-        "#reisenmitbaby",
-        "#familienreise"
+        "#flugzeugmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
     },
     {
-      "id": "fliegen-mit-baby-dinge-pin-3",
-      "articleSlug": "fliegen-mit-baby-dinge",
-      "pinTitle": "Fliegen mit Baby: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Handgepäck, Wickeln, Druckausgleich und kleine Reisehelfer griffbereit planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "fliegen-mit-baby-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Fliegen mit Baby\", premium magazine look, bright airplane seat by window with diaper backpack, baby blanket, earmuffs and travel pouch, calm premium magazine look, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
       "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Flug mit Baby vorbereiten: Kleine Beutel statt Chaos",
+      "pinDescription": "Modulares Packen für die Kabine: Wickelbeutel, Essensbeutel, Schlafbeutel und Dokumente getrennt vorbereiten. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Beutel statt Chaos",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Beutel statt Chaos\", premium clean magazine look for BabyReiseHelfer, mehrere beschriftungsfreie Stoffbeutel in Pastellfarben neben einem Handgepäck-Rucksack, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
       "keywords": [
         "Fliegen mit Baby",
-        "Baby Handgepäck",
-        "Flugzeug Baby",
-        "Wickeln im Flugzeug",
-        "Baby Reise Tipps"
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
       ],
       "hashtags": [
         "#fliegenmitbaby",
         "#babyreise",
         "#handgepäck",
-        "#reisenmitbaby",
-        "#familienreise"
+        "#flugzeugmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
     },
     {
-      "id": "fliegen-mit-baby-dinge-pin-4",
-      "articleSlug": "fliegen-mit-baby-dinge",
-      "pinTitle": "Fliegen mit Baby: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Handgepäck, Wickeln, Druckausgleich und kleine Reisehelfer griffbereit planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "fliegen-mit-baby-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Fliegen mit Baby\", premium magazine look, bright airplane seat by window with diaper backpack, baby blanket, earmuffs and travel pouch, calm premium magazine look, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
       "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Fliegen mit Baby: Wickeln im Flugzeug besser planen",
+      "pinDescription": "Praktische Vorbereitung für enge Flugzeugtoiletten: wenige Dinge, schnell erreichbar und hygienisch verstaut. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Wickeln im Flug",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Wickeln im Flug\", premium clean magazine look for BabyReiseHelfer, faltbare Wickelunterlage, Windel und Mini-Tücher auf kleinem Reisetisch, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
       "keywords": [
         "Fliegen mit Baby",
-        "Baby Handgepäck",
-        "Flugzeug Baby",
-        "Wickeln im Flugzeug",
-        "Baby Reise Tipps"
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
       ],
       "hashtags": [
         "#fliegenmitbaby",
         "#babyreise",
         "#handgepäck",
-        "#reisenmitbaby",
-        "#familienreise"
+        "#flugzeugmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
     },
     {
-      "id": "fliegen-mit-baby-dinge-pin-5",
-      "articleSlug": "fliegen-mit-baby-dinge",
-      "pinTitle": "Fliegen mit Baby: Der schnelle Check vor der Reise",
-      "pinDescription": "Handgepäck, Wickeln, Druckausgleich und kleine Reisehelfer griffbereit planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "fliegen-mit-baby-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Fliegen mit Baby\", premium magazine look, bright airplane seat by window with diaper backpack, baby blanket, earmuffs and travel pouch, calm premium magazine look, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
       "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Erster Flug mit Baby: Diese Vorbereitung hilft",
+      "pinDescription": "Vor dem ersten Flug mit Baby: Airline-Regeln prüfen, Handgepäck sortieren und Pausen am Flughafen einplanen. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Erster Flug",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Erster Flug\", premium clean magazine look for BabyReiseHelfer, Familien-Handgepäck vor hellem Flughafenfenster, ohne Logos und ohne Airline-Marken, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
       "keywords": [
         "Fliegen mit Baby",
-        "Baby Handgepäck",
-        "Flugzeug Baby",
-        "Wickeln im Flugzeug",
-        "Baby Reise Tipps"
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
       ],
       "hashtags": [
         "#fliegenmitbaby",
         "#babyreise",
         "#handgepäck",
-        "#reisenmitbaby",
-        "#familienreise"
+        "#flugzeugmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
     },
     {
-      "id": "kinderwagen-im-sommer-pin-1",
-      "articleSlug": "kinderwagen-im-sommer",
-      "pinTitle": "Kinderwagen im Sommer: Diese Dinge helfen wirklich",
-      "pinDescription": "Schatten schaffen, Luft lassen und Zubehör sicher befestigen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "fliegen-mit-baby-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/fliegen-mit-baby-dinge/",
+      "boardSuggestion": "Fliegen mit Baby",
+      "pinTitle": "Flugzeug mit Baby: Was du vorher klären solltest",
+      "pinDescription": "Buggy, Flüssigkeiten, Babynahrung und Gepäckregeln unterscheiden sich je nach Airline. Diese Punkte vorher prüfen. Passend zum BabyReiseHelfer-Ratgeber: Ratgeber für Fliegen mit Baby: Handgepäck, Wickeln, Schlaf, Druckausgleich und sinnvolle Produktideen ohne unnötigen Ballast.",
+      "overlayText": "Vorher klären",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Vorher klären\", premium clean magazine look for BabyReiseHelfer, Laptop mit Reisecheckliste, daneben Reisepass, Babyfläschchen und kleine Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Fliegen mit Baby",
+      "keywords": [
+        "Fliegen mit Baby",
+        "Handgepäck Baby",
+        "Baby Flugzeug",
+        "Flugreise Baby"
+      ],
+      "hashtags": [
+        "#fliegenmitbaby",
+        "#babyreise",
+        "#handgepäck",
+        "#flugzeugmitbaby",
+        "#elterntipps"
+      ],
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "fliegen-mit-baby-dinge",
+      "category": "fliegen-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-01",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Baby im Hotel: Diese Fragen vor der Buchung stellen",
+      "pinDescription": "Babybett, Aufzug, Verdunklung, Wasserkocher und Kühlschrank: Was du vor dem Hotelaufenthalt prüfen kannst. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "Vor Buchung prüfen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Vor Buchung prüfen\", premium clean magazine look for BabyReiseHelfer, helles Hotelzimmer mit Reisebett, Nachtlicht und geordneter Baby-Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-02",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Hotelzimmer mit Baby: Kleine Helfer für ruhigere Nächte",
+      "pinDescription": "Nachtlicht, Schlafplatz und einfache Routinen können im Hotelzimmer helfen, ohne dass der Koffer übervoll wird. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "Ruhigere Nächte",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Ruhigere Nächte\", premium clean magazine look for BabyReiseHelfer, Nachttisch mit warmem Nachtlicht, Babyflasche und weichem Musselintuch, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-03",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Baby im Hotel: Was wirklich vor Ort wichtig wird",
+      "pinDescription": "Im Hotel zählen Wege, Schlafplatz, Licht und Fütterung oft mehr als viele Extra-Produkte. Ein praktischer Überblick. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "Hotel-Basics",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Hotel-Basics\", premium clean magazine look for BabyReiseHelfer, übersichtliche Hotel-Packtasche mit Wickelorganizer und Schlafsachen, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-04",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Hotel mit Baby: Reisebett, Nachtlicht und Flaschenwärmer",
+      "pinDescription": "Produktideen für den Hotelaufenthalt mit Baby, neutral erklärt und ohne Preise, Sterne oder Shop-Versprechen. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "3 Hotel-Helfer",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"3 Hotel-Helfer\", premium clean magazine look for BabyReiseHelfer, Reisebett, kleines Nachtlicht und Fläschchenwärmer als cleane Studio-Komposition, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-05",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Baby schläft im Hotel: So planst du die Umgebung",
+      "pinDescription": "Verdunklung, Geräusche, Licht und Schlafplatz vorher bedenken, damit die erste Nacht weniger überraschend wird. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "Schlafplatz planen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Schlafplatz planen\", premium clean magazine look for BabyReiseHelfer, ruhige Hotelszene mit Reisebett am Fenster und leichtem Vorhang, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "baby-im-hotel-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Checkliste Hotel mit Baby: Kurz vor der Anreise",
+      "pinDescription": "Eine praktische Hotel-Checkliste für Babybett, Kühlschrank, Wasserkocher, Aufzug und nächtliches Licht. Passend zum BabyReiseHelfer-Ratgeber: So wird das Hotelzimmer mit Baby praktischer: Reisebett prüfen, Nachtlicht einpacken, Fläschchen vorbereiten und Schlafroutine retten.",
+      "overlayText": "Hotel Checkliste",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Hotel Checkliste\", premium clean magazine look for BabyReiseHelfer, Checkliste auf Hotelbett mit Baby-Reisetasche, Nachtlicht und kleinen Pflegeartikeln, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby im Hotel",
+      "keywords": [
+        "Baby im Hotel",
+        "Hotel mit Baby",
+        "Reisebett Baby",
+        "Nachtlicht Baby"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#reisebett",
+        "#familienhotel"
+      ],
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "baby-im-hotel",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "kinderwagen-im-sommer-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen im Sommer\", premium magazine look, modern stroller in summer park with sunshade, small fan and folded mosquito net, warm soft daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen im Sommer: Schatten ohne Hitzestau",
+      "pinDescription": "Warum luftige Schattenlösungen wichtiger sind als dichte Tücher über dem Kinderwagen. Tipps für warme Reisetage. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Schatten ohne Stau",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Schatten ohne Stau\", premium clean magazine look for BabyReiseHelfer, Kinderwagen im hellen Park mit luftigem Sonnenschutz und viel Abstand zum Stoff, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
         "Kinderwagen Sommer",
-        "Sonnenschutz Kinderwagen",
-        "Kinderwagen Ventilator",
-        "Moskitonetz Kinderwagen",
-        "Baby Hitze Urlaub"
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
         "#kinderwagen",
         "#sommermitbaby",
-        "#sonnenschutzbaby",
         "#babyreise",
-        "#urlaubmitbaby"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-im-sommer-pin-2",
-      "articleSlug": "kinderwagen-im-sommer",
-      "pinTitle": "Kinderwagen im Sommer: Was gehört auf die Packliste?",
-      "pinDescription": "Schatten schaffen, Luft lassen und Zubehör sicher befestigen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-im-sommer-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen im Sommer\", premium magazine look, modern stroller in summer park with sunshade, small fan and folded mosquito net, warm soft daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Sommer mit Baby: Kinderwagen-Zubehör sinnvoll auswählen",
+      "pinDescription": "Sonnenschutz, Ventilator und Moskitonetz neutral einordnen: Worauf du bei Befestigung und Luftzirkulation achten solltest. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Sommer-Zubehör",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Sommer-Zubehör\", premium clean magazine look for BabyReiseHelfer, Buggy mit Sonnenschutz, kleinem Ventilator und Organizer als sauberes Reisemotiv, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
         "Kinderwagen Sommer",
-        "Sonnenschutz Kinderwagen",
-        "Kinderwagen Ventilator",
-        "Moskitonetz Kinderwagen",
-        "Baby Hitze Urlaub"
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
         "#kinderwagen",
         "#sommermitbaby",
-        "#sonnenschutzbaby",
         "#babyreise",
-        "#urlaubmitbaby"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-im-sommer-pin-3",
-      "articleSlug": "kinderwagen-im-sommer",
-      "pinTitle": "Kinderwagen im Sommer: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Schatten schaffen, Luft lassen und Zubehör sicher befestigen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-im-sommer-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen im Sommer\", premium magazine look, modern stroller in summer park with sunshade, small fan and folded mosquito net, warm soft daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen-Sonnenschutz: Worauf Eltern achten sollten",
+      "pinDescription": "Universal-Sonnenschutz für Kinderwagen ist praktisch, sollte aber sicher sitzen und Luft nicht blockieren. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Sonnenschutz prüfen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Sonnenschutz prüfen\", premium clean magazine look for BabyReiseHelfer, Nahaufnahme eines Kinderwagen-Sonnensegels in Beige mit weichem Sommerlicht, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
         "Kinderwagen Sommer",
-        "Sonnenschutz Kinderwagen",
-        "Kinderwagen Ventilator",
-        "Moskitonetz Kinderwagen",
-        "Baby Hitze Urlaub"
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
         "#kinderwagen",
         "#sommermitbaby",
-        "#sonnenschutzbaby",
         "#babyreise",
-        "#urlaubmitbaby"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-im-sommer-pin-4",
-      "articleSlug": "kinderwagen-im-sommer",
-      "pinTitle": "Kinderwagen im Sommer: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Schatten schaffen, Luft lassen und Zubehör sicher befestigen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-im-sommer-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen im Sommer\", premium magazine look, modern stroller in summer park with sunshade, small fan and folded mosquito net, warm soft daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Buggy im Urlaub: Ventilator, Netz und Organizer",
+      "pinDescription": "Drei Zubehörtypen für warme Urlaube mit Baby: nicht als Muss, sondern als mögliche Helfer je nach Reiseort. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Buggy im Urlaub",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Buggy im Urlaub\", premium clean magazine look for BabyReiseHelfer, Buggy am Hotelweg mit Organizer, Ventilator und kleinem Netzbeutel, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
         "Kinderwagen Sommer",
-        "Sonnenschutz Kinderwagen",
-        "Kinderwagen Ventilator",
-        "Moskitonetz Kinderwagen",
-        "Baby Hitze Urlaub"
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
         "#kinderwagen",
         "#sommermitbaby",
-        "#sonnenschutzbaby",
         "#babyreise",
-        "#urlaubmitbaby"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-im-sommer-pin-5",
-      "articleSlug": "kinderwagen-im-sommer",
-      "pinTitle": "Kinderwagen im Sommer: Der schnelle Check vor der Reise",
-      "pinDescription": "Schatten schaffen, Luft lassen und Zubehör sicher befestigen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-im-sommer-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen im Sommer\", premium magazine look, modern stroller in summer park with sunshade, small fan and folded mosquito net, warm soft daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen im Sommer: Was du lieber vermeiden solltest",
+      "pinDescription": "Dichte Abdeckungen können Wärme stauen. Besser sind luftige Lösungen, Schattenpausen und regelmäßiges Prüfen. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Nicht zu dicht",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Nicht zu dicht\", premium clean magazine look for BabyReiseHelfer, Vergleichsmotiv mit luftigem Sonnensegel und freier Luftzirkulation, keine Warnsymbole, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
         "Kinderwagen Sommer",
-        "Sonnenschutz Kinderwagen",
-        "Kinderwagen Ventilator",
-        "Moskitonetz Kinderwagen",
-        "Baby Hitze Urlaub"
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
         "#kinderwagen",
         "#sommermitbaby",
-        "#sonnenschutzbaby",
         "#babyreise",
-        "#urlaubmitbaby"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "baby-im-hotel-pin-1",
-      "articleSlug": "baby-im-hotel",
-      "pinTitle": "Baby im Hotel: Diese Dinge helfen wirklich",
-      "pinDescription": "Schlafplatz, Licht und Fläschchen-Routine vorab planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby im Hotel\", premium magazine look, bright hotel room with baby travel crib, warm night light and bottle warmer on bedside table, calm atmosphere, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Hotel mit Baby",
+      "id": "kinderwagen-im-sommer-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-im-sommer/",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Sommerurlaub mit Kinderwagen: Praktische Checkliste",
+      "pinDescription": "Kurze Checkliste für Spaziergänge bei Wärme: Schatten, Getränke, Pausen, Mückenschutz und Wetterschutz einplanen. Passend zum BabyReiseHelfer-Ratgeber: Was beim Kinderwagen im Sommer wichtig ist: Luftzirkulation, Schatten, sichere Befestigung, Ventilator, Moskitonetz und UV-Schutz.",
+      "overlayText": "Sommer-Check",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Sommer-Check\", premium clean magazine look for BabyReiseHelfer, Kinderwagen neben Checkliste, Trinkflasche und Sonnenhut auf heller Terrasse, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen im Sommer",
       "keywords": [
-        "Baby im Hotel",
-        "Hotelzimmer mit Baby",
-        "Reisebett Baby",
-        "Nachtlicht Baby Reise",
-        "Flaschenwärmer Hotel"
+        "Kinderwagen Sommer",
+        "Kinderwagen Sonnenschutz",
+        "Buggy Sommer",
+        "Baby Hitzeschutz"
       ],
       "hashtags": [
-        "#hotelmitbaby",
-        "#reisenmitbaby",
+        "#kinderwagen",
+        "#sommermitbaby",
         "#babyreise",
-        "#reisebett",
-        "#familienurlaub"
+        "#sonnenschutz",
+        "#buggy"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "kinderwagen-im-sommer",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "baby-im-hotel-pin-2",
-      "articleSlug": "baby-im-hotel",
-      "pinTitle": "Baby im Hotel: Was gehört auf die Packliste?",
-      "pinDescription": "Schlafplatz, Licht und Fläschchen-Routine vorab planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby im Hotel\", premium magazine look, bright hotel room with baby travel crib, warm night light and bottle warmer on bedside table, calm atmosphere, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Hotel mit Baby",
-      "keywords": [
-        "Baby im Hotel",
-        "Hotelzimmer mit Baby",
-        "Reisebett Baby",
-        "Nachtlicht Baby Reise",
-        "Flaschenwärmer Hotel"
-      ],
-      "hashtags": [
-        "#hotelmitbaby",
-        "#reisenmitbaby",
-        "#babyreise",
-        "#reisebett",
-        "#familienurlaub"
-      ],
-      "callToAction": "Liste ansehen"
-    },
-    {
-      "id": "baby-im-hotel-pin-3",
-      "articleSlug": "baby-im-hotel",
-      "pinTitle": "Baby im Hotel: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Schlafplatz, Licht und Fläschchen-Routine vorab planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby im Hotel\", premium magazine look, bright hotel room with baby travel crib, warm night light and bottle warmer on bedside table, calm atmosphere, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Hotel mit Baby",
-      "keywords": [
-        "Baby im Hotel",
-        "Hotelzimmer mit Baby",
-        "Reisebett Baby",
-        "Nachtlicht Baby Reise",
-        "Flaschenwärmer Hotel"
-      ],
-      "hashtags": [
-        "#hotelmitbaby",
-        "#reisenmitbaby",
-        "#babyreise",
-        "#reisebett",
-        "#familienurlaub"
-      ],
-      "callToAction": "Tipps lesen"
-    },
-    {
-      "id": "baby-im-hotel-pin-4",
-      "articleSlug": "baby-im-hotel",
-      "pinTitle": "Baby im Hotel: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Schlafplatz, Licht und Fläschchen-Routine vorab planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby im Hotel\", premium magazine look, bright hotel room with baby travel crib, warm night light and bottle warmer on bedside table, calm atmosphere, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Hotel mit Baby",
-      "keywords": [
-        "Baby im Hotel",
-        "Hotelzimmer mit Baby",
-        "Reisebett Baby",
-        "Nachtlicht Baby Reise",
-        "Flaschenwärmer Hotel"
-      ],
-      "hashtags": [
-        "#hotelmitbaby",
-        "#reisenmitbaby",
-        "#babyreise",
-        "#reisebett",
-        "#familienurlaub"
-      ],
-      "callToAction": "Mehr Ideen holen"
-    },
-    {
-      "id": "baby-im-hotel-pin-5",
-      "articleSlug": "baby-im-hotel",
-      "pinTitle": "Baby im Hotel: Der schnelle Check vor der Reise",
-      "pinDescription": "Schlafplatz, Licht und Fläschchen-Routine vorab planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-im-hotel/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby im Hotel\", premium magazine look, bright hotel room with baby travel crib, warm night light and bottle warmer on bedside table, calm atmosphere, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Hotel mit Baby",
-      "keywords": [
-        "Baby im Hotel",
-        "Hotelzimmer mit Baby",
-        "Reisebett Baby",
-        "Nachtlicht Baby Reise",
-        "Flaschenwärmer Hotel"
-      ],
-      "hashtags": [
-        "#hotelmitbaby",
-        "#reisenmitbaby",
-        "#babyreise",
-        "#reisebett",
-        "#familienurlaub"
-      ],
-      "callToAction": "Checkliste lesen"
-    },
-    {
-      "id": "baby-reiseapotheke-pin-1",
-      "articleSlug": "baby-reiseapotheke",
-      "pinTitle": "Baby-Reiseapotheke: Diese Dinge helfen wirklich",
-      "pinDescription": "Übersichtlich packen und medizinische Fragen vor der Reise fachlich klären. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "reiseapotheke-baby-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby-Reiseapotheke\", premium magazine look, open compact first aid pouch on cream tabletop with thermometer, plasters and blank baby-safe bottles, clean daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Baby-Reiseapotheke & Gesundheit unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Baby-Reiseapotheke: Was gehört in die Tasche?",
+      "pinDescription": "Neutrale Packhilfe für die Baby-Reiseapotheke: gut sortieren, altersgerecht prüfen und vor der Reise fachlich abklären. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Reiseapotheke Baby",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Reiseapotheke Baby\", premium clean magazine look for BabyReiseHelfer, kleine Reiseapotheke-Box mit Thermometer, Pflastern und neutralen Fläschchen ohne Marken, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
         "Baby Reiseapotheke",
         "Reiseapotheke Baby Urlaub",
         "Baby Medikamente Reise",
-        "Fieberthermometer Baby Reise",
-        "Packliste Reiseapotheke"
+        "Packliste Baby"
       ],
       "hashtags": [
         "#reiseapotheke",
         "#babyreise",
-        "#reisenmitbaby",
         "#packliste",
-        "#familienurlaub"
+        "#urlaubmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "baby-reiseapotheke-pin-2",
-      "articleSlug": "baby-reiseapotheke",
-      "pinTitle": "Baby-Reiseapotheke: Was gehört auf die Packliste?",
-      "pinDescription": "Übersichtlich packen und medizinische Fragen vor der Reise fachlich klären. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "reiseapotheke-baby-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby-Reiseapotheke\", premium magazine look, open compact first aid pouch on cream tabletop with thermometer, plasters and blank baby-safe bottles, clean daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Baby-Reiseapotheke & Gesundheit unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Reiseapotheke Baby: Vor dem Urlaub fachlich prüfen",
+      "pinDescription": "Medikamente und Dosierungen gehören vor der Reise mit Kinderarzt oder Apotheke abgestimmt. Diese Liste hilft beim Sortieren. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Vorher prüfen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Vorher prüfen\", premium clean magazine look for BabyReiseHelfer, Checkliste neben kompakter Apotheke-Box und Fieberthermometer auf cremefarbenem Hintergrund, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
         "Baby Reiseapotheke",
         "Reiseapotheke Baby Urlaub",
         "Baby Medikamente Reise",
-        "Fieberthermometer Baby Reise",
-        "Packliste Reiseapotheke"
+        "Packliste Baby"
       ],
       "hashtags": [
         "#reiseapotheke",
         "#babyreise",
-        "#reisenmitbaby",
         "#packliste",
-        "#familienurlaub"
+        "#urlaubmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "baby-reiseapotheke-pin-3",
-      "articleSlug": "baby-reiseapotheke",
-      "pinTitle": "Baby-Reiseapotheke: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Übersichtlich packen und medizinische Fragen vor der Reise fachlich klären. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "reiseapotheke-baby-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby-Reiseapotheke\", premium magazine look, open compact first aid pouch on cream tabletop with thermometer, plasters and blank baby-safe bottles, clean daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Baby-Reiseapotheke & Gesundheit unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Baby-Reiseapotheke packen: Ordnung statt großer Tasche",
+      "pinDescription": "Eine kleine Box kann helfen, Pflaster, Thermometer und Pflegeartikel getrennt von Kleidung und Snacks aufzubewahren. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Kleine Box",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Kleine Box\", premium clean magazine look for BabyReiseHelfer, offene Erste-Hilfe-Box für Reisen, sauber sortiert und hell fotografiert, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
         "Baby Reiseapotheke",
         "Reiseapotheke Baby Urlaub",
         "Baby Medikamente Reise",
-        "Fieberthermometer Baby Reise",
-        "Packliste Reiseapotheke"
+        "Packliste Baby"
       ],
       "hashtags": [
         "#reiseapotheke",
         "#babyreise",
-        "#reisenmitbaby",
         "#packliste",
-        "#familienurlaub"
+        "#urlaubmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "baby-reiseapotheke-pin-4",
-      "articleSlug": "baby-reiseapotheke",
-      "pinTitle": "Baby-Reiseapotheke: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Übersichtlich packen und medizinische Fragen vor der Reise fachlich klären. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "reiseapotheke-baby-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby-Reiseapotheke\", premium magazine look, open compact first aid pouch on cream tabletop with thermometer, plasters and blank baby-safe bottles, clean daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Baby-Reiseapotheke & Gesundheit unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Urlaub mit Baby: Reiseapotheke nicht erst am Abend packen",
+      "pinDescription": "Rechtzeitig prüfen, was altersgerecht ist, was mit ins Handgepäck sollte und was unterwegs schnell erreichbar bleibt. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Rechtzeitig packen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Rechtzeitig packen\", premium clean magazine look for BabyReiseHelfer, Elternhand legt kleine Reiseapotheke in Wickelrucksack, warme natürliche Beleuchtung, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
         "Baby Reiseapotheke",
         "Reiseapotheke Baby Urlaub",
         "Baby Medikamente Reise",
-        "Fieberthermometer Baby Reise",
-        "Packliste Reiseapotheke"
+        "Packliste Baby"
       ],
       "hashtags": [
         "#reiseapotheke",
         "#babyreise",
-        "#reisenmitbaby",
         "#packliste",
-        "#familienurlaub"
+        "#urlaubmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "baby-reiseapotheke-pin-5",
-      "articleSlug": "baby-reiseapotheke",
-      "pinTitle": "Baby-Reiseapotheke: Der schnelle Check vor der Reise",
-      "pinDescription": "Übersichtlich packen und medizinische Fragen vor der Reise fachlich klären. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "reiseapotheke-baby-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Baby-Reiseapotheke\", premium magazine look, open compact first aid pouch on cream tabletop with thermometer, plasters and blank baby-safe bottles, clean daylight, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Baby-Reiseapotheke & Gesundheit unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Baby-Reiseapotheke: Die ruhige Checkliste",
+      "pinDescription": "Eine vorsichtige Übersicht ohne Heilversprechen: Was viele Eltern vor der Reise gedanklich durchgehen. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Ruhige Checkliste",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Ruhige Checkliste\", premium clean magazine look for BabyReiseHelfer, minimalistische Checkliste mit Häkchen, Baby-Pflegeartikel und kleiner Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
         "Baby Reiseapotheke",
         "Reiseapotheke Baby Urlaub",
         "Baby Medikamente Reise",
-        "Fieberthermometer Baby Reise",
-        "Packliste Reiseapotheke"
+        "Packliste Baby"
       ],
       "hashtags": [
         "#reiseapotheke",
         "#babyreise",
-        "#reisenmitbaby",
         "#packliste",
-        "#familienurlaub"
+        "#urlaubmitbaby",
+        "#elterntipps"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "urlaub-am-strand-mit-baby-pin-1",
-      "articleSlug": "urlaub-am-strand-mit-baby",
-      "pinTitle": "Strandurlaub mit Baby: Diese Dinge helfen wirklich",
-      "pinDescription": "Strandtage kurz, schattig und gut vorbereitet planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Strandurlaub mit Baby\", premium magazine look, calm bright beach setup with baby beach tent, UV hat, towel, wet bag and family beach bag on pale sand, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Strandurlaub mit Baby",
+      "id": "reiseapotheke-baby-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/baby-reiseapotheke/",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Reiseapotheke Baby: Was ins Handgepäck kann",
+      "pinDescription": "Für Flug oder lange Fahrt: wichtige, fachlich abgestimmte Dinge so packen, dass sie schnell erreichbar sind. Passend zum BabyReiseHelfer-Ratgeber: Baby-Reiseapotheke planen: Fieberthermometer, Pflaster, Nasentropfen, Medikamente, Sonnenschutz und wichtige Hinweise für Eltern.",
+      "overlayText": "Ins Handgepäck?",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Ins Handgepäck?\", premium clean magazine look for BabyReiseHelfer, Handgepäckfach mit kleiner medizinischer Reisebox, Wickeltasche und Reisedokumenten, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Reiseapotheke Baby",
       "keywords": [
-        "Strand mit Baby",
-        "Baby UV Schutz",
-        "Baby Strandmuschel",
-        "Urlaub am Strand Baby",
-        "Sonnenschutz Baby"
+        "Baby Reiseapotheke",
+        "Reiseapotheke Baby Urlaub",
+        "Baby Medikamente Reise",
+        "Packliste Baby"
       ],
       "hashtags": [
-        "#strandmitbaby",
-        "#uvschutz",
+        "#reiseapotheke",
         "#babyreise",
+        "#packliste",
         "#urlaubmitbaby",
-        "#familienurlaub"
+        "#elterntipps"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "baby-reiseapotheke",
+      "category": "packlisten"
     },
     {
-      "id": "urlaub-am-strand-mit-baby-pin-2",
-      "articleSlug": "urlaub-am-strand-mit-baby",
-      "pinTitle": "Strandurlaub mit Baby: Was gehört auf die Packliste?",
-      "pinDescription": "Strandtage kurz, schattig und gut vorbereitet planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Strandurlaub mit Baby\", premium magazine look, calm bright beach setup with baby beach tent, UV hat, towel, wet bag and family beach bag on pale sand, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Strandurlaub mit Baby",
-      "keywords": [
-        "Strand mit Baby",
-        "Baby UV Schutz",
-        "Baby Strandmuschel",
-        "Urlaub am Strand Baby",
-        "Sonnenschutz Baby"
-      ],
-      "hashtags": [
-        "#strandmitbaby",
-        "#uvschutz",
-        "#babyreise",
-        "#urlaubmitbaby",
-        "#familienurlaub"
-      ],
-      "callToAction": "Liste ansehen"
-    },
-    {
-      "id": "urlaub-am-strand-mit-baby-pin-3",
-      "articleSlug": "urlaub-am-strand-mit-baby",
-      "pinTitle": "Strandurlaub mit Baby: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Strandtage kurz, schattig und gut vorbereitet planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Strandurlaub mit Baby\", premium magazine look, calm bright beach setup with baby beach tent, UV hat, towel, wet bag and family beach bag on pale sand, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Strandurlaub mit Baby",
-      "keywords": [
-        "Strand mit Baby",
-        "Baby UV Schutz",
-        "Baby Strandmuschel",
-        "Urlaub am Strand Baby",
-        "Sonnenschutz Baby"
-      ],
-      "hashtags": [
-        "#strandmitbaby",
-        "#uvschutz",
-        "#babyreise",
-        "#urlaubmitbaby",
-        "#familienurlaub"
-      ],
-      "callToAction": "Tipps lesen"
-    },
-    {
-      "id": "urlaub-am-strand-mit-baby-pin-4",
-      "articleSlug": "urlaub-am-strand-mit-baby",
-      "pinTitle": "Strandurlaub mit Baby: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Strandtage kurz, schattig und gut vorbereitet planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Strandurlaub mit Baby\", premium magazine look, calm bright beach setup with baby beach tent, UV hat, towel, wet bag and family beach bag on pale sand, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Strandurlaub mit Baby",
-      "keywords": [
-        "Strand mit Baby",
-        "Baby UV Schutz",
-        "Baby Strandmuschel",
-        "Urlaub am Strand Baby",
-        "Sonnenschutz Baby"
-      ],
-      "hashtags": [
-        "#strandmitbaby",
-        "#uvschutz",
-        "#babyreise",
-        "#urlaubmitbaby",
-        "#familienurlaub"
-      ],
-      "callToAction": "Mehr Ideen holen"
-    },
-    {
-      "id": "urlaub-am-strand-mit-baby-pin-5",
-      "articleSlug": "urlaub-am-strand-mit-baby",
-      "pinTitle": "Strandurlaub mit Baby: Der schnelle Check vor der Reise",
-      "pinDescription": "Strandtage kurz, schattig und gut vorbereitet planen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
-      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Strandurlaub mit Baby\", premium magazine look, calm bright beach setup with baby beach tent, UV hat, towel, wet bag and family beach bag on pale sand, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Strandurlaub mit Baby",
-      "keywords": [
-        "Strand mit Baby",
-        "Baby UV Schutz",
-        "Baby Strandmuschel",
-        "Urlaub am Strand Baby",
-        "Sonnenschutz Baby"
-      ],
-      "hashtags": [
-        "#strandmitbaby",
-        "#uvschutz",
-        "#babyreise",
-        "#urlaubmitbaby",
-        "#familienurlaub"
-      ],
-      "callToAction": "Checkliste lesen"
-    },
-    {
-      "id": "wickeln-unterwegs-pin-1",
-      "articleSlug": "wickeln-unterwegs",
-      "pinTitle": "Wickeln unterwegs: Diese Dinge helfen wirklich",
-      "pinDescription": "Kleine Module statt vollgestopfter Tasche nutzen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Wickeln unterwegs\", premium magazine look, diaper backpack, foldable changing mat, wipes dispenser and diapers neatly arranged on a bright cream tabletop, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Wickeln unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Wickeln unterwegs: Was in den kleinen Wickelbeutel gehört",
+      "pinDescription": "Eine kompakte Wickel-Packliste für Reise, Flugzeug und Tagesausflug: nur das, was schnell erreichbar sein sollte. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Wickelbeutel packen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Wickelbeutel packen\", premium clean magazine look for BabyReiseHelfer, faltbare Wickelunterlage, Windeln, Feuchttücher und kleiner Beutel als helles Flatlay, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
       "keywords": [
         "Wickeln unterwegs",
-        "Wickelunterlage Reise",
-        "Wickelrucksack Flugzeug",
+        "Wickeltasche Reise",
         "Baby unterwegs wickeln",
-        "Reise Wickeltasche"
+        "Wickelunterlage Reise"
       ],
       "hashtags": [
         "#wickelnunterwegs",
         "#babyreise",
-        "#fliegenmitbaby",
         "#wickeltasche",
-        "#reisenmitbaby"
+        "#reisenmitbaby",
+        "#packliste"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
     },
     {
-      "id": "wickeln-unterwegs-pin-2",
-      "articleSlug": "wickeln-unterwegs",
-      "pinTitle": "Wickeln unterwegs: Was gehört auf die Packliste?",
-      "pinDescription": "Kleine Module statt vollgestopfter Tasche nutzen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Wickeln unterwegs\", premium magazine look, diaper backpack, foldable changing mat, wipes dispenser and diapers neatly arranged on a bright cream tabletop, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Wickeln unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Wickeln auf Reisen: Weniger Tasche, mehr Ordnung",
+      "pinDescription": "Warum ein kleiner separater Wickelbeutel im Rucksack oft praktischer ist als eine große unübersichtliche Tasche. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Mehr Ordnung",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mehr Ordnung\", premium clean magazine look for BabyReiseHelfer, Wickelrucksack mit separatem Organizer, klaren Fächern und Pastellfarben, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
       "keywords": [
         "Wickeln unterwegs",
-        "Wickelunterlage Reise",
-        "Wickelrucksack Flugzeug",
+        "Wickeltasche Reise",
         "Baby unterwegs wickeln",
-        "Reise Wickeltasche"
+        "Wickelunterlage Reise"
       ],
       "hashtags": [
         "#wickelnunterwegs",
         "#babyreise",
-        "#fliegenmitbaby",
         "#wickeltasche",
-        "#reisenmitbaby"
+        "#reisenmitbaby",
+        "#packliste"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
     },
     {
-      "id": "wickeln-unterwegs-pin-3",
-      "articleSlug": "wickeln-unterwegs",
-      "pinTitle": "Wickeln unterwegs: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Kleine Module statt vollgestopfter Tasche nutzen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Wickeln unterwegs\", premium magazine look, diaper backpack, foldable changing mat, wipes dispenser and diapers neatly arranged on a bright cream tabletop, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Wickeln unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Wickeln im Flugzeug: Mini-Set statt großer Tasche",
+      "pinDescription": "Für enge Räume hilft ein vorbereitetes Mini-Set mit Unterlage, Windel, Tüchern und Müllbeutel. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Mini-Set",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mini-Set\", premium clean magazine look for BabyReiseHelfer, kleines Wickelset auf Flugzeug-Klapptisch, ohne Airline-Logos, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
       "keywords": [
         "Wickeln unterwegs",
-        "Wickelunterlage Reise",
-        "Wickelrucksack Flugzeug",
+        "Wickeltasche Reise",
         "Baby unterwegs wickeln",
-        "Reise Wickeltasche"
+        "Wickelunterlage Reise"
       ],
       "hashtags": [
         "#wickelnunterwegs",
         "#babyreise",
-        "#fliegenmitbaby",
         "#wickeltasche",
-        "#reisenmitbaby"
+        "#reisenmitbaby",
+        "#packliste"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
     },
     {
-      "id": "wickeln-unterwegs-pin-4",
-      "articleSlug": "wickeln-unterwegs",
-      "pinTitle": "Wickeln unterwegs: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Kleine Module statt vollgestopfter Tasche nutzen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Wickeln unterwegs\", premium magazine look, diaper backpack, foldable changing mat, wipes dispenser and diapers neatly arranged on a bright cream tabletop, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Wickeln unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Baby unterwegs wickeln: Diese Reihenfolge spart Zeit",
+      "pinDescription": "Vorbereiten, Unterlage auslegen, wenige Dinge griffbereit halten und den Rest im Rucksack lassen. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Schneller finden",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Schneller finden\", premium clean magazine look for BabyReiseHelfer, Elternhand öffnet Wickelorganizer auf neutralem Reisetisch, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
       "keywords": [
         "Wickeln unterwegs",
-        "Wickelunterlage Reise",
-        "Wickelrucksack Flugzeug",
+        "Wickeltasche Reise",
         "Baby unterwegs wickeln",
-        "Reise Wickeltasche"
+        "Wickelunterlage Reise"
       ],
       "hashtags": [
         "#wickelnunterwegs",
         "#babyreise",
-        "#fliegenmitbaby",
         "#wickeltasche",
-        "#reisenmitbaby"
+        "#reisenmitbaby",
+        "#packliste"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
     },
     {
-      "id": "wickeln-unterwegs-pin-5",
-      "articleSlug": "wickeln-unterwegs",
-      "pinTitle": "Wickeln unterwegs: Der schnelle Check vor der Reise",
-      "pinDescription": "Kleine Module statt vollgestopfter Tasche nutzen. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Wickeln unterwegs\", premium magazine look, diaper backpack, foldable changing mat, wipes dispenser and diapers neatly arranged on a bright cream tabletop, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Wickeln unterwegs",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Wickeltasche für Reisen: Was wirklich griffbereit sein sollte",
+      "pinDescription": "Nicht alles muss oben liegen. Diese Übersicht trennt Sofort-Basics von Reservekleidung und Extra-Zubehör. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Griffbereit",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Griffbereit\", premium clean magazine look for BabyReiseHelfer, zwei geordnete Taschenbereiche: Sofort-Basics und Reserve, ohne Textlabels, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
       "keywords": [
         "Wickeln unterwegs",
-        "Wickelunterlage Reise",
-        "Wickelrucksack Flugzeug",
+        "Wickeltasche Reise",
         "Baby unterwegs wickeln",
-        "Reise Wickeltasche"
+        "Wickelunterlage Reise"
       ],
       "hashtags": [
         "#wickelnunterwegs",
         "#babyreise",
-        "#fliegenmitbaby",
         "#wickeltasche",
-        "#reisenmitbaby"
+        "#reisenmitbaby",
+        "#packliste"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
     },
     {
-      "id": "kinderwagen-zubehoer-urlaub-pin-1",
-      "articleSlug": "kinderwagen-zubehoer-urlaub",
-      "pinTitle": "Kinderwagen-Zubehör im Urlaub: Diese Dinge helfen wirklich",
-      "pinDescription": "Nur Zubehör mitnehmen, das ein echtes Reiseproblem löst. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "wickeln-unterwegs-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/wickeln-unterwegs/",
+      "boardSuggestion": "Baby Packlisten",
+      "pinTitle": "Wickeln unterwegs: Kleine Checkliste für Flug und Auto",
+      "pinDescription": "Eine speicherbare Checkliste für Eltern, die unterwegs nicht lange in der Tasche suchen möchten. Passend zum BabyReiseHelfer-Ratgeber: Wickeln unterwegs organisieren: faltbare Wickelunterlage, Wickelrucksack, kleine Beutel, Wechselkleidung und Hygiene im Flugzeug.",
+      "overlayText": "Flug & Auto",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Flug & Auto\", premium clean magazine look for BabyReiseHelfer, Wickelset neben Autositz-Gurtmotiv und Reisetasche, neutral und ruhig, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Wickeln unterwegs",
+      "keywords": [
+        "Wickeln unterwegs",
+        "Wickeltasche Reise",
+        "Baby unterwegs wickeln",
+        "Wickelunterlage Reise"
+      ],
+      "hashtags": [
+        "#wickelnunterwegs",
+        "#babyreise",
+        "#wickeltasche",
+        "#reisenmitbaby",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "wickeln-unterwegs",
+      "category": "packlisten"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-01",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "Strandurlaub mit Baby: Schatten zuerst planen",
+      "pinDescription": "Für Strandtage mit Baby sind Schatten, Pausen und kurze Wege oft wichtiger als viel Zubehör. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "Schatten zuerst",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Schatten zuerst\", premium clean magazine look for BabyReiseHelfer, helle Strandmuschel im Sand, Babyhut und Tasche daneben, ohne Menschen im Fokus, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-02",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "Baby am Strand: Was du vorher einpacken kannst",
+      "pinDescription": "Packideen für Strandtage mit Baby: UV-Hut, Wetbag, Trinkzubehör, Tücher und eine ruhige Schattenlösung. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "Strand-Packliste",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Strand-Packliste\", premium clean magazine look for BabyReiseHelfer, Strandtasche mit UV-Hut, Musselintuch, Wetbag und Wasserflasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-03",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "Strand mit Baby: Weniger Hitze, mehr Pausen",
+      "pinDescription": "Kurze Strandzeiten, Schatten und Luftzirkulation helfen, warme Tage entspannter zu planen. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "Mehr Pausen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mehr Pausen\", premium clean magazine look for BabyReiseHelfer, ruhiger Strandplatz am Vormittag mit Sonnenschutz und heller Picknickdecke, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-04",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "UV-Schutz für Baby: Worauf du im Urlaub achten solltest",
+      "pinDescription": "Neutraler Überblick zu Hut, Schatten, Kleidung und Strandmuschel, ohne Produktversprechen oder medizinische Aussagen. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "UV-Schutz prüfen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"UV-Schutz prüfen\", premium clean magazine look for BabyReiseHelfer, Baby-UV-Hut, leichte Kleidung und Strandmuschel als cleane Studio-Komposition, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-05",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "Strandurlaub Baby: Nasse Kleidung sauber verstauen",
+      "pinDescription": "Wetbag, Wechselkleidung und kleine Beutel halten Sand und nasse Sachen getrennt vom Rest der Tasche. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "Nasses getrennt",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Nasses getrennt\", premium clean magazine look for BabyReiseHelfer, wasserfeste Tasche neben nasser Baby-Badekleidung und Handtuch auf hellem Sand, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "strandurlaub-mit-baby-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/urlaub-am-strand-mit-baby/",
+      "boardSuggestion": "Baby Strandurlaub",
+      "pinTitle": "Baby Strandtag planen: Die einfache Morgen-Checkliste",
+      "pinDescription": "Vor dem Strand kurz prüfen: Schatten, Trinkpause, Wechselkleidung, Wickeln, Rückweg und Mittagshitze. Passend zum BabyReiseHelfer-Ratgeber: Strandurlaub mit Baby planen: Schatten, UV-Kleidung, Trinkpausen, Strandmuschel, Hut, Wickeln und Tageszeiten sinnvoll kombinieren.",
+      "overlayText": "Morgen-Check",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Morgen-Check\", premium clean magazine look for BabyReiseHelfer, Morgenlicht am Hoteltisch mit Strand-Checkliste, Sonnenhut und kleiner Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Strandurlaub mit Baby",
+      "keywords": [
+        "Strandurlaub Baby",
+        "Baby Strand",
+        "UV Schutz Baby",
+        "Urlaub am Strand mit Baby"
+      ],
+      "hashtags": [
+        "#strandmitbaby",
+        "#babyreise",
+        "#uvschutz",
+        "#urlaubmitbaby",
+        "#strandurlaub"
+      ],
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "urlaub-am-strand-mit-baby",
+      "category": "strand-sonne"
+    },
+    {
+      "id": "kinderwagen-zubehoer-pin-01",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen-Zubehör im Urlaub\", premium magazine look, premium stroller on sunny promenade with organizer, fan, rain cover pouch and mosquito net pouch nearby, clean lifestyle photo, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Was wirklich hilft",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen-Zubehör für den Urlaub: Was lohnt sich wirklich?",
+      "pinDescription": "Neutraler Ratgeber zu Sonnenschutz, Organizer, Moskitonetz, Ventilator und Regenschutz für Reisen mit Baby. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Was lohnt sich?",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Was lohnt sich?\", premium clean magazine look for BabyReiseHelfer, Kinderwagen mit wenigen Zubehörteilen sauber arrangiert auf hellem Reiseweg, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
       "keywords": [
         "Kinderwagen Zubehör Urlaub",
-        "Buggy Regenschutz",
+        "Buggy Zubehör Reise",
         "Kinderwagen Organizer",
-        "Moskitonetz Buggy",
-        "Sonnenschutz Kinderwagen"
+        "Regenschutz Buggy"
       ],
       "hashtags": [
         "#kinderwagenzubehör",
+        "#buggy",
         "#babyreise",
         "#urlaubmitbaby",
-        "#buggy",
-        "#familienreise"
+        "#kinderwagen"
       ],
-      "callToAction": "Ratgeber öffnen"
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-zubehoer-urlaub-pin-2",
-      "articleSlug": "kinderwagen-zubehoer-urlaub",
-      "pinTitle": "Kinderwagen-Zubehör im Urlaub: Was gehört auf die Packliste?",
-      "pinDescription": "Nur Zubehör mitnehmen, das ein echtes Reiseproblem löst. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-zubehoer-pin-02",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen-Zubehör im Urlaub\", premium magazine look, premium stroller on sunny promenade with organizer, fan, rain cover pouch and mosquito net pouch nearby, clean lifestyle photo, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Packliste zum Speichern",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Buggy im Urlaub: Zubehör nach Reiseziel auswählen",
+      "pinDescription": "Strand, Stadt oder Hotelanlage: Welches Kinderwagen-Zubehör je nach Situation sinnvoll sein kann. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Nach Reiseziel",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Nach Reiseziel\", premium clean magazine look for BabyReiseHelfer, Buggy neben drei dezenten Reiseziel-Symbolen: Strand, Stadt, Hotel, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
       "keywords": [
         "Kinderwagen Zubehör Urlaub",
-        "Buggy Regenschutz",
+        "Buggy Zubehör Reise",
         "Kinderwagen Organizer",
-        "Moskitonetz Buggy",
-        "Sonnenschutz Kinderwagen"
+        "Regenschutz Buggy"
       ],
       "hashtags": [
         "#kinderwagenzubehör",
+        "#buggy",
         "#babyreise",
         "#urlaubmitbaby",
-        "#buggy",
-        "#familienreise"
+        "#kinderwagen"
       ],
-      "callToAction": "Liste ansehen"
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-zubehoer-urlaub-pin-3",
-      "articleSlug": "kinderwagen-zubehoer-urlaub",
-      "pinTitle": "Kinderwagen-Zubehör im Urlaub: Diese Fehler kannst du vermeiden",
-      "pinDescription": "Nur Zubehör mitnehmen, das ein echtes Reiseproblem löst. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-zubehoer-pin-03",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen-Zubehör im Urlaub\", premium magazine look, premium stroller on sunny promenade with organizer, fan, rain cover pouch and mosquito net pouch nearby, clean lifestyle photo, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Besser vorbereiten",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen-Organizer: Praktisch oder nur extra Gepäck?",
+      "pinDescription": "Ein Organizer kann helfen, wenn Flasche, Tücher und Handy griffbereit bleiben sollen. Worauf du achten kannst. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Organizer prüfen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Organizer prüfen\", premium clean magazine look for BabyReiseHelfer, Kinderwagen-Organizer mit Flasche, Tuch und Handy-Dummy ohne Marken, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
       "keywords": [
         "Kinderwagen Zubehör Urlaub",
-        "Buggy Regenschutz",
+        "Buggy Zubehör Reise",
         "Kinderwagen Organizer",
-        "Moskitonetz Buggy",
-        "Sonnenschutz Kinderwagen"
+        "Regenschutz Buggy"
       ],
       "hashtags": [
         "#kinderwagenzubehör",
+        "#buggy",
         "#babyreise",
         "#urlaubmitbaby",
-        "#buggy",
-        "#familienreise"
+        "#kinderwagen"
       ],
-      "callToAction": "Tipps lesen"
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-zubehoer-urlaub-pin-4",
-      "articleSlug": "kinderwagen-zubehoer-urlaub",
-      "pinTitle": "Kinderwagen-Zubehör im Urlaub: 5 kleine Helfer für entspanntere Reisetage",
-      "pinDescription": "Nur Zubehör mitnehmen, das ein echtes Reiseproblem löst. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-zubehoer-pin-04",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen-Zubehör im Urlaub\", premium magazine look, premium stroller on sunny promenade with organizer, fan, rain cover pouch and mosquito net pouch nearby, clean lifestyle photo, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "5 Helfer für unterwegs",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Moskitonetz für Kinderwagen: Wann es auf Reisen hilft",
+      "pinDescription": "Mückenschutz kann je nach Reiseziel sinnvoll sein. Wichtig sind Passform, Luftigkeit und sichere Befestigung. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Mückenschutz",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mückenschutz\", premium clean magazine look for BabyReiseHelfer, Kinderwagen mit fein sichtbarem Moskitonetz in ruhiger Abendstimmung, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
       "keywords": [
         "Kinderwagen Zubehör Urlaub",
-        "Buggy Regenschutz",
+        "Buggy Zubehör Reise",
         "Kinderwagen Organizer",
-        "Moskitonetz Buggy",
-        "Sonnenschutz Kinderwagen"
+        "Regenschutz Buggy"
       ],
       "hashtags": [
         "#kinderwagenzubehör",
+        "#buggy",
         "#babyreise",
         "#urlaubmitbaby",
-        "#buggy",
-        "#familienreise"
+        "#kinderwagen"
       ],
-      "callToAction": "Mehr Ideen holen"
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
     },
     {
-      "id": "kinderwagen-zubehoer-urlaub-pin-5",
-      "articleSlug": "kinderwagen-zubehoer-urlaub",
-      "pinTitle": "Kinderwagen-Zubehör im Urlaub: Der schnelle Check vor der Reise",
-      "pinDescription": "Nur Zubehör mitnehmen, das ein echtes Reiseproblem löst. Speichere dir diese Idee und lies den vollständigen Ratgeber auf BabyReiseHelfer.",
+      "id": "kinderwagen-zubehoer-pin-05",
+      "status": "draft",
       "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
-      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue and sage green palette with coral accent, large readable German headline \"Kinderwagen-Zubehör im Urlaub\", premium magazine look, premium stroller on sunny promenade with organizer, fan, rain cover pouch and mosquito net pouch nearby, clean lifestyle photo, no logos, no Amazon images, no prices, no ratings, no watermark.",
-      "overlayText": "Kurz prüfen vor Abreise",
-      "boardSuggestion": "Kinderwagen-Zubehör im Urlaub",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Buggy-Regenschutz im Urlaub: Nicht nur bei Regen",
+      "pinDescription": "Wind, kurze Schauer und kühle Abende: Warum ein leichter Wetterschutz in manchen Urlauben praktisch sein kann. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Regen & Wind",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Regen & Wind\", premium clean magazine look for BabyReiseHelfer, Buggy mit transparentem Regenschutz und wenigen Regentropfen vor hellem Hintergrund, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
       "keywords": [
         "Kinderwagen Zubehör Urlaub",
-        "Buggy Regenschutz",
+        "Buggy Zubehör Reise",
         "Kinderwagen Organizer",
-        "Moskitonetz Buggy",
-        "Sonnenschutz Kinderwagen"
+        "Regenschutz Buggy"
       ],
       "hashtags": [
         "#kinderwagenzubehör",
+        "#buggy",
         "#babyreise",
         "#urlaubmitbaby",
-        "#buggy",
-        "#familienreise"
+        "#kinderwagen"
       ],
-      "callToAction": "Checkliste lesen"
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
+    },
+    {
+      "id": "kinderwagen-zubehoer-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/ratgeber/kinderwagen-zubehoer-urlaub/",
+      "boardSuggestion": "Kinderwagen Zubehör",
+      "pinTitle": "Kinderwagen-Zubehör: Die kleine Urlaubsliste",
+      "pinDescription": "Eine reduzierte Liste für Eltern, die nicht jedes Zubehörteil mitnehmen möchten, sondern gezielt nach Reiseproblem packen. Passend zum BabyReiseHelfer-Ratgeber: Kinderwagen-Zubehör für den Urlaub sinnvoll auswählen: Sonnenschutz, Organizer, Moskitonetz, Wetterschutz und Ventilator neutral eingeordnet.",
+      "overlayText": "Kleine Liste",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Kleine Liste\", premium clean magazine look for BabyReiseHelfer, Checkliste neben Sonnenschutz, Organizer und Mückennetz in sanften Farben, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Kinderwagen-Zubehör",
+      "keywords": [
+        "Kinderwagen Zubehör Urlaub",
+        "Buggy Zubehör Reise",
+        "Kinderwagen Organizer",
+        "Regenschutz Buggy"
+      ],
+      "hashtags": [
+        "#kinderwagenzubehör",
+        "#buggy",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#kinderwagen"
+      ],
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "kinderwagen-zubehoer-urlaub",
+      "category": "kinderwagen-zubehoer"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-01",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Baby-Reiseprodukte: Welche Helfer lösen echte Probleme?",
+      "pinDescription": "Produktideen für Reisen mit Baby, neutral sortiert nach Flugzeug, Hotel, Strand, Kinderwagen und Packlisten. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Echte Reisehelfer",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Echte Reisehelfer\", premium clean magazine look for BabyReiseHelfer, hochwertiges Flatlay mit Baby-Reiseprodukten ohne Marken, Preise oder Shop-Elemente, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-02",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Reiseprodukte fürs Baby: Erst Problem, dann Produkt",
+      "pinDescription": "Nicht alles ist nötig. Diese Übersicht hilft, Produkte nach konkreter Reisesituation statt nach Werbung auszuwählen. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Problem vor Produkt",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Problem vor Produkt\", premium clean magazine look for BabyReiseHelfer, cleane Magazin-Komposition mit Koffer, Checkliste und wenigen Baby-Reisehelfern, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-03",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Baby-Reisehelfer: Produktideen ohne Preis- und Sternevergleich",
+      "pinDescription": "Seriöse Produktkarten ohne Amazon-Bilder, Preise oder Bewertungen: Fokus auf Nutzen, Grenzen und Kaufkriterien. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Ohne Sterne-Hype",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Ohne Sterne-Hype\", premium clean magazine look for BabyReiseHelfer, ruhige Produktübersicht mit neutralen Karten, Pastellfarben und Baby-Reisekontext, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-04",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Urlaub mit Baby: Produkte nach Flug, Hotel und Strand sortieren",
+      "pinDescription": "Eine übersichtliche Produktseite für Eltern, die Reisehelfer nach Situation statt nach Shop-Kategorie finden möchten. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Nach Situation",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Nach Situation\", premium clean magazine look for BabyReiseHelfer, drei Reisebereiche als Foto-Set: Flughandgepäck, Hotelzimmer, Strandtasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-05",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Baby-Reiseprodukte: Worauf du vor dem Kauf achten kannst",
+      "pinDescription": "Größe, Gewicht, Reinigung, Sicherheitshinweise und Alltagstauglichkeit: Kriterien für Reiseprodukte mit Baby. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Worauf achten?",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Worauf achten?\", premium clean magazine look for BabyReiseHelfer, Checkliste mit Maßband, Tasche und ausgewählten neutralen Baby-Reiseartikeln, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "baby-reiseprodukte-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/produkte/",
+      "boardSuggestion": "Reisen mit Baby",
+      "pinTitle": "Packen mit Baby: Kleine Helfer für mehr Ordnung",
+      "pinDescription": "Packing Cubes, Dokumententasche, Wickelorganizer und Wetbag können helfen, wenn sie zum Reisestil passen. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Mehr Ordnung",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Mehr Ordnung\", premium clean magazine look for BabyReiseHelfer, ordentlich gepackter Koffer mit Packwürfeln, Dokumententasche und Baby-Kleidung, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Baby-Reiseprodukte",
+      "keywords": [
+        "Baby Reiseprodukte",
+        "Reiseprodukte Baby",
+        "Urlaub mit Baby Produkte",
+        "Baby Reisehelfer"
+      ],
+      "hashtags": [
+        "#babyreiseprodukte",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#packliste"
+      ],
+      "publishWindowSuggestion": "Freitag 11:00-13:00",
+      "articleSlug": "produkte",
+      "category": "produkte"
+    },
+    {
+      "id": "hotel-mit-baby-pin-01",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Hotel mit Baby: Produktideen fürs Zimmer",
+      "pinDescription": "Übersicht für Hotelaufenthalte mit Baby: Schlafplatz, Licht, Fläschchen, Wickeln und kleine Routinen. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Hotelzimmer Basics",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Hotelzimmer Basics\", premium clean magazine look for BabyReiseHelfer, Hotelzimmer mit Reisebett, Wickelorganizer und warmem Nachtlicht, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Samstag 09:00-11:00",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "hotel-mit-baby-pin-02",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Baby im Hotelzimmer: Was den Alltag einfacher machen kann",
+      "pinDescription": "Kleine Helfer für Zimmer und Nacht, ohne den Koffer unnötig voll zu machen: neutral und nach Situation sortiert. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Einfacher Alltag",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Einfacher Alltag\", premium clean magazine look for BabyReiseHelfer, Baby-Reisetasche auf Hotelbett mit wenigen gut sichtbaren Helfern, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Sonntag 19:00-21:00",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "hotel-mit-baby-pin-03",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Hotel mit Baby: Reisebett vorab klären",
+      "pinDescription": "Ob du ein Reisebett mitnimmst oder nicht: Vorab nach Bett, Matratze, Platz und Aufzug fragen. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Reisebett klären",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Reisebett klären\", premium clean magazine look for BabyReiseHelfer, Reisebett im hellen Hotelzimmer mit Checkliste auf dem Nachttisch, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Montag 19:00-21:00",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "hotel-mit-baby-pin-04",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Fläschchen im Hotel: Was vorher praktisch sein kann",
+      "pinDescription": "Wasserkocher, Kühlschrank, USB-Flaschenwärmer oder Thermosflasche: Was je nach Hotel sinnvoll sein kann. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Fläschchen planen",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Fläschchen planen\", premium clean magazine look for BabyReiseHelfer, Babyflasche, Thermosflasche und kleiner Wärmer auf Hotel-Schreibtisch, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Dienstag 12:00-14:00",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "hotel-mit-baby-pin-05",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Hotel mit Baby: Nachtlicht statt grelles Zimmerlicht",
+      "pinDescription": "Ein kleines Nachtlicht kann nachts Orientierung geben, ohne das ganze Zimmer hell zu machen. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Sanftes Licht",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Sanftes Licht\", premium clean magazine look for BabyReiseHelfer, kleines warmes Nachtlicht neben Babyflasche in ruhigem Hotelzimmer, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Mittwoch 20:00-21:30",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
+    },
+    {
+      "id": "hotel-mit-baby-pin-06",
+      "status": "draft",
+      "targetUrl": "https://babyreisehelfer.pages.dev/hotel-mit-baby/",
+      "boardSuggestion": "Baby im Hotel",
+      "pinTitle": "Baby-Hotelcheck: Diese Punkte vorher notieren",
+      "pinDescription": "Babybett, Verdunklung, Wege, Aufzug, Kühlschrank und Wasserkocher: eine speicherbare Hotel-Checkliste. Mehr dazu findest du auf BabyReiseHelfer.",
+      "overlayText": "Hotelcheck",
+      "imagePrompt": "Pinterest pin 1000 x 1500, warm cream background, baby blue, sage green and coral accent palette, large readable German overlay text \"Hotelcheck\", premium clean magazine look for BabyReiseHelfer, Notizbuch mit Hotel-Checkliste, Zimmerkarte und kleiner Baby-Tasche, baby travel context, no logos, no Amazon images, no prices, no star ratings, no reviews, no watermarks, topic: Hotel mit Baby",
+      "keywords": [
+        "Hotel mit Baby",
+        "Baby Hotelzimmer",
+        "Reisebett Baby",
+        "Flaschenwärmer Reise"
+      ],
+      "hashtags": [
+        "#hotelmitbaby",
+        "#babyreise",
+        "#urlaubmitbaby",
+        "#familienurlaub",
+        "#reisebett"
+      ],
+      "publishWindowSuggestion": "Donnerstag 18:00-20:00",
+      "articleSlug": "hotel-mit-baby",
+      "category": "hotel-mit-baby"
     }
   ]
 }

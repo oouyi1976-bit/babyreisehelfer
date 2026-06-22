@@ -184,7 +184,9 @@ marketing/
 
 Enthalten sind:
 
-- `marketing/pinterest/pins.json` und `marketing/pinterest/pins.md`: Pinterest-Pin-Ideen für alle Ratgeber
+- `marketing/pinterest/pins.json` und `marketing/pinterest/pins.md`: Pinterest-Pin-Drafts für Ratgeber, Kategorien und Produktübersichten
+- `marketing/pinterest/boards.md`: Board-Ideen mit Keywords und passenden Pin-Typen
+- `marketing/pinterest/30-day-plan.md`: 30 Tage Pinterest-Plan mit einem Pin pro Tag
 - `marketing/instagram/posts.json` und `marketing/instagram/posts.md`: Instagram-Carousel-Drafts mit Captions und Hashtags
 - `marketing/tiktok/scripts.json` und `marketing/tiktok/scripts.md`: TikTok/Reels-Skripte mit Hooks, Szenen und Voiceover
 - `marketing/calendar/30-day-plan.md`: 30-Tage-Plan mit Pinterest, Instagram und TikTok/Reels
@@ -200,10 +202,11 @@ Die Inhalte sind bewusst Drafts. Vor Veröffentlichung bitte manuell prüfen:
 Optional vorbereitet ist:
 
 ```text
-scripts/pinterest-post-draft.ts
+scripts/generate-pinterest-content.ts
+scripts/pinterest-post-dry-run.ts
 ```
 
-Das Script zeigt standardmäßig nur an, welche Pins gepostet würden. Echtes Pinterest-Posting darf erst erfolgen, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist und die nötigen Environment Variables vorhanden sind. Tokens gehören niemals ins Repository.
+Der Generator aktualisiert lokale Pinterest-Drafts ohne externe API. Das Dry-Run-Script zeigt nur Pins mit `status: "ready"` an und veröffentlicht bewusst nichts. Tokens gehören niemals ins Repository. Details stehen in `marketing/pinterest/README.md`.
 
 ## Klick-Tracking
 
