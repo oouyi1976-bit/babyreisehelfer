@@ -1,66 +1,73 @@
 import fs from 'node:fs/promises';
 
-type PinterestPinStatus = 'draft' | 'ready' | 'scheduled' | 'published' | 'archived';
+type PinterestPinStatus = 'draft' | 'ready' | 'posted' | 'needs-fix' | 'error';
 
 type PinterestPin = {
   id: string;
   status: PinterestPinStatus;
   targetUrl: string;
   boardSuggestion: string;
+  boardId: string;
   pinTitle: string;
   pinDescription: string;
+  publicImageUrl: string;
 };
 
-type PinterestPinsFile = {
-  pins: PinterestPin[];
+type PostedLog = {
+  posts?: Array<{ pinId: string; pinterestPinId?: string; postedAt?: string }>;
 };
 
 const pinsFile = new URL('../marketing/pinterest/pins.json', import.meta.url);
-const postingEnabled = process.env.ENABLE_PINTEREST_POSTING === 'true';
+const postedLogFile = new URL('../marketing/pinterest/posted-log.json', import.meta.url);
+const defaultBoardId = process.env.PINTEREST_DEFAULT_BOARD_ID ?? '';
 const limit = Number(process.env.PINTEREST_DRY_RUN_LIMIT ?? Number.POSITIVE_INFINITY);
 
-async function loadPins() {
-  const raw = await fs.readFile(pinsFile, 'utf8');
-  const parsed = JSON.parse(raw) as PinterestPinsFile | PinterestPin[];
-  return Array.isArray(parsed) ? parsed : parsed.pins;
+async function readJson<T>(file: URL, fallback: T) {
+  try {
+    return JSON.parse(await fs.readFile(file, 'utf8')) as T;
+  } catch {
+    return fallback;
+  }
 }
 
-function assertInternalTarget(pin: PinterestPin) {
-  if (!pin.targetUrl.startsWith('https://babyreisehelfer.pages.dev/')) {
-    throw new Error(`Pin ${pin.id} hat keine BabyReiseHelfer-Ziel-URL: ${pin.targetUrl}`);
-  }
+function validationErrors(pin: PinterestPin, postedIds: Set<string>) {
+  const errors: string[] = [];
+  const boardId = pin.boardId || defaultBoardId;
 
-  if (/amazon\./i.test(pin.targetUrl) || /tag=epic05e-21/i.test(pin.targetUrl)) {
-    throw new Error(`Pin ${pin.id} verweist direkt auf Amazon. Pinterest-Pins sollen auf BabyReiseHelfer zeigen.`);
-  }
+  if (!boardId) errors.push('boardId fehlt');
+  if (!pin.publicImageUrl) errors.push('publicImageUrl fehlt');
+  if (!pin.targetUrl) errors.push('targetUrl fehlt');
+  if (!pin.targetUrl.startsWith('https://babyreisehelfer.pages.dev/')) errors.push('targetUrl ist keine BabyReiseHelfer-URL');
+  if (/amazon\.|tag=epic05e-21/i.test(pin.targetUrl)) errors.push('targetUrl verweist direkt auf Amazon');
+  if (postedIds.has(pin.id)) errors.push('Pin steht bereits in posted-log.json');
+
+  return errors;
 }
 
 async function main() {
-  const pins = await loadPins();
-  const readyPins = pins.filter((pin) => pin.status === 'ready').slice(0, limit);
+  const data = await readJson<{ pins: PinterestPin[] }>(pinsFile, { pins: [] });
+  const postedLog = await readJson<PostedLog>(postedLogFile, { posts: [] });
+  const postedIds = new Set((postedLog.posts ?? []).map((entry) => entry.pinId));
+  const readyPins = data.pins.filter((pin) => pin.status === 'ready').slice(0, limit);
 
-  console.log(`Pinterest Dry-Run`);
-  console.log(`Posting aktiviert laut ENV: ${postingEnabled ? 'ja' : 'nein'}`);
-  console.log(`Bereit markierte Pins: ${readyPins.length}`);
-
-  if (postingEnabled) {
-    console.log(
-      'Hinweis: Dieses Script ist absichtlich nur ein Dry-Run und veröffentlicht auch mit ENABLE_PINTEREST_POSTING=true nichts.'
-    );
-  }
+  console.log('Pinterest Auto-Posting Dry-Run');
+  console.log(`Ready-Pins: ${readyPins.length}`);
 
   if (readyPins.length === 0) {
-    console.log('Keine Pins mit status "ready" gefunden. Setze einzelne geprüfte Pins manuell auf "ready".');
+    console.log('Keine Pins mit status "ready" gefunden. Drafts werden nicht gepostet.');
     return;
   }
 
   for (const [index, pin] of readyPins.entries()) {
-    assertInternalTarget(pin);
-    console.log(`\n${index + 1}. ${pin.pinTitle}`);
-    console.log(`   ID: ${pin.id}`);
-    console.log(`   Ziel-URL: ${pin.targetUrl}`);
-    console.log(`   Beschreibung: ${pin.pinDescription}`);
+    const errors = validationErrors(pin, postedIds);
+    console.log(`\n${index + 1}. ${pin.id}`);
+    console.log(`   Titel: ${pin.pinTitle}`);
     console.log(`   Board: ${pin.boardSuggestion}`);
+    console.log(`   Board-ID: ${pin.boardId || defaultBoardId || 'FEHLT'}`);
+    console.log(`   Ziel-URL: ${pin.targetUrl || 'FEHLT'}`);
+    console.log(`   Bild-URL: ${pin.publicImageUrl || 'FEHLT'}`);
+    console.log(`   Status: ${pin.status}`);
+    console.log(`   Mögliche Fehler: ${errors.length ? errors.join('; ') : 'keine'}`);
   }
 
   console.log('\nDry-Run beendet. Es wurde nichts veröffentlicht.');

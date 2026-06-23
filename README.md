@@ -185,7 +185,9 @@ marketing/
 Enthalten sind:
 
 - `marketing/pinterest/pins.json` und `marketing/pinterest/pins.md`: Pinterest-Pin-Drafts für Ratgeber, Kategorien und Produktübersichten
-- `marketing/pinterest/boards.md`: Board-Ideen mit Keywords und passenden Pin-Typen
+- `marketing/pinterest/boards.json` und `marketing/pinterest/boards.md`: Board-Ideen mit Keywords und später einzutragenden Pinterest-Board-IDs
+- `marketing/pinterest/posted-log.json`: Protokoll erfolgreich veröffentlichter Pins
+- `public/pinterest/generated-images/`: öffentlich deploybare Pin-Bilder im Format 1000 x 1500 px
 - `marketing/pinterest/30-day-plan.md`: 30 Tage Pinterest-Plan mit einem Pin pro Tag
 - `marketing/instagram/posts.json` und `marketing/instagram/posts.md`: Instagram-Carousel-Drafts mit Captions und Hashtags
 - `marketing/tiktok/scripts.json` und `marketing/tiktok/scripts.md`: TikTok/Reels-Skripte mit Hooks, Szenen und Voiceover
@@ -203,10 +205,12 @@ Optional vorbereitet ist:
 
 ```text
 scripts/generate-pinterest-content.ts
+scripts/generate-pinterest-images.ts
 scripts/pinterest-post-dry-run.ts
+scripts/pinterest-post-ready.ts
 ```
 
-Der Generator aktualisiert lokale Pinterest-Drafts ohne externe API. Das Dry-Run-Script zeigt nur Pins mit `status: "ready"` an und veröffentlicht bewusst nichts. Tokens gehören niemals ins Repository. Details stehen in `marketing/pinterest/README.md`.
+Der Generator aktualisiert lokale Pinterest-Drafts ohne externe API. Der Bildgenerator erstellt eigene Pin-Grafiken ohne Amazon-Bilder, Preise oder Sternebewertungen. Das Dry-Run-Script prüft nur Pins mit `status: "ready"` und veröffentlicht bewusst nichts. Echtes Posting läuft erst, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist und `PINTEREST_ACCESS_TOKEN` als Environment Variable oder GitHub Secret vorhanden ist. Tokens gehören niemals ins Repository. Details stehen in `marketing/pinterest/README.md`.
 
 ## Klick-Tracking
 

@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Reisen mit Baby",
+    "description": "Praktische Ratgeber, Packideen und ruhige Vorbereitung für Reisen mit Baby, von Wochenendtrip bis Sommerurlaub.",
+    "keywords": [
+      "Reisen mit Baby",
+      "Baby Reise Tipps",
+      "Familienurlaub",
+      "Baby unterwegs"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Packlisten",
+      "Flugzeug",
+      "Hotel",
+      "Strand",
+      "Reiseprodukte"
+    ]
+  },
+  {
+    "name": "Baby Packlisten",
+    "description": "Speicherbare Checklisten für Koffer, Handgepäck, Reiseapotheke, Hotelzimmer und Strandtage mit Baby.",
+    "keywords": [
+      "Baby Packliste",
+      "Packliste Urlaub Baby",
+      "Handgepäck Baby",
+      "Checkliste Baby"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Mallorca-Packliste",
+      "Reiseapotheke",
+      "Wickeln unterwegs",
+      "Organisation"
+    ]
+  },
+  {
+    "name": "Fliegen mit Baby",
+    "description": "Ruhige Vorbereitung für Flughafen, Kabine, Handgepäck, Wickeln und Schlafen während der Flugreise.",
+    "keywords": [
+      "Fliegen mit Baby",
+      "Baby Flugzeug",
+      "Handgepäck Baby",
+      "Flugreise Baby"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Flugzeug",
+      "Handgepäck",
+      "Wickelunterlage",
+      "Gehörschutz"
+    ]
+  },
+  {
+    "name": "Urlaub mit Baby",
+    "description": "Ideen für entspanntere Urlaubstage mit Baby: Unterkunft, Transfers, Tagesrhythmus, Packen und kleine Helfer.",
+    "keywords": [
+      "Urlaub mit Baby",
+      "Familienurlaub Baby",
+      "Baby Urlaub Tipps",
+      "Reiseplanung Baby"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Mallorca",
+      "Hotel",
+      "Packlisten",
+      "Reiseprodukte"
+    ]
+  },
+  {
+    "name": "Baby Strandurlaub",
+    "description": "Schatten, UV-Schutz, Sand, Wind und praktische Planung für Strandtage und warme Reiseziele mit Baby.",
+    "keywords": [
+      "Baby Strandurlaub",
+      "UV Schutz Baby",
+      "Strand mit Baby",
+      "Sommerurlaub Baby"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Strandurlaub",
+      "UV-Schutz",
+      "Sonnenschutz",
+      "Mallorca"
+    ]
+  },
+  {
+    "name": "Kinderwagen Zubehör",
+    "description": "Kinderwagen-Zubehör für unterwegs: Sonnenschutz, Moskitonetz, Organizer, Ventilator und Regenschutz.",
+    "keywords": [
+      "Kinderwagen Zubehör",
+      "Buggy Urlaub",
+      "Kinderwagen Sommer",
+      "Kinderwagen Sonnenschutz"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Kinderwagen",
+      "Buggy",
+      "Sommer",
+      "Zubehör"
+    ]
+  },
+  {
+    "name": "Baby im Hotel",
+    "description": "Ratgeber für Hotelzimmer mit Baby: Schlafplatz, Nachtlicht, Fläschchen, Wickeln und ruhige Abendroutine.",
+    "keywords": [
+      "Baby im Hotel",
+      "Hotel mit Baby",
+      "Reisebett Baby",
+      "Nachtlicht Baby"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Hotel",
+      "Reisebett",
+      "Nachtlicht",
+      "Flaschenwärmer"
+    ]
+  },
+  {
+    "name": "Familienurlaub Tipps",
+    "description": "Alltagstaugliche Tipps für Familienurlaub ohne übertriebenes Gepäck und ohne hektische Last-Minute-Suche.",
+    "keywords": [
+      "Familienurlaub Tipps",
+      "Urlaub planen Familie",
+      "Reisen mit Kindern",
+      "Packen Familie"
+    ],
+    "boardId": "",
+    "pinMatches": [
+      "Organisation",
+      "Dokumente",
+      "Packwürfel",
+      "Planung"
+    ]
+  }
+]

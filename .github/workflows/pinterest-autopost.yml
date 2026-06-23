@@ -1,0 +1,68 @@
+name: Pinterest Auto-Posting
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions nutzt UTC. 06:15 UTC entspricht im Sommer ca. 08:15 Uhr in Deutschland.
+    - cron: '15 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  pinterest-autopost:
+    runs-on: ubuntu-latest
+    env:
+      PUBLIC_SITE_URL: ${{ vars.PUBLIC_SITE_URL || 'https://babyreisehelfer.pages.dev' }}
+      ENABLE_PINTEREST_POSTING: ${{ vars.ENABLE_PINTEREST_POSTING || secrets.ENABLE_PINTEREST_POSTING || 'false' }}
+      PINTEREST_MAX_PINS_PER_RUN: ${{ vars.PINTEREST_MAX_PINS_PER_RUN || '1' }}
+      PINTEREST_DEFAULT_BOARD_ID: ${{ vars.PINTEREST_DEFAULT_BOARD_ID || '' }}
+      PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Pinterest dry-run
+        run: node scripts/pinterest-post-dry-run.ts
+
+      - name: Stop if posting is disabled
+        if: env.ENABLE_PINTEREST_POSTING != 'true'
+        run: echo "ENABLE_PINTEREST_POSTING ist nicht true. Dry-Run war erfolgreich, es wird nichts gepostet."
+
+      - name: Check Pinterest token
+        if: env.ENABLE_PINTEREST_POSTING == 'true'
+        run: |
+          if [ -z "$PINTEREST_ACCESS_TOKEN" ]; then
+            echo "PINTEREST_ACCESS_TOKEN fehlt. Bitte als GitHub Secret setzen."
+            exit 1
+          fi
+
+      - name: Post ready Pinterest pins
+        if: env.ENABLE_PINTEREST_POSTING == 'true'
+        run: node scripts/pinterest-post-ready.ts
+
+      - name: Commit posting state
+        if: env.ENABLE_PINTEREST_POSTING == 'true'
+        run: |
+          if [ -n "$(git status --porcelain marketing/pinterest/pins.json marketing/pinterest/posted-log.json public/pinterest/generated-images)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add marketing/pinterest/pins.json marketing/pinterest/posted-log.json public/pinterest/generated-images
+            git commit -m "Update Pinterest posting state"
+            git push
+          else
+            echo "Keine Pinterest-Statusänderungen zu committen."
+          fi

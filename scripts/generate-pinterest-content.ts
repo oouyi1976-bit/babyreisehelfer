@@ -29,10 +29,29 @@ type Board = {
   name: string;
   description: string;
   keywords: string[];
+  boardId?: string;
   pinMatches: string[];
 };
 
+type PinterestPinStatus = 'draft' | 'ready' | 'posted' | 'needs-fix' | 'error';
+
+type ExistingPin = {
+  id: string;
+  status?: PinterestPinStatus;
+  boardId?: string;
+  createdAt?: string;
+  postedAt?: string;
+  pinterestPinId?: string;
+  lastError?: string;
+};
+
+type ExistingBoard = {
+  name: string;
+  boardId?: string;
+};
+
 const siteUrl = process.env.SITE_URL ?? 'https://babyreisehelfer.pages.dev';
+const publicSiteUrl = process.env.PUBLIC_SITE_URL ?? siteUrl;
 const pinterestDir = new URL('../marketing/pinterest/', import.meta.url);
 const articlesDir = new URL('../src/content/ratgeber/', import.meta.url);
 
@@ -52,6 +71,7 @@ const boards: Board[] = [
     description:
       'Praktische Ratgeber, Packideen und ruhige Vorbereitung für Reisen mit Baby, von Wochenendtrip bis Sommerurlaub.',
     keywords: ['Reisen mit Baby', 'Baby Reise Tipps', 'Familienurlaub', 'Baby unterwegs'],
+    boardId: '',
     pinMatches: ['Packlisten', 'Flugzeug', 'Hotel', 'Strand', 'Reiseprodukte']
   },
   {
@@ -59,6 +79,7 @@ const boards: Board[] = [
     description:
       'Speicherbare Checklisten für Koffer, Handgepäck, Reiseapotheke, Hotelzimmer und Strandtage mit Baby.',
     keywords: ['Baby Packliste', 'Packliste Urlaub Baby', 'Handgepäck Baby', 'Checkliste Baby'],
+    boardId: '',
     pinMatches: ['Mallorca-Packliste', 'Reiseapotheke', 'Wickeln unterwegs', 'Organisation']
   },
   {
@@ -66,6 +87,7 @@ const boards: Board[] = [
     description:
       'Ruhige Vorbereitung für Flughafen, Kabine, Handgepäck, Wickeln und Schlafen während der Flugreise.',
     keywords: ['Fliegen mit Baby', 'Baby Flugzeug', 'Handgepäck Baby', 'Flugreise Baby'],
+    boardId: '',
     pinMatches: ['Flugzeug', 'Handgepäck', 'Wickelunterlage', 'Gehörschutz']
   },
   {
@@ -73,6 +95,7 @@ const boards: Board[] = [
     description:
       'Ideen für entspanntere Urlaubstage mit Baby: Unterkunft, Transfers, Tagesrhythmus, Packen und kleine Helfer.',
     keywords: ['Urlaub mit Baby', 'Familienurlaub Baby', 'Baby Urlaub Tipps', 'Reiseplanung Baby'],
+    boardId: '',
     pinMatches: ['Mallorca', 'Hotel', 'Packlisten', 'Reiseprodukte']
   },
   {
@@ -80,6 +103,7 @@ const boards: Board[] = [
     description:
       'Schatten, UV-Schutz, Sand, Wind und praktische Planung für Strandtage und warme Reiseziele mit Baby.',
     keywords: ['Baby Strandurlaub', 'UV Schutz Baby', 'Strand mit Baby', 'Sommerurlaub Baby'],
+    boardId: '',
     pinMatches: ['Strandurlaub', 'UV-Schutz', 'Sonnenschutz', 'Mallorca']
   },
   {
@@ -87,6 +111,7 @@ const boards: Board[] = [
     description:
       'Kinderwagen-Zubehör für unterwegs: Sonnenschutz, Moskitonetz, Organizer, Ventilator und Regenschutz.',
     keywords: ['Kinderwagen Zubehör', 'Buggy Urlaub', 'Kinderwagen Sommer', 'Kinderwagen Sonnenschutz'],
+    boardId: '',
     pinMatches: ['Kinderwagen', 'Buggy', 'Sommer', 'Zubehör']
   },
   {
@@ -94,6 +119,7 @@ const boards: Board[] = [
     description:
       'Ratgeber für Hotelzimmer mit Baby: Schlafplatz, Nachtlicht, Fläschchen, Wickeln und ruhige Abendroutine.',
     keywords: ['Baby im Hotel', 'Hotel mit Baby', 'Reisebett Baby', 'Nachtlicht Baby'],
+    boardId: '',
     pinMatches: ['Hotel', 'Reisebett', 'Nachtlicht', 'Flaschenwärmer']
   },
   {
@@ -101,6 +127,7 @@ const boards: Board[] = [
     description:
       'Alltagstaugliche Tipps für Familienurlaub ohne übertriebenes Gepäck und ohne hektische Last-Minute-Suche.',
     keywords: ['Familienurlaub Tipps', 'Urlaub planen Familie', 'Reisen mit Kindern', 'Packen Familie'],
+    boardId: '',
     pinMatches: ['Organisation', 'Dokumente', 'Packwürfel', 'Planung']
   }
 ];
@@ -693,6 +720,11 @@ function buildTargetUrl(route: string) {
   return new URL(route, siteUrl).href;
 }
 
+function buildPublicUrl(path: string) {
+  const normalizedBase = publicSiteUrl.endsWith('/') ? publicSiteUrl : `${publicSiteUrl}/`;
+  return new URL(path.replace(/^\//, ''), normalizedBase).href;
+}
+
 function buildImagePrompt(topic: Topic, angle: PinAngle) {
   return [
     'Pinterest pin 1000 x 1500',
@@ -712,8 +744,41 @@ function buildImagePrompt(topic: Topic, angle: PinAngle) {
   ].join(', ');
 }
 
-function buildPins(articleData: Map<string, Frontmatter>) {
+async function loadExistingPins() {
+  try {
+    const raw = await fs.readFile(new URL('pins.json', pinterestDir), 'utf8');
+    const parsed = JSON.parse(raw) as { pins?: ExistingPin[] } | ExistingPin[];
+    const pins = Array.isArray(parsed) ? parsed : parsed.pins ?? [];
+    return new Map(pins.map((pin) => [pin.id, pin]));
+  } catch {
+    return new Map<string, ExistingPin>();
+  }
+}
+
+async function loadExistingBoards() {
+  try {
+    const raw = await fs.readFile(new URL('boards.json', pinterestDir), 'utf8');
+    const parsed = JSON.parse(raw) as ExistingBoard[];
+    return new Map(parsed.map((board) => [board.name, board]));
+  } catch {
+    return new Map<string, ExistingBoard>();
+  }
+}
+
+function buildBoards(existingBoards: Map<string, ExistingBoard>) {
+  return boards.map((board) => ({
+    name: board.name,
+    description: board.description,
+    keywords: board.keywords,
+    boardId: existingBoards.get(board.name)?.boardId ?? board.boardId ?? '',
+    pinMatches: board.pinMatches
+  }));
+}
+
+function buildPins(articleData: Map<string, Frontmatter>, existingPins: Map<string, ExistingPin>, boardData: ReturnType<typeof buildBoards>) {
   let index = 0;
+  const now = new Date().toISOString();
+  const boardIdByName = new Map(boardData.map((board) => [board.name, board.boardId]));
 
   return topics.flatMap((topic) => {
     const frontmatter = articleData.get(topic.articleSlug);
@@ -721,21 +786,31 @@ function buildPins(articleData: Map<string, Frontmatter>) {
 
     return topic.angles.map((angle, angleIndex) => {
       index += 1;
+      const id = `${topic.topicId}-pin-${String(angleIndex + 1).padStart(2, '0')}`;
+      const existing = existingPins.get(id);
+      const fileName = `${id}.png`;
 
       return {
-        id: `${topic.topicId}-pin-${String(angleIndex + 1).padStart(2, '0')}`,
-        status: 'draft',
+        id,
+        status: existing?.status ?? 'draft',
         targetUrl: buildTargetUrl(topic.route),
         boardSuggestion: topic.boardSuggestion,
+        boardId: existing?.boardId ?? boardIdByName.get(topic.boardSuggestion) ?? '',
         pinTitle: angle.title,
         pinDescription: `${angle.description} ${baseDescription ? `Passend zum BabyReiseHelfer-Ratgeber: ${baseDescription}` : 'Mehr dazu findest du auf BabyReiseHelfer.'}`,
         overlayText: angle.overlayText,
         imagePrompt: buildImagePrompt(topic, angle),
+        imagePath: `public/pinterest/generated-images/${fileName}`,
+        publicImageUrl: buildPublicUrl(`/pinterest/generated-images/${fileName}`),
         keywords: topic.keywords,
         hashtags: topic.hashtags,
-        publishWindowSuggestion: publishWindows[(index - 1) % publishWindows.length],
         articleSlug: topic.articleSlug,
-        category: topic.category
+        category: topic.category,
+        createdAt: existing?.createdAt ?? now,
+        scheduledWindow: publishWindows[(index - 1) % publishWindows.length],
+        postedAt: existing?.postedAt ?? '',
+        pinterestPinId: existing?.pinterestPinId ?? '',
+        lastError: existing?.lastError ?? ''
       };
     });
   });
@@ -752,12 +827,17 @@ function renderPinsMarkdown(pins: ReturnType<typeof buildPins>) {
 - Status: ${pin.status}
 - Ziel-URL: ${pin.targetUrl}
 - Board: ${pin.boardSuggestion}
+- Board-ID: ${pin.boardId || 'noch nicht eingetragen'}
+- Bildpfad: ${pin.imagePath}
+- Öffentliche Bild-URL: ${pin.publicImageUrl}
 - Beschreibung: ${pin.pinDescription}
 - Overlay-Text: ${pin.overlayText}
 - Bildidee: ${pin.imagePrompt}
 - Keywords: ${pin.keywords.join(', ')}
 - Hashtags: ${pin.hashtags.join(' ')}
-- Veröffentlichungsfenster: ${pin.publishWindowSuggestion}`
+- Veröffentlichungsfenster: ${pin.scheduledWindow}
+- Pinterest-ID: ${pin.pinterestPinId || '-'}
+- Letzter Fehler: ${pin.lastError || '-'}`
         )
         .join('\n\n');
 
@@ -773,14 +853,15 @@ ${sections}
 `;
 }
 
-function renderBoardsMarkdown() {
-  const rows = boards
+function renderBoardsMarkdown(boardData: ReturnType<typeof buildBoards>) {
+  const rows = boardData
     .map(
       (board) => `## ${board.name}
 
 ${board.description}
 
 - Passende Keywords: ${board.keywords.join(', ')}
+- Board-ID: ${board.boardId || 'noch nicht eingetragen'}
 - Pins für dieses Board: ${board.pinMatches.join(', ')}`
     )
     .join('\n\n');
@@ -823,7 +904,10 @@ ${rows}
 async function main() {
   await fs.mkdir(pinterestDir, { recursive: true });
   const articleData = await readArticleFrontmatter();
-  const pins = buildPins(articleData);
+  const existingPins = await loadExistingPins();
+  const existingBoards = await loadExistingBoards();
+  const boardData = buildBoards(existingBoards);
+  const pins = buildPins(articleData, existingPins, boardData);
 
   const payload = {
     generatedAt: new Date().toISOString(),
@@ -839,7 +923,8 @@ async function main() {
 
   await fs.writeFile(new URL('pins.json', pinterestDir), `${JSON.stringify(payload, null, 2)}\n`);
   await fs.writeFile(new URL('pins.md', pinterestDir), renderPinsMarkdown(pins));
-  await fs.writeFile(new URL('boards.md', pinterestDir), renderBoardsMarkdown());
+  await fs.writeFile(new URL('boards.json', pinterestDir), `${JSON.stringify(boardData, null, 2)}\n`);
+  await fs.writeFile(new URL('boards.md', pinterestDir), renderBoardsMarkdown(boardData));
   await fs.writeFile(new URL('30-day-plan.md', pinterestDir), renderThirtyDayPlan(pins));
 
   console.log(`Pinterest-Drafts erzeugt: ${pins.length}`);
