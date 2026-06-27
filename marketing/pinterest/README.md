@@ -12,6 +12,7 @@ Dieses System bereitet Pinterest-Pins vor, erzeugt öffentliche Pin-Bilder und k
 - `generated-images/`: Platzhalterordner; die öffentlich abrufbaren Bilder liegen unter `public/pinterest/generated-images/`
 - `../../scripts/generate-pinterest-content.ts`: erzeugt/aktualisiert Pin-Daten
 - `../../scripts/generate-pinterest-images.ts`: erzeugt 1000 x 1500 px Pin-Bilder
+- `../../scripts/pinterest-fetch-boards.ts`: liest deine Pinterest-Boards mit `boards:read` und aktualisiert Board-IDs
 - `../../scripts/pinterest-post-dry-run.ts`: prüft `ready`-Pins, postet aber nicht
 - `../../scripts/pinterest-post-ready.ts`: postet nur bei `ENABLE_PINTEREST_POSTING=true`
 - `../../scripts/pinterest-auth-help.ts`: kurze Terminal-Hilfe zum Setup
@@ -33,27 +34,38 @@ Diese Status werden niemals automatisch gepostet: `draft`, `posted`, `needs-fix`
 1. Pinterest Business Account erstellen oder vorhandenen Account auf Business umstellen.
 2. Pinterest Developer App erstellen: https://developers.pinterest.com/
 3. OAuth / Access Token erzeugen.
-4. Benötigte Scopes:
+4. Aktueller Trial-Stand:
+   - Wenn `pins:write` noch nicht sichtbar ist, nur Board-Sync nutzen.
+   - Mit den aktuell sichtbaren Rechten `pins:read`, `boards:read`, `user_accounts:read`, `ads:read`, `catalogs:read` kann noch nicht gepostet werden.
+5. Benötigte Scopes für echtes Posting:
    - `pins:read`
    - `pins:write`
    - `boards:read`
    - `boards:write`, falls Boards später automatisch erstellt werden sollen
-5. Board-IDs herausfinden. Dafür kannst du die Pinterest API oder die Developer-Konsole verwenden.
-6. Board-IDs in `boards.json` oder direkt in `pins.json` eintragen.
-7. In GitHub unter Repository Settings -> Secrets and variables -> Actions setzen:
+6. Board-IDs zuerst auslesen:
+
+```bash
+export PINTEREST_ACCESS_TOKEN="DEIN_TOKEN"
+node scripts/pinterest-fetch-boards.ts
+```
+
+7. Board-IDs in `boards.json` oder direkt in `pins.json` prüfen.
+8. In GitHub unter Repository Settings -> Secrets and variables -> Actions setzen:
    - Secret: `PINTEREST_ACCESS_TOKEN`
    - Variable: `ENABLE_PINTEREST_POSTING` zunächst `false`
    - Variable: `PINTEREST_MAX_PINS_PER_RUN` zunächst `1`
+   - Variable: `PINTEREST_TOKEN_SCOPES` mit den sichtbaren Scopes, aktuell zum Beispiel `pins:read,boards:read,user_accounts:read,ads:read,catalogs:read`
    - Optional Variable: `PINTEREST_DEFAULT_BOARD_ID`
    - Optional Variable: `PUBLIC_SITE_URL` mit `https://babyreisehelfer.pages.dev`
-8. Dry-Run lokal oder in GitHub Actions prüfen.
-9. Erst danach `ENABLE_PINTEREST_POSTING=true` setzen.
+9. Dry-Run lokal oder in GitHub Actions prüfen.
+10. Erst wenn `pins:write` freigeschaltet ist, neuen Token erzeugen, `PINTEREST_TOKEN_SCOPES` um `pins:write` ergänzen und danach `ENABLE_PINTEREST_POSTING=true` setzen.
 
 ## Lokal testen
 
 ```bash
 node scripts/generate-pinterest-content.ts
 node scripts/generate-pinterest-images.ts
+node scripts/pinterest-fetch-boards.ts
 node scripts/pinterest-post-dry-run.ts
 ```
 
@@ -62,6 +74,7 @@ Echtes Posting lokal nur nach bewusstem Setzen der ENV-Werte:
 ```bash
 export ENABLE_PINTEREST_POSTING=true
 export PINTEREST_ACCESS_TOKEN="DEIN_TOKEN"
+export PINTEREST_TOKEN_SCOPES="pins:read,pins:write,boards:read"
 export PINTEREST_MAX_PINS_PER_RUN=1
 node scripts/pinterest-post-ready.ts
 ```
@@ -73,14 +86,13 @@ Der Workflow `.github/workflows/pinterest-autopost.yml` läuft einmal täglich. 
 Der Workflow macht:
 
 1. Dependencies installieren
-2. Pinterest-Daten aktualisieren
-3. Pin-Bilder erzeugen
-4. `npm run build`
-5. Dry-Run
-6. Nur bei `ENABLE_PINTEREST_POSTING=true` echtes Posting
-7. Nach erfolgreichem Posting `pins.json` und `posted-log.json` committen
+2. `npm run build`
+3. Wenn `PINTEREST_ACCESS_TOKEN` vorhanden ist: Board-IDs mit `boards:read` synchronisieren
+4. Dry-Run
+5. Nur bei `ENABLE_PINTEREST_POSTING=true` und `PINTEREST_TOKEN_SCOPES` enthält `pins:write`: echtes Posting
+6. Nach erfolgreichem Posting `pins.json` und `posted-log.json` committen
 
-Wenn kein Token vorhanden ist und Posting aktiviert wurde, bricht der Job mit einer verständlichen Meldung ab.
+Wenn kein Token vorhanden ist oder `pins:write` fehlt und Posting aktiviert wurde, bricht der Job mit einer verständlichen Meldung ab. Mit deinem aktuellen begrenzten Token ist also nur Board-Sync zu erwarten, kein echtes Posting.
 
 ## Sicherheitsregeln
 

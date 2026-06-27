@@ -22,6 +22,11 @@ type PinterestPinsFile = {
   pins: PinterestPin[];
 };
 
+type LocalBoard = {
+  name: string;
+  boardId: string;
+};
+
 type PostedLogEntry = {
   pinId: string;
   pinterestPinId: string;
@@ -43,6 +48,8 @@ const accessToken = process.env.PINTEREST_ACCESS_TOKEN;
 const postingEnabled = process.env.ENABLE_PINTEREST_POSTING === 'true';
 const maxPinsPerRun = Math.max(1, Number(process.env.PINTEREST_MAX_PINS_PER_RUN ?? 1));
 const defaultBoardId = process.env.PINTEREST_DEFAULT_BOARD_ID ?? '';
+const tokenScopes = process.env.PINTEREST_TOKEN_SCOPES ?? '';
+const boardsFile = new URL('../marketing/pinterest/boards.json', import.meta.url);
 
 async function readJson<T>(file: URL, fallback: T) {
   try {
@@ -56,9 +63,17 @@ async function writeJson(file: URL, value: unknown) {
   await fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`);
 }
 
-function validationErrors(pin: PinterestPin, postedIds: Set<string>) {
+function hasPinsWriteScope() {
+  return tokenScopes
+    .split(/[,\s]+/)
+    .map((scope) => scope.trim())
+    .filter(Boolean)
+    .includes('pins:write');
+}
+
+function validationErrors(pin: PinterestPin, postedIds: Set<string>, boardIdByName: Map<string, string>) {
   const errors: string[] = [];
-  const boardId = pin.boardId || defaultBoardId;
+  const boardId = pin.boardId || boardIdByName.get(pin.boardSuggestion) || defaultBoardId;
 
   if (pin.status !== 'ready') errors.push(`Status ist "${pin.status}", nicht "ready"`);
   if (!boardId) errors.push('boardId fehlt');
@@ -112,6 +127,8 @@ async function createPinterestPin(pin: PinterestPin, boardId: string) {
 async function main() {
   const data = await readJson<PinterestPinsFile>(pinsFile, { pins: [] });
   const postedLog = await readJson<PostedLog>(postedLogFile, { updatedAt: new Date().toISOString(), posts: [] });
+  const boards = await readJson<LocalBoard[]>(boardsFile, []);
+  const boardIdByName = new Map(boards.map((board) => [board.name, board.boardId]).filter(([, boardId]) => Boolean(boardId)));
   const postedIds = new Set(postedLog.posts.map((entry) => entry.pinId));
   const readyPins = data.pins.filter((pin) => pin.status === 'ready').slice(0, maxPinsPerRun);
 
@@ -123,7 +140,7 @@ async function main() {
   if (!postingEnabled) {
     console.log('ENABLE_PINTEREST_POSTING ist nicht true. Es wird nichts veröffentlicht.');
     for (const pin of readyPins) {
-      const errors = validationErrors(pin, postedIds);
+      const errors = validationErrors(pin, postedIds, boardIdByName);
       console.log(`- ${pin.id}: ${errors.length ? errors.join('; ') : 'würde gepostet werden'}`);
     }
     return;
@@ -133,11 +150,17 @@ async function main() {
     throw new Error('PINTEREST_ACCESS_TOKEN fehlt. Posting ist aktiviert, aber kein Token ist gesetzt.');
   }
 
+  if (!hasPinsWriteScope()) {
+    throw new Error(
+      'Pinterest Schreibrecht fehlt: PINTEREST_TOKEN_SCOPES enthält kein pins:write. Aktuell bitte nur Boards synchronisieren; echtes Posting erst nach Trial-Freigabe und Token mit pins:write aktivieren.'
+    );
+  }
+
   let postedCount = 0;
 
   for (const pin of readyPins) {
-    const boardId = pin.boardId || defaultBoardId;
-    const errors = validationErrors(pin, postedIds);
+    const boardId = pin.boardId || boardIdByName.get(pin.boardSuggestion) || defaultBoardId;
+    const errors = validationErrors(pin, postedIds, boardIdByName);
 
     if (errors.length) {
       pin.status = 'needs-fix';

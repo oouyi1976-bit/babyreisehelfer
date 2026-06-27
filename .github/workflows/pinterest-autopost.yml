@@ -17,6 +17,7 @@ jobs:
       ENABLE_PINTEREST_POSTING: ${{ vars.ENABLE_PINTEREST_POSTING || secrets.ENABLE_PINTEREST_POSTING || 'false' }}
       PINTEREST_MAX_PINS_PER_RUN: ${{ vars.PINTEREST_MAX_PINS_PER_RUN || '1' }}
       PINTEREST_DEFAULT_BOARD_ID: ${{ vars.PINTEREST_DEFAULT_BOARD_ID || '' }}
+      PINTEREST_TOKEN_SCOPES: ${{ vars.PINTEREST_TOKEN_SCOPES || '' }}
       PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
 
     steps:
@@ -35,6 +36,23 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Sync Pinterest board IDs
+        if: env.PINTEREST_ACCESS_TOKEN != ''
+        run: node scripts/pinterest-fetch-boards.ts
+
+      - name: Commit board ID sync
+        if: env.PINTEREST_ACCESS_TOKEN != ''
+        run: |
+          if [ -n "$(git status --porcelain marketing/pinterest/boards.json marketing/pinterest/pins.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add marketing/pinterest/boards.json marketing/pinterest/pins.json
+            git commit -m "Update Pinterest board IDs"
+            git push
+          else
+            echo "Keine neuen Pinterest Board IDs zu committen."
+          fi
+
       - name: Pinterest dry-run
         run: node scripts/pinterest-post-dry-run.ts
 
@@ -47,6 +65,12 @@ jobs:
         run: |
           if [ -z "$PINTEREST_ACCESS_TOKEN" ]; then
             echo "PINTEREST_ACCESS_TOKEN fehlt. Bitte als GitHub Secret setzen."
+            exit 1
+          fi
+          if ! printf '%s' "$PINTEREST_TOKEN_SCOPES" | grep -q 'pins:write'; then
+            echo "Pinterest Schreibrecht fehlt: PINTEREST_TOKEN_SCOPES enthält kein pins:write."
+            echo "Aktuell kann der Workflow Boards per boards:read synchronisieren, aber noch keine Pins posten."
+            echo "Warte auf Pinterest Trial-/App-Freigabe, erzeuge danach einen Token mit pins:write und ergänze PINTEREST_TOKEN_SCOPES."
             exit 1
           fi
 

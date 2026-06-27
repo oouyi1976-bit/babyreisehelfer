@@ -17,8 +17,14 @@ type PostedLog = {
   posts?: Array<{ pinId: string; pinterestPinId?: string; postedAt?: string }>;
 };
 
+type LocalBoard = {
+  name: string;
+  boardId: string;
+};
+
 const pinsFile = new URL('../marketing/pinterest/pins.json', import.meta.url);
 const postedLogFile = new URL('../marketing/pinterest/posted-log.json', import.meta.url);
+const boardsFile = new URL('../marketing/pinterest/boards.json', import.meta.url);
 const defaultBoardId = process.env.PINTEREST_DEFAULT_BOARD_ID ?? '';
 const limit = Number(process.env.PINTEREST_DRY_RUN_LIMIT ?? Number.POSITIVE_INFINITY);
 
@@ -30,9 +36,9 @@ async function readJson<T>(file: URL, fallback: T) {
   }
 }
 
-function validationErrors(pin: PinterestPin, postedIds: Set<string>) {
+function validationErrors(pin: PinterestPin, postedIds: Set<string>, boardIdByName: Map<string, string>) {
   const errors: string[] = [];
-  const boardId = pin.boardId || defaultBoardId;
+  const boardId = pin.boardId || boardIdByName.get(pin.boardSuggestion) || defaultBoardId;
 
   if (!boardId) errors.push('boardId fehlt');
   if (!pin.publicImageUrl) errors.push('publicImageUrl fehlt');
@@ -47,6 +53,8 @@ function validationErrors(pin: PinterestPin, postedIds: Set<string>) {
 async function main() {
   const data = await readJson<{ pins: PinterestPin[] }>(pinsFile, { pins: [] });
   const postedLog = await readJson<PostedLog>(postedLogFile, { posts: [] });
+  const boards = await readJson<LocalBoard[]>(boardsFile, []);
+  const boardIdByName = new Map(boards.map((board) => [board.name, board.boardId]).filter(([, boardId]) => Boolean(boardId)));
   const postedIds = new Set((postedLog.posts ?? []).map((entry) => entry.pinId));
   const readyPins = data.pins.filter((pin) => pin.status === 'ready').slice(0, limit);
 
@@ -59,11 +67,12 @@ async function main() {
   }
 
   for (const [index, pin] of readyPins.entries()) {
-    const errors = validationErrors(pin, postedIds);
+    const boardId = pin.boardId || boardIdByName.get(pin.boardSuggestion) || defaultBoardId;
+    const errors = validationErrors(pin, postedIds, boardIdByName);
     console.log(`\n${index + 1}. ${pin.id}`);
     console.log(`   Titel: ${pin.pinTitle}`);
     console.log(`   Board: ${pin.boardSuggestion}`);
-    console.log(`   Board-ID: ${pin.boardId || defaultBoardId || 'FEHLT'}`);
+    console.log(`   Board-ID: ${boardId || 'FEHLT'}`);
     console.log(`   Ziel-URL: ${pin.targetUrl || 'FEHLT'}`);
     console.log(`   Bild-URL: ${pin.publicImageUrl || 'FEHLT'}`);
     console.log(`   Status: ${pin.status}`);

@@ -206,11 +206,12 @@ Optional vorbereitet ist:
 ```text
 scripts/generate-pinterest-content.ts
 scripts/generate-pinterest-images.ts
+scripts/pinterest-fetch-boards.ts
 scripts/pinterest-post-dry-run.ts
 scripts/pinterest-post-ready.ts
 ```
 
-Der Generator aktualisiert lokale Pinterest-Drafts ohne externe API. Der Bildgenerator erstellt eigene Pin-Grafiken ohne Amazon-Bilder, Preise oder Sternebewertungen. Das Dry-Run-Script prüft nur Pins mit `status: "ready"` und veröffentlicht bewusst nichts. Echtes Posting läuft erst, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist und `PINTEREST_ACCESS_TOKEN` als Environment Variable oder GitHub Secret vorhanden ist. Tokens gehören niemals ins Repository. Details stehen in `marketing/pinterest/README.md`.
+Der Generator aktualisiert lokale Pinterest-Drafts ohne externe API. Der Bildgenerator erstellt eigene Pin-Grafiken ohne Amazon-Bilder, Preise oder Sternebewertungen. `pinterest-fetch-boards.ts` liest zuerst Board-IDs mit `boards:read`. Das Dry-Run-Script prüft nur Pins mit `status: "ready"` und veröffentlicht bewusst nichts. Echtes Posting läuft erst, wenn `ENABLE_PINTEREST_POSTING=true` gesetzt ist, `PINTEREST_ACCESS_TOKEN` vorhanden ist und `PINTEREST_TOKEN_SCOPES` `pins:write` enthält. Tokens gehören niemals ins Repository. Details stehen in `marketing/pinterest/README.md`.
 
 ## Klick-Tracking
 
