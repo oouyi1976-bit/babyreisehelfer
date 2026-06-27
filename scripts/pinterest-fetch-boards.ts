@@ -32,6 +32,7 @@ type PinterestPinsFile = {
 };
 
 const accessToken = process.env.PINTEREST_ACCESS_TOKEN;
+const postingEnabled = process.env.ENABLE_PINTEREST_POSTING === 'true';
 const boardsFile = new URL('../marketing/pinterest/boards.json', import.meta.url);
 const pinsFile = new URL('../marketing/pinterest/pins.json', import.meta.url);
 
@@ -53,6 +54,11 @@ function normalizeName(value: string) {
 
 async function fetchPinterestBoards() {
   if (!accessToken) {
+    if (!postingEnabled) {
+      console.warn('PINTEREST_ACCESS_TOKEN fehlt. Pinterest Board-Sync übersprungen.');
+      return null;
+    }
+
     throw new Error('PINTEREST_ACCESS_TOKEN fehlt. Board-Sync braucht einen Token mit boards:read.');
   }
 
@@ -73,6 +79,14 @@ async function fetchPinterestBoards() {
     const bodyText = await response.text();
 
     if (!response.ok) {
+      const apiNotReady = response.status === 401 || response.status === 403;
+
+      if (apiNotReady && !postingEnabled) {
+        console.warn('Pinterest API noch nicht freigeschaltet. Board-Sync übersprungen.');
+        console.warn(`Pinterest API ${response.status}: ${bodyText}`);
+        return null;
+      }
+
       const detail = response.status === 401 || response.status === 403
         ? 'Token ist ungültig oder hat kein boards:read-Recht.'
         : 'Pinterest API konnte Boards nicht laden.';
@@ -91,6 +105,11 @@ async function main() {
   const localBoards = await readJson<LocalBoard[]>(boardsFile, []);
   const pinsData = await readJson<PinterestPinsFile>(pinsFile, { pins: [] });
   const pinterestBoards = await fetchPinterestBoards();
+
+  if (!pinterestBoards) {
+    return;
+  }
+
   const pinterestByName = new Map(pinterestBoards.map((board) => [normalizeName(board.name), board]));
   const syncedAt = new Date().toISOString();
   let matchedBoards = 0;

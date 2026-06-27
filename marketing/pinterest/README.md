@@ -37,6 +37,7 @@ Diese Status werden niemals automatisch gepostet: `draft`, `posted`, `needs-fix`
 4. Aktueller Trial-Stand:
    - Wenn `pins:write` noch nicht sichtbar ist, nur Board-Sync nutzen.
    - Mit den aktuell sichtbaren Rechten `pins:read`, `boards:read`, `user_accounts:read`, `ads:read`, `catalogs:read` kann noch nicht gepostet werden.
+   - Falls Pinterest im Trial-Zustand `401` mit `consumer type is not supported` meldet, ist die App noch nicht für diese API-Nutzung freigeschaltet. Bei `ENABLE_PINTEREST_POSTING=false` gibt der Workflow dann nur eine Warnung aus und überspringt den Board-Sync.
 5. Benötigte Scopes für echtes Posting:
    - `pins:read`
    - `pins:write`
@@ -87,10 +88,12 @@ Der Workflow macht:
 
 1. Dependencies installieren
 2. `npm run build`
-3. Wenn `PINTEREST_ACCESS_TOKEN` vorhanden ist: Board-IDs mit `boards:read` synchronisieren
+3. Wenn `PINTEREST_ACCESS_TOKEN` vorhanden ist: Board-IDs mit `boards:read` synchronisieren, sofern Pinterest die App bereits freigeschaltet hat
 4. Dry-Run
 5. Nur bei `ENABLE_PINTEREST_POSTING=true` und `PINTEREST_TOKEN_SCOPES` enthält `pins:write`: echtes Posting
 6. Nach erfolgreichem Posting `pins.json` und `posted-log.json` committen
+
+Wenn Pinterest wegen ausstehendem Trial-Zugriff noch `401` / `consumer type is not supported` zurückgibt, schreibt der Workflow: `Pinterest API noch nicht freigeschaltet. Board-Sync übersprungen.` Solange `ENABLE_PINTEREST_POSTING=false` ist, blockiert das nicht den Build.
 
 Wenn kein Token vorhanden ist oder `pins:write` fehlt und Posting aktiviert wurde, bricht der Job mit einer verständlichen Meldung ab. Mit deinem aktuellen begrenzten Token ist also nur Board-Sync zu erwarten, kein echtes Posting.
 
