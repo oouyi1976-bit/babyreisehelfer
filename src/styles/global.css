@@ -668,9 +668,10 @@ ul {
   position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
-  min-height: 152px;
+  aspect-ratio: 4 / 3;
+  min-height: 210px;
   border-bottom: 1px solid rgba(234, 223, 206, 0.72);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
   background: linear-gradient(135deg, var(--color-cream), var(--color-blue-soft));
 }
 
@@ -690,6 +691,7 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 220ms ease;
 }
 
@@ -697,7 +699,7 @@ ul {
 .product-card:focus-within .product-card__image-shell img,
 .product-card__image-link:hover img,
 .product-card__image-link:focus-visible img {
-  transform: scale(1.025);
+  transform: scale(1.04);
 }
 
 .product-visual {
@@ -712,8 +714,8 @@ ul {
   position: relative;
   display: block;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
-  min-height: 152px;
+  aspect-ratio: 4 / 3;
+  min-height: 210px;
   border-bottom: 1px solid rgba(234, 223, 206, 0.72);
   background: var(--pv-bg);
 }
@@ -908,7 +910,7 @@ ul {
 
 .product-card--compact .product-visual,
 .product-card--compact .product-card__image-shell {
-  min-height: 116px;
+  min-height: 170px;
 }
 
 .check-list,
@@ -3021,6 +3023,7 @@ h2 {
   display: block;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
   background:
     linear-gradient(135deg, rgba(220, 238, 247, 0.92), rgba(255, 241, 221, 0.92)),
     var(--color-blue-soft);
@@ -3033,11 +3036,12 @@ h2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: transform 220ms ease;
 }
 
 .travel-product-card:hover .travel-product-card__media img {
-  transform: scale(1.035);
+  transform: scale(1.045);
 }
 
 .travel-product-card__media--disabled img {
@@ -3068,7 +3072,7 @@ h2 {
 }
 
 .travel-product-card--compact .travel-product-card__media {
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 4 / 3;
 }
 
 .digistore-grid {
