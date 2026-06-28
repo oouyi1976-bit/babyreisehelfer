@@ -29,7 +29,7 @@ const {
           <tr>
             <td data-label="Produkt">
               <strong>{product.name}</strong>
-              <span>{product.priceRange}</span>
+              <span>Einordnung: {product.priceRange}</span>
             </td>
             <td data-label="Kategorie">{product.category}</td>
             <td data-label="Geeignet für">{product.bestFor}</td>
@@ -39,15 +39,15 @@ const {
                 <a
                   href={product.affiliateUrl}
                   target="_blank"
-                  rel="sponsored nofollow noopener"
+                  rel="nofollow sponsored noopener noreferrer"
                   data-affiliate-link
                   data-product-id={product.id}
                   data-product-title={product.name}
                 >
-                  Amazon ansehen
+                  Bei Amazon ansehen
                 </a>
               ) : (
-                <span class="placeholder-link">Amazon-Link eintragen</span>
+                <span class="placeholder-link">{product.buttonText}</span>
               )}
             </td>
           </tr>

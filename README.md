@@ -110,12 +110,15 @@ Dort sind 50 Reiseprodukte in dieser Struktur gepflegt:
   bestFor: 'Ideale Nutzungssituation',
   priceRange: 'Mittelklasse',
   affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN',
+  affiliateStatus: 'placeholder',
+  buttonText: 'Amazon-Link folgt',
+  image: '/travel-product-images/reisebett-baby-kompakt.webp',
   imageAlt: 'Alt-Text',
   ratingText: 'Keine Amazon-Bewertung angezeigt'
 }
 ```
 
-Solange `affiliateUrl` den Platzhalter `AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN` enthält, wird kein Amazon-Link geöffnet. Die Buttons zeigen dann `Amazon-Link noch eintragen`.
+Solange `affiliateUrl` den Platzhalter `AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN` enthält oder `affiliateStatus: 'placeholder'` gesetzt ist, wird kein Amazon-Link geöffnet. Die Buttons zeigen dann `Amazon-Link folgt`.
 
 Echte Amazon-Affiliate-Links ersetzt du direkt in `src/data/travelProducts.ts`:
 
@@ -142,9 +145,9 @@ affiliateUrl: 'https://www.amazon.de/dp/B0D6YZWGNM?tag=epic05e-21',
 affiliateStatus: 'ready'
 ```
 
-Die Buttons sind mit `rel="sponsored nofollow noopener"` markiert und sichtbar als Werbung/Affiliate-Link gekennzeichnet.
+Die Buttons sind mit `rel="nofollow sponsored noopener noreferrer"` markiert und sichtbar als Werbung/Affiliate-Link gekennzeichnet.
 
-Solange `affiliateStatus: 'placeholder'` gesetzt ist, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Link noch nicht eingetragen`.
+Solange `affiliateStatus: 'placeholder'` gesetzt ist, wird kein Amazon-Link geöffnet. Die Produktbuttons zeigen dann sichtbar `Amazon-Link folgt`.
 
 Erst wenn ein echter Amazon.de-Link mit Tracking-ID geprüft wurde und der Status bewusst auf `ready` gesetzt wurde, öffnet der Button den Affiliate-Link:
 

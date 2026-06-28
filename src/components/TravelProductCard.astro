@@ -7,15 +7,46 @@ const hasReadyLink = isAmazonAffiliateReady(product);
 ---
 
 <article class:list={['travel-product-card', { 'travel-product-card--compact': compact }]}>
-  <div class="travel-product-card__visual" aria-hidden="true">
-    <span>{product.category}</span>
-  </div>
+  {hasReadyLink ? (
+    <a
+      class="travel-product-card__media"
+      href={product.affiliateUrl}
+      target="_blank"
+      rel="nofollow sponsored noopener noreferrer"
+      data-affiliate-link
+      data-product-id={product.id}
+      data-product-title={product.name}
+      aria-label={`${product.name} bei Amazon ansehen`}
+    >
+      <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+    </a>
+  ) : (
+    <div class="travel-product-card__media travel-product-card__media--disabled">
+      <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+    </div>
+  )}
 
   <div class="travel-product-card__body">
-    <div class="product-card__topline">
+    <div class="travel-product-card__badges">
+      <span>{product.category}</span>
       <span>Werbung / Amazon-Affiliate</span>
     </div>
-    <h3>{product.name}</h3>
+    <h3>
+      {hasReadyLink ? (
+        <a
+          href={product.affiliateUrl}
+          target="_blank"
+          rel="nofollow sponsored noopener noreferrer"
+          data-affiliate-link
+          data-product-id={product.id}
+          data-product-title={product.name}
+        >
+          {product.name}
+        </a>
+      ) : (
+        product.name
+      )}
+    </h3>
     <p>{product.shortDescription}</p>
 
     <dl class="product-card__facts">
@@ -24,7 +55,7 @@ const hasReadyLink = isAmazonAffiliateReady(product);
         <dd>{product.bestFor}</dd>
       </div>
       <div>
-        <dt>Preisbereich</dt>
+        <dt>Einordnung</dt>
         <dd>{product.priceRange}</dd>
       </div>
     </dl>
@@ -43,11 +74,11 @@ const hasReadyLink = isAmazonAffiliateReady(product);
 
     <AffiliateButton
       href={product.affiliateUrl}
-      label="Bei Amazon ansehen"
+      label={product.buttonText}
       trackingId={product.id}
       trackingTitle={product.name}
       disabled={!hasReadyLink}
-      disabledLabel="Amazon-Link noch eintragen"
+      disabledLabel={product.buttonText}
       fullWidth
     />
   </div>

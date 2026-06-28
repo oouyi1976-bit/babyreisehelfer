@@ -79,7 +79,7 @@ export const travelPages: TravelPage[] = [
     ],
     productSectionTitle: 'Produktideen für den ersten Urlaubs-Check',
     productSectionText:
-      'Diese Auswahl deckt Schlafen, Transport, Sonne, Ordnung und Beschäftigung ab. Amazon-Links sind Platzhalter, bis echte Affiliate-Links geprüft eingetragen werden.',
+      'Diese Auswahl deckt Schlafen, Transport, Sonne, Ordnung und Beschäftigung ab. Geprüfte Amazon-Affiliate-Links öffnen extern, unsichere Links bleiben sichtbar deaktiviert.',
     productIds: [
       'reisebett-baby-kompakt',
       'buggy-reisen-handgepaeck',
@@ -379,7 +379,7 @@ export const travelPages: TravelPage[] = [
     eyebrow: 'Reiseprodukte',
     h1: 'Reiseprodukte für Baby, Kind und Familienurlaub',
     intro:
-      'Hier findest du 50 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Die Amazon-Affiliate-Links sind vorbereitet und aktuell als Platzhalter markiert.',
+      'Hier findest du 50 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Geprüfte Amazon-Affiliate-Links sind eingebunden, unsichere Produkte bleiben bewusst als Platzhalter markiert.',
     heroImage: '/category-images/kinderwagen-zubehoer.webp',
     primaryLink: '/beste-reiseprodukte/',
     primaryLabel: 'Beste Auswahl ansehen',
@@ -393,9 +393,9 @@ export const travelPages: TravelPage[] = [
         items: ['Nicht alles auf einmal kaufen', 'Maße und Gewicht prüfen', 'Vor der Reise testen']
       },
       {
-        heading: 'Amazon-Platzhalter bewusst nutzen',
+        heading: 'Affiliate-Links transparent prüfen',
         text:
-          'Bis echte Amazon-Partnerlinks geprüft sind, zeigen die Buttons keinen ausgehenden Amazon-Link. So bleibt die Seite sauber und transparent.',
+          'Nur geprüfte Amazon-Partnerlinks öffnen extern. Wenn ein Produktlink noch nicht sicher gepflegt ist, bleibt der Button deaktiviert und transparent markiert.',
         items: ['Keine erfundenen Preise', 'Keine Sternebewertungen kopieren', 'Keine Amazon-Bilder übernehmen']
       },
       {
@@ -424,9 +424,9 @@ export const travelPages: TravelPage[] = [
     articleTitle: 'Ratgeber zu Reiseprodukten',
     faq: [
       {
-        question: 'Warum sind die Amazon-Links Platzhalter?',
+        question: 'Warum sind manche Amazon-Links Platzhalter?',
         answer:
-          'Damit keine ungeprüften oder falschen Affiliate-Links veröffentlicht werden. Echte Amazon-Partnerlinks können später in src/data/travelProducts.ts eingetragen werden.'
+          'Damit keine ungeprüften oder falschen Affiliate-Links veröffentlicht werden. Neue geprüfte Amazon-Partnerlinks können zentral in src/data/travelProducts.ts ergänzt werden.'
       },
       {
         question: 'Werden Amazon-Preise oder Sterne angezeigt?',
@@ -440,7 +440,7 @@ export const travelPages: TravelPage[] = [
       }
     ],
     pros: ['Zentrale Datenpflege', 'Klare Affiliate-Kennzeichnung', 'Produkte nach Reiseproblemen sortiert'],
-    cons: ['Platzhalter müssen vor Monetarisierung ersetzt werden', 'Produktverfügbarkeit kann sich ändern', 'Herstellerangaben immer aktuell prüfen'],
+    cons: ['Einzelne Produktlinks können noch Platzhalter sein', 'Produktverfügbarkeit kann sich ändern', 'Herstellerangaben immer aktuell prüfen'],
     ctaTitle: 'Die besten Reiseprodukte fokussiert ansehen',
     ctaText: 'Wenn du nicht alle 50 Produkte prüfen möchtest, starte mit der kuratierten Auswahl.',
     ctaHref: '/beste-reiseprodukte/',
@@ -693,7 +693,7 @@ export const travelPages: TravelPage[] = [
       }
     ],
     pros: ['Fokussierte Auswahl statt 50 Produkte auf einmal', 'Keine übertriebenen Werbeversprechen', 'Gute interne Verlinkung zu Ratgebern'],
-    cons: ['Keine individuelle Kaufberatung', 'Amazon-Links müssen noch ersetzt werden', 'Produktdetails vor Kauf beim Anbieter prüfen'],
+    cons: ['Keine individuelle Kaufberatung', 'Einzelne Amazon-Links können noch Platzhalter sein', 'Produktdetails vor Kauf beim Anbieter prüfen'],
     ctaTitle: 'Alle Reiseprodukte vergleichen',
     ctaText: 'Die vollständige Liste mit 50 Produktideen findest du im Reiseprodukte-Bereich.',
     ctaHref: '/reiseprodukte/',

@@ -32,7 +32,7 @@ const isReady = product ? isAffiliateLinkReady(product) : Boolean(href) && !isPl
     class:list={['button', 'button--affiliate', 'affiliate-button', { 'affiliate-button--full': fullWidth }]}
     href={link}
     target="_blank"
-    rel="sponsored nofollow noopener"
+    rel="nofollow sponsored noopener noreferrer"
     data-affiliate-link
     data-product-id={product?.id ?? trackingId ?? 'affiliate-link'}
     data-product-title={product?.title ?? trackingTitle ?? text}

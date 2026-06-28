@@ -7,11 +7,15 @@ export type TravelProduct = {
   bestFor: string;
   priceRange: string;
   affiliateUrl: string;
+  affiliateStatus: 'ready' | 'placeholder';
+  buttonText: string;
+  image: string;
   imageAlt: string;
   ratingText: string;
 };
 
 export const AMAZON_AFFILIATE_PLACEHOLDER = 'AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN';
+export const amazonTrackingId = 'epic05e-21';
 
 export const travelProductCategories = [
   'Reisebett Baby',
@@ -50,7 +54,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Eigener Schlafplatz unterwegs', 'Faltbar und transportierbar', 'Hilft bei vertrauter Abendroutine'],
     bestFor: 'Familien, die mehr als eine Nacht am selben Ort bleiben',
     priceRange: 'Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B004AHLMF6?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/reisebett-baby-kompakt.webp',
     imageAlt: 'Kompaktes Baby-Reisebett für Urlaub und Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -63,6 +70,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Eltern, die das vorhandene Reisebett vorher prüfen möchten',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reisebett-matratze-faltbar.webp',
     imageAlt: 'Faltbare Matratze für ein Baby-Reisebett',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -75,6 +85,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flugreisen, Städtetrips und Familien mit Kleinkind',
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/buggy-reisen-handgepaeck.webp',
     imageAlt: 'Kompakter Buggy für Reisen mit Kind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -87,6 +100,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kleinkinder, die im Urlaub noch Mittagsschlaf machen',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/buggy-reisen-liegefunktion.webp',
     imageAlt: 'Reisebuggy mit Liegefunktion im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -99,6 +115,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Strandwege, Altstädte, Madeira-Levadas und Flughäfen',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/babytrage-urlaub-luftig.webp',
     imageAlt: 'Luftige Babytrage für Urlaub mit Baby',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -111,6 +130,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien mit Laufanfängern und Kleinkindern',
     priceRange: 'Premium',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/babytrage-toddler-reise.webp',
     imageAlt: 'Toddler-Trage für Familienurlaub und längere Wege',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -122,7 +144,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Viele Dinge bleiben sortiert', 'Beide Hände frei', 'Passt gut zu Flugreisen'],
     bestFor: 'Flugzeug, Bahnhof, Mietwagen und Tagesausflüge',
     priceRange: 'Budget bis Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B08T7VKR2R?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/wickelrucksack-reise-handgepaeck.webp',
     imageAlt: 'Wickelrucksack für Reise und Handgepäck',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -135,6 +160,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien mit Babyflasche, Brei oder vielen Snacks',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/wickelrucksack-isolierfach.webp',
     imageAlt: 'Wickelrucksack mit Isolierfach für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -146,7 +174,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Schneller Überblick', 'Ablaufdaten leichter prüfbar', 'Passt ins Handgepäck'],
     bestFor: 'Packlisten, Ferienwohnung, Strandtasche und Ausflüge',
     priceRange: 'Budget',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B0B698Z6N6?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/reiseapotheke-organizer-baby.webp',
     imageAlt: 'Organizer für Reiseapotheke mit Baby und Kind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -159,6 +190,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Eltern, die Gesundheitsbasics geordnet dabeihaben wollen',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/fieberthermometer-reise.webp',
     imageAlt: 'Kompaktes Fieberthermometer für die Reiseapotheke',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -170,7 +204,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Schützt Kopf und Nacken', 'Kleines Packmaß', 'Schnell trocknend wählbar'],
     bestFor: 'Sommerurlaub, Strandtage und helle Promenaden',
     priceRange: 'Budget',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B019WETN3E?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/baby-sonnenhut-uv.webp',
     imageAlt: 'Baby-Sonnenhut mit Nackenschutz für Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -182,7 +219,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Schnell befestigt', 'Leichter als viele Schirme', 'Gut für Spaziergänge'],
     bestFor: 'Kinderwagenwege, Flughafen und Ferienort',
     priceRange: 'Budget bis Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B0D6YZWGNM?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/baby-sonnensegel-kinderwagen.webp',
     imageAlt: 'Sonnensegel am Kinderwagen im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -195,6 +235,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Strandurlaub und warme Reiseziele',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/uv-shirt-kind-langarm.webp',
     imageAlt: 'UV-Shirt für Kinder im Strandurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -207,6 +250,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kinder, die im Urlaub viel am Wasser sind',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/uv-badeanzug-kind.webp',
     imageAlt: 'UV-Badeanzug für Kind im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -218,7 +264,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Eigene Schattenzone', 'Windschutz möglich', 'Platz für Wickelpause'],
     bestFor: 'Strandurlaub mit Baby und Kleinkind',
     priceRange: 'Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B01M7SLK3C?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/strandmuschel-baby-uv.webp',
     imageAlt: 'Baby-Strandmuschel mit UV-Schutz am Strand',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -230,7 +279,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Schnell aufgebaut', 'Mehr Liegefläche', 'Gut für längere Strandtage'],
     bestFor: 'Familien mit mehreren Kindern oder viel Strandgepäck',
     priceRange: 'Mittelklasse bis Premium',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B08RQFKJS6?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/strandmuschel-pop-up-familie.webp',
     imageAlt: 'Pop-up-Strandmuschel für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -243,6 +295,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien, die vorab Kompatibilität und Zulassung prüfen',
     priceRange: 'Premium',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kindersitz-reise-faltbar.webp',
     imageAlt: 'Faltbarer Kindersitz für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -255,6 +310,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Ältere Kinder nach Prüfung der gesetzlichen Vorgaben',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/sitzerhoehung-reise-kind.webp',
     imageAlt: 'Reise-Sitzerhöhung für Kind im Mietwagen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -267,6 +325,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Langstrecken und Kinder, die schwer zur Ruhe kommen',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/flugzeug-fussstuetze-kind.webp',
     imageAlt: 'Flugzeug-Fußstütze für Kind auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -279,6 +340,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Längere Wartezeiten, Flugreisen und Autofahrten',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/flugzeug-tablet-halter-kind.webp',
     imageAlt: 'Tablet-Halter als Flugzeug-Zubehör für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -291,6 +355,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flugzeug, Bahn, Auto und Hotelzimmer',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kopfhoerer-kinder-lautstaerkebegrenzung.webp',
     imageAlt: 'Kinderkopfhörer mit Lautstärkebegrenzung für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -303,6 +370,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien, die im Flugzeug und unterwegs flexibel bleiben wollen',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kopfhoerer-kinder-bluetooth-kabel.webp',
     imageAlt: 'Kinderkopfhörer mit Bluetooth und Kabel im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -315,6 +385,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kinder, die unterwegs einschlafen',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/nackenkissen-kind-flugzeug.webp',
     imageAlt: 'Nackenkissen für Kinder im Flugzeug',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -327,6 +400,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Handgepäck-Minimalisten und Flugreisen',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/nackenkissen-aufblasbar-familie.webp',
     imageAlt: 'Aufblasbares Nackenkissen für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -338,7 +414,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Koffer bleibt übersichtlich', 'Schneller Zugriff im Hotel', 'Jedes Kind kann eigene Farbe bekommen'],
     bestFor: 'Familienurlaub mit mehreren Taschen oder Koffern',
     priceRange: 'Budget bis Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B0DQNBG4F2?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/packwuerfel-familienurlaub-set.webp',
     imageAlt: 'Packwürfel für Familienurlaub und Kinderkleidung',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -351,6 +430,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flugreisen mit wenig Gepäck und längere Familienurlaube',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/packwuerfel-kompression-reise.webp',
     imageAlt: 'Kompressions-Packwürfel für Reisegepäck',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -363,6 +445,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flugreisen mit Familiengepäck',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kofferwaage-digital.webp',
     imageAlt: 'Digitale Kofferwaage für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -375,6 +460,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien, die mit mehreren Gepäckstücken fliegen',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kofferwaage-massband.webp',
     imageAlt: 'Kofferwaage mit Maßband für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -387,6 +475,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Auslandsreisen mit Babytechnik und Eltern-Geräten',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reiseadapter-universal-usb.webp',
     imageAlt: 'Universal-Reiseadapter mit USB für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -399,6 +490,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien mit klarem Reiseziel und wenigen Geräten',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reiseadapter-europa-uk.webp',
     imageAlt: 'Reiseadapter für UK und Irland',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -411,6 +505,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kinder im Kindergarten- und Schulalter',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/trinkflasche-kind-auslaufsicher.webp',
     imageAlt: 'Auslaufsichere Trinkflasche für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -423,6 +520,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Warme Urlaubstage und lange Transfers',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/trinkflasche-baby-strohhalm.webp',
     imageAlt: 'Trinkflasche mit Strohhalm für Kind im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -435,6 +535,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flughafen, Bahn, Auto und Strandtasche',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/snackbox-kind-faecher.webp',
     imageAlt: 'Snackbox mit Fächern für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -447,6 +550,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kleinkinder, die häufig kleine Pausen brauchen',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/snackbox-auslaufsicher-baby.webp',
     imageAlt: 'Auslaufsichere Snackbox für Kleinkind im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -459,6 +565,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kinder ab etwa Kleinkindalter, je nach Produktangabe',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/spielzeug-flugreise-beschaeftigungsbuch.webp',
     imageAlt: 'Beschäftigungsbuch als Spielzeug für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -471,6 +580,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Wartezeiten, Flugzeug und Restaurantbesuche',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/spielzeug-flugreise-magnetspiel.webp',
     imageAlt: 'Magnetspiel als Flugreise-Spielzeug für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -483,6 +595,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Kinder, die gern selbst Verantwortung übernehmen',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kinderkoffer-rollen.webp',
     imageAlt: 'Kinderkoffer mit Rollen für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -495,6 +610,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Flughafen und Bahnreisen mit längeren Wegen',
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kinderkoffer-sitzkoffer.webp',
     imageAlt: 'Sitzkoffer für Kinder am Flughafen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -506,7 +624,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Wichtiges bleibt griffbereit', 'Entlastet den Wickelrucksack', 'Gut für kurze Ausflüge'],
     bestFor: 'Stadtbummel, Promenade, Zoo und Flughafen',
     priceRange: 'Budget bis Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B07F1SFW6D?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/buggy-organizer-getraenkehalter.webp',
     imageAlt: 'Buggy-Organizer mit Getränkehalter für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -519,6 +640,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien, die Buggy und Handgepäck oft wechseln',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/buggy-organizer-abnehmbar.webp',
     imageAlt: 'Abnehmbarer Buggy-Organizer im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -531,6 +655,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Strandurlaub und Reisen mit wenig Gepäck',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reisehandtuch-mikrofaser-kind.webp',
     imageAlt: 'Mikrofaser-Reisehandtuch für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -543,6 +670,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Babys, Kleinkinder und Poolurlaub',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reisehandtuch-kapuzenhandtuch.webp',
     imageAlt: 'Kapuzen-Reisehandtuch für Baby und Kleinkind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -555,6 +685,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Strandtage, Ferienparks und Ausflüge mit Snacks',
     priceRange: 'Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kuehlrucksack-familie-strand.webp',
     imageAlt: 'Kühlrucksack für Familienurlaub und Strand',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -567,6 +700,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familien mit Babyflaschen oder Brei unterwegs',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/kuehltasche-babyflaschen.webp',
     imageAlt: 'Kühltasche für Babyflaschen auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -578,7 +714,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Alles an einem Ort', 'Schneller Check-in', 'Weniger Suchen am Flughafen'],
     bestFor: 'Flugreisen, Fähre, Hotel-Check-in und Mietwagen',
     priceRange: 'Budget bis Mittelklasse',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B07BGH11MN?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/dokumententasche-familie-rfid.webp',
     imageAlt: 'Dokumententasche für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -591,6 +730,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Strand, Pool, Boot, Madeira-Ausflüge und Regenwetter',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/dokumentenhuelle-wasserdicht.webp',
     imageAlt: 'Wasserdichte Dokumentenhülle für Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -603,6 +745,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Familienurlaub mit wenig Gepäck oder Ferienwohnung',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reisewaschmittel-tube.webp',
     imageAlt: 'Reisewaschmittel für Kinderkleidung im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -615,6 +760,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Ferienwohnungen, Camping und Strandurlaub',
     priceRange: 'Budget',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/reisewaescheleine-klammern.webp',
     imageAlt: 'Reise-Wäscheleine für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -626,7 +774,10 @@ export const travelProducts: TravelProduct[] = [
     benefits: ['Ohne Wirkstoff', 'Klein im Gepäck', 'Schnell übergezogen'],
     bestFor: 'Seen, Campingplätze, Hotelgärten und warme Abendstunden',
     priceRange: 'Budget',
-    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateUrl: 'https://www.amazon.de/dp/B01HH1MZ6G?tag=epic05e-21',
+    affiliateStatus: 'ready',
+    buttonText: 'Bei Amazon ansehen',
+    image: '/travel-product-images/mueckenschutz-kinderwagen-netz.webp',
     imageAlt: 'Mückennetz für Kinderwagen im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   },
@@ -639,6 +790,9 @@ export const travelProducts: TravelProduct[] = [
     bestFor: 'Eltern, die Herstellerhinweise und Kinder-Eignung genau prüfen',
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    affiliateStatus: 'placeholder',
+    buttonText: 'Amazon-Link folgt',
+    image: '/travel-product-images/mueckenschutz-stecker-reise.webp',
     imageAlt: 'Mückenschutz für Reisezimmer im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
   }
@@ -659,8 +813,10 @@ export const featuredTravelProductIds = [
 
 export function isAmazonAffiliateReady(product: TravelProduct) {
   return (
+    product.affiliateStatus === 'ready' &&
     product.affiliateUrl !== AMAZON_AFFILIATE_PLACEHOLDER &&
-    product.affiliateUrl.startsWith('https://www.amazon.de/')
+    product.affiliateUrl.startsWith('https://www.amazon.de/') &&
+    product.affiliateUrl.includes(`tag=${amazonTrackingId}`)
   );
 }
 
