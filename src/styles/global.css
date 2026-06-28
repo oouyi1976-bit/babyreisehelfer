@@ -3044,26 +3044,6 @@ h2 {
   filter: saturate(0.88);
 }
 
-.travel-product-card__badges {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.travel-product-card__badges span {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  border-radius: 999px;
-  background: rgba(220, 238, 247, 0.7);
-  color: var(--color-blue);
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0;
-  line-height: 1.2;
-  padding: 7px 10px;
-}
-
 .travel-product-card__body {
   display: grid;
   gap: 15px;

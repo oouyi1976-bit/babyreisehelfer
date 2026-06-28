@@ -4,6 +4,8 @@ import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProduc
 
 const { product, compact = false } = Astro.props as { product: TravelProduct; compact?: boolean };
 const hasReadyLink = isAmazonAffiliateReady(product);
+const imageSrc = product.image || '/product-images/reisedokumententasche-familie.webp';
+const imageAlt = product.imageAlt || `${product.name} auf BabyReiseHelfer`;
 ---
 
 <article class:list={['travel-product-card', { 'travel-product-card--compact': compact }]}>
@@ -18,18 +20,15 @@ const hasReadyLink = isAmazonAffiliateReady(product);
       data-product-title={product.name}
       aria-label={`${product.name} bei Amazon ansehen`}
     >
-      <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+      <img src={imageSrc} alt={imageAlt} width="900" height="675" loading="lazy" decoding="async" />
     </a>
   ) : (
     <div class="travel-product-card__media travel-product-card__media--disabled">
-      <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+      <img src={imageSrc} alt={imageAlt} width="900" height="675" loading="lazy" decoding="async" />
     </div>
   )}
 
   <div class="travel-product-card__body">
-    <div class="travel-product-card__badges">
-      <span>{product.category}</span>
-    </div>
     <h3>
       {hasReadyLink ? (
         <a
