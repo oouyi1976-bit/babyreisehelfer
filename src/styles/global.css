@@ -863,22 +863,8 @@ ul {
 
 .product-card__body {
   display: grid;
-  gap: 13px;
-  padding: 20px;
-}
-
-.product-card__topline {
-  display: flex;
-}
-
-.product-card__topline span {
-  border-radius: 999px;
-  background: #fff1dd;
-  color: #6f4a18;
-  font-size: 0.74rem;
-  font-weight: 850;
-  line-height: 1.1;
-  padding: 7px 9px;
+  gap: 15px;
+  padding: 22px;
 }
 
 .product-card p {
@@ -2205,11 +2191,6 @@ h2 {
   color: var(--color-coral-dark);
 }
 
-.product-card__topline span {
-  background: #fff0df;
-  color: #9a5637;
-}
-
 .check-list li::before {
   background: var(--color-sage);
 }
@@ -3083,15 +3064,10 @@ h2 {
   padding: 7px 10px;
 }
 
-.travel-product-card__badges span:nth-child(2) {
-  background: rgba(255, 231, 217, 0.92);
-  color: var(--color-coral-dark);
-}
-
 .travel-product-card__body {
   display: grid;
-  gap: 13px;
-  padding: 20px;
+  gap: 15px;
+  padding: 22px;
 }
 
 .travel-product-card h3 {
