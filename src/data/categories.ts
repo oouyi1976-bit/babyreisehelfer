@@ -111,6 +111,24 @@ export const categories: SiteCategory[] = [
       'feuchttuecher-spender-unterwegs',
       'kulturtasche-babyartikel'
     ]
+  },
+  {
+    slug: 'babyschlaf',
+    title: 'Babyschlaf',
+    navLabel: 'Babyschlaf',
+    description:
+      'Bindungsorientierte Babyschlaf-Ratgeber, ruhige Routinen und digitale Orientierung für entspanntere Nächte und Reisetage.',
+    homeDescription: 'Sanfte Schlafroutinen, Tagesschlaf und Orientierung ohne Druck.',
+    highlights: ['Routinen', 'Nächte', 'Tagesschlaf'],
+    image: '/article-images/fallback-babyreise.webp',
+    intro:
+      'Babyschlaf ist selten planbar, aber Eltern können sich gut vorbereiten. Diese Rubrik sammelt sanfte Ratgeber, realistische Erwartungen und digitale Produkte für Familien, die Unterstützung wünschen.',
+    productCategories: ['babyschlaf'],
+    featuredProductIds: [
+      'bindungsorientiert-durchschlafen-lernen',
+      'babys-tage-meistern',
+      'schlummergeheimnisse-neugeborene'
+    ]
   }
 ];
 

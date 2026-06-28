@@ -1,0 +1,14 @@
+---
+const {
+  title = 'Wichtiger Hinweis',
+  text = 'Babyschlaf ist individuell. Unsere Inhalte geben Orientierung, ersetzen aber keine medizinische Beratung und geben keine Garantie für durchgeschlafene Nächte.'
+} = Astro.props as {
+  title?: string;
+  text?: string;
+};
+---
+
+<aside class="disclaimer-box">
+  <strong>{title}</strong>
+  <p>{text}</p>
+</aside>

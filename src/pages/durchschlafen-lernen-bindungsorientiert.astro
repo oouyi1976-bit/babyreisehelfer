@@ -1,0 +1,102 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import AffiliateButton from '../components/AffiliateButton.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import ProsConsBox from '../components/ProsConsBox.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import CTABox from '../components/CTABox.astro';
+import { products } from '../data/products';
+
+const product = products.find((item) => item.id === 'bindungsorientiert-durchschlafen-lernen')!;
+const relatedArticles = (await getCollection('ratgeber'))
+  .filter((article) => article.data.category === 'babyschlaf')
+  .slice(0, 3);
+
+const faqItems = [
+  {
+    question: 'Garantiert dieser Ratgeber, dass mein Baby durchschläft?',
+    answer:
+      'Nein. Der Ratgeber kann Orientierung geben, aber Babyschlaf lässt sich nicht garantieren. Entwicklung, Temperament und Alltag spielen immer mit.'
+  },
+  {
+    question: 'Ist bindungsorientiert dasselbe wie gar keine Veränderung?',
+    answer:
+      'Nicht unbedingt. Bindungsorientiert bedeutet, Bedürfnisse ernst zu nehmen und Veränderungen achtsam zu begleiten, statt Druck aufzubauen.'
+  },
+  {
+    question: 'Wann sollte ich zusätzlich Hilfe suchen?',
+    answer:
+      'Wenn du dir gesundheitliche Sorgen machst, dein Baby auffällig wirkt oder du selbst stark erschöpft bist, hole bitte fachliche Unterstützung dazu.'
+  }
+];
+---
+
+<Layout
+  title="Bindungsorientiert durchschlafen lernen"
+  description="Ehrliche Einordnung zum Babyschlaf-Ratgeber Bindungsorientiert durchschlafen lernen: für Eltern, die Orientierung ohne Druck suchen."
+>
+  <section class="product-hero">
+    <div class="container product-hero__grid">
+      <div>
+        <p class="eyebrow">Werbung / Affiliate-Link</p>
+        <h1>{product.title}</h1>
+        <p class="hero__subtitle">
+          Ein digitaler Ratgeber für Eltern, die nächtliches Aufwachen besser verstehen möchten und sich eine sanfte, bindungsorientierte Begleitung wünschen.
+        </p>
+        <div class="hero__actions">
+          <AffiliateButton product={product} label="Ratgeber bei Babyschlummerland ansehen" />
+          <a class="button button--secondary" href="/baby-schlafprodukte/">Alle Schlafprodukte vergleichen</a>
+        </div>
+      </div>
+      <ProductVisual product={product} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-content">
+      <h2>Für wen dieser Ratgeber gedacht ist</h2>
+      <p>
+        "Bindungsorientiert durchschlafen lernen" richtet sich an Eltern, die nachts häufig begleiten, stillen, tragen oder beruhigen und sich fragen, was realistisch ist. Der Ratgeber kann helfen, typische Schlafsituationen einzuordnen und sanfter an Routinen zu arbeiten.
+      </p>
+      <p>
+        Er passt besonders, wenn du keine harte Schlafmethode suchst, sondern verstehen möchtest, wie Nähe, Sicherheit und Entwicklung zusammenspielen können. Er ist kein Versprechen, dass dein Baby nach kurzer Zeit durchschläft.
+      </p>
+
+      <h2>Was du erwarten kannst</h2>
+      <ul>
+        <li>Orientierung zu nächtlichem Aufwachen und Einschlafbegleitung</li>
+        <li>Impulse für ruhigere Routinen ohne Druck</li>
+        <li>Einordnung, warum Babys in bestimmten Phasen mehr Nähe brauchen können</li>
+        <li>Gedanken dazu, wie Eltern Entlastung suchen können, ohne die Bedürfnisse des Babys zu übergehen</li>
+      </ul>
+
+      <DisclaimerBox />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <ProsConsBox title="Kurz eingeordnet" pros={product.pros} cons={product.cons} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <FAQ items={faqItems} />
+    </div>
+  </section>
+
+  <RelatedArticles articles={relatedArticles} title="Passende Babyschlaf-Ratgeber" />
+
+  <div class="container section">
+    <CTABox
+      title="Lieber erst vergleichen?"
+      text="Im Überblick siehst du, welcher Ratgeber zu Nächten, Tagesschlaf oder Neugeborenenzeit passt."
+      href="/baby-schlafprodukte/"
+      buttonText="Vergleich ansehen"
+    />
+  </div>
+</Layout>

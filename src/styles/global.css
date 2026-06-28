@@ -2493,6 +2493,160 @@ h2 {
   border-top-color: rgba(255, 253, 248, 0.12);
 }
 
+.category-card__icon--babyschlaf::before {
+  top: 14px;
+  left: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 999px;
+  background: var(--color-blue-strong);
+}
+
+.category-card__icon--babyschlaf::after {
+  top: 17px;
+  left: 23px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(255, 253, 248, 0.92);
+  box-shadow: 10px 11px 0 -4px var(--color-sun);
+}
+
+.page-hero--sleep {
+  background:
+    linear-gradient(135deg, rgba(220, 238, 247, 0.9), rgba(255, 248, 238, 0.86)),
+    var(--color-soft);
+}
+
+.sleep-home {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(239, 101, 79, 0.1), transparent 30%),
+    linear-gradient(180deg, #ffffff, var(--color-cream));
+}
+
+.sleep-note-grid {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.sleep-note-grid > div {
+  display: grid;
+  gap: 14px;
+}
+
+.product-hero {
+  padding: 56px 0;
+  background:
+    linear-gradient(135deg, rgba(233, 241, 230, 0.92), rgba(220, 238, 247, 0.8)),
+    var(--color-soft);
+}
+
+.product-hero__grid {
+  display: grid;
+  gap: 30px;
+  align-items: center;
+}
+
+.product-hero .product-visual {
+  min-height: 280px;
+  border: 1px solid rgba(234, 223, 206, 0.78);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.product-visual--sleep-guide,
+.product-visual--day-naps,
+.product-visual--newborn-sleep {
+  --pv-bg: #eef5f4;
+  --pv-ground: #f7ead8;
+  --pv-fill: #8fae8a;
+  --pv-fill-soft: #fffdf8;
+  --pv-accent: #ef8068;
+}
+
+.disclaimer-box {
+  display: grid;
+  gap: 8px;
+  border: 1px solid #f0dcc2;
+  border-left: 5px solid var(--color-coral);
+  border-radius: var(--radius);
+  background: #fff8ec;
+  color: #60462a;
+  padding: 18px;
+}
+
+.disclaimer-box strong {
+  color: #47331f;
+  font-size: 1rem;
+}
+
+.disclaimer-box p {
+  color: #60462a;
+}
+
+.faq-section {
+  display: grid;
+  gap: 18px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+}
+
+.faq-item summary {
+  cursor: pointer;
+  color: var(--color-ink);
+  font-weight: 850;
+  list-style: none;
+  padding: 18px 20px;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  float: right;
+  color: var(--color-coral-dark);
+  content: "+";
+  font-weight: 900;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  border-top: 1px solid rgba(234, 223, 206, 0.78);
+  padding: 0 20px 18px;
+}
+
+.affiliate-button--full {
+  width: 100%;
+}
+
+@media (min-width: 780px) {
+  .sleep-note-grid,
+  .product-hero__grid {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .product-grid.product-grid--featured {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 639px) {
   .site-header {
     position: static;

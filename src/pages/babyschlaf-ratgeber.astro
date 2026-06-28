@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CTABox from '../components/CTABox.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+
+const articles = (await getCollection('ratgeber'))
+  .filter((article) => article.data.category === 'babyschlaf')
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Babyschlaf-Ratgeber',
+  description: 'Ratgeberartikel zu Babyschlaf, Tagesschlaf, Abendroutine, Schlafregression und Reisen mit Baby.',
+  url: new URL('/babyschlaf-ratgeber/', Astro.site).href
+};
+---
+
+<Layout
+  title="Babyschlaf-Ratgeber"
+  description="Alle Babyschlaf-Ratgeber von BabyReiseHelfer: Nächte, Tagesschlaf, Neugeborene, Abendroutine, Schlafregression und Reisen."
+  jsonLd={pageSchema}
+>
+  <section class="page-hero page-hero--sleep">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Ratgeber</p>
+      <h1>Babyschlaf-Ratgeber für ruhige Orientierung</h1>
+      <p>
+        Verständliche Artikel für Eltern, die Babyschlaf einordnen möchten, ohne sich von perfekten Routinen unter Druck setzen zu lassen.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Alle Artikel</p>
+          <h2>Schlaf, Nähe, Routinen und Reisen</h2>
+        </div>
+        <p>
+          Die Inhalte ersetzen keine medizinische Beratung. Sie helfen beim Sortieren typischer Alltagssituationen und verlinken passende Ratgeberprodukte transparent als Affiliate-Links.
+        </p>
+      </div>
+      <div class="article-grid">
+        {articles.map((article) => <ArticleCard article={article} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container narrow">
+      <DisclaimerBox
+        title="Ohne Schlafversprechen"
+        text="Babys entwickeln Schlafrhythmen unterschiedlich. Unsere Ratgeber sprechen über Orientierung, Routinen und Entlastung, aber nie über garantierte Ergebnisse."
+      />
+    </div>
+  </section>
+
+  <div class="container section">
+    <CTABox
+      title="Digitale Babyschlaf-Produkte vergleichen"
+      text="Wenn du tiefer einsteigen möchtest, findest du hier die drei eingebundenen Ratgeber mit ehrlicher Einordnung."
+      href="/baby-schlafprodukte/"
+      buttonText="Produkte vergleichen"
+    />
+  </div>
+</Layout>

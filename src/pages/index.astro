@@ -8,13 +8,14 @@ import HeroVisual from '../components/HeroVisual.astro';
 import TrustBar from '../components/TrustBar.astro';
 import TipsCompareSection from '../components/TipsCompareSection.astro';
 import { categories } from '../data/categories';
-import { getProductsByIds } from '../data/products';
+import { babysleepProductIds, getProductsByIds } from '../data/products';
 
 const articles = (await getCollection('ratgeber'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 6);
 
 const featuredCategories = categories;
+const babysleepProducts = getProductsByIds(babysleepProductIds);
 const topProducts = getProductsByIds([
   'kinderwagen-sonnenschutz',
   'faltbare-wickelunterlage',
@@ -50,6 +51,24 @@ const topProducts = getProductsByIds([
   </section>
 
   <TrustBar />
+
+  <section class="section sleep-home" id="babyschlaf">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Babyschlaf & ruhige Nächte</p>
+          <h2>Sanfte Ratgeber für Schlaf, Tagesschlaf und neue Routinen</h2>
+        </div>
+        <p>
+          Keine Schlafgarantie und kein Druck. Diese digitalen Ratgeber können Eltern Orientierung geben, wenn Nächte, Reisen oder Tagesabläufe gerade viel Kraft brauchen.
+          <a class="text-link" href="/babyschlaf/">Babyschlaf-Bereich öffnen</a>
+        </p>
+      </div>
+      <div class="product-grid product-grid--featured">
+        {babysleepProducts.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
 
   <section class="section" id="kategorien">
     <div class="container">

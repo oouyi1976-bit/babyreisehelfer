@@ -1,0 +1,112 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import CTABox from '../components/CTABox.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { babysleepProductIds, getProductsByIds } from '../data/products';
+
+const products = getProductsByIds(babysleepProductIds);
+const articles = (await getCollection('ratgeber'))
+  .filter((article) => article.data.category === 'babyschlaf')
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 6);
+
+const faqItems = [
+  {
+    question: 'Kann ein Ratgeber garantieren, dass mein Baby durchschläft?',
+    answer:
+      'Nein. Babyschlaf ist individuell und hängt von Entwicklung, Temperament, Gesundheit und Umgebung ab. Ein guter Ratgeber kann helfen, Situationen besser einzuordnen und ruhigere Routinen zu entwickeln.'
+  },
+  {
+    question: 'Passt Babyschlaf überhaupt zu einer Reise-Seite?',
+    answer:
+      'Ja, denn Schlaf ist auf Reisen oft ein großes Thema. Hotelzimmer, fremde Geräusche, Flugtage und neue Abläufe können Babys irritieren. Sanfte Vorbereitung kann Eltern entlasten.'
+  },
+  {
+    question: 'Sind die Links Affiliate-Links?',
+    answer:
+      'Ja. Die Produktlinks sind als Werbung gekennzeichnet. Wenn du über einen Link kaufst, erhalten wir ggf. eine Provision. Für dich entstehen keine Mehrkosten.'
+  }
+];
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Babyschlaf & ruhige Nächte',
+  description: 'Sanfte Babyschlaf-Ratgeber und Orientierung für Eltern, die ruhige Routinen ohne Druck suchen.',
+  url: new URL('/babyschlaf/', Astro.site).href
+};
+---
+
+<Layout
+  title="Babyschlaf & ruhige Nächte"
+  description="Sanfte Babyschlaf-Ratgeber, Tagesschlaf-Tipps und digitale Produktideen für Eltern, die Orientierung ohne Druck suchen."
+  jsonLd={pageSchema}
+>
+  <section class="page-hero page-hero--sleep">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Babyschlaf</p>
+      <h1>Babyschlaf verstehen, ohne Druck aufzubauen</h1>
+      <p>
+        Nächte mit Baby sind selten perfekt planbar. Hier findest du ruhige Ratgeber, ehrliche Einordnungen und ausgewählte digitale Produkte für Eltern, die sich Unterstützung wünschen.
+      </p>
+      <div class="hero__actions">
+        <a class="button" href="/baby-schlafprodukte/">Schlafprodukte ansehen</a>
+        <a class="button button--secondary" href="/babyschlaf-ratgeber/">Ratgeber lesen</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Digitale Ratgeber</p>
+          <h2>Babyschlaf-Produkte für mehr Orientierung</h2>
+        </div>
+        <p>
+          Diese Angebote versprechen keine perfekten Nächte. Sie können Eltern dabei helfen, Schlafsituationen besser zu verstehen und den eigenen Weg ruhiger zu gestalten.
+        </p>
+      </div>
+      <div class="product-grid product-grid--featured">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container sleep-note-grid">
+      <div>
+        <p class="eyebrow">Eltern-Ratgeber statt Schlafdruck</p>
+        <h2>Was du hier nicht findest</h2>
+        <p>
+          Keine Versprechen wie "in drei Tagen schläft jedes Baby durch". Kein Druck, keine starren Programme und keine Abwertung von Nähe. Babys dürfen Bedürfnisse haben, und Eltern dürfen sich trotzdem Entlastung wünschen.
+        </p>
+      </div>
+      <DisclaimerBox
+        title="Realistisch bleiben"
+        text="Wenn dein Baby krank wirkt, auffällig schlecht trinkt, Atemprobleme hat oder du dir Sorgen machst, ist ein Ratgeber nicht der richtige Ort. Dann bitte Kinderarzt, Hebamme oder medizinische Hilfe einbeziehen."
+      />
+    </div>
+  </section>
+
+  <RelatedArticles articles={articles} title="Babyschlaf-Ratgeber auf BabyReiseHelfer" />
+
+  <section class="section">
+    <div class="container narrow">
+      <FAQ items={faqItems} />
+    </div>
+  </section>
+
+  <div class="container section">
+    <CTABox
+      title="Babyschlaf-Produkte im Überblick"
+      text="Vergleiche die drei digitalen Ratgeber und wähle nur das aus, was zu eurer aktuellen Situation passt."
+      href="/baby-schlafprodukte/"
+      buttonText="Zum Überblick"
+    />
+  </div>
+</Layout>

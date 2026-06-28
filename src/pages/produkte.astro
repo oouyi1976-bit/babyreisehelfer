@@ -15,14 +15,14 @@ const productSchema = {
   '@type': 'CollectionPage',
   name: 'Empfohlene Produktideen | BabyReiseHelfer',
   description:
-    'Neutrale Produktideen für Babyreisen, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten.',
+    'Neutrale Produktideen und digitale Ratgeber für Babyreisen, Babyschlaf, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten.',
   url: new URL('/produkte/', Astro.site).href
 };
 ---
 
 <Layout
   title="Empfohlene Produktideen"
-  description="Konkrete, neutral eingeordnete Amazon-Produktideen für Babyreisen, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten."
+  description="Neutral eingeordnete Produktideen und digitale Ratgeber für Babyreisen, Babyschlaf, Flugzeug, Hotel, Strand, Kinderwagen und Packlisten."
   jsonLd={productSchema}
 >
   <section class="page-hero">
@@ -30,7 +30,7 @@ const productSchema = {
       <p class="eyebrow">Produkte</p>
       <h1>Empfohlene Produktideen für Reisen mit Baby</h1>
       <p>
-        Konkrete Amazon.de-Produktlinks, aber ohne Preise, ohne Sternebewertungen, ohne Amazon-Bilder und ohne erfundene Testsieger.
+        Konkrete Affiliate-Links, aber ohne Preise, ohne Sternebewertungen, ohne fremde Produktbilder und ohne erfundene Testsieger.
       </p>
     </div>
   </section>

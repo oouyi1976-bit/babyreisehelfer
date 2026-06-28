@@ -1,0 +1,37 @@
+---
+import { isAffiliateLinkReady, type Product } from '../data/products';
+
+const {
+  product,
+  href,
+  label,
+  fullWidth = false
+} = Astro.props as {
+  product?: Product;
+  href?: string;
+  label?: string;
+  fullWidth?: boolean;
+};
+
+const link = product?.affiliateUrl ?? href ?? '';
+const text = label ?? product?.buttonText ?? 'Ansehen';
+const isReady = product ? isAffiliateLinkReady(product) : Boolean(href);
+---
+
+{isReady ? (
+  <a
+    class:list={['button', 'button--affiliate', 'affiliate-button', { 'affiliate-button--full': fullWidth }]}
+    href={link}
+    target="_blank"
+    rel="sponsored nofollow noopener"
+    data-affiliate-link
+    data-product-id={product?.id ?? 'affiliate-link'}
+    data-product-title={product?.title ?? text}
+  >
+    {text}
+  </a>
+) : (
+  <span class:list={['button', 'button--disabled', 'affiliate-button', { 'affiliate-button--full': fullWidth }]} aria-disabled="true">
+    Link noch nicht verfügbar
+  </span>
+)}

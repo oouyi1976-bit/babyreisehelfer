@@ -1,0 +1,20 @@
+---
+type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+const { items, title = 'Häufige Fragen' } = Astro.props as { items: FAQItem[]; title?: string };
+---
+
+<section class="faq-section">
+  <h2>{title}</h2>
+  <div class="faq-list">
+    {items.map((item) => (
+      <details class="faq-item">
+        <summary>{item.question}</summary>
+        <p>{item.answer}</p>
+      </details>
+    ))}
+  </div>
+</section>

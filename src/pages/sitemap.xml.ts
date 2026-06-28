@@ -5,15 +5,21 @@ import { categories } from '../data/categories';
 export const GET: APIRoute = async ({ site }) => {
   const baseUrl = (site ?? new URL('https://babyreisehelfer.pages.dev')).toString().replace(/\/$/, '');
   const articles = await getCollection('ratgeber');
-  const paths = [
+  const paths = Array.from(new Set([
     '/',
     '/produkte/',
     '/impressum/',
     '/datenschutz/',
     '/produkt-links-eintragen/',
+    '/babyschlaf/',
+    '/babyschlaf-ratgeber/',
+    '/baby-schlafprodukte/',
+    '/durchschlafen-lernen-bindungsorientiert/',
+    '/babys-tage-meistern/',
+    '/schlummergeheimnisse-neugeborene/',
     ...categories.map((category) => `/${category.slug}/`),
     ...articles.map((article) => `/ratgeber/${article.id}/`)
-  ];
+  ]));
 
   const urls = paths
     .map((path) => {

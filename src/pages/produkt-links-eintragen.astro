@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { amazonTrackingId } from '../data/products';
+import { amazonTrackingId, babyschlummerlandTrackingId } from '../data/products';
 ---
 
 <Layout
@@ -27,6 +27,11 @@ import { amazonTrackingId } from '../data/products';
       <h2>Zentrale Datei</h2>
       <p>
         Alle Produktdaten und Produktlinks liegen in <code>src/data/products.ts</code>. Dort wird pro Produkt entschieden, ob der Button noch deaktiviert bleibt oder den echten Affiliate-Link öffnet.
+      </p>
+
+      <h2>Babyschlummerland-Links</h2>
+      <p>
+        Die Babyschlaf-Ratgeber nutzen das Partnerprogramm von Babyschlummerland. Diese Links verwenden <code>#aff={babyschlummerlandTrackingId}</code> und sind in <code>src/data/products.ts</code> mit <code>affiliateNetwork: 'babyschlummerland'</code> gekennzeichnet.
       </p>
 
       <h2>Workflow</h2>

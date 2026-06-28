@@ -70,6 +70,8 @@ Die Produktdaten liegen zentral in:
 src/data/products.ts
 ```
 
+Neben Amazon-Produkten liegen dort auch die Babyschlummerland-Ratgeber für den neuen Babyschlaf-Bereich. Diese Einträge sind mit `affiliateNetwork: 'babyschlummerland'` gekennzeichnet und nutzen Links im Format `https://www.babyschlummerland.de/.../#aff=Benman8810`.
+
 Meine Amazon-PartnerNet Tracking-ID lautet:
 
 ```text

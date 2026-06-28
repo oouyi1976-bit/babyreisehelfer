@@ -28,7 +28,8 @@ const iconToVisual: Record<string, string> = {
   document: 'document-organizer',
   net: 'mosquito-net',
   organizer: 'stroller-organizer',
-  rain: 'rain-cover'
+  rain: 'rain-cover',
+  sleep: 'sleep-guide'
 };
 
 const visualType = product.imageType && product.imageType !== 'css-icon'
@@ -215,6 +216,42 @@ const visualType = product.imageType && product.imageType !== 'css-icon'
         <circle class="pv-dark" cx="126" cy="163" r="11"></circle>
         <circle class="pv-dark" cx="189" cy="163" r="11"></circle>
         <path class="pv-line pv-rain" d="M73 63 L66 79 M103 50 L96 66 M245 58 L238 74 M274 80 L267 96"></path>
+      </g>
+    )}
+
+    {visualType === 'sleep-guide' && (
+      <g class="pv-scene">
+        <rect class="pv-fill" x="92" y="58" width="116" height="104" rx="16"></rect>
+        <path class="pv-white" d="M108 74 H192 V146 H108 Z"></path>
+        <path class="pv-line" d="M123 95 C134 82 158 83 169 98 C176 108 176 124 168 135 C153 126 137 126 122 135 C113 122 114 106 123 95 Z"></path>
+        <circle class="pv-accent" cx="146" cy="112" r="15"></circle>
+        <path class="pv-white" d="M154 100 C145 103 142 115 148 123 C138 119 135 107 142 99 C146 96 151 96 154 100 Z"></path>
+        <path class="pv-line" d="M224 70 C214 82 216 101 231 110 C215 114 199 101 199 84 C199 74 211 65 224 70 Z"></path>
+        <path class="pv-line" d="M78 99 L85 106 L78 113 L71 106 Z M233 132 L239 138 L233 144 L227 138 Z"></path>
+      </g>
+    )}
+
+    {visualType === 'day-naps' && (
+      <g class="pv-scene">
+        <circle class="pv-sun" cx="232" cy="62" r="22"></circle>
+        <rect class="pv-fill" x="79" y="90" width="166" height="62" rx="21"></rect>
+        <rect class="pv-white" x="98" y="70" width="74" height="46" rx="18"></rect>
+        <path class="pv-line" d="M111 92 C122 84 145 84 158 94"></path>
+        <path class="pv-accent" d="M174 103 C193 92 217 98 229 119 C207 126 189 120 174 103 Z"></path>
+        <path class="pv-line" d="M104 151 V163 M221 151 V163"></path>
+        <path class="pv-line" d="M64 77 H93 M70 61 H103 M60 124 H85"></path>
+      </g>
+    )}
+
+    {visualType === 'newborn-sleep' && (
+      <g class="pv-scene">
+        <path class="pv-fill" d="M93 142 C103 92 132 66 162 66 C193 66 223 92 232 142 Z"></path>
+        <rect class="pv-white" x="103" y="104" width="118" height="52" rx="24"></rect>
+        <circle class="pv-accent" cx="150" cy="121" r="16"></circle>
+        <path class="pv-line" d="M160 118 C170 117 178 122 181 131"></path>
+        <path class="pv-line" d="M119 144 C139 135 182 135 204 144"></path>
+        <path class="pv-line" d="M222 58 C211 71 214 91 229 100 C211 102 197 88 199 73 C200 63 211 55 222 58 Z"></path>
+        <path class="pv-line" d="M84 84 L90 90 L84 96 L78 90 Z M242 126 L248 132 L242 138 L236 132 Z"></path>
       </g>
     )}
 

@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ProductComparisonTable from '../components/ProductComparisonTable.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import FAQ from '../components/FAQ.astro';
+import CTABox from '../components/CTABox.astro';
+import { babysleepProductIds, getProductsByIds } from '../data/products';
+
+const products = getProductsByIds(babysleepProductIds);
+const faqItems = [
+  {
+    question: 'Welcher Ratgeber passt, wenn die Nächte gerade schwierig sind?',
+    answer:
+      'Wenn es vor allem um häufiges Aufwachen und realistische Erwartungen geht, kann der bindungsorientierte Durchschlaf-Ratgeber ein passender Einstieg sein.'
+  },
+  {
+    question: 'Welcher Ratgeber passt bei kurzen Nickerchen tagsüber?',
+    answer:
+      'Dann passt eher "Babys Tage meistern", weil der Fokus auf Tagesschlaf, Wachzeiten und Tagesstruktur liegt.'
+  },
+  {
+    question: 'Was ist für die ersten Wochen mit Neugeborenem sinnvoll?',
+    answer:
+      'Für Schwangerschaft, Wochenbett und die erste Zeit mit Baby ist "Schlummergeheimnisse für Neugeborene" am nächsten am Thema.'
+  }
+];
+---
+
+<Layout
+  title="Baby-Schlafprodukte im Überblick"
+  description="Vergleich der Babyschlaf-Ratgeber von Babyschlummerland mit ehrlicher Einordnung, Affiliate-Hinweis und ohne Schlafgarantie."
+>
+  <section class="page-hero page-hero--sleep">
+    <div class="container page-hero__inner">
+      <p class="eyebrow">Produktüberblick</p>
+      <h1>Baby-Schlafprodukte ruhig vergleichen</h1>
+      <p>
+        Drei digitale Ratgeber für unterschiedliche Situationen: nächtliches Aufwachen, Tagesschlaf und die ersten Wochen mit Neugeborenem.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Werbung / Affiliate-Links</p>
+          <h2>Welche Unterstützung passt zu euch?</h2>
+        </div>
+        <p>
+          Die Links führen zu Babyschlummerland. Wenn du über einen Link kaufst, erhalten wir ggf. eine Provision. Für dich entstehen keine Mehrkosten.
+        </p>
+      </div>
+      <div class="product-grid product-grid--featured">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Vergleich</p>
+        <h2>Der schnelle Überblick</h2>
+      </div>
+      <ProductComparisonTable products={products} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container sleep-note-grid">
+      <div>
+        <h2>So ordnen wir die Produkte ein</h2>
+        <p>
+          Wir betrachten die Ratgeber als Orientierung für Eltern, nicht als Lösung mit Erfolgsgarantie. Wichtig ist, dass die Inhalte zu eurer Haltung, eurem Baby und eurer aktuellen Belastung passen.
+        </p>
+      </div>
+      <DisclaimerBox />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container narrow">
+      <FAQ items={faqItems} />
+    </div>
+  </section>
+
+  <div class="container section">
+    <CTABox
+      title="Erst noch lesen?"
+      text="Im Babyschlaf-Ratgeber findest du Grundlagen, bevor du dich für ein Produkt entscheidest."
+      href="/babyschlaf-ratgeber/"
+      buttonText="Ratgeber öffnen"
+    />
+  </div>
+</Layout>

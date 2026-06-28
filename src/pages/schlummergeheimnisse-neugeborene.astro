@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import AffiliateButton from '../components/AffiliateButton.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import ProsConsBox from '../components/ProsConsBox.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import CTABox from '../components/CTABox.astro';
+import { products } from '../data/products';
+
+const product = products.find((item) => item.id === 'schlummergeheimnisse-neugeborene')!;
+const relatedArticles = (await getCollection('ratgeber'))
+  .filter((article) => ['neugeborene-und-schlaf', 'babyschlaf-ohne-druck', 'warum-babys-nachts-oft-aufwachen'].includes(article.id));
+
+const faqItems = [
+  {
+    question: 'Ist ein Schlafratgeber für Neugeborene überhaupt sinnvoll?',
+    answer:
+      'Er kann sinnvoll sein, wenn er Erwartungen realistischer macht. Neugeborene schlafen häufig unregelmäßig und brauchen viel Nähe. Es geht nicht um Training.'
+  },
+  {
+    question: 'Geht es hier ums Durchschlafen?',
+    answer:
+      'Nein. In den ersten Wochen steht nicht Durchschlafen im Mittelpunkt, sondern Sicherheit, Nähe, Versorgung und ein besseres Verständnis für normale Neugeborenenrhythmen.'
+  },
+  {
+    question: 'Was ist wichtiger als jede Routine?',
+    answer:
+      'Eine sichere Schlafumgebung, gute Versorgung und fachlicher Rat bei Unsicherheit. Routinen dürfen unterstützen, aber nicht wichtiger werden als die Bedürfnisse des Babys.'
+  }
+];
+---
+
+<Layout
+  title="Schlummergeheimnisse für Neugeborene"
+  description="Ehrliche Einordnung zum E-Book Schlummergeheimnisse für Neugeborene: sanfte Orientierung für die ersten Wochen mit Baby."
+>
+  <section class="product-hero">
+    <div class="container product-hero__grid">
+      <div>
+        <p class="eyebrow">Werbung / Affiliate-Link</p>
+        <h1>{product.title}</h1>
+        <p class="hero__subtitle">
+          Ein E-Book für Eltern in der Neugeborenenzeit, wenn Schlaf, Nähe und neue Abläufe sich erst finden müssen.
+        </p>
+        <div class="hero__actions">
+          <AffiliateButton product={product} label="E-Book bei Babyschlummerland ansehen" />
+          <a class="button button--secondary" href="/babyschlaf-ratgeber/">Grundlagen lesen</a>
+        </div>
+      </div>
+      <ProductVisual product={product} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-content">
+      <h2>Für die erste Zeit mit Baby</h2>
+      <p>
+        Die ersten Wochen sind oft wunderschön und gleichzeitig fordernd. Schlaf passiert in kurzen Abschnitten, Nähe ist wichtig und vieles fühlt sich neu an. Das E-Book kann helfen, normale Neugeborenenmuster besser einzuordnen.
+      </p>
+      <p>
+        Es ist besonders interessant für werdende Eltern, frisch gebackene Familien oder alle, die sich vor dem ersten Familienbesuch oder der ersten Reise mit Baby ruhiger vorbereiten möchten.
+      </p>
+
+      <h2>Was realistisch ist</h2>
+      <ul>
+        <li>Neugeborene schlafen selten nach festen Uhrzeiten</li>
+        <li>Häufiges Aufwachen kann normal sein</li>
+        <li>Nähe, Hunger und Reife beeinflussen Schlaf stark</li>
+        <li>Kleine Routinen dürfen helfen, müssen aber flexibel bleiben</li>
+      </ul>
+
+      <DisclaimerBox
+        title="Sicherer Schlaf geht vor"
+        text="Bei Neugeborenen sind sichere Schlafumgebung, Still- oder Fütterungsberatung und medizinische Abklärung bei Unsicherheit besonders wichtig. Ein E-Book ersetzt keine fachliche Begleitung."
+      />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <ProsConsBox title="Kurz eingeordnet" pros={product.pros} cons={product.cons} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <FAQ items={faqItems} />
+    </div>
+  </section>
+
+  <RelatedArticles articles={relatedArticles} title="Mehr zur Neugeborenenzeit" />
+
+  <div class="container section">
+    <CTABox
+      title="Noch andere Schlafprodukte ansehen?"
+      text="Wenn dein Baby älter ist oder eher Tagesschlaf ein Thema ist, lohnt sich der Vergleich der drei Ratgeber."
+      href="/baby-schlafprodukte/"
+      buttonText="Produkte vergleichen"
+    />
+  </div>
+</Layout>

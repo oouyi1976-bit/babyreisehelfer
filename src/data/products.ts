@@ -1,9 +1,11 @@
 export type AffiliateStatus = 'placeholder' | 'ready';
+export type AffiliateNetwork = 'amazon' | 'babyschlummerland';
 
 export type Product = {
   id: string;
   title: string;
   category: string;
+  affiliateNetwork?: AffiliateNetwork;
   amazonSearchTerm: string;
   amazonProductUrl: string;
   affiliateUrl: string;
@@ -23,18 +25,36 @@ export type Product = {
 };
 
 export const amazonTrackingId = 'epic05e-21';
+export const babyschlummerlandTrackingId = 'Benman8810';
 
 export function hasAmazonTrackingId(url: string) {
   return url.includes(`tag=${amazonTrackingId}`);
 }
 
 export function isAffiliateLinkReady(product: Product) {
-  return (
-    product.affiliateStatus === 'ready' &&
-    product.affiliateUrl.startsWith('https://www.amazon.de/') &&
-    hasAmazonTrackingId(product.affiliateUrl)
-  );
+  if (product.affiliateStatus !== 'ready') return false;
+
+  const network = product.affiliateNetwork ?? 'amazon';
+
+  if (network === 'amazon') {
+    return product.affiliateUrl.startsWith('https://www.amazon.de/') && hasAmazonTrackingId(product.affiliateUrl);
+  }
+
+  if (network === 'babyschlummerland') {
+    return (
+      product.affiliateUrl.startsWith('https://www.babyschlummerland.de/') &&
+      product.affiliateUrl.includes(`#aff=${babyschlummerlandTrackingId}`)
+    );
+  }
+
+  return false;
 }
+
+export const babysleepProductIds = [
+  'bindungsorientiert-durchschlafen-lernen',
+  'babys-tage-meistern',
+  'schlummergeheimnisse-neugeborene'
+];
 
 export const products: Product[] = [
   {
@@ -611,6 +631,87 @@ export const products: Product[] = [
     image: '/product-images/kulturtasche-babyartikel.webp',
     icon: 'toiletry',
     legalNote: 'Flüssigkeiten für Flugreisen nach aktuellen Sicherheitsregeln packen.'
+  },
+  {
+    id: 'bindungsorientiert-durchschlafen-lernen',
+    title: 'Bindungsorientiert durchschlafen lernen',
+    category: 'babyschlaf',
+    affiliateNetwork: 'babyschlummerland',
+    amazonSearchTerm: 'Babyschlaf Ratgeber bindungsorientiert durchschlafen lernen',
+    amazonProductUrl: 'https://www.babyschlummerland.de/durchschlafen-lernen-bindungsorientiert/',
+    affiliateUrl: 'https://www.babyschlummerland.de/durchschlafen-lernen-bindungsorientiert/#aff=Benman8810',
+    affiliateStatus: 'ready',
+    shortDescription:
+      'Digitaler Elternratgeber für Familien, die Babyschlaf ohne Druck und mit Blick auf Bindung besser verstehen möchten.',
+    idealFor: 'Eltern, die nachts häufiger aufwachen und sich realistische, liebevolle Orientierung wünschen',
+    whyItFits:
+      'Der Ratgeber passt zu BabyReiseHelfer, weil Schlaf auch auf Reisen ein großes Thema ist und ruhige Routinen Eltern entlasten können.',
+    whatToLookFor: [
+      'Keine Schlafgarantie erwarten',
+      'Inhalte mit eurem Bauchgefühl abgleichen',
+      'Bei medizinischen Fragen fachlichen Rat einholen'
+    ],
+    benefits: ['Kann Schlafsituationen einordnen', 'Setzt auf bindungsorientierte Begleitung', 'Digital sofort verfügbar'],
+    pros: ['Sanfter Ratgeber-Ton', 'Hilft beim Sortieren typischer Schlaffragen', 'Auch für Reise- und Hotelnächte mitdenkbar'],
+    cons: ['Kein Ersatz für medizinische Beratung', 'Nicht jedes Baby reagiert gleich auf Routinen', 'Erfordert Geduld und Beobachtung'],
+    buttonText: 'Ratgeber ansehen',
+    imageType: 'sleep-guide',
+    icon: 'sleep',
+    legalNote: 'Babyschlaf ist individuell. Der Ratgeber gibt Orientierung, aber keine Garantie für durchgeschlafene Nächte.'
+  },
+  {
+    id: 'babys-tage-meistern',
+    title: 'Babys Tage meistern',
+    category: 'babyschlaf',
+    affiliateNetwork: 'babyschlummerland',
+    amazonSearchTerm: 'Babys Tagesschlaf Ratgeber Tagesstruktur Baby',
+    amazonProductUrl: 'https://www.babyschlummerland.de/buch-tagesschlaf-baby/',
+    affiliateUrl: 'https://www.babyschlummerland.de/buch-tagesschlaf-baby/#aff=Benman8810',
+    affiliateStatus: 'ready',
+    shortDescription:
+      'Ratgeber rund um Tagesschlaf, Wachzeiten und ruhigere Tagesabläufe mit Baby.',
+    idealFor: 'Eltern, deren Baby tagsüber schwer zur Ruhe findet oder sehr kurze Nickerchen macht',
+    whyItFits:
+      'Reisetage werden oft leichter, wenn Eltern Schlafdruck, Pausen und Wachfenster besser einschätzen können.',
+    whatToLookFor: [
+      'Wachzeiten altersgerecht betrachten',
+      'Tagesstruktur flexibel halten',
+      'Keine starren Pläne auf jedes Baby übertragen'
+    ],
+    benefits: ['Kann Tagesabläufe übersichtlicher machen', 'Gibt Impulse für Pausen und Routinen', 'Hilft beim Beobachten von Müdigkeitssignalen'],
+    pros: ['Fokus auf den Alltag', 'Gut für Vorbereitung vor Reisen', 'Unterstützt ruhigeres Planen'],
+    cons: ['Kein fixer Tagesplan für jedes Baby', 'Reisetage bleiben manchmal unvorhersehbar', 'Braucht konsequentes Beobachten statt schnelles Rezept'],
+    buttonText: 'Ratgeber ansehen',
+    imageType: 'day-naps',
+    icon: 'sleep',
+    legalNote: 'Tagesrhythmen entwickeln sich individuell. Die Inhalte ersetzen keine persönliche Beratung.'
+  },
+  {
+    id: 'schlummergeheimnisse-neugeborene',
+    title: 'Schlummergeheimnisse für Neugeborene',
+    category: 'babyschlaf',
+    affiliateNetwork: 'babyschlummerland',
+    amazonSearchTerm: 'Neugeborene Schlaf Ratgeber erste Wochen Baby',
+    amazonProductUrl: 'https://www.babyschlummerland.de/ebook-schlummergeheimnisse-fuer-neugeborene/',
+    affiliateUrl: 'https://www.babyschlummerland.de/ebook-schlummergeheimnisse-fuer-neugeborene/#aff=Benman8810',
+    affiliateStatus: 'ready',
+    shortDescription:
+      'E-Book für die ersten Wochen mit Baby, wenn Schlaf, Nähe und neue Routinen sich erst einspielen.',
+    idealFor: 'Schwangere, frisch gebackene Eltern und Familien in der Neugeborenenzeit',
+    whyItFits:
+      'Gerade vor der ersten Reise oder dem ersten Familienbesuch kann Grundwissen über Neugeborenenschlaf entlasten.',
+    whatToLookFor: [
+      'Normale Neugeborenenbedürfnisse berücksichtigen',
+      'Sicheren Schlafplatz priorisieren',
+      'Bei Unsicherheit Hebamme oder Kinderarzt fragen'
+    ],
+    benefits: ['Kann Erwartungen realistischer machen', 'Begleitet die ersten Wochen', 'Niedrige Einstiegshürde als E-Book'],
+    pros: ['Sanfter Einstieg ins Thema Babyschlaf', 'Gut für die Vorbereitung', 'Kann Eltern Unsicherheit nehmen'],
+    cons: ['Neugeborene schlafen selten planbar', 'Kein Programm zum schnellen Durchschlafen', 'Sichere Schlafumgebung bleibt immer wichtiger als Routinen'],
+    buttonText: 'E-Book ansehen',
+    imageType: 'newborn-sleep',
+    icon: 'sleep',
+    legalNote: 'Für Neugeborene gelten besondere Empfehlungen zu sicherem Schlaf. Bei Fragen bitte Hebamme oder Kinderarzt einbeziehen.'
   }
 ];
 

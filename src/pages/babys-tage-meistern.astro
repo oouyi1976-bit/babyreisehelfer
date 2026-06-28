@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import AffiliateButton from '../components/AffiliateButton.astro';
+import DisclaimerBox from '../components/DisclaimerBox.astro';
+import ProsConsBox from '../components/ProsConsBox.astro';
+import FAQ from '../components/FAQ.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import CTABox from '../components/CTABox.astro';
+import { products } from '../data/products';
+
+const product = products.find((item) => item.id === 'babys-tage-meistern')!;
+const relatedArticles = (await getCollection('ratgeber'))
+  .filter((article) => ['tagesschlaf-beim-baby-tipps', 'abendroutine-mit-baby', 'reisen-mit-baby-und-schlaf'].includes(article.id));
+
+const faqItems = [
+  {
+    question: 'Hilft ein Tagesschlaf-Ratgeber auch bei Nächten?',
+    answer:
+      'Er kann indirekt helfen, weil Tagesstruktur und Übermüdung manche Nächte beeinflussen können. Eine Garantie gibt es aber nicht.'
+  },
+  {
+    question: 'Muss ich einen festen Tagesplan einhalten?',
+    answer:
+      'Nein. Gerade mit Baby und auf Reisen sind flexible Orientierungspunkte oft hilfreicher als starre Uhrzeiten.'
+  },
+  {
+    question: 'Für wen ist der Ratgeber weniger passend?',
+    answer:
+      'Wenn du eine schnelle Methode mit festen Schritten erwartest, passt der Ansatz vermutlich nicht. Er ist eher für Beobachtung, Einordnung und sanfte Struktur gedacht.'
+  }
+];
+---
+
+<Layout
+  title="Babys Tage meistern"
+  description="Ehrliche Einordnung zum Tagesschlaf-Ratgeber Babys Tage meistern: für Eltern, die ruhigere Tagesabläufe mit Baby suchen."
+>
+  <section class="product-hero">
+    <div class="container product-hero__grid">
+      <div>
+        <p class="eyebrow">Werbung / Affiliate-Link</p>
+        <h1>{product.title}</h1>
+        <p class="hero__subtitle">
+          Ein Ratgeber für Tagesschlaf, Wachfenster und alltagstaugliche Routinen, wenn Babys tagsüber schwer zur Ruhe finden.
+        </p>
+        <div class="hero__actions">
+          <AffiliateButton product={product} label="Ratgeber bei Babyschlummerland ansehen" />
+          <a class="button button--secondary" href="/babyschlaf-ratgeber/">Mehr zum Babyschlaf lesen</a>
+        </div>
+      </div>
+      <ProductVisual product={product} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container article-content">
+      <h2>Worum es bei diesem Ratgeber geht</h2>
+      <p>
+        "Babys Tage meistern" schaut auf den Tag: Müdigkeitssignale, Pausen, Wachzeiten und kleine Routinen. Das kann besonders hilfreich sein, wenn Nickerchen sehr kurz sind oder dein Baby tagsüber schnell überreizt wirkt.
+      </p>
+      <p>
+        Für Reisen ist das Thema ebenfalls relevant. Flugtage, Hotelwechsel oder Strandtage verschieben Schlafzeiten oft. Wer die Grundlagen besser versteht, kann flexibler planen.
+      </p>
+
+      <h2>Wann der Ratgeber passen kann</h2>
+      <ul>
+        <li>Wenn du tagsüber mehr Struktur suchst, ohne dein Baby in einen starren Plan zu pressen</li>
+        <li>Wenn kurze Nickerchen euren Alltag sehr anstrengend machen</li>
+        <li>Wenn du vor einer Reise besser einschätzen möchtest, wann Pausen sinnvoll sind</li>
+        <li>Wenn du Müdigkeitssignale deines Babys bewusster beobachten möchtest</li>
+      </ul>
+
+      <DisclaimerBox />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <ProsConsBox title="Kurz eingeordnet" pros={product.pros} cons={product.cons} />
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <FAQ items={faqItems} />
+    </div>
+  </section>
+
+  <RelatedArticles articles={relatedArticles} title="Passende Artikel zu Tagesschlaf und Reisen" />
+
+  <div class="container section">
+    <CTABox
+      title="Alle Babyschlaf-Produkte ansehen"
+      text="Vergleiche die digitalen Ratgeber und entscheide in Ruhe, was zu eurer Familie passt."
+      href="/baby-schlafprodukte/"
+      buttonText="Zum Überblick"
+    />
+  </div>
+</Layout>

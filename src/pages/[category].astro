@@ -9,10 +9,12 @@ import { categories, type SiteCategory } from '../data/categories';
 import { getProductsByIds, products, type Product } from '../data/products';
 
 export function getStaticPaths() {
-  return categories.map((category) => ({
-    params: { category: category.slug },
-    props: { category }
-  }));
+  return categories
+    .filter((category) => category.slug !== 'babyschlaf')
+    .map((category) => ({
+      params: { category: category.slug },
+      props: { category }
+    }));
 }
 
 const { category } = Astro.props as { category: SiteCategory };
