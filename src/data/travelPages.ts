@@ -78,8 +78,7 @@ export const travelPages: TravelPage[] = [
       }
     ],
     productSectionTitle: 'Produktideen für den ersten Urlaubs-Check',
-    productSectionText:
-      'Diese Auswahl deckt Schlafen, Transport, Sonne, Ordnung und Beschäftigung ab. Geprüfte Amazon-Affiliate-Links öffnen extern, unsichere Links bleiben sichtbar deaktiviert.',
+    productSectionText: '',
     productIds: [
       'reisebett-baby-kompakt',
       'buggy-reisen-handgepaeck',

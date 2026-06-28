@@ -106,7 +106,7 @@ const faqSchema = {
           <p class="eyebrow">Amazon-Produkte</p>
           <h2>{page.productSectionTitle}</h2>
         </div>
-        <p>{page.productSectionText}</p>
+        {page.productSectionText && <p>{page.productSectionText}</p>}
       </div>
       <ProductGrid products={selectedProducts} />
     </div>
