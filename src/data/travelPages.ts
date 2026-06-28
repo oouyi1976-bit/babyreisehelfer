@@ -379,7 +379,7 @@ export const travelPages: TravelPage[] = [
     eyebrow: 'Reiseprodukte',
     h1: 'Reiseprodukte für Baby, Kind und Familienurlaub',
     intro:
-      'Hier findest du 50 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Geprüfte Amazon-Affiliate-Links sind eingebunden, unsichere Produkte bleiben bewusst als Platzhalter markiert.',
+      'Hier findest du 50 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Alle Amazon-Links sind als Affiliate-Links gekennzeichnet und führen extern zu Amazon.de.',
     heroImage: '/category-images/kinderwagen-zubehoer.webp',
     primaryLink: '/beste-reiseprodukte/',
     primaryLabel: 'Beste Auswahl ansehen',
@@ -395,7 +395,7 @@ export const travelPages: TravelPage[] = [
       {
         heading: 'Affiliate-Links transparent prüfen',
         text:
-          'Nur geprüfte Amazon-Partnerlinks öffnen extern. Wenn ein Produktlink noch nicht sicher gepflegt ist, bleibt der Button deaktiviert und transparent markiert.',
+          'Die Produktlinks führen als gekennzeichnete Amazon-Partnerlinks extern zu Amazon.de. Preise, Sternebewertungen und Rezensionen werden bewusst nicht übernommen.',
         items: ['Keine erfundenen Preise', 'Keine Sternebewertungen kopieren', 'Keine Amazon-Bilder übernehmen']
       },
       {
@@ -424,9 +424,9 @@ export const travelPages: TravelPage[] = [
     articleTitle: 'Ratgeber zu Reiseprodukten',
     faq: [
       {
-        question: 'Warum sind manche Amazon-Links Platzhalter?',
+        question: 'Warum führen die Produktlinks zu Amazon.de?',
         answer:
-          'Damit keine ungeprüften oder falschen Affiliate-Links veröffentlicht werden. Neue geprüfte Amazon-Partnerlinks können zentral in src/data/travelProducts.ts ergänzt werden.'
+          'Die Links sind Amazon-Partnerlinks mit Tracking-ID. Wenn du darüber kaufst, erhalten wir ggf. eine Provision; für dich entstehen keine Mehrkosten.'
       },
       {
         question: 'Werden Amazon-Preise oder Sterne angezeigt?',
@@ -440,7 +440,7 @@ export const travelPages: TravelPage[] = [
       }
     ],
     pros: ['Zentrale Datenpflege', 'Klare Affiliate-Kennzeichnung', 'Produkte nach Reiseproblemen sortiert'],
-    cons: ['Einzelne Produktlinks können noch Platzhalter sein', 'Produktverfügbarkeit kann sich ändern', 'Herstellerangaben immer aktuell prüfen'],
+    cons: ['Produktverfügbarkeit kann sich ändern', 'Herstellerangaben immer aktuell prüfen', 'Keine individuelle Kaufberatung'],
     ctaTitle: 'Die besten Reiseprodukte fokussiert ansehen',
     ctaText: 'Wenn du nicht alle 50 Produkte prüfen möchtest, starte mit der kuratierten Auswahl.',
     ctaHref: '/beste-reiseprodukte/',
