@@ -1,0 +1,188 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import ProductGrid from './ProductGrid.astro';
+import ComparisonTable from './ComparisonTable.astro';
+import DigistoreProductBox from './DigistoreProductBox.astro';
+import FAQ from './FAQ.astro';
+import CTABox from './CTABox.astro';
+import DisclaimerBox from './DisclaimerBox.astro';
+import ProsConsBox from './ProsConsBox.astro';
+import RelatedArticles from './RelatedArticles.astro';
+import { getDigistoreLinksByIds } from '../data/digistoreLinks';
+import { getTravelProductsByIds, travelProducts } from '../data/travelProducts';
+import { type TravelPage, travelPages } from '../data/travelPages';
+
+const { page } = Astro.props as { page: TravelPage };
+const selectedProducts = page.showAllProducts ? travelProducts : getTravelProductsByIds(page.productIds);
+const comparisonProducts = getTravelProductsByIds(page.comparisonIds);
+const prominentDigistoreLinks = getDigistoreLinksByIds(page.prominentDigistoreIds);
+const secondaryDigistoreLinks = getDigistoreLinksByIds(page.secondaryDigistoreIds);
+const articles = (await getCollection('ratgeber'))
+  .filter((article) => page.articleCategories.includes(article.data.category))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, page.slug === 'urlaub-ratgeber' ? 15 : 6);
+const primaryIsExternal = page.primaryLink.startsWith('http');
+const pageUrl = new URL(`/${page.slug}/`, Astro.site).href;
+
+const pageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: page.title,
+  description: page.description,
+  url: pageUrl,
+  inLanguage: 'de-DE'
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faq.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+};
+---
+
+<Layout title={page.title} description={page.description} jsonLd={[pageSchema, faqSchema]}>
+  <section class="travel-page-hero">
+    <div class="container travel-page-hero__grid">
+      <div class="travel-page-hero__content">
+        <p class="eyebrow">{page.eyebrow}</p>
+        <h1>{page.h1}</h1>
+        <p>{page.intro}</p>
+        <div class="hero__actions">
+          <a
+            class="button"
+            href={page.primaryLink}
+            target={primaryIsExternal ? '_blank' : undefined}
+            rel={primaryIsExternal ? 'sponsored nofollow noopener' : undefined}
+            data-affiliate-link={primaryIsExternal ? true : undefined}
+            data-product-id={primaryIsExternal ? 'madeira-bus-pdf' : undefined}
+            data-product-title={primaryIsExternal ? 'Madeira mit Bus PDF-Reiseführer' : undefined}
+          >
+            {page.primaryLabel}
+          </a>
+          <a class="button button--secondary" href={page.secondaryLink}>{page.secondaryLabel}</a>
+        </div>
+      </div>
+      <div class="travel-page-hero__image">
+        <img src={page.heroImage} alt={`${page.h1} auf BabyReiseHelfer`} loading="eager" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <nav class="travel-nav-strip" aria-label="Urlaub und Reisen mit Kind">
+    <div class="container travel-nav-strip__links">
+      {travelPages.slice(0, 5).map((item) => (
+        <a href={`/${item.slug}/`} aria-current={item.slug === page.slug ? 'page' : undefined}>{item.eyebrow}</a>
+      ))}
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container travel-info-grid">
+      {page.sections.map((section) => (
+        <article class="travel-info-card">
+          <p class="eyebrow">Reiseplanung</p>
+          <h2>{section.heading}</h2>
+          <p>{section.text}</p>
+          <ul class="check-list">
+            {section.items.map((item) => <li>{item}</li>)}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Amazon-Produkte</p>
+          <h2>{page.productSectionTitle}</h2>
+        </div>
+        <p>{page.productSectionText}</p>
+      </div>
+      <ProductGrid products={selectedProducts} />
+    </div>
+  </section>
+
+  {comparisonProducts.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow">Vergleich</p>
+          <h2>Welche Reiseprodukte passen zu eurer Situation?</h2>
+        </div>
+        <ComparisonTable products={comparisonProducts} />
+      </div>
+    </section>
+  )}
+
+  {(prominentDigistoreLinks.length > 0 || secondaryDigistoreLinks.length > 0) && (
+    <section class="section section--soft">
+      <div class="container">
+        {prominentDigistoreLinks.length > 0 && (
+          <>
+            <div class="section__header">
+              <p class="eyebrow">Passende digitale Empfehlung</p>
+              <h2>Prominent, weil der Inhalt zur Seite passt</h2>
+            </div>
+            <div class="digistore-grid">
+              {prominentDigistoreLinks.map((link) => <DigistoreProductBox link={link} prominent />)}
+            </div>
+          </>
+        )}
+
+        {secondaryDigistoreLinks.length > 0 && (
+          <div class:list={['travel-secondary-recommendations', { 'travel-secondary-recommendations--spaced': prominentDigistoreLinks.length > 0 }]}>
+            <div class="section__header">
+              <p class="eyebrow">Weitere Reise-Empfehlungen</p>
+              <h2>Ergänzende Digistore24-Links</h2>
+              <p>
+                Diese Angebote haben Reisebezug, sind aber nicht speziell auf Babyreise oder Familienurlaub ausgerichtet.
+              </p>
+            </div>
+            <div class="digistore-grid">
+              {secondaryDigistoreLinks.map((link) => <DigistoreProductBox link={link} />)}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container travel-disclaimer-grid">
+      <DisclaimerBox
+        title="Affiliate-Hinweis"
+        text="Diese Seite enthält Amazon- und Digistore24-Affiliate-Links. Wenn du über einen solchen Link kaufst, erhalten wir ggf. eine Provision. Für dich entstehen dadurch keine Mehrkosten."
+      />
+      <DisclaimerBox
+        title="Keine medizinische Beratung"
+        text="Reiseapotheke, Sonnenschutz, Mückenschutz und Gesundheitsthemen sind allgemeine Hinweise. Bei Beschwerden, Medikamenten, Dosierungen oder Unsicherheit bitte Kinderarzt, Arzt oder Apotheke fragen."
+      />
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container narrow">
+      <FAQ items={page.faq} title="FAQ zu diesem Reisethema" />
+    </div>
+  </section>
+
+  <div class="container section">
+    <ProsConsBox title="Kurz eingeordnet" pros={page.pros} cons={page.cons} />
+  </div>
+
+  <RelatedArticles articles={articles} eyebrow="Weiterlesen" title={page.articleTitle} />
+
+  <div class="container section">
+    <CTABox title={page.ctaTitle} text={page.ctaText} href={page.ctaHref} buttonText={page.ctaButtonText} />
+  </div>
+</Layout>

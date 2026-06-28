@@ -1,0 +1,37 @@
+---
+import type { DigistoreLink } from '../data/digistoreLinks';
+
+const { link, prominent = false } = Astro.props as {
+  link: DigistoreLink;
+  prominent?: boolean;
+};
+---
+
+<article class:list={['digistore-box', { 'digistore-box--prominent': prominent }]}>
+  <div class="digistore-box__content">
+    <p class="eyebrow">Digistore24 / Affiliate-Link</p>
+    <h3>{link.title}</h3>
+    <p>{link.description}</p>
+    <dl class="product-card__facts">
+      <div>
+        <dt>Passend für</dt>
+        <dd>{link.bestFor}</dd>
+      </div>
+      <div>
+        <dt>Einordnung</dt>
+        <dd>{link.relevanceNote}</dd>
+      </div>
+    </dl>
+  </div>
+  <a
+    class="button button--affiliate"
+    href={link.url}
+    target="_blank"
+    rel="sponsored nofollow noopener"
+    data-affiliate-link
+    data-product-id={link.id}
+    data-product-title={link.title}
+  >
+    Empfehlung ansehen
+  </a>
+</article>

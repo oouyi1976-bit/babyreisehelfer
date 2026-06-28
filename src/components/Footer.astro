@@ -1,5 +1,10 @@
 ---
 import { categories } from '../data/categories';
+import { travelPages } from '../data/travelPages';
+
+const footerTravelPages = travelPages.filter((page) =>
+  ['urlaub', 'reisen-mit-kind', 'flugreise-mit-kind', 'familienurlaub', 'reiseprodukte', 'madeira-mit-bus'].includes(page.slug)
+);
 ---
 
 <footer class="site-footer" id="ueber-uns">
@@ -34,9 +39,19 @@ import { categories } from '../data/categories';
     </div>
 
     <div>
+      <h2>Urlaub & Reisen</h2>
+      <ul>
+        {footerTravelPages.map((page) => (
+          <li><a href={`/${page.slug}/`}>{page.eyebrow}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
       <h2>Über uns</h2>
       <ul>
         <li><a href="/produkte/">Empfohlene Produkte</a></li>
+        <li><a href="/beste-reiseprodukte/">Beste Reiseprodukte</a></li>
         <li><a href="/#ratgeber">Ratgeber & Inspiration</a></li>
         <li><a href="/#reiseziele">Tipps & Vergleiche</a></li>
       </ul>
@@ -64,7 +79,7 @@ import { categories } from '../data/categories';
 
   <div class="container site-footer__bottom">
     <p>
-      Hinweis: Wir verlinken auf ausgewählte Produkte und digitale Ratgeber. Bei einem Kauf über unsere Links erhalten wir ggf. eine kleine Provision - für dich bleibt der Preis gleich.
+      Affiliate-Hinweis: Wir verlinken auf ausgewählte Amazon-Produkte, digitale Ratgeber und Digistore24-Angebote. Bei einem Kauf über unsere Links erhalten wir ggf. eine kleine Provision - für dich bleibt der Preis gleich.
       Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
     </p>
     <p>© {new Date().getFullYear()} BabyReiseHelfer. Inhalte ersetzen keine medizinische, rechtliche oder sicherheitstechnische Beratung.</p>

@@ -1,0 +1,58 @@
+---
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+const {
+  products,
+  caption = 'Reiseprodukte im neutralen Vergleich'
+} = Astro.props as {
+  products: TravelProduct[];
+  caption?: string;
+};
+---
+
+<div class="comparison-table" role="region" aria-label={caption} tabindex="0">
+  <table>
+    <caption>{caption}</caption>
+    <thead>
+      <tr>
+        <th>Produkt</th>
+        <th>Kategorie</th>
+        <th>Geeignet für</th>
+        <th>Vorteile</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {products.map((product) => {
+        const hasReadyLink = isAmazonAffiliateReady(product);
+        return (
+          <tr>
+            <td data-label="Produkt">
+              <strong>{product.name}</strong>
+              <span>{product.priceRange}</span>
+            </td>
+            <td data-label="Kategorie">{product.category}</td>
+            <td data-label="Geeignet für">{product.bestFor}</td>
+            <td data-label="Vorteile">{product.benefits.slice(0, 2).join(' · ')}</td>
+            <td data-label="Link">
+              {hasReadyLink ? (
+                <a
+                  href={product.affiliateUrl}
+                  target="_blank"
+                  rel="sponsored nofollow noopener"
+                  data-affiliate-link
+                  data-product-id={product.id}
+                  data-product-title={product.name}
+                >
+                  Amazon ansehen
+                </a>
+              ) : (
+                <span class="placeholder-link">Amazon-Link eintragen</span>
+              )}
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>

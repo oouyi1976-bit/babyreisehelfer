@@ -1,0 +1,679 @@
+export type TravelProduct = {
+  id: string;
+  name: string;
+  category: string;
+  shortDescription: string;
+  benefits: string[];
+  bestFor: string;
+  priceRange: string;
+  affiliateUrl: string;
+  imageAlt: string;
+  ratingText: string;
+};
+
+export const AMAZON_AFFILIATE_PLACEHOLDER = 'AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN';
+
+export const travelProductCategories = [
+  'Reisebett Baby',
+  'Buggy für Reisen',
+  'Babytrage für Urlaub',
+  'Wickelrucksack',
+  'Reiseapotheke',
+  'Sonnenschutz Baby',
+  'UV-Kleidung Kind',
+  'Strandmuschel',
+  'Kindersitz Reise',
+  'Flugzeug-Zubehör Kind',
+  'Kopfhörer Kinder',
+  'Nackenkissen',
+  'Packwürfel',
+  'Kofferwaage',
+  'Reiseadapter',
+  'Trinkflasche',
+  'Snackbox',
+  'Spielzeug für Flugreise',
+  'Kinderkoffer',
+  'Buggy-Organizer',
+  'Reisehandtuch',
+  'Kühlrucksack',
+  'Dokumententasche',
+  'Reisewaschmittel',
+  'Mückenschutz'
+];
+
+export const travelProducts: TravelProduct[] = [
+  {
+    id: 'reisebett-baby-kompakt',
+    name: 'Kompaktes Baby-Reisebett',
+    category: 'Reisebett Baby',
+    shortDescription: 'Leichtes Reisebett für Hotel, Ferienwohnung oder Besuch bei Familie.',
+    benefits: ['Eigener Schlafplatz unterwegs', 'Faltbar und transportierbar', 'Hilft bei vertrauter Abendroutine'],
+    bestFor: 'Familien, die mehr als eine Nacht am selben Ort bleiben',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kompaktes Baby-Reisebett für Urlaub und Familienreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reisebett-matratze-faltbar',
+    name: 'Faltbare Reisebett-Matratze',
+    category: 'Reisebett Baby',
+    shortDescription: 'Zusätzliche faltbare Matratze, wenn das Reisebett sehr hart wirkt.',
+    benefits: ['Kleineres Packmaß als starre Matratzen', 'Kann Liegekomfort verbessern', 'Auch für Besuche nutzbar'],
+    bestFor: 'Eltern, die das vorhandene Reisebett vorher prüfen möchten',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Faltbare Matratze für ein Baby-Reisebett',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'buggy-reisen-handgepaeck',
+    name: 'Reisebuggy mit kleinem Faltmaß',
+    category: 'Buggy für Reisen',
+    shortDescription: 'Wendiger Buggy für Flughafen, Stadturlaub und kurze Transfers.',
+    benefits: ['Schnell zusammenklappbar', 'Leichter als viele Kinderwagen', 'Praktisch bei viel Umsteigen'],
+    bestFor: 'Flugreisen, Städtetrips und Familien mit Kleinkind',
+    priceRange: 'Mittelklasse bis Premium',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kompakter Buggy für Reisen mit Kind',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'buggy-reisen-liegefunktion',
+    name: 'Reisebuggy mit Liegefunktion',
+    category: 'Buggy für Reisen',
+    shortDescription: 'Buggy für längere Urlaubstage, wenn unterwegs auch Schlafpausen anstehen.',
+    benefits: ['Liegeposition für Pausen', 'Sonnenverdeck oft integriert', 'Gut für Tagesausflüge'],
+    bestFor: 'Kleinkinder, die im Urlaub noch Mittagsschlaf machen',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Reisebuggy mit Liegefunktion im Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'babytrage-urlaub-luftig',
+    name: 'Luftige Babytrage für warme Reiseziele',
+    category: 'Babytrage für Urlaub',
+    shortDescription: 'Babytrage mit atmungsaktivem Material für Ausflüge ohne Kinderwagen.',
+    benefits: ['Hände bleiben frei', 'Gut bei Treppen und Altstädten', 'Kleiner als ein Buggy'],
+    bestFor: 'Strandwege, Altstädte, Madeira-Levadas und Flughäfen',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Luftige Babytrage für Urlaub mit Baby',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'babytrage-toddler-reise',
+    name: 'Toddler-Trage für müde Kleinkinder',
+    category: 'Babytrage für Urlaub',
+    shortDescription: 'Stabilere Trage für größere Kinder, wenn Wege im Urlaub zu lang werden.',
+    benefits: ['Entlastet bei müden Kindern', 'Nützlich bei unebenem Gelände', 'Alternative zum Buggy'],
+    bestFor: 'Familien mit Laufanfängern und Kleinkindern',
+    priceRange: 'Premium',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Toddler-Trage für Familienurlaub und längere Wege',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'wickelrucksack-reise-handgepaeck',
+    name: 'Wickelrucksack als Handgepäck',
+    category: 'Wickelrucksack',
+    shortDescription: 'Rucksack mit Fächern für Windeln, Wechselkleidung, Snacks und Dokumente.',
+    benefits: ['Viele Dinge bleiben sortiert', 'Beide Hände frei', 'Passt gut zu Flugreisen'],
+    bestFor: 'Flugzeug, Bahnhof, Mietwagen und Tagesausflüge',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Wickelrucksack für Reise und Handgepäck',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'wickelrucksack-isolierfach',
+    name: 'Wickelrucksack mit Isolierfach',
+    category: 'Wickelrucksack',
+    shortDescription: 'Reiserucksack mit isolierten Fächern für Fläschchen oder kleine Snacks.',
+    benefits: ['Mehr Ordnung unterwegs', 'Flaschen schneller griffbereit', 'Praktisch für lange Reisetage'],
+    bestFor: 'Familien mit Babyflasche, Brei oder vielen Snacks',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Wickelrucksack mit Isolierfach für Familienreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reiseapotheke-organizer-baby',
+    name: 'Reiseapotheke-Organizer für Baby und Kind',
+    category: 'Reiseapotheke',
+    shortDescription: 'Kleine Tasche, um Pflaster, Fieberthermometer und abgestimmte Mittel zu bündeln.',
+    benefits: ['Schneller Überblick', 'Ablaufdaten leichter prüfbar', 'Passt ins Handgepäck'],
+    bestFor: 'Packlisten, Ferienwohnung, Strandtasche und Ausflüge',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Organizer für Reiseapotheke mit Baby und Kind',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'fieberthermometer-reise',
+    name: 'Kompaktes Fieberthermometer für Reisen',
+    category: 'Reiseapotheke',
+    shortDescription: 'Kleines Thermometer als Basis für die Familien-Reiseapotheke.',
+    benefits: ['Nimmt wenig Platz weg', 'Hilft bei erster Einschätzung', 'Auch daheim nutzbar'],
+    bestFor: 'Eltern, die Gesundheitsbasics geordnet dabeihaben wollen',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kompaktes Fieberthermometer für die Reiseapotheke',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'baby-sonnenhut-uv',
+    name: 'Baby-Sonnenhut mit Nackenschutz',
+    category: 'Sonnenschutz Baby',
+    shortDescription: 'Leichter Hut mit Nackenschutz für Strand, Pool und Stadtbummel.',
+    benefits: ['Schützt Kopf und Nacken', 'Kleines Packmaß', 'Schnell trocknend wählbar'],
+    bestFor: 'Sommerurlaub, Strandtage und helle Promenaden',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Baby-Sonnenhut mit Nackenschutz für Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'baby-sonnensegel-kinderwagen',
+    name: 'Kinderwagen-Sonnensegel für Reisen',
+    category: 'Sonnenschutz Baby',
+    shortDescription: 'Flexibler Schatten für Buggy oder Kinderwagen bei tief stehender Sonne.',
+    benefits: ['Schnell befestigt', 'Leichter als viele Schirme', 'Gut für Spaziergänge'],
+    bestFor: 'Kinderwagenwege, Flughafen und Ferienort',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Sonnensegel am Kinderwagen im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'uv-shirt-kind-langarm',
+    name: 'UV-Shirt für Kinder',
+    category: 'UV-Kleidung Kind',
+    shortDescription: 'Leichtes Langarmshirt für Strand, Pool und Bootsausflug.',
+    benefits: ['Bedeckt Schultern und Arme', 'Trocknet meist schnell', 'Reduziert Nachcremen an bedeckten Stellen'],
+    bestFor: 'Strandurlaub und warme Reiseziele',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'UV-Shirt für Kinder im Strandurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'uv-badeanzug-kind',
+    name: 'UV-Badeanzug oder UV-Set',
+    category: 'UV-Kleidung Kind',
+    shortDescription: 'Badebekleidung mit mehr Bedeckung für längere Wasser- und Strandzeiten.',
+    benefits: ['Mehr bedeckte Haut', 'Gut mit Sonnenhut kombinierbar', 'Praktisch am Pool'],
+    bestFor: 'Kinder, die im Urlaub viel am Wasser sind',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'UV-Badeanzug für Kind im Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'strandmuschel-baby-uv',
+    name: 'Baby-Strandmuschel mit UV-Schutz',
+    category: 'Strandmuschel',
+    shortDescription: 'Mobiler Schattenplatz für Strand, Badesee oder Garten der Ferienwohnung.',
+    benefits: ['Eigene Schattenzone', 'Windschutz möglich', 'Platz für Wickelpause'],
+    bestFor: 'Strandurlaub mit Baby und Kleinkind',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Baby-Strandmuschel mit UV-Schutz am Strand',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'strandmuschel-pop-up-familie',
+    name: 'Pop-up-Strandmuschel für Familien',
+    category: 'Strandmuschel',
+    shortDescription: 'Größere Strandmuschel, wenn mehrere Kinder, Taschen und Pausen Platz brauchen.',
+    benefits: ['Schnell aufgebaut', 'Mehr Liegefläche', 'Gut für längere Strandtage'],
+    bestFor: 'Familien mit mehreren Kindern oder viel Strandgepäck',
+    priceRange: 'Mittelklasse bis Premium',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Pop-up-Strandmuschel für Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kindersitz-reise-faltbar',
+    name: 'Faltbarer Reise-Kindersitz',
+    category: 'Kindersitz Reise',
+    shortDescription: 'Transportable Sitzlösung für Taxi, Mietwagen oder Carsharing, wenn zugelassen.',
+    benefits: ['Kompakter als Standardsitz', 'Für Transfers planbar', 'Kann Stress bei Ankunft senken'],
+    bestFor: 'Familien, die vorab Kompatibilität und Zulassung prüfen',
+    priceRange: 'Premium',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Faltbarer Kindersitz für Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'sitzerhoehung-reise-kind',
+    name: 'Reise-Sitzerhöhung für ältere Kinder',
+    category: 'Kindersitz Reise',
+    shortDescription: 'Leichte Sitzerhöhung für größere Kinder, sofern sie zu Alter, Größe und Rechtslage passt.',
+    benefits: ['Leicht zu transportieren', 'Schneller Einbau', 'Gut für Mietwagenplanung'],
+    bestFor: 'Ältere Kinder nach Prüfung der gesetzlichen Vorgaben',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Reise-Sitzerhöhung für Kind im Mietwagen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'flugzeug-fussstuetze-kind',
+    name: 'Flugzeug-Fußstütze für Kinder',
+    category: 'Flugzeug-Zubehör Kind',
+    shortDescription: 'Aufblasbare oder faltbare Fußstütze für bequemeres Sitzen, falls Airline erlaubt.',
+    benefits: ['Kann Beine entlasten', 'Kleines Packmaß', 'Hilft bei längeren Flügen'],
+    bestFor: 'Langstrecken und Kinder, die schwer zur Ruhe kommen',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Flugzeug-Fußstütze für Kind auf Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'flugzeug-tablet-halter-kind',
+    name: 'Tablet-Halter für Flugzeug und Auto',
+    category: 'Flugzeug-Zubehör Kind',
+    shortDescription: 'Halterung, damit Hörspiele oder Offline-Videos nicht ständig herunterfallen.',
+    benefits: ['Hände bleiben frei', 'Kann Streit um das Gerät reduzieren', 'Auch im Auto nutzbar'],
+    bestFor: 'Längere Wartezeiten, Flugreisen und Autofahrten',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Tablet-Halter als Flugzeug-Zubehör für Kinder',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kopfhoerer-kinder-lautstaerkebegrenzung',
+    name: 'Kinderkopfhörer mit Lautstärkebegrenzung',
+    category: 'Kopfhörer Kinder',
+    shortDescription: 'Kopfhörer für Hörspiele und Filme mit kindgerechter Lautstärkebegrenzung.',
+    benefits: ['Ruhigere Reisezeit', 'Faltbare Modelle sparen Platz', 'Gut für Offline-Unterhaltung'],
+    bestFor: 'Flugzeug, Bahn, Auto und Hotelzimmer',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kinderkopfhörer mit Lautstärkebegrenzung für Flugreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kopfhoerer-kinder-bluetooth-kabel',
+    name: 'Kinderkopfhörer mit Bluetooth und Kabel',
+    category: 'Kopfhörer Kinder',
+    shortDescription: 'Flexibles Modell für Tablet, Flugzeug-Adapter und verschiedene Geräte.',
+    benefits: ['Kabellos oder per Kabel nutzbar', 'Praktisch bei leeren Akkus', 'Für mehrere Reisesituationen geeignet'],
+    bestFor: 'Familien, die im Flugzeug und unterwegs flexibel bleiben wollen',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kinderkopfhörer mit Bluetooth und Kabel im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'nackenkissen-kind-flugzeug',
+    name: 'Nackenkissen für Kinder',
+    category: 'Nackenkissen',
+    shortDescription: 'Kleines Reisekissen für Flugzeug, Bahn und lange Autofahrten.',
+    benefits: ['Stützt Kopf und Nacken', 'Klein am Rucksack befestigbar', 'Kann Schlafpausen angenehmer machen'],
+    bestFor: 'Kinder, die unterwegs einschlafen',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Nackenkissen für Kinder im Flugzeug',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'nackenkissen-aufblasbar-familie',
+    name: 'Aufblasbares Nackenkissen',
+    category: 'Nackenkissen',
+    shortDescription: 'Platzsparendes Kissen für Eltern oder ältere Kinder im Handgepäck.',
+    benefits: ['Sehr kleines Packmaß', 'Härte variierbar', 'Schnell verstaut'],
+    bestFor: 'Handgepäck-Minimalisten und Flugreisen',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Aufblasbares Nackenkissen für Familienreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'packwuerfel-familienurlaub-set',
+    name: 'Packwürfel-Set für Familien',
+    category: 'Packwürfel',
+    shortDescription: 'Organizer für Kinderkleidung, Windeln, Strandzeug und Elternsachen.',
+    benefits: ['Koffer bleibt übersichtlich', 'Schneller Zugriff im Hotel', 'Jedes Kind kann eigene Farbe bekommen'],
+    bestFor: 'Familienurlaub mit mehreren Taschen oder Koffern',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Packwürfel für Familienurlaub und Kinderkleidung',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'packwuerfel-kompression-reise',
+    name: 'Kompressions-Packwürfel',
+    category: 'Packwürfel',
+    shortDescription: 'Packwürfel mit Kompressionsreißverschluss für Kleidung mit viel Volumen.',
+    benefits: ['Spart Platz', 'Trennt saubere und getragene Kleidung', 'Hilft bei kleinen Koffern'],
+    bestFor: 'Flugreisen mit wenig Gepäck und längere Familienurlaube',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kompressions-Packwürfel für Reisegepäck',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kofferwaage-digital',
+    name: 'Digitale Kofferwaage',
+    category: 'Kofferwaage',
+    shortDescription: 'Kleine Waage, um Aufgabegepäck und Rückreise-Souvenirs zu kontrollieren.',
+    benefits: ['Vermeidet Überraschungen am Flughafen', 'Passt ins Handgepäck', 'Auch für Buggytaschen nützlich'],
+    bestFor: 'Flugreisen mit Familiengepäck',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Digitale Kofferwaage für Familienreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kofferwaage-massband',
+    name: 'Kofferwaage mit Maßband',
+    category: 'Kofferwaage',
+    shortDescription: 'Waage plus Maßband, um Gewicht und Gepäckmaße grob zu prüfen.',
+    benefits: ['Zwei Checks in einem', 'Gut für Handgepäckplanung', 'Klein und leicht'],
+    bestFor: 'Familien, die mit mehreren Gepäckstücken fliegen',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kofferwaage mit Maßband für Flugreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reiseadapter-universal-usb',
+    name: 'Universal-Reiseadapter mit USB',
+    category: 'Reiseadapter',
+    shortDescription: 'Adapter für mehrere Länder mit USB-Anschlüssen für Handy, Nachtlicht und Zubehör.',
+    benefits: ['Weniger Einzelstecker', 'Mehrere Geräte ladbar', 'Gut für Ferienwohnungen'],
+    bestFor: 'Auslandsreisen mit Babytechnik und Eltern-Geräten',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Universal-Reiseadapter mit USB für Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reiseadapter-europa-uk',
+    name: 'Reiseadapter Europa auf UK',
+    category: 'Reiseadapter',
+    shortDescription: 'Einfacher Länderadapter für Reisen nach Großbritannien, Irland oder passende Zielregionen.',
+    benefits: ['Kleiner als Universaladapter', 'Günstige Ergänzung', 'Gut als Reserve'],
+    bestFor: 'Familien mit klarem Reiseziel und wenigen Geräten',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Reiseadapter für UK und Irland',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'trinkflasche-kind-auslaufsicher',
+    name: 'Auslaufsichere Trinkflasche für Kinder',
+    category: 'Trinkflasche',
+    shortDescription: 'Robuste Flasche für Flugzeug, Strand, Auto und Ausflüge.',
+    benefits: ['Weniger Kleckern im Gepäck', 'Schnell griffbereit', 'Nachfüllbar statt Einwegflaschen'],
+    bestFor: 'Kinder im Kindergarten- und Schulalter',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Auslaufsichere Trinkflasche für Kinder auf Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'trinkflasche-baby-strohhalm',
+    name: 'Kinder-Trinkflasche mit Strohhalm',
+    category: 'Trinkflasche',
+    shortDescription: 'Flasche mit Strohhalmdeckel für kleine Kinder, die im Sitzen trinken.',
+    benefits: ['Einhandbedienung möglich', 'Gut im Buggy', 'Motiviert zum Trinken'],
+    bestFor: 'Warme Urlaubstage und lange Transfers',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Trinkflasche mit Strohhalm für Kind im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'snackbox-kind-faecher',
+    name: 'Snackbox mit Fächern',
+    category: 'Snackbox',
+    shortDescription: 'Box mit getrennten Fächern für Obst, Cracker, Brot und kleine Reise-Snacks.',
+    benefits: ['Snacks bleiben sortiert', 'Weniger Verpackungsmüll', 'Gut für Wartezeiten'],
+    bestFor: 'Flughafen, Bahn, Auto und Strandtasche',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Snackbox mit Fächern für Kinder auf Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'snackbox-auslaufsicher-baby',
+    name: 'Auslaufsichere Snackbox für Kleinkinder',
+    category: 'Snackbox',
+    shortDescription: 'Dichte Box für kleine Portionen, wenn der Wickelrucksack nicht kleben soll.',
+    benefits: ['Gut für weiche Snacks', 'Leicht zu reinigen', 'Kompakt im Handgepäck'],
+    bestFor: 'Kleinkinder, die häufig kleine Pausen brauchen',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Auslaufsichere Snackbox für Kleinkind im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'spielzeug-flugreise-beschaeftigungsbuch',
+    name: 'Beschäftigungsbuch für Flugreisen',
+    category: 'Spielzeug für Flugreise',
+    shortDescription: 'Ruhiges Buch mit Klappen, Stickern oder kleinen Aufgaben für Wartezeiten.',
+    benefits: ['Leise Beschäftigung', 'Kein Akku nötig', 'Passt ins Handgepäck'],
+    bestFor: 'Kinder ab etwa Kleinkindalter, je nach Produktangabe',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Beschäftigungsbuch als Spielzeug für Flugreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'spielzeug-flugreise-magnetspiel',
+    name: 'Magnetspiel für unterwegs',
+    category: 'Spielzeug für Flugreise',
+    shortDescription: 'Kleines Reisespiel mit magnetischen Teilen, die weniger schnell herunterfallen.',
+    benefits: ['Kompakt', 'Mehrfach bespielbar', 'Gut für Tischchen im Zug oder Flugzeug'],
+    bestFor: 'Wartezeiten, Flugzeug und Restaurantbesuche',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Magnetspiel als Flugreise-Spielzeug für Kinder',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kinderkoffer-rollen',
+    name: 'Kinderkoffer mit Rollen',
+    category: 'Kinderkoffer',
+    shortDescription: 'Eigener kleiner Koffer für Kleidung, Kuscheltier und Reisebeschäftigung.',
+    benefits: ['Kind kann mitpacken', 'Motiviert zur Ordnung', 'Eigene Dinge bleiben zusammen'],
+    bestFor: 'Kinder, die gern selbst Verantwortung übernehmen',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kinderkoffer mit Rollen für Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kinderkoffer-sitzkoffer',
+    name: 'Sitzkoffer für Kinder',
+    category: 'Kinderkoffer',
+    shortDescription: 'Kinderkoffer, der je nach Modell auch als Sitz- oder Ziehgepäck genutzt werden kann.',
+    benefits: ['Kann Wartezeiten erleichtern', 'Spielerisches Reisen', 'Eigener Stauraum fürs Kind'],
+    bestFor: 'Flughafen und Bahnreisen mit längeren Wegen',
+    priceRange: 'Mittelklasse bis Premium',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Sitzkoffer für Kinder am Flughafen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'buggy-organizer-getraenkehalter',
+    name: 'Buggy-Organizer mit Getränkehalter',
+    category: 'Buggy-Organizer',
+    shortDescription: 'Tasche für Trinkflasche, Tücher, Sonnencreme und Tickets am Buggygriff.',
+    benefits: ['Wichtiges bleibt griffbereit', 'Entlastet den Wickelrucksack', 'Gut für kurze Ausflüge'],
+    bestFor: 'Stadtbummel, Promenade, Zoo und Flughafen',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Buggy-Organizer mit Getränkehalter für Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'buggy-organizer-abnehmbar',
+    name: 'Abnehmbarer Buggy-Organizer',
+    category: 'Buggy-Organizer',
+    shortDescription: 'Organizer, der schnell vom Buggy abgenommen und mitgenommen werden kann.',
+    benefits: ['Schnell abnehmbar', 'Gut bei Restaurantstopps', 'Kleinteile bleiben zusammen'],
+    bestFor: 'Familien, die Buggy und Handgepäck oft wechseln',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Abnehmbarer Buggy-Organizer im Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reisehandtuch-mikrofaser-kind',
+    name: 'Mikrofaser-Reisehandtuch für Kinder',
+    category: 'Reisehandtuch',
+    shortDescription: 'Leichtes Handtuch für Strand, Pool, Camping und spontane Waschgänge.',
+    benefits: ['Trocknet schnell', 'Kleines Packmaß', 'Leichter als Frottee'],
+    bestFor: 'Strandurlaub und Reisen mit wenig Gepäck',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Mikrofaser-Reisehandtuch für Kinder',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reisehandtuch-kapuzenhandtuch',
+    name: 'Kapuzen-Reisehandtuch',
+    category: 'Reisehandtuch',
+    shortDescription: 'Schnelltrocknendes Handtuch mit Kapuze für Babys und Kleinkinder.',
+    benefits: ['Hält Kopf nach dem Baden warm', 'Gut am Pool', 'Einfach überzuwerfen'],
+    bestFor: 'Babys, Kleinkinder und Poolurlaub',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kapuzen-Reisehandtuch für Baby und Kleinkind',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kuehlrucksack-familie-strand',
+    name: 'Kühlrucksack für Familien',
+    category: 'Kühlrucksack',
+    shortDescription: 'Rucksack für Getränke, Snacks und Picknick am Strand oder bei Ausflügen.',
+    benefits: ['Hände bleiben frei', 'Mehr Volumen als kleine Kühltaschen', 'Gut für Tagesausflüge'],
+    bestFor: 'Strandtage, Ferienparks und Ausflüge mit Snacks',
+    priceRange: 'Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kühlrucksack für Familienurlaub und Strand',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'kuehltasche-babyflaschen',
+    name: 'Kühltasche für Babyflaschen',
+    category: 'Kühlrucksack',
+    shortDescription: 'Kleine isolierte Tasche für Flaschen, Gläschen oder kurze Wege.',
+    benefits: ['Kompakt im Wickelrucksack', 'Schnell griffbereit', 'Gut für Transfers'],
+    bestFor: 'Familien mit Babyflaschen oder Brei unterwegs',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Kühltasche für Babyflaschen auf Reisen',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'dokumententasche-familie-rfid',
+    name: 'Familien-Dokumententasche',
+    category: 'Dokumententasche',
+    shortDescription: 'Organizer für Pässe, Bordkarten, Versicherungskarten und Buchungsunterlagen.',
+    benefits: ['Alles an einem Ort', 'Schneller Check-in', 'Weniger Suchen am Flughafen'],
+    bestFor: 'Flugreisen, Fähre, Hotel-Check-in und Mietwagen',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Dokumententasche für Familienreise',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'dokumentenhuelle-wasserdicht',
+    name: 'Wasserdichte Dokumentenhülle',
+    category: 'Dokumententasche',
+    shortDescription: 'Schutzhülle für Ausweise, Tickets und Notizen bei Strand- oder Bootsausflügen.',
+    benefits: ['Schützt vor Spritzwasser', 'Kleines Format', 'Gut für Tagesausflüge'],
+    bestFor: 'Strand, Pool, Boot, Madeira-Ausflüge und Regenwetter',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Wasserdichte Dokumentenhülle für Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reisewaschmittel-tube',
+    name: 'Reisewaschmittel in der Tube',
+    category: 'Reisewaschmittel',
+    shortDescription: 'Kleines Waschmittel für Bodys, Socken oder verschmutzte Kinderkleidung unterwegs.',
+    benefits: ['Spart Wechselkleidung', 'Gut für längere Reisen', 'Passt in die Kulturtasche'],
+    bestFor: 'Familienurlaub mit wenig Gepäck oder Ferienwohnung',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Reisewaschmittel für Kinderkleidung im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'reisewaescheleine-klammern',
+    name: 'Reise-Wäscheleine mit Klammern',
+    category: 'Reisewaschmittel',
+    shortDescription: 'Kompakte Leine zum Trocknen kleiner Kleidungsstücke im Hotel oder Apartment.',
+    benefits: ['Keine große Wäscheausstattung nötig', 'Gut für nasse Badesachen', 'Leicht im Gepäck'],
+    bestFor: 'Ferienwohnungen, Camping und Strandurlaub',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Reise-Wäscheleine für Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'mueckenschutz-kinderwagen-netz',
+    name: 'Mückennetz für Kinderwagen',
+    category: 'Mückenschutz',
+    shortDescription: 'Feinmaschiges Netz für Buggy oder Kinderwagen bei Abendessen im Freien.',
+    benefits: ['Ohne Wirkstoff', 'Klein im Gepäck', 'Schnell übergezogen'],
+    bestFor: 'Seen, Campingplätze, Hotelgärten und warme Abendstunden',
+    priceRange: 'Budget',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Mückennetz für Kinderwagen im Urlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  },
+  {
+    id: 'mueckenschutz-stecker-reise',
+    name: 'Mückenschutz für Reisezimmer',
+    category: 'Mückenschutz',
+    shortDescription: 'Zimmerlösung gegen Mücken, deren Eignung für Kinderzimmer vorher geprüft werden sollte.',
+    benefits: ['Kann Nächte ruhiger machen', 'Gut für Ferienwohnungen', 'Vor Ort oft schwerer zu finden'],
+    bestFor: 'Eltern, die Herstellerhinweise und Kinder-Eignung genau prüfen',
+    priceRange: 'Budget bis Mittelklasse',
+    affiliateUrl: AMAZON_AFFILIATE_PLACEHOLDER,
+    imageAlt: 'Mückenschutz für Reisezimmer im Familienurlaub',
+    ratingText: 'Keine Amazon-Bewertung angezeigt'
+  }
+];
+
+export const featuredTravelProductIds = [
+  'reisebett-baby-kompakt',
+  'buggy-reisen-handgepaeck',
+  'babytrage-urlaub-luftig',
+  'wickelrucksack-reise-handgepaeck',
+  'reiseapotheke-organizer-baby',
+  'baby-sonnenhut-uv',
+  'strandmuschel-baby-uv',
+  'kopfhoerer-kinder-lautstaerkebegrenzung',
+  'packwuerfel-familienurlaub-set',
+  'dokumententasche-familie-rfid'
+];
+
+export function isAmazonAffiliateReady(product: TravelProduct) {
+  return (
+    product.affiliateUrl !== AMAZON_AFFILIATE_PLACEHOLDER &&
+    product.affiliateUrl.startsWith('https://www.amazon.de/')
+  );
+}
+
+export function getTravelProductsByIds(ids: string[]) {
+  return ids
+    .map((id) => travelProducts.find((product) => product.id === id))
+    .filter((product): product is TravelProduct => Boolean(product));
+}
+
+export function getTravelProductsByCategory(category: string) {
+  return travelProducts.filter((product) => product.category === category);
+}
+
+export function getTravelProductsByCategories(categories: string[]) {
+  return travelProducts.filter((product) => categories.includes(product.category));
+}

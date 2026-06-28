@@ -3,12 +3,16 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import ProductComparisonTable from '../../components/ProductComparisonTable.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import ProsConsBox from '../../components/ProsConsBox.astro';
 import CTABox from '../../components/CTABox.astro';
 import AffiliateDisclosure from '../../components/AffiliateDisclosure.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
 import { getProductsByIds } from '../../data/products';
+import { getTravelProductsByIds } from '../../data/travelProducts';
 import { getCategoryBySlug } from '../../data/categories';
+import { getTravelPageBySlug } from '../../data/travelPages';
 
 export async function getStaticPaths() {
   const entries = await getCollection('ratgeber');
@@ -21,7 +25,11 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const category = getCategoryBySlug(entry.data.category);
+const travelPage = getTravelPageBySlug(entry.data.category);
+const breadcrumbHref = category ? `/${category.slug}/` : travelPage ? `/${travelPage.slug}/` : '/';
+const breadcrumbLabel = category?.title ?? travelPage?.eyebrow ?? 'Ratgeber';
 const featuredProducts = getProductsByIds(entry.data.featuredProductIds);
+const featuredTravelProducts = getTravelProductsByIds(entry.data.featuredProductIds);
 const allArticles = await getCollection('ratgeber');
 const relatedArticles = allArticles
   .filter((article) => article.id !== entry.id && article.data.category === entry.data.category)
@@ -56,7 +64,7 @@ const articleSchema = {
   <article class="article-layout">
     <header class="article-hero">
       <div class="container article-hero__inner">
-        <a class="breadcrumb" href={category ? `/${category.slug}/` : '/'}>{category?.title ?? 'Ratgeber'}</a>
+        <a class="breadcrumb" href={breadcrumbHref}>{breadcrumbLabel}</a>
         <h1>{entry.data.title}</h1>
         <p>{entry.data.excerpt}</p>
         <div class="article-meta">
@@ -70,7 +78,7 @@ const articleSchema = {
       <div class="article-content">
         <Content />
 
-        {featuredProducts.length > 0 && (
+        {(featuredProducts.length > 0 || featuredTravelProducts.length > 0) && (
           <>
             <AffiliateDisclosure compact />
             <section id="affiliate-link-eintragen" class="article-product-section">
@@ -78,9 +86,12 @@ const articleSchema = {
               <p>
                 Die folgenden Karten zeigen neutrale Produktideen und digitale Ratgeber. Affiliate-Links sind sichtbar gekennzeichnet; Preise, Sternebewertungen und erfundene Testsieger werden nicht angezeigt.
               </p>
-              <div class="product-grid product-grid--article">
-                {featuredProducts.map((product) => <ProductCard product={product} compact />)}
-              </div>
+              {featuredProducts.length > 0 && (
+                <div class="product-grid product-grid--article">
+                  {featuredProducts.map((product) => <ProductCard product={product} compact />)}
+                </div>
+              )}
+              {featuredTravelProducts.length > 0 && <ProductGrid products={featuredTravelProducts} compact />}
             </section>
           </>
         )}
@@ -89,6 +100,13 @@ const articleSchema = {
           <section class="article-product-section">
             <h2>Kurzer Vergleich</h2>
             <ProductComparisonTable products={featuredProducts} />
+          </section>
+        )}
+
+        {featuredTravelProducts.length > 2 && (
+          <section class="article-product-section">
+            <h2>Kurzer Reiseprodukt-Vergleich</h2>
+            <ComparisonTable products={featuredTravelProducts} />
           </section>
         )}
 
@@ -112,6 +130,7 @@ const articleSchema = {
           <h2>In diesem Artikel</h2>
           <p>{entry.data.description}</p>
           {category && <a class="text-link" href={`/${category.slug}/`}>Mehr zu {category.title}</a>}
+          {travelPage && <a class="text-link" href={`/${travelPage.slug}/`}>Mehr zu {travelPage.eyebrow}</a>}
         </div>
       </aside>
     </div>

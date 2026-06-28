@@ -1,0 +1,9 @@
+---
+import TravelPageTemplate from '../components/TravelPageTemplate.astro';
+import { getTravelPageBySlug } from '../data/travelPages';
+
+const page = getTravelPageBySlug('reisen-mit-kind');
+if (!page) throw new Error('Travel page not found: reisen-mit-kind');
+---
+
+<TravelPageTemplate page={page} />

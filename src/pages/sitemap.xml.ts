@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../data/categories';
+import { travelPages } from '../data/travelPages';
 
 export const GET: APIRoute = async ({ site }) => {
   const baseUrl = (site ?? new URL('https://babyreisehelfer.pages.dev')).toString().replace(/\/$/, '');
@@ -17,6 +18,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/durchschlafen-lernen-bindungsorientiert/',
     '/babys-tage-meistern/',
     '/schlummergeheimnisse-neugeborene/',
+    ...travelPages.map((page) => `/${page.slug}/`),
     ...categories.map((category) => `/${category.slug}/`),
     ...articles.map((article) => `/ratgeber/${article.id}/`)
   ]));

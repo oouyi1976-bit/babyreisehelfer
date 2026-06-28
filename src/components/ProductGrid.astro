@@ -1,0 +1,13 @@
+---
+import TravelProductCard from './TravelProductCard.astro';
+import type { TravelProduct } from '../data/travelProducts';
+
+const { products, compact = false } = Astro.props as {
+  products: TravelProduct[];
+  compact?: boolean;
+};
+---
+
+<div class="travel-product-grid">
+  {products.map((product) => <TravelProductCard product={product} compact={compact} />)}
+</div>

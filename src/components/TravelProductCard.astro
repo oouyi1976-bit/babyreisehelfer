@@ -1,0 +1,54 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+const { product, compact = false } = Astro.props as { product: TravelProduct; compact?: boolean };
+const hasReadyLink = isAmazonAffiliateReady(product);
+---
+
+<article class:list={['travel-product-card', { 'travel-product-card--compact': compact }]}>
+  <div class="travel-product-card__visual" aria-hidden="true">
+    <span>{product.category}</span>
+  </div>
+
+  <div class="travel-product-card__body">
+    <div class="product-card__topline">
+      <span>Werbung / Amazon-Affiliate</span>
+    </div>
+    <h3>{product.name}</h3>
+    <p>{product.shortDescription}</p>
+
+    <dl class="product-card__facts">
+      <div>
+        <dt>Geeignet für</dt>
+        <dd>{product.bestFor}</dd>
+      </div>
+      <div>
+        <dt>Preisbereich</dt>
+        <dd>{product.priceRange}</dd>
+      </div>
+    </dl>
+
+    {!compact && (
+      <ul class="check-list">
+        {product.benefits.slice(0, 3).map((benefit) => (
+          <li>{benefit}</li>
+        ))}
+      </ul>
+    )}
+
+    <p class="product-card__note">
+      {product.ratingText}. Bitte Herstellerangaben, Maße, Altersempfehlung und Sicherheitshinweise vor dem Kauf prüfen.
+    </p>
+
+    <AffiliateButton
+      href={product.affiliateUrl}
+      label="Bei Amazon ansehen"
+      trackingId={product.id}
+      trackingTitle={product.name}
+      disabled={!hasReadyLink}
+      disabledLabel="Amazon-Link noch eintragen"
+      fullWidth
+    />
+  </div>
+</article>

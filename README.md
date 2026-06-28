@@ -41,6 +41,26 @@ npm run preview
 
 Die Domain in `astro.config.mjs` steht aktuell auf `https://babyreisehelfer.pages.dev`. Wenn du später eine eigene Domain nutzt, passe den Wert `site` dort sowie die Sitemap-URL in `public/robots.txt` an.
 
+## GitHub Push
+
+Änderungen lokal prüfen und danach committen:
+
+```bash
+git status
+npm run build
+git add .
+git commit -m "Add travel affiliate section with Amazon and Digistore24 links"
+git push
+```
+
+Wenn noch kein Remote existiert:
+
+```bash
+git remote add origin https://github.com/DEIN-NAME/DEIN-REPO.git
+git branch -M main
+git push -u origin main
+```
+
 ## Betreiberangaben für Impressum eintragen
 
 Die Anbieterkennzeichnung wird zentral gepflegt in:
@@ -71,6 +91,39 @@ src/data/products.ts
 ```
 
 Neben Amazon-Produkten liegen dort auch die Babyschlummerland-Ratgeber für den neuen Babyschlaf-Bereich. Diese Einträge sind mit `affiliateNetwork: 'babyschlummerland'` gekennzeichnet und nutzen Links im Format `https://www.babyschlummerland.de/.../#aff=Benman8810`.
+
+Die neuen Reiseprodukte für Urlaub, Reisen mit Kind, Flugreise, Familienurlaub und Madeira liegen separat in:
+
+```text
+src/data/travelProducts.ts
+```
+
+Dort sind 50 Reiseprodukte in dieser Struktur gepflegt:
+
+```ts
+{
+  id: 'reisebett-baby-kompakt',
+  name: 'Kompaktes Baby-Reisebett',
+  category: 'Reisebett Baby',
+  shortDescription: 'Kurze Beschreibung',
+  benefits: ['Vorteil 1', 'Vorteil 2'],
+  bestFor: 'Ideale Nutzungssituation',
+  priceRange: 'Mittelklasse',
+  affiliateUrl: 'AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN',
+  imageAlt: 'Alt-Text',
+  ratingText: 'Keine Amazon-Bewertung angezeigt'
+}
+```
+
+Solange `affiliateUrl` den Platzhalter `AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN` enthält, wird kein Amazon-Link geöffnet. Die Buttons zeigen dann `Amazon-Link noch eintragen`.
+
+Echte Amazon-Affiliate-Links ersetzt du direkt in `src/data/travelProducts.ts`:
+
+```ts
+affiliateUrl: 'https://www.amazon.de/dp/ASIN?tag=epic05e-21'
+```
+
+Wichtig: Nur geprüfte Amazon.de-Links mit deiner Tracking-ID `tag=epic05e-21` eintragen. Keine Amazon-Bilder, Preise, Sternebewertungen oder Rezensionen kopieren.
 
 Meine Amazon-PartnerNet Tracking-ID lautet:
 
@@ -144,6 +197,54 @@ Produktbilder liegen lokal unter `public/product-images/` und werden über `imag
 `imageType` steuert die eigene Fallback-Illustration in `src/components/ProductVisual.astro`, falls noch kein WebP-Bild vorhanden ist. Verfügbare Visual-Typen sind unter anderem `stroller-sunshade`, `changing-mat`, `night-light`, `beach-tent`, `baby-earmuffs`, `first-aid-box`, `stroller-fan`, `bottle-warmer`, `travel-crib`, `thermos-bottle`, `packing-cubes`, `document-organizer`, `mosquito-net`, `stroller-organizer` und `rain-cover`.
 
 Wenn das Produkt auf Kategorie-Seiten erscheinen soll, prüfe zusätzlich `src/data/categories.ts`.
+
+## Neue Reiseprodukte ergänzen
+
+Neue Reiseprodukte für den Urlaub-Bereich fügst du in `src/data/travelProducts.ts` in das Array `travelProducts` ein. Danach kannst du die Produkt-ID in `src/data/travelPages.ts` bei einer Hauptseite oder im Frontmatter eines Artikels unter `featuredProductIds` verwenden.
+
+Für neue Amazon-Produkte gilt:
+
+- `affiliateUrl` zuerst als `AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN` lassen, wenn der Link noch nicht geprüft ist
+- später durch einen echten Amazon.de-PartnerNet-Link mit `tag=epic05e-21` ersetzen
+- keine aktuellen Preise oder Sternebewertungen manuell eintragen
+- bei Baby-, Medizin-, Sonnen- und Sicherheitsprodukten vorsichtig formulieren und Herstellerangaben beachten
+
+## Digistore24-Links
+
+Die Digistore24-Reiseempfehlungen liegen zentral in:
+
+```text
+src/data/digistoreLinks.ts
+```
+
+Aktuell gepflegt sind:
+
+- `https://www.madeira-bus.com/pdf#aff=Benman8810` als prominent passende Empfehlung für `/madeira-mit-bus/`
+- `https://www.digistore24.com/redir/702242/Benman8810/` als allgemeiner Mallorca-Reiseratgeber nur unter „Weitere Reise-Empfehlungen“
+- `https://www.digistore24.com/redir/40363/Benman8810/` als allgemeiner Spar-/Reiseratgeber nur unter „Weitere Reise-Empfehlungen“
+
+Die Platzierung steuerst du über `placement: 'prominent'` oder `placement: 'secondary'`. Ein Link sollte nur prominent erscheinen, wenn er inhaltlich wirklich zur jeweiligen Familienreise- oder Babyreise-Seite passt.
+
+## Reise-Seiten und Reiseartikel
+
+Die SEO-Daten, FAQs, Produktauswahlen, Digistore-Einbindungen und CTAs der neuen Hauptseiten liegen in:
+
+```text
+src/data/travelPages.ts
+```
+
+Die Hauptseiten sind:
+
+- `/urlaub/`
+- `/reisen-mit-kind/`
+- `/familienurlaub/`
+- `/flugreise-mit-kind/`
+- `/reiseprodukte/`
+- `/urlaub-ratgeber/`
+- `/madeira-mit-bus/`
+- `/beste-reiseprodukte/`
+
+Neue Reiseartikel legst du wie alle Ratgeber unter `src/content/ratgeber/` an. Wenn ein Artikel Reiseprodukte anzeigen soll, trägst du die IDs aus `src/data/travelProducts.ts` unter `featuredProductIds` ein.
 
 ## Neue Artikel hinzufügen
 

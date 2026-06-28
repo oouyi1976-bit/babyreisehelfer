@@ -16,6 +16,33 @@ const articles = (await getCollection('ratgeber'))
 
 const featuredCategories = categories;
 const babysleepProducts = getProductsByIds(babysleepProductIds);
+const travelHomeLinks = [
+  {
+    title: 'Reisen mit Kind',
+    href: '/reisen-mit-kind/',
+    description: 'Planung, Handgepäck, Snacks und kleine Routinen für entspanntere Reisetage.'
+  },
+  {
+    title: 'Flugreise mit Kind',
+    href: '/flugreise-mit-kind/',
+    description: 'Checkliste für Boarding, Handgepäck, Beschäftigung und Wartezeiten.'
+  },
+  {
+    title: 'Familienurlaub',
+    href: '/familienurlaub/',
+    description: 'Unterkunft, Budget, Packliste und Alltagstauglichkeit im Familienurlaub.'
+  },
+  {
+    title: 'Reiseprodukte',
+    href: '/reiseprodukte/',
+    description: '50 Produktideen für Reisebett, Buggy, Sonnenschutz, Flugzeug und Strand.'
+  },
+  {
+    title: 'Madeira mit Bus',
+    href: '/madeira-mit-bus/',
+    description: 'Tipps für Madeira ohne Mietwagen, Busplanung und passende Packideen.'
+  }
+];
 const topProducts = getProductsByIds([
   'kinderwagen-sonnenschutz',
   'faltbare-wickelunterlage',
@@ -51,6 +78,29 @@ const topProducts = getProductsByIds([
   </section>
 
   <TrustBar />
+
+  <section class="section travel-home" id="urlaub-reisen-mit-kind">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Urlaub & Reisen mit Kind</p>
+          <h2>Neue Einstiege für Familienurlaub, Flugreise und Reiseprodukte</h2>
+        </div>
+        <p>
+          Der neue Reisebereich verbindet SEO-Ratgeber, Amazon-Produktideen und passend eingeordnete digitale Reise-Empfehlungen.
+          <a class="text-link" href="/urlaub/">Urlaub-Bereich öffnen</a>
+        </p>
+      </div>
+      <div class="travel-home-grid">
+        {travelHomeLinks.map((item) => (
+          <a class="travel-home-card" href={item.href}>
+            <span>{item.title}</span>
+            <p>{item.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <section class="section sleep-home" id="babyschlaf">
     <div class="container">

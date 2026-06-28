@@ -1,0 +1,9 @@
+---
+import TravelPageTemplate from '../components/TravelPageTemplate.astro';
+import { getTravelPageBySlug } from '../data/travelPages';
+
+const page = getTravelPageBySlug('beste-reiseprodukte');
+if (!page) throw new Error('Travel page not found: beste-reiseprodukte');
+---
+
+<TravelPageTemplate page={page} />

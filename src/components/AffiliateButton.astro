@@ -5,17 +5,26 @@ const {
   product,
   href,
   label,
-  fullWidth = false
+  fullWidth = false,
+  trackingId,
+  trackingTitle,
+  disabled = false,
+  disabledLabel = 'Link noch nicht verfügbar'
 } = Astro.props as {
   product?: Product;
   href?: string;
   label?: string;
   fullWidth?: boolean;
+  trackingId?: string;
+  trackingTitle?: string;
+  disabled?: boolean;
+  disabledLabel?: string;
 };
 
 const link = product?.affiliateUrl ?? href ?? '';
 const text = label ?? product?.buttonText ?? 'Ansehen';
-const isReady = product ? isAffiliateLinkReady(product) : Boolean(href);
+const isPlaceholder = link === 'AMAZON_AFFILIATE_LINK_HIER_EINFUEGEN' || link.includes('AMAZON_AFFILIATE');
+const isReady = product ? isAffiliateLinkReady(product) : Boolean(href) && !isPlaceholder && !disabled;
 ---
 
 {isReady ? (
@@ -25,13 +34,13 @@ const isReady = product ? isAffiliateLinkReady(product) : Boolean(href);
     target="_blank"
     rel="sponsored nofollow noopener"
     data-affiliate-link
-    data-product-id={product?.id ?? 'affiliate-link'}
-    data-product-title={product?.title ?? text}
+    data-product-id={product?.id ?? trackingId ?? 'affiliate-link'}
+    data-product-title={product?.title ?? trackingTitle ?? text}
   >
     {text}
   </a>
 ) : (
   <span class:list={['button', 'button--disabled', 'affiliate-button', { 'affiliate-button--full': fullWidth }]} aria-disabled="true">
-    Link noch nicht verfügbar
+    {disabledLabel}
   </span>
 )}
