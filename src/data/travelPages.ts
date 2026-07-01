@@ -84,17 +84,24 @@ export const travelPages: TravelPage[] = [
       'buggy-reisen-handgepaeck',
       'babytrage-urlaub-luftig',
       'wickelrucksack-reise-handgepaeck',
+      'flaschenwaermer-akku-reise',
+      'milchpulver-portionierer-reise',
       'reiseapotheke-organizer-baby',
       'baby-sonnenhut-uv',
       'strandmuschel-baby-uv',
+      'wetbag-windeln-reise',
       'packwuerfel-familienurlaub-set',
       'snackbox-kind-faecher',
-      'dokumententasche-familie-rfid'
+      'thermosflasche-babywasser-unterwegs',
+      'dokumententasche-familie-rfid',
+      'sandfreie-strandmatte-familie',
+      'auto-sonnenschutz-kind-fenster'
     ],
     comparisonIds: [
       'reisebett-baby-kompakt',
       'buggy-reisen-handgepaeck',
       'babytrage-urlaub-luftig',
+      'flaschenwaermer-akku-reise',
       'packwuerfel-familienurlaub-set',
       'dokumententasche-familie-rfid'
     ],
@@ -167,17 +174,25 @@ export const travelPages: TravelPage[] = [
       'wickelrucksack-reise-handgepaeck',
       'snackbox-kind-faecher',
       'trinkflasche-kind-auslaufsicher',
+      'feuchttuecherbox-reise',
+      'schnullerbox-reise',
       'kopfhoerer-kinder-lautstaerkebegrenzung',
       'spielzeug-flugreise-beschaeftigungsbuch',
+      'kuscheldecke-kind-reise',
       'packwuerfel-familienurlaub-set',
+      'gepaeckanhaenger-kinder',
+      'tsa-kofferschloss-familie',
       'dokumententasche-familie-rfid',
-      'buggy-organizer-getraenkehalter'
+      'buggy-organizer-getraenkehalter',
+      'reise-toilettensitz-kind',
+      'regenponcho-kind-reise'
     ],
     comparisonIds: [
       'wickelrucksack-reise-handgepaeck',
       'snackbox-kind-faecher',
       'trinkflasche-kind-auslaufsicher',
-      'kopfhoerer-kinder-lautstaerkebegrenzung'
+      'kopfhoerer-kinder-lautstaerkebegrenzung',
+      'reise-toilettensitz-kind'
     ],
     prominentDigistoreIds: [],
     secondaryDigistoreIds: secondaryTravelRecommendations,
@@ -247,18 +262,30 @@ export const travelPages: TravelPage[] = [
     productIds: [
       'reisebett-baby-kompakt',
       'reisebett-matratze-faltbar',
+      'verdunkelungsrollo-reise-baby',
+      'weisses-rauschen-geraet-reise',
+      'babyphone-kamera-reise',
       'packwuerfel-familienurlaub-set',
+      'faltbarer-hochstuhl-reise',
+      'tischsitz-baby-reise',
+      'babybrei-thermobehaelter-reise',
       'strandmuschel-pop-up-familie',
+      'sandfreie-strandmatte-familie',
       'kuehlrucksack-familie-strand',
       'reisehandtuch-mikrofaser-kind',
+      'steckdosenschutz-reise-set',
+      'eckenschutz-reise-set',
+      'faltbarer-bollerwagen-familie',
       'reisewaschmittel-tube',
       'reiseapotheke-organizer-baby'
     ],
     comparisonIds: [
       'reisebett-baby-kompakt',
+      'verdunkelungsrollo-reise-baby',
       'packwuerfel-familienurlaub-set',
       'strandmuschel-pop-up-familie',
-      'kuehlrucksack-familie-strand'
+      'kuehlrucksack-familie-strand',
+      'faltbarer-hochstuhl-reise'
     ],
     prominentDigistoreIds: [],
     secondaryDigistoreIds: secondaryTravelRecommendations,
@@ -331,15 +358,23 @@ export const travelPages: TravelPage[] = [
       'nackenkissen-kind-flugzeug',
       'flugzeug-fussstuetze-kind',
       'flugzeug-tablet-halter-kind',
+      'milchpulver-portionierer-reise',
+      'feuchttuecherbox-reise',
+      'schnullerbox-reise',
+      'wetbag-windeln-reise',
+      'kuscheldecke-kind-reise',
       'spielzeug-flugreise-beschaeftigungsbuch',
       'spielzeug-flugreise-magnetspiel',
       'kofferwaage-digital',
+      'gepaeckanhaenger-kinder',
+      'tsa-kofferschloss-familie',
       'dokumententasche-familie-rfid'
     ],
     comparisonIds: [
       'kopfhoerer-kinder-lautstaerkebegrenzung',
       'nackenkissen-kind-flugzeug',
       'flugzeug-fussstuetze-kind',
+      'milchpulver-portionierer-reise',
       'kofferwaage-digital'
     ],
     prominentDigistoreIds: [],
@@ -374,11 +409,11 @@ export const travelPages: TravelPage[] = [
     slug: 'reiseprodukte',
     title: 'Reiseprodukte für Baby, Kind und Familienurlaub',
     description:
-      '50 Reiseprodukte für Baby, Kind und Familienurlaub: Reisebett, Buggy, Wickelrucksack, Flugzeug-Zubehör, Sonnenschutz, Strand und Packhilfen.',
+      '80 Reiseprodukte für Baby, Kind und Familienurlaub: Reisebett, Buggy, Wickelrucksack, Flugzeug-Zubehör, Sonnenschutz, Essen, Strand und Packhilfen.',
     eyebrow: 'Reiseprodukte',
     h1: 'Reiseprodukte für Baby, Kind und Familienurlaub',
     intro:
-      'Hier findest du 50 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Alle Amazon-Links sind als Affiliate-Links gekennzeichnet und führen extern zu Amazon.de.',
+      'Hier findest du 80 strukturierte Produktideen für Reisen, Urlaub und Familienferien. Alle Amazon-Links sind als Affiliate-Links gekennzeichnet und führen extern zu Amazon.de.',
     heroImage: '/category-images/kinderwagen-zubehoer.webp',
     primaryLink: '/beste-reiseprodukte/',
     primaryLabel: 'Beste Auswahl ansehen',
@@ -401,10 +436,10 @@ export const travelPages: TravelPage[] = [
         heading: 'Produktpflege im Code',
         text:
           'Alle neuen Reiseprodukte liegen zentral in src/data/travelProducts.ts und können dort später mit echten Affiliate-URLs ergänzt werden.',
-        items: ['50 Produkte', '25 Kategorien', 'Einheitliche Datenstruktur']
+        items: ['80 Produkte', '37 Kategorien', 'Einheitliche Datenstruktur']
       }
     ],
-    productSectionTitle: 'Alle 50 Reiseprodukte',
+    productSectionTitle: 'Alle 80 Reiseprodukte',
     productSectionText:
       'Die Produktkarten zeigen neutrale Kaufkriterien, keine aktuellen Preise und keine Amazon-Bewertungen.',
     productIds: [],
@@ -415,7 +450,11 @@ export const travelPages: TravelPage[] = [
       'wickelrucksack-reise-handgepaeck',
       'reiseapotheke-organizer-baby',
       'strandmuschel-baby-uv',
-      'kopfhoerer-kinder-lautstaerkebegrenzung'
+      'kopfhoerer-kinder-lautstaerkebegrenzung',
+      'flaschenwaermer-akku-reise',
+      'verdunkelungsrollo-reise-baby',
+      'faltbarer-hochstuhl-reise',
+      'sandfreie-strandmatte-familie'
     ],
     prominentDigistoreIds: [],
     secondaryDigistoreIds: secondaryTravelRecommendations,
@@ -441,7 +480,7 @@ export const travelPages: TravelPage[] = [
     pros: ['Zentrale Datenpflege', 'Klare Affiliate-Kennzeichnung', 'Produkte nach Reiseproblemen sortiert'],
     cons: ['Produktverfügbarkeit kann sich ändern', 'Herstellerangaben immer aktuell prüfen', 'Keine individuelle Kaufberatung'],
     ctaTitle: 'Die besten Reiseprodukte fokussiert ansehen',
-    ctaText: 'Wenn du nicht alle 50 Produkte prüfen möchtest, starte mit der kuratierten Auswahl.',
+    ctaText: 'Wenn du nicht alle 80 Produkte prüfen möchtest, starte mit der kuratierten Auswahl.',
     ctaHref: '/beste-reiseprodukte/',
     ctaButtonText: 'Beste Reiseprodukte'
   },
@@ -616,7 +655,7 @@ export const travelPages: TravelPage[] = [
       'Beste bedeutet hier nicht Testsieger. Gemeint sind Produkte, die häufige Familienreise-Probleme lösen und vor der Reise sinnvoll geprüft werden können.',
     heroImage: '/product-images/reisedokumententasche-familie.webp',
     primaryLink: '/reiseprodukte/',
-    primaryLabel: 'Alle 50 Produkte ansehen',
+    primaryLabel: 'Alle 80 Produkte ansehen',
     secondaryLink: '/ratgeber/die-besten-reiseprodukte-fuer-familien/',
     secondaryLabel: 'Ratgeber lesen',
     sections: [
@@ -639,7 +678,7 @@ export const travelPages: TravelPage[] = [
         items: ['Erst Basisprobleme lösen', 'Dann Komfort ergänzen', 'Sicherheitsangaben prüfen']
       }
     ],
-    productSectionTitle: 'Kuratiert: 16 starke Reiseprodukt-Ideen',
+    productSectionTitle: 'Kuratiert: 24 starke Reiseprodukt-Ideen',
     productSectionText:
       'Diese Auswahl ist ein sinnvoller Startpunkt, bevor du die komplette Produktliste prüfst.',
     productIds: [
@@ -647,28 +686,39 @@ export const travelPages: TravelPage[] = [
       'buggy-reisen-handgepaeck',
       'babytrage-urlaub-luftig',
       'wickelrucksack-reise-handgepaeck',
+      'flaschenwaermer-akku-reise',
+      'milchpulver-portionierer-reise',
       'reiseapotheke-organizer-baby',
+      'verdunkelungsrollo-reise-baby',
+      'faltbarer-hochstuhl-reise',
       'baby-sonnenhut-uv',
       'uv-shirt-kind-langarm',
       'strandmuschel-baby-uv',
+      'sandfreie-strandmatte-familie',
       'kopfhoerer-kinder-lautstaerkebegrenzung',
       'nackenkissen-kind-flugzeug',
       'packwuerfel-familienurlaub-set',
       'kofferwaage-digital',
       'trinkflasche-kind-auslaufsicher',
       'snackbox-kind-faecher',
+      'wetbag-windeln-reise',
+      'feuchttuecherbox-reise',
       'dokumententasche-familie-rfid',
-      'mueckenschutz-kinderwagen-netz'
+      'mueckenschutz-kinderwagen-netz',
+      'kinderwagen-getraenkehalter',
+      'auto-sonnenschutz-kind-fenster'
     ],
     comparisonIds: [
       'reisebett-baby-kompakt',
       'buggy-reisen-handgepaeck',
       'babytrage-urlaub-luftig',
       'wickelrucksack-reise-handgepaeck',
+      'flaschenwaermer-akku-reise',
       'strandmuschel-baby-uv',
       'kopfhoerer-kinder-lautstaerkebegrenzung',
       'packwuerfel-familienurlaub-set',
-      'dokumententasche-familie-rfid'
+      'dokumententasche-familie-rfid',
+      'verdunkelungsrollo-reise-baby'
     ],
     prominentDigistoreIds: [],
     secondaryDigistoreIds: secondaryTravelRecommendations,
@@ -691,10 +741,10 @@ export const travelPages: TravelPage[] = [
           'Starte mit den Dingen, die eure größte Reibung lösen: Schlafplatz, Transport, Sonnenschutz, Ordnung, Snacks oder Beschäftigung.'
       }
     ],
-    pros: ['Fokussierte Auswahl statt 50 Produkte auf einmal', 'Keine übertriebenen Werbeversprechen', 'Gute interne Verlinkung zu Ratgebern'],
+    pros: ['Fokussierte Auswahl statt 80 Produkte auf einmal', 'Keine übertriebenen Werbeversprechen', 'Gute interne Verlinkung zu Ratgebern'],
     cons: ['Keine individuelle Kaufberatung', 'Einzelne Amazon-Links können noch Platzhalter sein', 'Produktdetails vor Kauf beim Anbieter prüfen'],
     ctaTitle: 'Alle Reiseprodukte vergleichen',
-    ctaText: 'Die vollständige Liste mit 50 Produktideen findest du im Reiseprodukte-Bereich.',
+    ctaText: 'Die vollständige Liste mit 80 Produktideen findest du im Reiseprodukte-Bereich.',
     ctaHref: '/reiseprodukte/',
     ctaButtonText: 'Alle Produkte ansehen'
   }
