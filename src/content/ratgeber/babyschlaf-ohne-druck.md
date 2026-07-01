@@ -3,7 +3,7 @@ title: "Babyschlaf ohne Druck: Was Eltern wissen sollten"
 description: "Babyschlaf ohne Druck verstehen: realistische Erwartungen, sanfte Routinen und ehrliche Entlastung für Eltern."
 excerpt: "Babyschlaf wird leichter, wenn Eltern wissen, was normal sein kann und welche Routinen ohne Druck unterstützen."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/babyschlaf-ohne-druck.webp"
 date: 2026-06-28
 readingTime: 7
 featuredProductIds:

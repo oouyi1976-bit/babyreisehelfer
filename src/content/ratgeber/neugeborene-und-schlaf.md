@@ -3,7 +3,7 @@ title: "Neugeborene und Schlaf: Was in den ersten Wochen normal ist"
 description: "Neugeborenenschlaf verstehen: kurze Schlafphasen, Nähe, Hunger und sichere Schlafumgebung in den ersten Wochen."
 excerpt: "In den ersten Wochen ist Schlaf oft unregelmäßig. Das ist anstrengend, aber häufig normal."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/neugeborene-und-schlaf.webp"
 date: 2026-06-28
 readingTime: 6
 featuredProductIds:

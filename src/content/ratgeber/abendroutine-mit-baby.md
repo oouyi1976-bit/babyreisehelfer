@@ -3,7 +3,7 @@ title: "Abendroutine mit Baby: einfache Ideen"
 description: "Einfache Ideen für eine Abendroutine mit Baby: ruhig, flexibel und ohne starre Schlafversprechen."
 excerpt: "Eine Abendroutine muss nicht perfekt sein. Wiederkehrende kleine Schritte können Orientierung geben."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/abendroutine-mit-baby.webp"
 date: 2026-06-28
 readingTime: 6
 featuredProductIds:

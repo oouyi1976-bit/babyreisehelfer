@@ -656,6 +656,7 @@ export const products: Product[] = [
     cons: ['Kein Ersatz für medizinische Beratung', 'Nicht jedes Baby reagiert gleich auf Routinen', 'Erfordert Geduld und Beobachtung'],
     buttonText: 'Ratgeber ansehen',
     imageType: 'sleep-guide',
+    image: '/product-images/bindungsorientiert-durchschlafen-lernen.webp',
     icon: 'sleep',
     legalNote: 'Babyschlaf ist individuell. Der Ratgeber gibt Orientierung, aber keine Garantie für durchgeschlafene Nächte.'
   },
@@ -683,6 +684,7 @@ export const products: Product[] = [
     cons: ['Kein fixer Tagesplan für jedes Baby', 'Reisetage bleiben manchmal unvorhersehbar', 'Braucht konsequentes Beobachten statt schnelles Rezept'],
     buttonText: 'Ratgeber ansehen',
     imageType: 'day-naps',
+    image: '/product-images/babys-tage-meistern.webp',
     icon: 'sleep',
     legalNote: 'Tagesrhythmen entwickeln sich individuell. Die Inhalte ersetzen keine persönliche Beratung.'
   },
@@ -710,6 +712,7 @@ export const products: Product[] = [
     cons: ['Neugeborene schlafen selten planbar', 'Kein Programm zum schnellen Durchschlafen', 'Sichere Schlafumgebung bleibt immer wichtiger als Routinen'],
     buttonText: 'E-Book ansehen',
     imageType: 'newborn-sleep',
+    image: '/product-images/schlummergeheimnisse-neugeborene.webp',
     icon: 'sleep',
     legalNote: 'Für Neugeborene gelten besondere Empfehlungen zu sicherem Schlaf. Bei Fragen bitte Hebamme oder Kinderarzt einbeziehen.'
   }

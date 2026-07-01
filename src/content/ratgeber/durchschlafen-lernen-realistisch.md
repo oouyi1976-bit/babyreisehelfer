@@ -3,7 +3,7 @@ title: "Durchschlafen lernen: Was realistisch ist"
 description: "Durchschlafen lernen realistisch einordnen: Was Eltern erwarten können und warum Schlafentwicklung Zeit braucht."
 excerpt: "Durchschlafen ist kein fester Meilenstein für alle Babys. Realistische Erwartungen entlasten oft mehr als schnelle Versprechen."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/durchschlafen-lernen-realistisch.webp"
 date: 2026-06-28
 readingTime: 7
 featuredProductIds:

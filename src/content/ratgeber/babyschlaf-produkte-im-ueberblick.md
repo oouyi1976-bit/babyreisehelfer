@@ -3,7 +3,7 @@ title: "Babyschlaf-Produkte im Überblick"
 description: "Babyschlaf-Produkte ehrlich einordnen: digitale Ratgeber für Nächte, Tagesschlaf und Neugeborene."
 excerpt: "Nicht jedes Schlafprodukt passt zu jeder Familie. Dieser Überblick hilft beim ruhigen Vergleichen."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/babyschlaf-produkte-ueberblick.webp"
 date: 2026-06-28
 readingTime: 6
 featuredProductIds:

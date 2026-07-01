@@ -3,7 +3,7 @@ title: "Baby schläft nur auf dem Arm - was tun?"
 description: "Wenn das Baby nur auf dem Arm schläft: mögliche Gründe, sanfte Übergänge und ehrliche Entlastung für Eltern."
 excerpt: "Schlafen auf dem Arm kann Nähebedürfnis zeigen. Eltern dürfen trotzdem nach machbaren Übergängen suchen."
 category: "babyschlaf"
-image: "/article-images/fallback-babyreise.webp"
+image: "/article-images/baby-schlaeft-nur-auf-dem-arm.webp"
 date: 2026-06-28
 readingTime: 7
 featuredProductIds:
