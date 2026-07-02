@@ -189,7 +189,7 @@ export const products: Product[] = [
     benefits: ['Sanftes Licht', 'USB-ladbar', 'Hilft bei fremder Umgebung'],
     pros: ['Klein und leicht', 'Auch daheim nutzbar', 'Praktisch für nächtliches Wickeln'],
     cons: ['Akku muss geladen sein', 'Zu helles Licht kann stören', 'Nicht ins Babybett legen'],
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     imageType: 'night-light',
     image: '/product-images/nachtlicht-hotel.webp',
     icon: 'light',

@@ -68,7 +68,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B004AHLMF6?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisebett-baby-kompakt.webp',
     imageAlt: 'Kompaktes Baby-Reisebett für Urlaub und Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -83,7 +83,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0B24L9JYW?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisebett-matratze-faltbar.webp',
     imageAlt: 'Faltbare Matratze für ein Baby-Reisebett',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -98,7 +98,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0FXWGMBRD?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/buggy-reisen-handgepaeck.webp',
     imageAlt: 'Kompakter Buggy für Reisen mit Kind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -113,7 +113,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08J4XBMJJ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/buggy-reisen-liegefunktion.webp',
     imageAlt: 'Reisebuggy mit Liegefunktion im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -128,7 +128,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B09F3Q46Z6?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/babytrage-urlaub-luftig.webp',
     imageAlt: 'Luftige Babytrage für Urlaub mit Baby',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -143,7 +143,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B07CSRFHSX?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/babytrage-toddler-reise.webp',
     imageAlt: 'Toddler-Trage für Familienurlaub und längere Wege',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -158,7 +158,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08T7VKR2R?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/wickelrucksack-handgepaeck.webp',
     imageAlt: 'Wickelrucksack für Reise und Handgepäck',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -173,7 +173,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B07DC6C7CN?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/wickelrucksack-isolierfach.webp',
     imageAlt: 'Wickelrucksack mit Isolierfach für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -188,7 +188,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0B698Z6N6?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reiseapotheke-organizer-baby.webp',
     imageAlt: 'Organizer für Reiseapotheke mit Baby und Kind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -203,7 +203,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B00NABMMC0?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/fieberthermometer-reise.webp',
     imageAlt: 'Kompaktes Fieberthermometer für die Reiseapotheke',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -218,7 +218,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0CF91H1XG?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/baby-sonnenhut-uv.webp',
     imageAlt: 'Baby-Sonnenhut mit Nackenschutz für Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -233,7 +233,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B088GHGG23?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/baby-sonnensegel-kinderwagen.webp',
     imageAlt: 'Sonnensegel am Kinderwagen im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -248,7 +248,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0DDPZB22S?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/uv-shirt-kind-langarm.webp',
     imageAlt: 'UV-Shirt für Kinder im Strandurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -263,7 +263,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0FNBKJ6DB?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/uv-badeanzug-kind.webp',
     imageAlt: 'UV-Badeanzug für Kind im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -278,7 +278,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0BKL64SQ6?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/strandmuschel-baby-uv.webp',
     imageAlt: 'Baby-Strandmuschel mit UV-Schutz am Strand',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -293,7 +293,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0H1SCBPL9?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/strandmuschel-pop-up-familie.webp',
     imageAlt: 'Pop-up-Strandmuschel für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -308,7 +308,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0FXBDZX3P?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kindersitz-reise-faltbar.webp',
     imageAlt: 'Faltbarer Kindersitz für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -323,7 +323,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0FM43M4VW?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/sitzerhoehung-reise-kind.webp',
     imageAlt: 'Reise-Sitzerhöhung für Kind im Mietwagen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -338,7 +338,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B07NLK3SMX?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/flugzeug-fussstuetze-kind.webp',
     imageAlt: 'Flugzeug-Fußstütze für Kind auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -353,7 +353,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B00JY1C20W?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/flugzeug-tablet-halter-kind.webp',
     imageAlt: 'Tablet-Halter als Flugzeug-Zubehör für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -368,7 +368,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B00KDGYW8W?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kinderkopfhoerer-lautstaerkebegrenzung.webp',
     imageAlt: 'Kinderkopfhörer mit Lautstärkebegrenzung für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -383,7 +383,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B082HMMBH1?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kopfhoerer-kinder-bluetooth-kabel.webp',
     imageAlt: 'Kinderkopfhörer mit Bluetooth und Kabel im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -398,7 +398,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0D1XTBXP6?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/nackenkissen-kind-flugzeug.webp',
     imageAlt: 'Nackenkissen für Kinder im Flugzeug',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -413,7 +413,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0CY578HC5?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/nackenkissen-aufblasbar-familie.webp',
     imageAlt: 'Aufblasbares Nackenkissen für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -428,7 +428,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0DQNBG4F2?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/packwuerfel-set-familien.webp',
     imageAlt: 'Packwürfel für Familienurlaub und Kinderkleidung',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -443,7 +443,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CPT3QZT7?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/packwuerfel-kompression-reise.webp',
     imageAlt: 'Kompressions-Packwürfel für Reisegepäck',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -458,7 +458,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0186K8T9O?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kofferwaage-digital.webp',
     imageAlt: 'Digitale Kofferwaage für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -473,7 +473,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0BWKC3D19?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kofferwaage-massband.webp',
     imageAlt: 'Kofferwaage mit Maßband für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -488,7 +488,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0B2DRC76L?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reiseadapter-universal-usb.webp',
     imageAlt: 'Universal-Reiseadapter mit USB für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -503,7 +503,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0DNHY38LV?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reiseadapter-europa-uk.webp',
     imageAlt: 'Reiseadapter für UK und Irland',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -518,7 +518,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0C1H3MGJ7?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/auslaufsichere-trinkflasche-kinder.webp',
     imageAlt: 'Auslaufsichere Trinkflasche für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -533,7 +533,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B08FWY73ZP?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/trinkflasche-baby-strohhalm.webp',
     imageAlt: 'Trinkflasche mit Strohhalm für Kind im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -548,7 +548,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B07C275388?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/snackbox-mit-faechern.webp',
     imageAlt: 'Snackbox mit Fächern für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -563,7 +563,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CR1XXRP5?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/snackbox-auslaufsicher-baby.webp',
     imageAlt: 'Auslaufsichere Snackbox für Kleinkind im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -578,7 +578,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/3911760019?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/beschaeftigungsbuch-flugreise.webp',
     imageAlt: 'Beschäftigungsbuch als Spielzeug für Flugreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -593,7 +593,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0CGHCTMPC?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/spielzeug-flugreise-magnetspiel.webp',
     imageAlt: 'Magnetspiel als Flugreise-Spielzeug für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -608,7 +608,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B07HH4VNLR?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kinderkoffer-rollen.webp',
     imageAlt: 'Kinderkoffer mit Rollen für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -623,7 +623,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0F8QN4MQ2?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kinderkoffer-sitzkoffer.webp',
     imageAlt: 'Sitzkoffer für Kinder am Flughafen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -638,7 +638,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B07F1SFW6D?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/buggy-organizer-getraenkehalter.webp',
     imageAlt: 'Buggy-Organizer mit Getränkehalter für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -653,7 +653,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B093STD6GZ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/buggy-organizer-abnehmbar.webp',
     imageAlt: 'Abnehmbarer Buggy-Organizer im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -668,7 +668,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B07937CVB5?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisehandtuch-mikrofaser-kind.webp',
     imageAlt: 'Mikrofaser-Reisehandtuch für Kinder',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -683,7 +683,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08V3CNRR2?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisehandtuch-kapuzenhandtuch.webp',
     imageAlt: 'Kapuzen-Reisehandtuch für Baby und Kleinkind',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -698,7 +698,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CW917Q92?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kuehlrucksack-familie-strand.webp',
     imageAlt: 'Kühlrucksack für Familienurlaub und Strand',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -713,7 +713,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B09XY8XM56?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kuehltasche-babyflaschen.webp',
     imageAlt: 'Kühltasche für Babyflaschen auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -728,7 +728,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B07BGH11MN?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/familien-dokumententasche.webp',
     imageAlt: 'Dokumententasche für Familienreise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -743,7 +743,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0CGDTBJKK?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/dokumentenhuelle-wasserdicht.webp',
     imageAlt: 'Wasserdichte Dokumentenhülle für Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -758,7 +758,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B07V4LXCQT?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisewaschmittel-tube.webp',
     imageAlt: 'Reisewaschmittel für Kinderkleidung im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -773,7 +773,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0BJPNTXFJ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reisewaescheleine-klammern.webp',
     imageAlt: 'Reise-Wäscheleine für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -788,7 +788,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B01HH1MZ6G?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/mueckenschutz-kinderwagen-netz.webp',
     imageAlt: 'Mückennetz für Kinderwagen im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -803,7 +803,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08WQRGBHW?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/mueckenschutz-stecker-reise.webp',
     imageAlt: 'Mückenschutz für Reisezimmer im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -818,7 +818,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0GVJR34PG?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/flaschenwaermer-akku-reise.webp',
     imageAlt: 'Mobiler Akku-Flaschenwärmer für Babyreisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -833,7 +833,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B00E4T3R9Y?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/milchpulver-portionierer-reise.webp',
     imageAlt: 'Milchpulver-Portionierer für Babyfläschchen unterwegs',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -848,7 +848,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CZ49D2ND?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/thermosflasche-babywasser-unterwegs.webp',
     imageAlt: 'Isolierflasche für Babywasser im Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -863,7 +863,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0DPXCGTPN?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/babybrei-thermobehaelter-reise.webp',
     imageAlt: 'Thermobehälter für Babybrei auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -878,7 +878,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CZCX792S?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/faltbarer-hochstuhl-reise.webp',
     imageAlt: 'Faltbare Sitzerhöhung als Reisehochstuhl',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -893,7 +893,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0C9WXSXGN?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/tischsitz-baby-reise.webp',
     imageAlt: 'Tischsitz für Babymahlzeiten auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -908,7 +908,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B08GFCX964?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/silikon-laetzchen-reise.webp',
     imageAlt: 'Silikon-Lätzchen für Babymahlzeiten unterwegs',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -923,7 +923,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0CCKV35PZ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/baby-besteck-reisebox.webp',
     imageAlt: 'Baby-Besteckset für unterwegs',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -938,7 +938,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0D8KR44QY?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/wetbag-windeln-reise.webp',
     imageAlt: 'Wetbag für nasse Kinderkleidung auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -953,7 +953,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0C77Y3QGM?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/feuchttuecherbox-reise.webp',
     imageAlt: 'Feuchttücherbox für Wickeltasche und Reise',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -968,7 +968,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0F9WF8KVW?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/schnullerbox-reise.webp',
     imageAlt: 'Schnullerbox für Babyreisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -983,7 +983,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08BD8YCC7?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/verdunkelungsrollo-reise-baby.webp',
     imageAlt: 'Reise-Verdunkelungsrollo für Babyzimmer unterwegs',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -998,7 +998,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0B7JBC6XX?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/weisses-rauschen-geraet-reise.webp',
     imageAlt: 'Kompaktes White-Noise-Gerät für Reisen mit Baby',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1013,7 +1013,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0GWDF6R16?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/babyphone-kamera-reise.webp',
     imageAlt: 'Mobiles Babyphone mit Kamera für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1028,7 +1028,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0854MW97N?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/steckdosenschutz-reise-set.webp',
     imageAlt: 'Steckdosenschutz-Set für Ferienwohnung mit Baby',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1043,7 +1043,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0BTL99Y2B?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/eckenschutz-reise-set.webp',
     imageAlt: 'Eckenschutz für Hotelzimmer und Ferienwohnung',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1058,7 +1058,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0FW3K6ZXW?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kinderwagen-haken-karabiner.webp',
     imageAlt: 'Kinderwagen-Haken für Taschen unterwegs',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1073,7 +1073,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B09BC1YY9Q?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/buggy-board-kinderwagen.webp',
     imageAlt: 'Buggy-Board als Mitfahrbrett für Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1088,7 +1088,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0897GGD4F?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kinderwagen-getraenkehalter.webp',
     imageAlt: 'Getränkehalter am Kinderwagen im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1103,7 +1103,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B08DHG3TYL?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/kuscheldecke-kind-reise.webp',
     imageAlt: 'Leichte Reisedecke mit Packsack für Familienreisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1118,7 +1118,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0GT5LGWVG?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/regenponcho-kind-reise.webp',
     imageAlt: 'Kinder-Regenponcho für Familienausflüge',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1133,7 +1133,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0G1BLJJXC?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/wasserschuhe-kind-strand.webp',
     imageAlt: 'Wasserschuhe für Kinder am Strand',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1148,7 +1148,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B0CRKZR7QN?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/schwimmwindeln-reise.webp',
     imageAlt: 'Wiederverwendbare Schwimmwindeln für Babyurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1163,7 +1163,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B094ZCP4PJ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/faltbares-strandspielzeug-reise.webp',
     imageAlt: 'Faltbares Strandspielzeug für Kinder im Urlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1178,7 +1178,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B09Q5988XF?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/sandfreie-strandmatte-familie.webp',
     imageAlt: 'Große sandfreie Strandmatte für Familienurlaub',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1193,7 +1193,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B0FZ51P2GQ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/gepaeckanhaenger-kinder.webp',
     imageAlt: 'Kinder-Gepäckanhänger für Koffer und Rucksack',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1208,7 +1208,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B08PD1HTC7?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/tsa-kofferschloss-familie.webp',
     imageAlt: 'TSA-Kofferschloss-Set für Familienreisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1223,7 +1223,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget',
     affiliateUrl: 'https://www.amazon.de/dp/B07TWJLSXQ?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/reise-toilettensitz-kind.webp',
     imageAlt: 'Faltbarer Toilettensitz für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1238,7 +1238,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Mittelklasse bis Premium',
     affiliateUrl: 'https://www.amazon.de/dp/B0GMH4834P?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/faltbarer-bollerwagen-familie.webp',
     imageAlt: 'Faltbarer Bollerwagen für Familienausflüge',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
@@ -1253,7 +1253,7 @@ export const travelProducts: TravelProduct[] = [
     priceRange: 'Budget bis Mittelklasse',
     affiliateUrl: 'https://www.amazon.de/dp/B01HXY5TH4?tag=epic05e-21',
     affiliateStatus: 'ready',
-    buttonText: 'Bei Amazon ansehen',
+    buttonText: 'Produkt ansehen',
     image: '/travel-product-images/auto-sonnenschutz-kind-fenster.webp',
     imageAlt: 'Auto-Sonnenschutz für Kinder auf Reisen',
     ratingText: 'Keine Amazon-Bewertung angezeigt'
