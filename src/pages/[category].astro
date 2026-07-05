@@ -7,6 +7,7 @@ import ProductComparisonTable from '../components/ProductComparisonTable.astro';
 import CTABox from '../components/CTABox.astro';
 import { categories, type SiteCategory } from '../data/categories';
 import { getProductsByIds, products, type Product } from '../data/products';
+import { popularGuideLinks } from '../data/seoLandingPages';
 
 export function getStaticPaths() {
   return categories
@@ -45,6 +46,23 @@ const categorySchema = {
       <p class="eyebrow">Kategorie</p>
       <h1>{category.title}</h1>
       <p>{category.intro}</p>
+    </div>
+  </section>
+
+  <section class="section section--compact">
+    <div class="container">
+      <div class="section__header">
+        <p class="eyebrow">Direkt weiter</p>
+        <h2>Beliebte Babyreise-Ratgeber</h2>
+      </div>
+      <div class="travel-home-grid travel-home-grid--compact">
+        {popularGuideLinks.slice(0, 5).map((item) => (
+          <a class="travel-home-card" href={item.href}>
+            <span>{item.title}</span>
+            <p>{item.description}</p>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 

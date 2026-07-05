@@ -18,6 +18,8 @@ tags:
 
 Eine gute Packliste für Familienurlaub verhindert zwei Dinge: Vergessen und Überpacken. Sortiere deshalb nach Reisesituationen. So merkst du schneller, was wirklich gebraucht wird und was nur aus Sorge im Koffer landet.
 
+Für Reisen mit Baby findest du zusätzlich die [Urlaub mit Baby Packliste](/urlaub-mit-baby-packliste/). Wenn ihr fliegt, sind die Seiten [Fliegen mit Baby](/fliegen-mit-baby/) und [Handgepäck mit Baby für den Flug](/handgepaeck-baby-flug/) die passenden nächsten Schritte.
+
 ## Handgepäck oder Tagesrucksack
 
 Dokumente, Wechselkleidung, Snacks, Trinkflasche, Windeln, Feuchttücher, kleine Beschäftigung, wichtige Medikamente und Ladekabel gehören griffbereit. Für Flugreisen kommen Airline-Regeln und Flüssigkeiten dazu.

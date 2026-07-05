@@ -22,6 +22,8 @@ tags:
 
 Fliegen mit Baby ist nicht automatisch stressig, aber es ist schlecht geeignet für Chaos im Handgepäck. Entscheidend ist, dass du alles Wichtige mit einer Hand findest: Windeln, Feuchttücher, Wechselkleidung, Nahrung, Schnuller, Tücher und Dokumente. Ein Wickelrucksack mit klaren Fächern kann hier sinnvoller sein als eine große offene Tasche.
 
+Wenn du erst die Grundlagen sortieren möchtest, starte mit der Hauptseite [Fliegen mit Baby](/fliegen-mit-baby/) oder der kompakten [Fliegen mit Baby Packliste](/fliegen-mit-baby-packliste/). Für den Sitzplatz im Flugzeug gibt es zusätzlich die Seite [Handgepäck mit Baby für den Flug](/handgepaeck-baby-flug/).
+
 Prüfe vorab die Regeln deiner Airline zu Buggy, Babyschale, Flüssigkeiten, Babynahrung und Gepäck. Diese Vorgaben ändern sich je nach Airline und Tarif.
 
 ## Handgepäck: lieber modular packen

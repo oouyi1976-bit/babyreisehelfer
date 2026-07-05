@@ -1,0 +1,9 @@
+---
+import SeoLandingPage from '../components/SeoLandingPage.astro';
+import { getSeoLandingPageBySlug } from '../data/seoLandingPages';
+
+const page = getSeoLandingPageBySlug('reiseapotheke-baby-urlaub');
+if (!page) throw new Error('SEO landing page not found: reiseapotheke-baby-urlaub');
+---
+
+<SeoLandingPage page={page} />

@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../data/categories';
+import { seoLandingPages } from '../data/seoLandingPages';
 import { travelPages } from '../data/travelPages';
 
 export const GET: APIRoute = async ({ site }) => {
@@ -19,6 +20,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/babys-tage-meistern/',
     '/schlummergeheimnisse-neugeborene/',
     ...travelPages.map((page) => `/${page.slug}/`),
+    ...seoLandingPages.map((page) => `/${page.slug}/`),
     ...categories.map((category) => `/${category.slug}/`),
     ...articles.map((article) => `/ratgeber/${article.id}/`)
   ]));

@@ -1,0 +1,9 @@
+---
+import SeoLandingPage from '../components/SeoLandingPage.astro';
+import { getSeoLandingPageBySlug } from '../data/seoLandingPages';
+
+const page = getSeoLandingPageBySlug('urlaub-mit-baby-packliste');
+if (!page) throw new Error('SEO landing page not found: urlaub-mit-baby-packliste');
+---
+
+<SeoLandingPage page={page} />

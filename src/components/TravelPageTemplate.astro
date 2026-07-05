@@ -10,6 +10,7 @@ import DisclaimerBox from './DisclaimerBox.astro';
 import ProsConsBox from './ProsConsBox.astro';
 import RelatedArticles from './RelatedArticles.astro';
 import { getDigistoreLinksByIds } from '../data/digistoreLinks';
+import { popularGuideLinks } from '../data/seoLandingPages';
 import { getTravelProductsByIds, travelProducts } from '../data/travelProducts';
 import { type TravelPage, travelPages } from '../data/travelPages';
 
@@ -83,6 +84,28 @@ const faqSchema = {
       ))}
     </div>
   </nav>
+
+  <section class="section section--compact">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Wichtige Babyreise-Einstiege</p>
+          <h2>Schnell weiter zur passenden Checkliste</h2>
+        </div>
+        <p>
+          Direkte interne Links helfen dir, vom allgemeinen Reisethema zur konkreten Packliste oder Flugvorbereitung zu springen.
+        </p>
+      </div>
+      <div class="travel-home-grid travel-home-grid--compact">
+        {popularGuideLinks.slice(0, 5).map((item) => (
+          <a class="travel-home-card" href={item.href}>
+            <span>{item.title}</span>
+            <p>{item.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
 
   <section class="section">
     <div class="container travel-info-grid">

@@ -9,6 +9,7 @@ import TrustBar from '../components/TrustBar.astro';
 import TipsCompareSection from '../components/TipsCompareSection.astro';
 import { categories } from '../data/categories';
 import { babysleepProductIds, getProductsByIds } from '../data/products';
+import { popularGuideLinks } from '../data/seoLandingPages';
 
 const articles = (await getCollection('ratgeber'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -128,6 +129,28 @@ const topProducts = getProductsByIds([
       </div>
       <div class="category-grid">
         {featuredCategories.map((category) => <CategoryCard category={category} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="beliebte-ratgeber">
+    <div class="container">
+      <div class="section__header section__header--split">
+        <div>
+          <p class="eyebrow">Beliebte Babyreise-Ratgeber</p>
+          <h2>Direkte Einstiege für häufige Elternfragen</h2>
+        </div>
+        <p>
+          Diese Seiten sind besonders hilfreich, wenn du schnell von der Planung zur passenden Checkliste springen möchtest.
+        </p>
+      </div>
+      <div class="travel-home-grid travel-home-grid--popular">
+        {popularGuideLinks.map((item) => (
+          <a class="travel-home-card" href={item.href}>
+            <span>{item.title}</span>
+            <p>{item.description}</p>
+          </a>
+        ))}
       </div>
     </div>
   </section>
