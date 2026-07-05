@@ -60,6 +60,11 @@ export const popularGuideLinks: SeoRelatedLink[] = [
     title: 'Reiseprodukte für Familien',
     href: '/reiseprodukte/',
     description: 'Neutral sortierte Produktideen ohne Preise, Sterne oder Fake-Testsieger.'
+  },
+  {
+    title: 'Autofahrt mit Baby Checkliste',
+    href: '/autofahrt-mit-baby-checkliste/',
+    description: 'Pausen, Snacks, Wickeln, Schlaf und Beschäftigung für lange Autofahrten.'
   }
 ];
 
@@ -320,6 +325,49 @@ export const seoLandingPages: SeoLandingPage[] = [
     ],
     ctaHref: '/ratgeber/fliegen-mit-baby-dinge/',
     ctaText: 'Flug-Ratgeber lesen'
+  },
+  {
+    slug: 'autofahrt-mit-baby-checkliste',
+    title: 'Autofahrt mit Baby Checkliste: Pausen, Snacks und Reisehelfer',
+    description:
+      'Autofahrt mit Baby Checkliste: Pausen planen, Wickeltasche packen, Snacks, Trinkflasche, Sonnenschutz, Beschäftigung und praktische Produktideen.',
+    eyebrow: 'Autoreise mit Baby',
+    h1: 'Autofahrt mit Baby Checkliste',
+    intro:
+      'Eine lange Autofahrt mit Baby wird leichter, wenn Pausen, Wickeln, Trinken, Sonnenschutz und Schlaf nicht improvisiert werden müssen. Diese Checkliste hilft dir, realistisch zu planen und das Handgepäck im Auto sinnvoll zu sortieren.',
+    heroImage: '/travel-product-images/auto-sonnenschutz-kind-fenster.webp',
+    checklist: [
+      {
+        heading: 'Vor der Abfahrt',
+        text: 'Plane die Route so, dass Pausen nicht erst kommen, wenn alle erschöpft sind.',
+        items: ['Wickel- und Fütterpausen einplanen', 'Route mit geeigneten Stopps prüfen', 'Sonnenschutz am Fenster testen']
+      },
+      {
+        heading: 'Griffbereit im Auto',
+        text: 'Alles, was während der Fahrt gebraucht wird, gehört in Reichweite der Erwachsenen.',
+        items: ['Windeln, Feuchttücher und Wechselkleidung', 'Trinkflasche und altersgerechte Snacks', 'Müllbeutel oder Wetbag für nasse Sachen']
+      },
+      {
+        heading: 'Schlaf und Beschäftigung',
+        text: 'Wenige vertraute Dinge reichen oft aus. Wichtig ist, dass nichts lose und gefährlich herumfliegt.',
+        items: ['Leichte Decke oder Tuch einpacken', 'Leise Beschäftigung für Pausen bereithalten', 'Kindersitz und Gurte nach Herstellerangaben prüfen']
+      }
+    ],
+    productIds: [
+      'auto-sonnenschutz-kind-fenster',
+      'snackbox-kind-faecher',
+      'trinkflasche-kind-auslaufsicher',
+      'feuchttuecherbox-reise',
+      'reise-toilettensitz-kind',
+      'kuscheldecke-kind-reise'
+    ],
+    relatedLinks: [
+      { title: 'Lange Autofahrt mit Kind', href: '/ratgeber/lange-autofahrt-mit-kind-tipps/', description: 'Ratgeber für Pausen, Snacks und Beschäftigung unterwegs.' },
+      { title: 'Reisen mit Kind', href: '/reisen-mit-kind/', description: 'Planung, Tagesrucksack und Reiseprodukte für Familien.' },
+      { title: 'Urlaub mit Baby Packliste', href: '/urlaub-mit-baby-packliste/', description: 'Die komplette Packliste für Schlafen, Wickeln, Essen und Sonne.' }
+    ],
+    ctaHref: '/ratgeber/lange-autofahrt-mit-kind-tipps/',
+    ctaText: 'Autofahrt-Ratgeber lesen'
   }
 ];
 

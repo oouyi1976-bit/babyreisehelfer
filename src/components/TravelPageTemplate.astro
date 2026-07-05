@@ -97,7 +97,7 @@ const faqSchema = {
         </p>
       </div>
       <div class="travel-home-grid travel-home-grid--compact">
-        {popularGuideLinks.slice(0, 5).map((item) => (
+        {popularGuideLinks.map((item) => (
           <a class="travel-home-card" href={item.href}>
             <span>{item.title}</span>
             <p>{item.description}</p>

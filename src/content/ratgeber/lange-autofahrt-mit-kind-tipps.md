@@ -18,6 +18,8 @@ tags:
 
 Eine lange Autofahrt mit Kind ist kein Ausdauerwettbewerb. Gute Etappen, erreichbare Snacks und eine ruhige Sitzumgebung helfen mehr als ein zu optimistischer Zeitplan.
 
+Wenn du mit Baby unterwegs bist, starte zusätzlich mit der [Autofahrt mit Baby Checkliste](/autofahrt-mit-baby-checkliste/). Dort sind Pausen, Wickeln, Snacks, Sonnenschutz und passende Produktideen kompakt sortiert.
+
 ## Pausen vorher einplanen
 
 Plane Pausen nicht erst, wenn alle erschöpft sind. Spielplätze, Raststätten mit Grünfläche oder kurze Spaziergänge können den Tag retten. Mit Baby sind Wickel- und Fütterpausen fest einzuplanen.
