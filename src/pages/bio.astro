@@ -1,0 +1,230 @@
+---
+import '../styles/global.css';
+
+const links = [
+  {
+    label: 'Sommer & Kinderwagen',
+    detail: 'Schatten, Luftzirkulation und praktische Tipps',
+    href: '/ratgeber/kinderwagen-im-sommer/',
+    icon: '☀️'
+  },
+  {
+    label: 'Flugreise mit Kind',
+    detail: 'Checkliste für Handgepäck, Boarding und Beschäftigung',
+    href: '/ratgeber/flugreise-mit-kind-checkliste-eltern/',
+    icon: '✈️'
+  },
+  {
+    label: 'Packliste Familienurlaub',
+    detail: 'Was wirklich mit muss – kompakt gesammelt',
+    href: '/ratgeber/packliste-familienurlaub/',
+    icon: '🧳'
+  },
+  {
+    label: 'Reiseapotheke mit Baby',
+    detail: 'Orientierung für Urlaub, Ausflüge und unterwegs',
+    href: '/ratgeber/baby-reiseapotheke/',
+    icon: '🩹'
+  }
+];
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BabyReiseHelfer – Links für Eltern unterwegs</title>
+    <meta name="description" content="Die wichtigsten Packlisten und Ratgeber von BabyReiseHelfer für Urlaub, Flugzeug, Hotel und unterwegs." />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main class="bio-page">
+      <section class="bio-card" aria-labelledby="bio-title">
+        <a class="bio-brand" href="/" aria-label="Zur Startseite von BabyReiseHelfer">
+          <span class="bio-mark">BR</span>
+          <span>BabyReiseHelfer</span>
+        </a>
+
+        <p class="bio-eyebrow">Ratgeber für Eltern unterwegs</p>
+        <h1 id="bio-title">Planen, packen und entspannter losfahren.</h1>
+        <p class="bio-intro">Praktische Orientierung für Urlaub, Flugzeug, Hotel, Strand und Kinderwagen mit Baby.</p>
+
+        <nav class="bio-links" aria-label="Wichtige Ratgeber">
+          {links.map((link) => (
+            <a class="bio-link" href={link.href}>
+              <span class="bio-icon" aria-hidden="true">{link.icon}</span>
+              <span class="bio-link-copy">
+                <strong>{link.label}</strong>
+                <small>{link.detail}</small>
+              </span>
+              <span class="bio-arrow" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </nav>
+
+        <p class="bio-note">Einige Ratgeber enthalten Empfehlungen und Affiliate-Links. Für dich ändert sich am Preis nichts.</p>
+
+        <footer class="bio-footer">
+          <a href="/impressum/">Impressum</a>
+          <span>·</span>
+          <a href="/datenschutz/">Datenschutz</a>
+          <span>·</span>
+          <a href="/affiliate-hinweis/">Affiliate-Hinweis</a>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  .bio-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: start center;
+    padding: 26px 16px 42px;
+    background:
+      radial-gradient(circle at 90% 0%, rgba(220, 238, 247, 0.9), transparent 37%),
+      linear-gradient(180deg, #fff8ee 0%, #f8fbfb 100%);
+  }
+
+  .bio-card {
+    width: min(100%, 560px);
+    display: grid;
+    gap: 18px;
+    padding: 28px;
+    border: 1px solid rgba(234, 223, 206, 0.9);
+    border-radius: 28px;
+    background: rgba(255, 253, 248, 0.94);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .bio-brand {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-blue);
+    font-weight: 900;
+  }
+
+  .bio-mark {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 13px;
+    background: var(--color-blue);
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: -0.05em;
+  }
+
+  .bio-eyebrow {
+    margin-top: 6px;
+    color: var(--color-green-strong);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    max-width: 12ch;
+    font-size: clamp(2rem, 8vw, 3.35rem);
+  }
+
+  .bio-intro {
+    max-width: 48ch;
+    color: var(--color-muted);
+  }
+
+  .bio-links {
+    display: grid;
+    gap: 11px;
+    margin-top: 4px;
+  }
+
+  .bio-link {
+    display: grid;
+    grid-template-columns: 38px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    min-height: 78px;
+    padding: 13px;
+    border: 1px solid var(--color-line);
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 14px rgba(22, 50, 79, 0.05);
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+  }
+
+  .bio-link:hover,
+  .bio-link:focus-visible {
+    transform: translateY(-2px);
+    border-color: var(--color-blue-strong);
+    box-shadow: 0 11px 22px rgba(22, 50, 79, 0.10);
+  }
+
+  .bio-icon {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--color-sage-soft);
+    font-size: 1.1rem;
+  }
+
+  .bio-link-copy {
+    display: grid;
+    gap: 2px;
+  }
+
+  .bio-link-copy strong {
+    color: var(--color-blue);
+    line-height: 1.2;
+  }
+
+  .bio-link-copy small {
+    color: var(--color-muted);
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .bio-arrow {
+    color: var(--color-coral-dark);
+    font-size: 1.35rem;
+    font-weight: 800;
+  }
+
+  .bio-note {
+    padding: 13px 15px;
+    border-radius: 15px;
+    background: var(--color-cream-2);
+    color: #667083;
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
+  .bio-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    color: var(--color-muted);
+    font-size: 0.76rem;
+  }
+
+  .bio-footer a:hover,
+  .bio-footer a:focus-visible {
+    color: var(--color-blue);
+    text-decoration: underline;
+  }
+
+  @media (min-width: 560px) {
+    .bio-page { padding-top: 52px; }
+    .bio-card { padding: 36px; }
+  }
+</style>
