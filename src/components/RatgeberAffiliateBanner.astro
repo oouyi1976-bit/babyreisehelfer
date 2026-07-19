@@ -1,0 +1,27 @@
+---
+const {
+  image,
+  imageAlt,
+  title,
+  text,
+  href,
+  buttonText
+} = Astro.props as {
+  image: string;
+  imageAlt: string;
+  title: string;
+  text: string;
+  href: string;
+  buttonText: string;
+};
+---
+
+<section class="ratgeber-promo" aria-label={title}>
+  <img src={image} alt={imageAlt} width="1800" height="600" loading="lazy" decoding="async" />
+  <div class="ratgeber-promo__content">
+    <span>Werbung</span>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <a class="button" href={href}>{buttonText}</a>
+  </div>
+</section>

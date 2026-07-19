@@ -11,17 +11,20 @@ const {
   description = 'BabyReiseHelfer sammelt Packlisten, Produktideen und Ratgeber für entspannte Reisen mit Baby.',
   ogType = 'website',
   canonical,
+  ogImage = '/og-image.svg',
   jsonLd
 } = Astro.props as {
   title?: string;
   description?: string;
   ogType?: string;
   canonical?: string;
+  ogImage?: string;
   jsonLd?: JsonLd;
 };
 
 const site = Astro.site ?? new URL('https://babyreisehelfer.pages.dev');
 const canonicalUrl = new URL(canonical ?? Astro.url.pathname, site);
+const ogImageUrl = new URL(ogImage, site);
 const pageTitle = title.includes('BabyReiseHelfer') ? title : `${title} | BabyReiseHelfer`;
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -55,7 +58,7 @@ const jsonLdItems = jsonLd
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalUrl.href} />
     <meta property="og:locale" content="de_DE" />
-    <meta property="og:image" content={new URL('/og-image.svg', site).href} />
+    <meta property="og:image" content={ogImageUrl.href} />
     <meta name="twitter:card" content="summary_large_image" />
 
     {jsonLdItems.map((item) => (

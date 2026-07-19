@@ -19,6 +19,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/durchschlafen-lernen-bindungsorientiert/',
     '/babys-tage-meistern/',
     '/schlummergeheimnisse-neugeborene/',
+    '/ratgeber/10-tipps-reisen-mit-baby/',
     ...travelPages.map((page) => `/${page.slug}/`),
     ...seoLandingPages.map((page) => `/${page.slug}/`),
     ...categories.map((category) => `/${category.slug}/`),

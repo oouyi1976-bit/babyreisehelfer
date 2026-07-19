@@ -1,0 +1,67 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+const {
+  product,
+  attention
+} = Astro.props as {
+  product: TravelProduct;
+  attention: string;
+};
+
+const hasReadyLink = isAmazonAffiliateReady(product);
+const externalAttributes = {
+  target: '_blank',
+  rel: 'nofollow sponsored noopener noreferrer',
+  'data-affiliate-link': true,
+  'data-product-id': product.id,
+  'data-product-title': product.name
+};
+---
+
+<section class="article-recommendation" aria-label={`Produktidee: ${product.name}`}>
+  <div class="article-recommendation__media">
+    {hasReadyLink ? (
+      <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...externalAttributes}>
+        <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+      </a>
+    ) : (
+      <img src={product.image} alt={product.imageAlt} width="900" height="675" loading="lazy" decoding="async" />
+    )}
+  </div>
+  <div class="article-recommendation__content">
+    <p class="article-recommendation__eyebrow">Produktidee</p>
+    <h3>
+      {hasReadyLink ? (
+        <a href={product.affiliateUrl} {...externalAttributes}>{product.name}</a>
+      ) : (
+        product.name
+      )}
+    </h3>
+    <p>{product.shortDescription}</p>
+    <dl class="article-recommendation__facts">
+      <div>
+        <dt>Geeignet für</dt>
+        <dd>{product.bestFor}</dd>
+      </div>
+      <div>
+        <dt>Worauf achten?</dt>
+        <dd>{attention}</dd>
+      </div>
+    </dl>
+    <ul class="article-recommendation__benefits">
+      {product.benefits.slice(0, 3).map((benefit) => <li>{benefit}</li>)}
+    </ul>
+    {hasReadyLink ? (
+      <AffiliateButton
+        href={product.affiliateUrl}
+        label="Produkt ansehen"
+        trackingId={product.id}
+        trackingTitle={product.name}
+      />
+    ) : (
+      <a class="button button--secondary" href="/reiseprodukte/">Produktübersicht ansehen</a>
+    )}
+  </div>
+</section>
