@@ -1,0 +1,10 @@
+---
+const { items } = Astro.props as { items: string[] };
+---
+
+<section class="article-quick-overview" aria-labelledby="article-quick-overview-title">
+  <h2 id="article-quick-overview-title">Auf einen Blick:</h2>
+  <ul>
+    {items.map((item) => <li>{item}</li>)}
+  </ul>
+</section>

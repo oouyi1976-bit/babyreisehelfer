@@ -1,13 +1,11 @@
 ---
 const navItems = [
-  { label: 'Urlaub', href: '/urlaub/' },
-  { label: 'Reisen mit Kind', href: '/reisen-mit-kind/' },
+  { label: 'Startseite', href: '/' },
+  { label: 'Reiseziele', href: '/urlaub/' },
   { label: 'Packlisten', href: '/packlisten/' },
-  { label: 'Babyschlaf', href: '/babyschlaf/' },
-  { label: 'Ratgeber', href: '/#ratgeber' },
-  { label: 'Reiseprodukte', href: '/reiseprodukte/' },
-  { label: 'Produkte', href: '/produkte/' },
-  { label: 'Über uns', href: '/#ueber-uns' }
+  { label: 'Unterkünfte', href: '/hotel-mit-baby/' },
+  { label: 'Baby unterwegs', href: '/reisen-mit-kind/' },
+  { label: 'Über uns', href: '/impressum/' }
 ];
 ---
 
@@ -26,6 +24,7 @@ const navItems = [
           fetchpriority="high"
         />
       </picture>
+      <span class="site-logo__tagline">Stressfrei reisen mit Baby</span>
     </a>
 
     <nav class="site-nav" aria-label="Hauptnavigation">
@@ -34,6 +33,15 @@ const navItems = [
       ))}
     </nav>
 
-    <a class="header-cta" href="/beste-reiseprodukte/">Top-Produkte</a>
+    <a class="header-search" href="/reiseprodukte/" aria-label="Reiseprodukte entdecken" title="Reiseprodukte entdecken">
+      <span aria-hidden="true"></span>
+    </a>
+
+    <details class="site-mobile-menu">
+      <summary aria-label="Navigation öffnen"><span aria-hidden="true"></span></summary>
+      <nav aria-label="Mobile Hauptnavigation">
+        {navItems.map((item) => <a href={item.href}>{item.label}</a>)}
+      </nav>
+    </details>
   </div>
 </header>

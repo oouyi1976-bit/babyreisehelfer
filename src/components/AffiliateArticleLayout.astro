@@ -1,0 +1,40 @@
+---
+const {
+  title,
+  updatedAt,
+  heroImage,
+  heroAlt
+} = Astro.props as {
+  title: string;
+  updatedAt: string;
+  heroImage: string;
+  heroAlt: string;
+};
+---
+
+<article class="affiliate-article">
+  <div class="affiliate-article__container">
+    <div class="affiliate-article__grid">
+      <main class="affiliate-article__main">
+        <header class="affiliate-article__header">
+          <p class="affiliate-article__kicker">Ratgeber für Familienreisen</p>
+          <h1>{title}</h1>
+          <div class="affiliate-article__author">
+            <img src="/brand/babyreisehelfer-icon.png" alt="BabyReiseHelfer" width="44" height="44" />
+            <div>
+              <strong>Von BabyReiseHelfer</strong>
+              <span>Zuletzt aktualisiert: {updatedAt}</span>
+            </div>
+          </div>
+          <figure class="affiliate-article__hero">
+            <img src={heroImage} alt={heroAlt} width="1600" height="700" fetchpriority="high" />
+          </figure>
+        </header>
+        <slot />
+      </main>
+      <aside class="affiliate-article__sidebar">
+        <slot name="sidebar" />
+      </aside>
+    </div>
+  </div>
+</article>

@@ -12,6 +12,8 @@ const {
   ogType = 'website',
   canonical,
   ogImage = '/og-image.svg',
+  bodyClass = '',
+  showGlobalDisclosure = true,
   jsonLd
 } = Astro.props as {
   title?: string;
@@ -19,6 +21,8 @@ const {
   ogType?: string;
   canonical?: string;
   ogImage?: string;
+  bodyClass?: string;
+  showGlobalDisclosure?: boolean;
   jsonLd?: JsonLd;
 };
 
@@ -65,11 +69,13 @@ const jsonLdItems = jsonLd
       <script type="application/ld+json" set:html={JSON.stringify(item)} />
     ))}
   </head>
-  <body>
+  <body class={bodyClass}>
     <Header />
-    <div class="container disclosure-container">
-      <AffiliateDisclosure compact />
-    </div>
+    {showGlobalDisclosure && (
+      <div class="container disclosure-container">
+        <AffiliateDisclosure compact />
+      </div>
+    )}
     <main>
       <slot />
     </main>

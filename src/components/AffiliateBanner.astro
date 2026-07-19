@@ -1,0 +1,29 @@
+---
+const {
+  tone = 'coral',
+  image,
+  imageAlt,
+  title,
+  text,
+  href,
+  buttonText
+} = Astro.props as {
+  tone?: 'coral' | 'mint';
+  image: string;
+  imageAlt: string;
+  title: string;
+  text: string;
+  href: string;
+  buttonText: string;
+};
+---
+
+<section class:list={['affiliate-banner', `affiliate-banner--${tone}`]} aria-label={title}>
+  <div class="affiliate-banner__content">
+    <span>Anzeige</span>
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <a class="button" href={href}>{buttonText}</a>
+  </div>
+  <img src={image} alt={imageAlt} width="1800" height="600" loading="lazy" decoding="async" />
+</section>

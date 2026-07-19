@@ -1,0 +1,71 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+const { products, adImage } = Astro.props as { products: TravelProduct[]; adImage: string };
+---
+
+<div class="article-sidebar-stack">
+  <section class="article-sidebar-ad">
+    <span>Anzeige</span>
+    <div>
+      <h2>Sicher und entspannt reisen mit der passenden Ausrüstung</h2>
+      <p>Praktische Empfehlungen für unterwegs.</p>
+      <a class="button" href="/reiseprodukte/">Zu den Empfehlungen</a>
+    </div>
+    <img src={adImage} alt="Familienreise mit Baby am Strand" width="480" height="360" loading="lazy" decoding="async" />
+  </section>
+
+  <section class="article-sidebar-products">
+    <h2>Unsere Top-Produktempfehlungen</h2>
+    {products.map((product) => {
+      const hasReadyLink = isAmazonAffiliateReady(product);
+      const linkAttributes = {
+        target: '_blank',
+        rel: 'nofollow sponsored noopener noreferrer',
+        'data-affiliate-link': true,
+        'data-product-id': product.id,
+        'data-product-title': product.name
+      };
+      return (
+        <article class="article-sidebar-product">
+          {hasReadyLink ? (
+            <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
+              <img src={product.image} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
+            </a>
+          ) : (
+            <img src={product.image} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
+          )}
+          <div>
+            <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>
+            <p>{product.shortDescription}</p>
+            {hasReadyLink ? (
+              <AffiliateButton href={product.affiliateUrl} label="Produkt ansehen" trackingId={product.id} trackingTitle={product.name} />
+            ) : (
+              <a class="button" href="/reiseprodukte/">Produktübersicht</a>
+            )}
+          </div>
+        </article>
+      );
+    })}
+    <a class="article-sidebar-products__all" href="/reiseprodukte/">Alle Empfehlungen anzeigen →</a>
+  </section>
+
+  <section class="article-sidebar-travel-ad">
+    <span>Anzeige</span>
+    <h2>Urlaub planen?</h2>
+    <p>Finde praktische Ideen für familienfreundliche Reisen.</p>
+    <ul>
+      <li>Angebote vergleichen</li>
+      <li>Familienfreundliche Unterkünfte</li>
+      <li>Flexibel planen</li>
+    </ul>
+    <a class="button" href="/urlaub/">Reiseangebote ansehen</a>
+  </section>
+
+  <section class="article-sidebar-checklist">
+    <h2>Kostenlose Reise-Checkliste für Eltern</h2>
+    <p>10 Tipps für entspannteres Reisen mit Baby.</p>
+    <a class="button" href="/packlisten/">Packliste ansehen</a>
+  </section>
+</div>

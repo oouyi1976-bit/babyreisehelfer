@@ -1,0 +1,10 @@
+---
+const { items } = Astro.props as { items: Array<{ id: string; title: string }> };
+---
+
+<nav class="article-table-of-contents" aria-label="Inhaltsverzeichnis">
+  <strong>In diesem Artikel</strong>
+  <ol>
+    {items.map((item) => <li><a href={`#${item.id}`}>{item.title}</a></li>)}
+  </ol>
+</nav>

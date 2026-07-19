@@ -1,0 +1,47 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+const {
+  product,
+  label = 'Praktischer Reisebegleiter für Eltern'
+} = Astro.props as {
+  product: TravelProduct;
+  label?: string;
+};
+
+const hasReadyLink = isAmazonAffiliateReady(product);
+const linkAttributes = {
+  target: '_blank',
+  rel: 'nofollow sponsored noopener noreferrer',
+  'data-affiliate-link': true,
+  'data-product-id': product.id,
+  'data-product-title': product.name
+};
+---
+
+<section class="inline-affiliate-product" aria-label={`Produktidee: ${product.name}`}>
+  <div class="inline-affiliate-product__media">
+    {hasReadyLink ? (
+      <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
+        <img src={product.image} alt={product.imageAlt} width="480" height="360" loading="lazy" decoding="async" />
+      </a>
+    ) : (
+      <img src={product.image} alt={product.imageAlt} width="480" height="360" loading="lazy" decoding="async" />
+    )}
+  </div>
+  <div class="inline-affiliate-product__content">
+    <p>{label}</p>
+    <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>
+    <ul>
+      {product.benefits.slice(0, 3).map((benefit) => <li>{benefit}</li>)}
+    </ul>
+  </div>
+  <div class="inline-affiliate-product__action">
+    {hasReadyLink ? (
+      <AffiliateButton href={product.affiliateUrl} label="Produkt ansehen" trackingId={product.id} trackingTitle={product.name} />
+    ) : (
+      <a class="button" href="/reiseprodukte/">Produktübersicht</a>
+    )}
+  </div>
+</section>
