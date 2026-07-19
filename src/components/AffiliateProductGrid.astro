@@ -21,6 +21,7 @@ const { title, products } = Astro.props as {
   <div class="affiliate-product-grid">
     {products.map((product) => {
       const hasReadyLink = isAmazonAffiliateReady(product);
+      const productImage = product.officialAmazonImageUrl ?? product.image;
       const linkAttributes = {
         target: '_blank',
         rel: 'nofollow sponsored noopener noreferrer',
@@ -34,10 +35,10 @@ const { title, products } = Astro.props as {
           <div class="affiliate-product-grid-card__media">
             {hasReadyLink ? (
               <a href={product.affiliateUrl} aria-label={`${product.name} bei Amazon ansehen`} {...linkAttributes}>
-                <img src={product.image} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
+                <img src={productImage} alt={product.name} width="800" height="800" loading="lazy" decoding="async" />
               </a>
             ) : (
-              <img src={product.image} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
+              <img src={productImage} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
             )}
           </div>
 
@@ -58,7 +59,7 @@ const { title, products } = Astro.props as {
 
           <div class="affiliate-product-grid-card__action">
             {hasReadyLink ? (
-              <AffiliateButton href={product.affiliateUrl} label="Bei Amazon ansehen" trackingId={product.id} trackingTitle={product.name} />
+              <AffiliateButton href={product.affiliateUrl} label="Jetzt bei Amazon ansehen" trackingId={product.id} trackingTitle={product.name} />
             ) : (
               <span class="affiliate-product-grid-card__pending">Amazon-Link folgt</span>
             )}

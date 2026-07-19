@@ -27,7 +27,11 @@ const productById = new Map(getTravelProductsByIds([
   'laessig-buggy-organizer',
   'buggy-reisen-handgepaeck',
   'babytrage-urlaub-luftig',
-  'kofferwaage-digital'
+  'kofferwaage-digital',
+  'trinkflasche-kind-auslaufsicher',
+  'snackbox-kind-faecher',
+  'silikon-laetzchen-reise',
+  'feuchttuecherbox-reise'
 ]).map((product) => [product.id, product]));
 const backpack = productById.get('wickelrucksack-reise-handgepaeck');
 const firstAidOrganizer = productById.get('reiseapotheke-organizer-baby');
@@ -62,6 +66,13 @@ const outdoorProducts = getGridProducts([
   { id: 'laessig-buggy-organizer', attention: 'Beladung und Befestigung am eigenen Buggy testen.' }
 ]);
 
+const foodAndCleanlinessProducts = getGridProducts([
+  { id: 'trinkflasche-kind-auslaufsicher', attention: 'Verschluss und Reinigung vor der Reise testen.' },
+  { id: 'snackbox-kind-faecher', attention: 'Fächergröße an die üblichen Portionen anpassen.' },
+  { id: 'silikon-laetzchen-reise', attention: 'Nur nutzen, wenn sich Material und Verschluss gut anfühlen.' },
+  { id: 'feuchttuecherbox-reise', attention: 'Vor der Abreise prüfen, ob sie sauber schließt.' }
+]);
+
 const sidebarProducts = [
   productById.get('reiseapotheke-organizer-baby'),
   productById.get('buggy-reisen-handgepaeck'),
@@ -74,25 +85,36 @@ const tips = [
     id: 'planung-ist-alles',
     title: 'Planung ist alles',
     paragraphs: [
-      'Eine gute Planung heißt nicht, jeden Tag exakt durchzutakten. Sie schafft vor allem Luft für die Momente, die mit Baby spontan anders laufen: eine lange Wickelpause, ein verpasster Bus oder ein Mittagsschlaf genau dann, wenn ihr losmöchtet.',
-      'Klärt deshalb vorab nur die entscheidenden Punkte: Anreise, Transfer, Schlafplatz und die erste Mahlzeit am Ziel. Bei Flügen gehören auch die Regeln der Airline zu Buggy, Babynahrung und Gepäck dazu.',
-      'Für die Ankunft hilft ein Mini-Plan: Schlafsachen, Windeln und Wechselkleidung liegen so bereit, dass ihr nicht den gesamten Koffer öffnen müsst.'
+      'Eine gute Planung heißt nicht, jeden Reisetag im Viertelstundentakt festzulegen. Sie schafft vor allem Luft für das, was mit Baby fast immer dazwischenkommt: eine längere Wickelpause, ein verpasster Bus, ein unerwartet später Mittagsschlaf oder ein Moment, in dem ihr einfach kurz ankommen müsst. Gerade am ersten Tag ist weniger Programm oft die angenehmere Entscheidung.',
+      'Beginne bei der Anreisezeit. Manche Familien reisen lieber früh los, solange das Kind noch ausgeschlafen ist, andere nutzen eine Schlafphase im Auto oder Zug. Entscheidend ist nicht die perfekte Uhrzeit, sondern ein realistischer Plan mit Reserve. Bei Flugreisen gehören Check-in, Sicherheitskontrolle, Gate-Wechsel und mögliche Wartezeiten dazu. Prüfe auch, wie Buggy, Babynahrung und Handgepäck bei deiner Airline geregelt sind.',
+      'Plane den Transfer vom Flughafen oder Bahnhof mit derselben Sorgfalt wie die Unterkunft. Gibt es einen passenden Kindersitz, einen Aufzug, genug Platz für Gepäck oder eine ruhige Möglichkeit zum Stillen und Wickeln? Wenn möglich, notiere eine zweite Option, falls ein Shuttle verspätet ist. Das nimmt Druck aus den ersten Stunden und hilft, wenn das Baby gerade etwas anderes braucht als der Fahrplan vorsieht.',
+      'Kontaktiere die Unterkunft vorab und frage konkret nach Babybett, Matratze, Hochstuhl, Kühlschrank und Waschmöglichkeit. Für die Ankunft bewährt sich ein kleines Set ganz oben im Gepäck: Schlafsachen, Windeln, Wechselkleidung, ein Snack und eine vertraute Kleinigkeit. So müsst ihr nicht sofort alles ausräumen.'
     ],
-    checklist: ['Ankunftszeit und Transfer realistisch einplanen', 'Schlafplatz und Ausstattung der Unterkunft vorab klären', 'Für die ersten zwei Stunden am Zielort alles griffbereit halten'],
+    checklist: ['Ankunftszeit, Transfer und Puffer realistisch planen', 'Schlafplatz und wichtige Ausstattung vorab klären', 'Für die ersten zwei Stunden am Zielort ein Mini-Set griffbereit halten'],
+    callout: {
+      title: 'Drei Fragen vor der Buchung',
+      items: ['Wie kommen wir vom Flughafen oder Bahnhof zur Unterkunft?', 'Gibt es einen geeigneten Schlafplatz?', 'Können wichtige Dinge vor Ort gekauft werden?']
+    },
     links: [
       { href: '/fliegen-mit-baby/', label: 'Fliegen mit Baby' },
-      { href: '/hotel-mit-baby/', label: 'Baby im Hotel' }
+      { href: '/hotel-mit-baby/', label: 'Baby im Hotel' },
+      { href: '/urlaub-mit-baby-packliste/', label: 'Urlaub mit Baby Packliste' }
     ]
   },
   {
     id: 'richtige-packliste',
     title: 'Die richtige Packliste nutzen',
     paragraphs: [
-      'Eine Packliste ist kein Wettbewerb um den vollsten Koffer. Sie schützt davor, die wichtigen Kleinigkeiten zu vergessen, und hilft gleichzeitig dabei, Dinge auszusortieren, die unterwegs nicht wirklich gebraucht werden.',
-      'Ordne deine Liste nach Situationen: schlafen, wickeln, essen, unterwegs sein und schützen. Erst danach ergänzt du, was zu Reiseziel, Wetter und Dauer passt.',
-      'Für die Anreise lohnt sich eine eigene kleine Liste. So bleiben die Dinge für Flug, Bahn oder Auto von der Hotel-Ausstattung getrennt.'
+      'Eine Packliste ist kein Wettbewerb um den vollsten Koffer. Sie verhindert vor allem, dass die kleinen, aber wichtigen Dinge in letzter Minute untergehen. Statt mit einer langen Liste aus einzelnen Gegenständen zu starten, hilft es vielen Eltern, zuerst typische Situationen aufzuschreiben: Anreise, Schlafen, Wickeln, Essen, Wetterwechsel und Ausflug. Erst darunter kommen die Dinge, die zu euch, zum Ziel und zur Jahreszeit passen.',
+      'Trenne Handgepäck und Koffer frühzeitig. Im Handgepäck liegt alles, was ihr vor dem Einchecken, bei einer Verspätung und in den ersten Stunden am Zielort braucht. Der Koffer darf dagegen die Vorräte und Dinge für den Aufenthalt aufnehmen. Dadurch musst du unterwegs nicht nach Windeln, Wechselkleidung oder Unterlagen suchen und kannst den großen Koffer bei einem kurzen Stopp geschlossen lassen.',
+      'Bei Kleidung ist eine Mischung aus geplanten Tagen und kleiner Notfallreserve oft praktikabler als viele Einzelteile. Wähle Teile, die sich gut kombinieren lassen und schnell wechseln lassen. Für ein warmes Reiseziel gehören leichte Schichten, ein Sonnenhut und eine zusätzliche trockene Garnitur in die Nähe. Für kühlere Anreisen helfen eine wärmende Lage und ein Satz Kleidung, der nicht tief im Gepäck verschwindet.',
+      'Packe Dokumente gesammelt in eine eigene Hülle und denke die Rückreise gleich mit: Wohin kommen nasse Sachen, angebrochene Snacks oder Souvenirs? Ein freier Beutel und etwas Platz im Koffer sparen später Improvisation. Notiere nach jeder Reise, was wirklich gefehlt hat, und entwickle daraus eure persönliche Liste.'
     ],
-    checklist: ['Handgepäck und Koffer getrennt planen', 'Schlaf- und Wickelsachen zuerst notieren', 'Nur Dinge ergänzen, die ihr am Zielort nicht einfach besorgen könnt'],
+    checklist: ['Handgepäck und Koffer getrennt planen', 'Kleidung nach Tagen plus Notfallreserve sortieren', 'Dokumente und Rückreisebedarf von Anfang an mitdenken'],
+    callout: {
+      title: 'Diese Dinge gehören nicht tief in den Koffer',
+      items: ['Windeln', 'Wechselkleidung', 'Essen und Trinken', 'wichtige Dokumente', 'Medikamente nach individueller Abstimmung']
+    },
     links: [
       { href: '/packlisten/', label: 'Baby-Reise-Packlisten' },
       { href: '/urlaub-mit-baby-packliste/', label: 'Urlaub mit Baby Packliste' }
@@ -102,22 +124,35 @@ const tips = [
     id: 'unterhaltung-unterwegs',
     title: 'Unterhaltung für unterwegs einplanen',
     paragraphs: [
-      'Lange Wartezeiten oder Fahrten können mit Baby herausfordernd sein. Meist braucht es dafür keine große Spielzeugsammlung: Ein vertrauter Gegenstand, ein kleines Bilderbuch und eine neue, einfache Idee reichen oft völlig aus.',
-      'Bewahre ein oder zwei Dinge nur für die Reise auf. Dadurch bleiben sie interessanter und die Tasche wird nicht unnötig schwer.',
-      'Achte auf altersgerechte Teile, die im Sitz nicht schnell verloren gehen. Gemeinsames Schauen, Singen oder die Umgebung beobachten sind ebenfalls gute Reisebeschäftigungen.'
+      'Lange Wartezeiten und enge Sitzplätze können für kleine Kinder schnell eintönig werden. Dafür braucht es aber keine große Spielzeugsammlung. Ein vertrauter Gegenstand für ruhige Momente, ein kleines Bilderbuch und eine neue, einfache Idee reichen oft weiter als eine volle Tasche. Das Ziel ist nicht dauerhafte Beschäftigung, sondern kleine Wechsel, die die Zeit angenehmer machen.',
+      'Mische Bekanntes und Neues. Das vertraute Tuch, ein Beißring oder ein Lieblingsbuch kann beim Übergang helfen, während ein neues Pappbuch, ein kleines Magnetspiel oder ein Stickerheft erst bei längerer Wartezeit herauskommt. So bleibt etwas Reserve übrig. Zu viele Teile erzeugen dagegen schnell Unordnung, fallen unter Sitze oder lenken eher ab, als dass sie beschäftigen.',
+      'Beobachten ist ebenfalls eine echte Reisebeschäftigung. Im Zug gibt es Landschaften, Ansagen und Menschen zu sehen, am Flughafen Fahrzeuge und große Fenster, im Auto können Eltern erzählen oder zusammen einfache Lieder wiederholen. Gerade bei Babys ist die direkte Ansprache oft wertvoller als ein weiterer Gegenstand. Achte darauf, dass alle Teile zum Alter passen und nicht aus vielen kleinen, lose herumfliegenden Elementen bestehen.',
+      'Plane den Wechsel aktiv ein: Erst schauen, dann snacken, dann ein Lied, später ein Buch. Wenn ein Kind müde, hungrig oder überreizt ist, löst ein neues Spielzeug das Grundbedürfnis nicht. Kurze Pausen, Nähe und ein ruhiger Blick nach draußen dürfen genauso Teil des Plans sein.'
     ],
-    checklist: ['Ein vertrauter Gegenstand für Ruhephasen', 'Eine kleine neue Idee für Wartezeiten', 'Nur leise und altersgerechte Dinge einpacken'],
-    links: [{ href: '/ratgeber/baby-im-flugzeug-beschaeftigen/', label: 'Baby im Flugzeug beschäftigen' }]
+    checklist: ['Einen vertrauten Gegenstand für Ruhephasen einpacken', 'Eine kleine neue Idee für lange Wartezeiten zurückhalten', 'Nur leise und altersgerechte Dinge auswählen'],
+    callout: {
+      title: 'Drei leise Beschäftigungen für Flug und Bahn',
+      items: ['Kleines Bilderbuch gemeinsam anschauen', 'Vertrautes Lied oder Fingerspiel', 'Die Umgebung am Fenster beobachten und benennen']
+    },
+    links: [
+      { href: '/ratgeber/baby-im-flugzeug-beschaeftigen/', label: 'Baby im Flugzeug beschäftigen' },
+      { href: '/fliegen-mit-baby/', label: 'Fliegen mit Baby' }
+    ]
   },
   {
     id: 'handgepaeck-organisieren',
     title: 'Handgepäck sinnvoll organisieren',
     paragraphs: [
-      'Entscheidend ist nicht, wie viel im Handgepäck steckt, sondern wie schnell du es findest. Ein Wickelset, eine Wechselkleidung und Essen oder Trinken gehören nach oben oder in eine eigene kleine Tasche.',
-      'Plane eine kleine Reserve ein. Verspätungen, Stau oder ein langes Warten sind mit Baby gleich entspannter, wenn eine zusätzliche Windel, ein Tuch und etwas Vertrautes nicht erst gesucht werden müssen.',
-      'Bei Flugreisen solltest du die aktuellen Regeln für Babynahrung und Flüssigkeiten direkt bei der Airline prüfen.'
+      'Entscheidend ist nicht, wie viel im Handgepäck steckt, sondern wie schnell du etwas findest. Packe nach Situationen statt nach Produktgruppen: ein kleines Wickelset, eine Tasche für Essen und Trinken, einen verschließbaren Beutel mit Wechselkleidung und eine dünne Reserve für Verzögerungen. Wenn jede dieser Einheiten einen festen Platz hat, muss beim Gate oder auf der Raststätte nicht der ganze Rucksack ausgeräumt werden.',
+      'Das Wickelset darf wirklich separat sein: Windel, Tücher, Unterlage, Wechselbody und ein Beutel für Nasses oder Müll. Für eine kurze Pause kannst du es einfach herausnehmen und anschließend wieder oben einordnen. Kleidung in verschließbaren Beuteln bleibt sauber, wenn einmal etwas ausläuft. Auch ein kleiner Beutel für schmutzige oder nasse Teile verhindert, dass sich alles im Rucksack vermischt.',
+      'Plane eine Verspätungsreserve ein, aber nicht für jede denkbare Stunde. Eine zusätzliche Windel, etwas zu trinken, ein kleiner Snack und ein vertrauter Gegenstand machen bei einer längeren Wartezeit oft den Unterschied. Bei mehreren Umstiegen hilft es, Reisepässe, Tickets und Versicherungsdaten in einem Fach zu bündeln, das nicht mit Snacks oder Wickelsachen geteilt wird.',
+      'Für Flugreisen gelten je nach Airline und Abflugort eigene Regeln für Babynahrung und Flüssigkeiten. Prüfe diese direkt vor der Reise bei der Airline oder dem Flughafen, statt dich auf alte Erfahrungsberichte zu verlassen. Ein kurzer Probepack-Abend zeigt, ob alles in 30 Sekunden erreichbar ist.'
     ],
     checklist: ['Wickelset, Wechselbody und Müllbeutel separat bündeln', 'Trinken und Snacks ohne Umräumen erreichen', 'Eine kleine Reserve für Verzögerungen einplanen'],
+    callout: {
+      title: 'In 30 Sekunden griffbereit',
+      items: ['Wickelset', 'eine komplette Wechselkleidung', 'Trinken und kleiner Snack', 'Dokumententasche oder Reisepässe']
+    },
     links: [
       { href: '/handgepaeck-baby-flug/', label: 'Handgepäck mit Baby' },
       { href: '/ratgeber/fliegen-mit-baby-dinge/', label: 'Fliegen mit Baby: praktische Tipps' }
@@ -127,11 +162,16 @@ const tips = [
     id: 'schlafplatz-hotel',
     title: 'Schlafplatz im Hotel vorbereiten',
     paragraphs: [
-      'Ein fremdes Zimmer muss nicht wie zu Hause aussehen. Für viele Babys reichen eine ruhige Ecke, passende Schlafkleidung und ein ähnlicher Ablauf wie daheim, um besser zur Ruhe zu kommen.',
-      'Frage vor der Reise nach, ob die Unterkunft ein Babybett stellt und wie es ausgestattet ist. Prüfe den Schlafplatz bei der Ankunft selbst, bevor du ihn nutzt.',
-      'Ein kleines Nachtlicht kann bei nächtlichem Wickeln Orientierung geben, ohne den ganzen Raum hell zu machen. Sicherheits- und Herstellerhinweise bleiben dabei immer wichtig.'
+      'Ein fremdes Zimmer muss nicht wie zu Hause aussehen, damit ein Baby zur Ruhe kommen kann. Oft helfen schon eine ruhige Ecke, vertraute Schlafkleidung und ein ähnlicher Ablauf. Schaffe nach der Ankunft nicht sofort ein perfektes Kinderzimmer, sondern beginne mit den Dingen, die bei euch zu Hause den Übergang in die Nacht markieren: Windel, Schlafsack, ein kurzes Ritual und gedämpftes Licht.',
+      'Kontaktiere die Unterkunft vorab und frage nach Babybett, Matratze und Platz im Zimmer. Bei der Ankunft prüfst du den Schlafplatz selbst, bevor du ihn nutzt. Achte darauf, ob das Bett stabil steht, ob sich lose Gegenstände in der Nähe befinden und ob Kabel, Lampen oder Vorhänge erreichbar sind. Wenn etwas nicht passt, ist ein anderer Platz im Zimmer oder ein eigenes Reisebett oft die ruhigere Lösung.',
+      'Ein heller Raum am Abend kann ungewohnt sein. Ein mobiler Verdunkelungshelfer oder ein anderer ruhiger Schlafbereich kann dabei unterstützen, sofern Befestigung, Luftzirkulation und Herstellerhinweise passen. Decke einen Kinderwagen oder ein Bett nicht vollständig ab. Für nächtliches Wickeln kann ein kleines Nachtlicht Orientierung geben, ohne den ganzen Raum aufzuhellen. Auch hier gilt: Kabel und lose Teile gehören außer Reichweite.',
+      'Lege die Dinge für die Nacht zusammen bereit: Windeln, Tücher, Wechselbody, Schlafsack und bei Bedarf ein Getränk für die Erwachsenen. So entsteht nachts keine hektische Suche. Kleine Wiederholungen reichen oft aus. Eine unruhige Nacht kann in neuer Umgebung ganz normal sein.'
     ],
-    checklist: ['Schlafplatz vor dem ersten Schlafen prüfen', 'Schlafsack und Abendroutine griffbereit legen', 'Fenster, Kabel und Kleinteile im Zimmer kontrollieren'],
+    checklist: ['Unterkunft vorab nach Babybett und Ausstattung fragen', 'Schlafplatz vor dem ersten Schlafen prüfen', 'Schlafsack und Abendroutine griffbereit legen'],
+    callout: {
+      title: 'Hotelzimmer nach der Ankunft prüfen',
+      items: ['Schlafplatz steht stabil und frei', 'Kabel, lose Gegenstände und Stolperfallen sind außer Reichweite', 'Wickelsachen liegen für die Nacht bereit', 'Fenster und Raumtemperatur sind für euch passend']
+    },
     links: [
       { href: '/hotel-mit-baby/', label: 'Baby im Hotel' },
       { href: '/baby-im-hotel-packliste/', label: 'Hotel-Packliste mit Baby' }
@@ -141,33 +181,54 @@ const tips = [
     id: 'pausen-einplanen',
     title: 'Ausreichend Pausen einplanen',
     paragraphs: [
-      'Ein Zeitplan mit Baby darf bewusst Lücken haben. Ein ungeplanter Wickelstopp, eine längere Mahlzeit oder zehn Minuten zum Beobachten sind kein Fehler im Ablauf, sondern Teil der Reise.',
-      'Plane Transfers kürzer und Wartezeiten angenehmer. Bei Autofahrten helfen sichere Pausenorte, die du vorher grob kennst.',
-      'Wähle pro Tag lieber einen Hauptplan und eine kleine Alternative. Das macht es leichter, auf Müdigkeit, Wetter oder die Bedürfnisse deines Babys zu reagieren.'
+      'Ein Zeitplan mit Baby darf bewusst Lücken haben. Ein ungeplanter Wickelstopp, eine längere Mahlzeit oder zehn Minuten zum Beobachten sind kein Fehler im Ablauf, sondern Teil der Reise. Wer nur die reine Fahr- oder Gehzeit plant, erlebt jede Pause als Verzögerung. Mit Puffer wird dieselbe Pause zu einem erwarteten Abschnitt des Tages.',
+      'Reduziere die Zahl der Programmpunkte. Ein Ausflug am Vormittag und ein ruhiger Nachmittag können erfüllender sein als drei Sehenswürdigkeiten mit ständigem Ortswechsel. Bei längeren Transfers ist es sinnvoll, nicht nur die Strecke, sondern auch die Wege zum Parkplatz, Aufzug oder Bahnsteig einzurechnen. Mit Kinderwagen, Trage und Gepäck dauern selbst kurze Wechsel manchmal länger als gedacht.',
+      'Bei Autofahrten hilft es, ein oder zwei mögliche Pausenorte vorher grob zu markieren. Es muss kein perfekter Spielplatz sein: Ein ruhiger Parkplatz mit Platz zum Wickeln, ein Rastplatz mit Toiletten oder ein kleiner Park am Rand der Strecke können reichen. Bei Ausflügen ist ein Rückzugsort wichtig, etwa ein schattiger Platz, das Hotelzimmer in erreichbarer Nähe oder ein Café mit Wickelmöglichkeit.',
+      'Der Plan darf sich ändern. Wenn das Baby müde ist, das Wetter kippt oder alle einfach genug haben, ist der Abbruch eines Vorhabens kein Misserfolg. Lege pro Tag einen Hauptplan und eine kleine Alternative fest.'
     ],
     checklist: ['Zusätzliche Zeit für Transfers einbauen', 'Eine ruhige Pause pro Tag vorsehen', 'Rückweg und Wickelmöglichkeit bei Ausflügen mitdenken'],
-    links: [{ href: '/ratgeber/lange-autofahrt-mit-kind-tipps/', label: 'Lange Autofahrt mit Kind' }]
+    callout: {
+      title: 'Realistische Tagesplanung mit Baby',
+      items: ['Ein Hauptziel statt einer langen Liste', 'Transferzeit großzügig rechnen', 'Rückzugsort für Pausen kennen', 'Alternative bei Müdigkeit oder Wetter bereithalten']
+    },
+    links: [
+      { href: '/ratgeber/lange-autofahrt-mit-kind-tipps/', label: 'Lange Autofahrt mit Kind' },
+      { href: '/reisen-mit-kind/', label: 'Reisen mit Kind' }
+    ]
   },
   {
     id: 'essen-trinken',
     title: 'Essen und Trinken griffbereit halten',
     paragraphs: [
-      'Der beste Reiseplan wird anstrengend, wenn alle hungrig oder durstig sind. Packe Essen und Trinken deshalb als festen Teil des Handgepäcks ein, nicht als letzten Gedanken vor der Abreise.',
-      'Für Babys können Fläschchen, Stillzubehör, Lätzchen und eine kleine Reserve sinnvoll sein. Ältere Kinder profitieren von einer nachfüllbaren Trinkflasche und kleinen Portionen für Wartezeiten.',
-      'Bei warmen Reisezielen gehören Trinkpausen zum Tagesablauf. Prüfe vor Ort immer die Wasserqualität und bleibe bei der vertrauten Zubereitung.'
+      'Der beste Reiseplan wird anstrengend, wenn alle hungrig oder durstig sind. Packe Essen und Trinken deshalb als festen Teil des Handgepäcks und nicht als letzten Gedanken vor der Abreise. Eine kleine Station mit Flasche, Snacks, Lätzchen, Tüchern und Müllbeutel verhindert, dass beim ersten Hunger alles gleichzeitig gesucht werden muss.',
+      'Für Babys können Fläschchen, Stillzubehör und die gewohnte Nahrung wichtig sein. Ältere Kinder kommen oft gut mit kleinen Portionen zurecht, die sich ohne großes Krümeln oder Kleckern essen lassen. Vertraute Lebensmittel sind auf Reisen meist hilfreicher als neue Spezialideen. Für längere Wartezeiten gehört eine Reserve dazu, aber nicht so viel, dass der Rucksack schwer und unübersichtlich wird.',
+      'Nachfüllbare Behälter und getrennte Fächer erleichtern die Ordnung. Packe feuchte oder klebrige Dinge in gut schließende Dosen und halte Tücher sowie einen kleinen Müllbeutel daneben. Ein abwischbares Lätzchen kann beim Essen im Hotel, Restaurant oder Auto praktisch sein, wenn es zu eurem Alltag passt. Was unterwegs genutzt wird, sollte sich später auch einfach reinigen lassen.',
+      'Bei warmen Reisezielen gehören Trinkpausen zum Tagesablauf. Prüfe vor Ort die Wasserqualität und bleibe bei der vertrauten Zubereitung, wenn das für euch wichtig ist. Auch Erwachsene brauchen eine einfache Reserve, damit sie in einer unruhigen Situation nicht zusätzlich nach Verpflegung suchen müssen.'
     ],
     checklist: ['Trinkmöglichkeit für alle Mitreisenden', 'Kleine Portionen statt einer großen Snacktasche', 'Tuch und Müllbeutel direkt in die Seitentasche'],
-    links: [{ href: '/reisen-mit-kind/', label: 'Reisen mit Kind' }]
+    callout: {
+      title: 'Snack- und Trinkstation im Handgepäck',
+      items: ['Nachfüllbare Trinkflasche', 'Kleine Snackportionen', 'Lätzchen oder Tuch', 'Feuchttücher und Müllbeutel']
+    },
+    links: [
+      { href: '/reisen-mit-kind/', label: 'Reisen mit Kind' },
+      { href: '/handgepaeck-baby-flug/', label: 'Handgepäck mit Baby' }
+    ]
   },
   {
     id: 'sonnenschutz',
     title: 'Sonnenschutz nicht vergessen',
     paragraphs: [
-      'Mit Baby ist Schatten oft wichtiger als ein voller Strandtag. Plane Spaziergänge, Pausen und Ausflüge so, dass ihr die intensive Sonne möglichst umgeht.',
-      'Ein Sonnenhut, leichte Kleidung und ein Sonnensegel können Situationen erleichtern, ersetzen aber keine Schattenpause. Im Buggy sollte die Luft immer frei zirkulieren können.',
-      'Bei Sonnenschutzmitteln, UV-Kleidung und individuellen Fragen zu Haut oder Alter ist eine Beratung durch Kinderarzt oder Apotheke sinnvoll.'
+      'Mit Baby ist Schatten oft wichtiger als ein voller Strandtag. Plane Spaziergänge, Pausen und Ausflüge so, dass ihr die intensive Mittagshitze möglichst umgeht. Ein Platz unter einem festen Dach, einem Baum oder einer geeigneten Strandmuschel ist hilfreicher als ein sonniger Programmpunkt, der später nur noch anstrengend wird. Auch im Hotel oder in der Stadt lohnt es sich, schattige Wege und ruhige Cafés einzuplanen.',
+      'Leichte, luftige Kleidung und ein Sonnenhut können Alltagssituationen erleichtern. Entscheidend bleibt aber, dass das Kind nicht überhitzt und echte Pausen im Schatten bekommt. Ein Sonnensegel am Kinderwagen kann bei tief stehender Sonne unterstützen, darf die Luftzirkulation aber nicht einschränken. Den Kinderwagen vollständig mit einem Tuch oder einer Decke abzudecken, ist keine gute Lösung, weil sich Wärme stauen kann.',
+      'Bei Strandtagen helfen klare Übergänge: kurz spielen, trinken, Schattenpause, später wieder ein kleiner Spaziergang. Sorge dafür, dass sich ein Schattenplatz wirklich verändern lässt, wenn die Sonne wandert. Eine Strandmuschel oder ein Schirm ersetzt dabei nie die Aufsicht. Prüfe den Untergrund, die Temperatur und ob sich euer Baby darin wohlfühlt, statt einen langen Strandtag um jeden Preis durchzuziehen.',
+      'Bei Fragen zu Sonnenschutzmitteln, UV-Kleidung oder zum Alter deines Kindes kann eine individuelle Beratung durch Kinderarzt oder Apotheke sinnvoll sein. Ein häufiger Irrtum ist, nur an Creme zu denken. Schatten, Kleidung, Hut, Pausen und Trinken gehören zusammen.'
     ],
     checklist: ['Schattenplatz und Trinkpausen einplanen', 'Hut und leichte Wechselkleidung mitnehmen', 'Kinderwagen nicht dicht abdecken'],
+    callout: {
+      title: 'Kinderwagen niemals vollständig abdecken',
+      items: ['Luftzirkulation immer frei lassen', 'Schattenplatz regelmäßig anpassen', 'Bei Hitze kurze Wege und Pausen planen']
+    },
     links: [
       { href: '/strand-sonne/', label: 'Strand & Sonne mit Baby' },
       { href: '/kinderwagen-zubehoer/', label: 'Kinderwagen-Zubehör im Urlaub' }
@@ -177,23 +238,39 @@ const tips = [
     id: 'reiseapotheke',
     title: 'Reiseapotheke vorbereiten',
     paragraphs: [
-      'Eine Reiseapotheke ist kein fertiges Standardpaket. Sie richtet sich nach Alter des Kindes, Ziel, Reisedauer und den Hinweisen eurer Kinderarztpraxis oder Apotheke.',
-      'Ein kleiner Organizer kann helfen, alles übersichtlich zu halten. Medikamente, Dosierungen und Fragen zu Fieber, Durchfall oder Insektenstichen solltest du aber immer individuell abklären.',
-      'Kontrolliere Ablaufdaten und bewahre alles kindersicher auf. Nach der Reise kannst du ergänzen, was euch wirklich gefehlt hat.'
+      'Eine Reiseapotheke ist kein fertiges Standardpaket. Sie richtet sich nach Alter des Kindes, Ziel, Reisedauer, Vorerkrankungen und den Hinweisen eurer Kinderarztpraxis oder Apotheke. Was für eine Wochenendreise in Deutschland passt, kann für eine Flugreise oder ein warmes Reiseziel anders aussehen. Plane deshalb rechtzeitig genug Zeit für eine individuelle Rückfrage ein.',
+      'Ein kleiner Organizer kann helfen, Pflaster, Thermometer, Versicherungsunterlagen und die individuell abgestimmten Mittel übersichtlich zu bündeln. Medikamente, Dosierungen und Fragen zu Fieber, Durchfall, Insektenstichen oder Hautreaktionen gehören aber nicht in eine allgemeine Online-Liste. Kläre sie fachlich und notiere wichtige Angaben so, dass beide betreuenden Erwachsenen sie finden.',
+      'Kontrolliere Ablaufdaten, Verpackungen und Lagerung. Manche Produkte brauchen bestimmte Temperaturen oder sollen nicht dauerhaft im heißen Auto liegen. Lege die Reiseapotheke kindersicher und getrennt von Snacks ab, aber so, dass Erwachsene sie im Bedarfsfall schnell erreichen. Zu einer guten Vorbereitung gehören auch Versicherungsdaten, eine Notfallnummer und die Adresse der Unterkunft.',
+      'Nach der Reise lohnt sich ein kurzer Blick zurück: Was habt ihr tatsächlich genutzt, was war unnötig und welche Information hat euch gefehlt? So wächst eine persönliche, abgestimmte Reiseapotheke. Der häufigste Fehler ist, viele Mittel einzupacken, ohne ihre Anwendung, Haltbarkeit oder Lagerung vorher zu prüfen.'
     ],
     checklist: ['Medikamente und Dosierung fachlich abstimmen', 'Ablaufdaten und Lagerung prüfen', 'Wichtige Nummern und Versicherungsdaten notieren'],
-    links: [{ href: '/ratgeber/reiseapotheke-baby-kind/', label: 'Reiseapotheke für Baby und Kind' }]
+    callout: {
+      title: 'Vor Reisebeginn kontrollieren',
+      items: ['Individuelle Zusammenstellung fachlich abgestimmt', 'Ablaufdaten und Temperaturanforderungen geprüft', 'Versicherungsdaten und wichtige Nummern gespeichert', 'Kindersichere Aufbewahrung geplant']
+    },
+    links: [
+      { href: '/ratgeber/reiseapotheke-baby-kind/', label: 'Reiseapotheke für Baby und Kind' },
+      { href: '/reiseprodukte/', label: 'Reiseprodukte für Familien' }
+    ]
   },
   {
     id: 'weniger-ist-mehr',
     title: 'Weniger ist manchmal mehr',
     paragraphs: [
-      'Mehr Gepäck bedeutet nicht automatisch mehr Sicherheit. Jedes zusätzliche Teil kostet beim Tragen, Suchen und Einräumen Zeit.',
-      'Die wichtigste Frage vor dem Packen lautet: Welche konkrete Situation löst dieses Teil für uns? Vertraute Basics sind oft hilfreicher als viele neue Anschaffungen.',
-      'Nach jeder Reise lohnt sich ein kurzer Rückblick. Was war ständig im Einsatz, was konnte im Koffer bleiben? So wird deine persönliche Packliste von Reise zu Reise besser.'
+      'Mehr Gepäck bedeutet nicht automatisch mehr Sicherheit. Jedes zusätzliche Teil kostet beim Tragen, Suchen und Einräumen Zeit. Gerade mit Baby zeigt sich unterwegs schnell, dass ein gut gepackter Rucksack und ein übersichtlicher Koffer hilfreicher sind als viele Dinge, die nur für eine theoretische Situation mitkommen. Reduktion beginnt nicht mit Verzicht, sondern mit einer klaren Entscheidung für das, was euch wirklich unterstützt.',
+      'Stelle vor jedem Gegenstand dieselbe Frage: Welche konkrete Situation erleichtert uns dieses Produkt? Wenn die Antwort nur lautet, dass es vielleicht irgendwann nützlich sein könnte, darf es zunächst von der Liste. Vertraute Basics wie Schlafsack, Wickelset, Lieblingskleidung und ein funktionierender Sonnenschutz sind oft wertvoller als viele neue Anschaffungen kurz vor der Abfahrt.',
+      'Nutze auch die Ausstattung der Unterkunft. Ein Kinderstuhl, ein Wasserkocher, eine Waschmaschine oder ein naher Supermarkt können Teile im Koffer ersetzen. Verbrauchsartikel wie Windeln, Wasser oder Snacks lassen sich am Zielort manchmal besser besorgen, sofern die Verfügbarkeit vorher realistisch eingeschätzt wurde. Kleidung wird leichter, wenn sie kombinierbar ist und nicht für jeden Tag ein komplett neues Outfit braucht.',
+      'Denk an das Rückreisegewicht. Nasse Badesachen, angebrochene Packungen und kleine Mitbringsel brauchen Platz. Ein freier Beutel und etwas Luft im Koffer sind keine Verschwendung, sondern Teil der Planung. Nach jeder Reise lohnt sich ein kurzer Rückblick: Was war ständig im Einsatz, was blieb liegen?'
     ],
-    checklist: ['Jeden Gegenstand einer konkreten Situation zuordnen', 'Am Zielort verfügbare Dinge nicht doppelt einpacken', 'Etwas Platz für die Rückreise lassen'],
-    links: [{ href: '/ratgeber/reisen-mit-baby-was-muss-wirklich-mit/', label: 'Reisen mit Baby: Was muss wirklich mit?' }]
+    checklist: ['Jeden Gegenstand einer konkreten Situation zuordnen', 'Ausstattung und Einkaufsmöglichkeiten vor Ort berücksichtigen', 'Etwas Platz für die Rückreise lassen'],
+    callout: {
+      title: 'Diese Frage vor jedem Gegenstand stellen',
+      items: ['Welche konkrete Situation erleichtert uns dieses Produkt?']
+    },
+    links: [
+      { href: '/ratgeber/reisen-mit-baby-was-muss-wirklich-mit/', label: 'Reisen mit Baby: Was muss wirklich mit?' },
+      { href: '/packlisten/', label: 'Baby-Reise-Packlisten' }
+    ]
   }
 ];
 
@@ -206,6 +283,7 @@ const articleSchema = {
   image: new URL(heroImage, Astro.site).href,
   datePublished: '2026-07-19T00:00:00+02:00',
   dateModified: '2026-07-19T00:00:00+02:00',
+  wordCount: 2643,
   inLanguage: 'de-DE',
   mainEntityOfPage: articleUrl,
   author: { '@type': 'Organization', name: 'BabyReiseHelfer' },
@@ -244,8 +322,8 @@ const breadcrumbSchema = {
     heroAlt="Fröhliches Baby im Buggy auf einer Strandpromenade im Urlaub"
   >
     <div class="affiliate-article__intro-copy">
-      <p>Reisen mit Baby kann eine wunderbare Erfahrung sein – wenn man gut vorbereitet ist.</p>
-      <p>Wir haben unsere besten Tipps, ehrliche Erfahrungen und praktische Empfehlungen für dich zusammengestellt.</p>
+      <p>Reisen mit Baby kann wunderbar sein – wenn man vorbereitet ist und flexibel bleibt.</p>
+      <p>Dieser Ratgeber hilft dir dabei, Anreise, Schlaf, Handgepäck, Pausen und typische Urlaubssituationen übersichtlich vorzubereiten. Nimm daraus nur das mit, was zu eurer Reise, eurem Kind und eurem Alltag passt.</p>
     </div>
 
     <ArticleQuickOverview items={[
@@ -270,8 +348,14 @@ const breadcrumbSchema = {
           <ul>
             {tip.checklist.map((item) => <li>{item}</li>)}
           </ul>
+          <aside class="affiliate-article-tip__callout" aria-label={tip.callout.title}>
+            <h3>{tip.callout.title}</h3>
+            <ul>
+              {tip.callout.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </aside>
           <p class="affiliate-article-tip__related">
-            Weiterlesen: {tip.links.map((link) => <a href={link.href}>{link.label}</a>)}
+            Weiterlesen: {tip.links.map((link, linkIndex) => <Fragment>{linkIndex > 0 && ' · '}<a href={link.href}>{link.label}</a></Fragment>)}
           </p>
         </section>
 
@@ -305,11 +389,26 @@ const breadcrumbSchema = {
           />
         )}
 
+        {index === 6 && <AffiliateProductGrid title="Essen, Trinken und Sauberkeit unterwegs" products={foodAndCleanlinessProducts} />}
+
         {index === 7 && <AffiliateProductGrid title="Schatten, Ruhe und Ordnung für unterwegs" products={outdoorProducts} />}
 
         {index === 8 && firstAidOrganizer && <InlineAffiliateProduct product={firstAidOrganizer} label="Kompakte Ordnung für die Reiseapotheke" />}
       </Fragment>
     ))}
+
+    <section class="affiliate-departure-checklist" aria-labelledby="departure-checklist-title">
+      <div>
+        <p>Praktischer Abschluss</p>
+        <h2 id="departure-checklist-title">Vor der Abreise noch einmal prüfen</h2>
+        <span>Ein kurzer letzter Blick reduziert Hektik, ohne aus der Abfahrt ein Großprojekt zu machen.</span>
+      </div>
+      <ul>
+        {['Reisedokumente', 'Versicherung', 'Unterkunft bestätigt', 'Transfer geklärt', 'Handgepäck gepackt', 'Reiseapotheke abgestimmt', 'Wetter geprüft', 'wichtigste Kontaktdaten gespeichert', 'Platz für die Rückreise gelassen'].map((item) => (
+          <li><span aria-hidden="true">✓</span>{item}</li>
+        ))}
+      </ul>
+    </section>
 
     <section class="affiliate-article__closing">
       <h2>Gut vorbereitet, aber nicht überladen</h2>
@@ -317,6 +416,6 @@ const breadcrumbSchema = {
       <a class="button" href="/packlisten/">Zur Reise-Checkliste</a>
     </section>
 
-    <ArticleSidebar slot="sidebar" products={sidebarProducts} adImage={heroImage} />
+    <ArticleSidebar slot="sidebar" products={sidebarProducts} adImage="/article-images/sidebar-praktische-reisehelfer.webp" />
   </AffiliateArticleLayout>
 </Layout>

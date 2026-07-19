@@ -7,19 +7,20 @@ const { products, adImage } = Astro.props as { products: TravelProduct[]; adImag
 
 <div class="article-sidebar-stack">
   <section class="article-sidebar-ad">
-    <span>Anzeige</span>
-    <div>
-      <h2>Sicher und entspannt reisen mit der passenden Ausrüstung</h2>
-      <p>Praktische Empfehlungen für unterwegs.</p>
-      <a class="button" href="/reiseprodukte/">Zu den Empfehlungen</a>
+    <div class="article-sidebar-ad__content">
+      <span>Anzeige</span>
+      <h2>Praktische Reisehelfer, die unterwegs wirklich Platz sparen</h2>
+      <p>Vom übersichtlichen Wickelrucksack bis zum kompakten Reisebett: Entdecke praktische Produkte für Flugzeug, Hotel, Autofahrt und Strand.</p>
+      <a class="button" href="/reiseprodukte/">Reisehelfer entdecken</a>
     </div>
-    <img src={adImage} alt="Familienreise mit Baby am Strand" width="480" height="360" loading="lazy" decoding="async" />
+    <img src={adImage} alt="Geöffneter Wickelrucksack mit Packwürfeln und Reise-Basics im Hotelzimmer" width="960" height="720" loading="lazy" decoding="async" />
   </section>
 
   <section class="article-sidebar-products">
     <h2>Unsere Top-Produktempfehlungen</h2>
     {products.map((product) => {
       const hasReadyLink = isAmazonAffiliateReady(product);
+      const productImage = product.officialAmazonImageUrl ?? product.image;
       const linkAttributes = {
         target: '_blank',
         rel: 'nofollow sponsored noopener noreferrer',
@@ -31,16 +32,16 @@ const { products, adImage } = Astro.props as { products: TravelProduct[]; adImag
         <article class="article-sidebar-product">
           {hasReadyLink ? (
             <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
-              <img src={product.image} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
+              <img src={productImage} alt={product.name} width="180" height="135" loading="lazy" decoding="async" />
             </a>
           ) : (
-            <img src={product.image} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
+            <img src={productImage} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
           )}
           <div>
             <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>
             <p>{product.shortDescription}</p>
             {hasReadyLink ? (
-              <AffiliateButton href={product.affiliateUrl} label="Produkt ansehen" trackingId={product.id} trackingTitle={product.name} />
+              <AffiliateButton href={product.affiliateUrl} label="Jetzt bei Amazon ansehen" trackingId={product.id} trackingTitle={product.name} />
             ) : (
               <a class="button" href="/reiseprodukte/">Produktübersicht</a>
             )}

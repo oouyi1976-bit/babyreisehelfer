@@ -11,6 +11,11 @@ export type TravelProduct = {
   buttonText: string;
   image: string;
   imageAlt: string;
+  /**
+   * Optional Amazon image URL obtained manually through SiteStripe or the
+   * Product Advertising API. Never populate this field from scraped markup.
+   */
+  officialAmazonImageUrl?: string;
   ratingText: string;
 };
 
