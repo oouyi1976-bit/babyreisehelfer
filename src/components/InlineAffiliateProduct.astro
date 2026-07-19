@@ -1,17 +1,18 @@
 ---
 import AffiliateButton from './AffiliateButton.astro';
-import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+import { isAmazonAffiliateReady } from '../data/travelProducts';
+import type { AmazonArticleCardProduct } from '../data/amazonArticleProducts';
 
 const {
   product,
   label = 'Praktischer Reisebegleiter für Eltern'
 } = Astro.props as {
-  product: TravelProduct;
+  product: AmazonArticleCardProduct;
   label?: string;
 };
 
 const hasReadyLink = isAmazonAffiliateReady(product);
-const productImage = product.officialAmazonImageUrl ?? product.image;
+const productImage = product.amazonImageUrl;
 const linkAttributes = {
   target: '_blank',
   rel: 'nofollow sponsored noopener noreferrer',
@@ -21,16 +22,18 @@ const linkAttributes = {
 };
 ---
 
-<section class="inline-affiliate-product" aria-label={`Produktidee: ${product.name}`}>
-  <div class="inline-affiliate-product__media">
-    {hasReadyLink ? (
-      <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
+<section class:list={['inline-affiliate-product', { 'inline-affiliate-product--without-amazon-image': !productImage }]} aria-label={`Produktidee: ${product.name}`}>
+  {productImage && (
+    <div class="inline-affiliate-product__media">
+      {hasReadyLink ? (
+        <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
+          <img src={productImage} alt={product.name} width="480" height="360" loading="lazy" decoding="async" />
+        </a>
+      ) : (
         <img src={productImage} alt={product.name} width="480" height="360" loading="lazy" decoding="async" />
-      </a>
-    ) : (
-      <img src={productImage} alt={product.imageAlt} width="480" height="360" loading="lazy" decoding="async" />
-    )}
-  </div>
+      )}
+    </div>
+  )}
   <div class="inline-affiliate-product__content">
     <p>{label}</p>
     <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>

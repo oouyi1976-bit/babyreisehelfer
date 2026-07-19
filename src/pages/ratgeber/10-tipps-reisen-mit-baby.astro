@@ -7,7 +7,8 @@ import InlineAffiliateProduct from '../../components/InlineAffiliateProduct.astr
 import AffiliateProductGrid from '../../components/AffiliateProductGrid.astro';
 import AffiliateBanner from '../../components/AffiliateBanner.astro';
 import ArticleSidebar from '../../components/ArticleSidebar.astro';
-import { getTravelProductsByIds, type TravelProduct } from '../../data/travelProducts';
+import { getTravelProductsByIds } from '../../data/travelProducts';
+import { toAmazonArticleCardProduct, type AmazonArticleCardProduct } from '../../data/amazonArticleProducts';
 
 const canonical = '/ratgeber/10-tipps-reisen-mit-baby/';
 const heroImage = '/article-images/10-tipps-reisen-mit-baby-beach-hero.webp';
@@ -33,14 +34,19 @@ const productById = new Map(getTravelProductsByIds([
   'silikon-laetzchen-reise',
   'feuchttuecherbox-reise'
 ]).map((product) => [product.id, product]));
-const backpack = productById.get('wickelrucksack-reise-handgepaeck');
-const firstAidOrganizer = productById.get('reiseapotheke-organizer-baby');
+const toArticleProduct = (id: string) => {
+  const product = productById.get(id);
+  return product ? toAmazonArticleCardProduct(product) : undefined;
+};
 
-type ArticleGridProduct = TravelProduct & { attention: string };
+const backpack = toArticleProduct('wickelrucksack-reise-handgepaeck');
+const firstAidOrganizer = toArticleProduct('reiseapotheke-organizer-baby');
+
+type ArticleGridProduct = AmazonArticleCardProduct & { attention: string };
 
 const getGridProducts = (items: Array<{ id: string; attention: string }>) =>
   items.reduce<ArticleGridProduct[]>((products, item) => {
-    const product = productById.get(item.id);
+    const product = toArticleProduct(item.id);
     if (product) products.push({ ...product, attention: item.attention });
     return products;
   }, []);
@@ -74,11 +80,11 @@ const foodAndCleanlinessProducts = getGridProducts([
 ]);
 
 const sidebarProducts = [
-  productById.get('reiseapotheke-organizer-baby'),
-  productById.get('buggy-reisen-handgepaeck'),
-  productById.get('babytrage-urlaub-luftig'),
-  productById.get('kofferwaage-digital')
-].filter(Boolean);
+  toArticleProduct('reiseapotheke-organizer-baby'),
+  toArticleProduct('buggy-reisen-handgepaeck'),
+  toArticleProduct('babytrage-urlaub-luftig'),
+  toArticleProduct('kofferwaage-digital')
+].filter((product): product is AmazonArticleCardProduct => Boolean(product));
 
 const tips = [
   {

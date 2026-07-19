@@ -1,8 +1,9 @@
 ---
 import AffiliateButton from './AffiliateButton.astro';
-import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+import { isAmazonAffiliateReady } from '../data/travelProducts';
+import type { AmazonArticleCardProduct } from '../data/amazonArticleProducts';
 
-type AffiliateGridProduct = TravelProduct & {
+type AffiliateGridProduct = AmazonArticleCardProduct & {
   attention: string;
 };
 
@@ -21,7 +22,7 @@ const { title, products } = Astro.props as {
   <div class="affiliate-product-grid">
     {products.map((product) => {
       const hasReadyLink = isAmazonAffiliateReady(product);
-      const productImage = product.officialAmazonImageUrl ?? product.image;
+      const productImage = product.amazonImageUrl;
       const linkAttributes = {
         target: '_blank',
         rel: 'nofollow sponsored noopener noreferrer',
@@ -31,16 +32,18 @@ const { title, products } = Astro.props as {
       };
 
       return (
-        <article class="affiliate-product-grid-card">
-          <div class="affiliate-product-grid-card__media">
-            {hasReadyLink ? (
-              <a href={product.affiliateUrl} aria-label={`${product.name} bei Amazon ansehen`} {...linkAttributes}>
+        <article class:list={['affiliate-product-grid-card', { 'affiliate-product-grid-card--without-amazon-image': !productImage }]}>
+          {productImage && (
+            <div class="affiliate-product-grid-card__media">
+              {hasReadyLink ? (
+                <a href={product.affiliateUrl} aria-label={`${product.name} bei Amazon ansehen`} {...linkAttributes}>
+                  <img src={productImage} alt={product.name} width="800" height="800" loading="lazy" decoding="async" />
+                </a>
+              ) : (
                 <img src={productImage} alt={product.name} width="800" height="800" loading="lazy" decoding="async" />
-              </a>
-            ) : (
-              <img src={productImage} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
-            )}
-          </div>
+              )}
+            </div>
+          )}
 
           <div class="affiliate-product-grid-card__body">
             <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>

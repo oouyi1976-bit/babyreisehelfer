@@ -1,8 +1,9 @@
 ---
 import AffiliateButton from './AffiliateButton.astro';
-import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+import { isAmazonAffiliateReady } from '../data/travelProducts';
+import type { AmazonArticleCardProduct } from '../data/amazonArticleProducts';
 
-const { products, adImage } = Astro.props as { products: TravelProduct[]; adImage: string };
+const { products, adImage } = Astro.props as { products: AmazonArticleCardProduct[]; adImage: string };
 ---
 
 <div class="article-sidebar-stack">
@@ -20,7 +21,7 @@ const { products, adImage } = Astro.props as { products: TravelProduct[]; adImag
     <h2>Unsere Top-Produktempfehlungen</h2>
     {products.map((product) => {
       const hasReadyLink = isAmazonAffiliateReady(product);
-      const productImage = product.officialAmazonImageUrl ?? product.image;
+      const productImage = product.amazonImageUrl;
       const linkAttributes = {
         target: '_blank',
         rel: 'nofollow sponsored noopener noreferrer',
@@ -29,14 +30,14 @@ const { products, adImage } = Astro.props as { products: TravelProduct[]; adImag
         'data-product-title': product.name
       };
       return (
-        <article class="article-sidebar-product">
-          {hasReadyLink ? (
+        <article class:list={['article-sidebar-product', { 'article-sidebar-product--without-amazon-image': !productImage }]}>
+          {productImage && (hasReadyLink ? (
             <a href={product.affiliateUrl} aria-label={`${product.name} ansehen`} {...linkAttributes}>
               <img src={productImage} alt={product.name} width="180" height="135" loading="lazy" decoding="async" />
             </a>
           ) : (
-            <img src={productImage} alt={product.imageAlt} width="180" height="135" loading="lazy" decoding="async" />
-          )}
+            <img src={productImage} alt={product.name} width="180" height="135" loading="lazy" decoding="async" />
+          ))}
           <div>
             <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>
             <p>{product.shortDescription}</p>
