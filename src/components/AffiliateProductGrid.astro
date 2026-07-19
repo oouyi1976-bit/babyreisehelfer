@@ -1,0 +1,70 @@
+---
+import AffiliateButton from './AffiliateButton.astro';
+import { isAmazonAffiliateReady, type TravelProduct } from '../data/travelProducts';
+
+type AffiliateGridProduct = TravelProduct & {
+  attention: string;
+};
+
+const { title, products } = Astro.props as {
+  title: string;
+  products: AffiliateGridProduct[];
+};
+---
+
+<section class="affiliate-product-grid-section" aria-label={title}>
+  <div class="affiliate-product-grid-section__heading">
+    <span>Produktideen</span>
+    <h2>{title}</h2>
+  </div>
+
+  <div class="affiliate-product-grid">
+    {products.map((product) => {
+      const hasReadyLink = isAmazonAffiliateReady(product);
+      const linkAttributes = {
+        target: '_blank',
+        rel: 'nofollow sponsored noopener noreferrer',
+        'data-affiliate-link': true,
+        'data-product-id': product.id,
+        'data-product-title': product.name
+      };
+
+      return (
+        <article class="affiliate-product-grid-card">
+          <div class="affiliate-product-grid-card__media">
+            {hasReadyLink ? (
+              <a href={product.affiliateUrl} aria-label={`${product.name} bei Amazon ansehen`} {...linkAttributes}>
+                <img src={product.image} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
+              </a>
+            ) : (
+              <img src={product.image} alt={product.imageAlt} width="800" height="800" loading="lazy" decoding="async" />
+            )}
+          </div>
+
+          <div class="affiliate-product-grid-card__body">
+            <h3>{hasReadyLink ? <a href={product.affiliateUrl} {...linkAttributes}>{product.name}</a> : product.name}</h3>
+            <p>{product.shortDescription}</p>
+            <dl>
+              <div>
+                <dt>Geeignet für</dt>
+                <dd>{product.bestFor}</dd>
+              </div>
+              <div>
+                <dt>Darauf achten</dt>
+                <dd>{product.attention}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="affiliate-product-grid-card__action">
+            {hasReadyLink ? (
+              <AffiliateButton href={product.affiliateUrl} label="Bei Amazon ansehen" trackingId={product.id} trackingTitle={product.name} />
+            ) : (
+              <span class="affiliate-product-grid-card__pending">Amazon-Link folgt</span>
+            )}
+          </div>
+        </article>
+      );
+    })}
+  </div>
+</section>

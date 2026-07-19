@@ -4237,8 +4237,151 @@ body.affiliate-article-page {
   min-width: 146px;
 }
 
+.affiliate-product-grid-section {
+  border-top: 1px solid #e4e8e7;
+  margin-top: 31px;
+  padding-top: 27px;
+}
+
+.affiliate-product-grid-section__heading {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.affiliate-product-grid-section__heading > span {
+  color: #23786f;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.affiliate-product-grid-section__heading h2 {
+  color: #181818;
+  font-size: clamp(1.35rem, 2.3vw, 1.72rem);
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.affiliate-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.affiliate-product-grid-card {
+  display: flex;
+  min-width: 0;
+  min-height: 470px;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e1e7e5;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 5px 16px rgba(29, 43, 42, 0.055);
+}
+
+.affiliate-product-grid-card__media {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f7f4ee;
+}
+
+.affiliate-product-grid-card__media a,
+.affiliate-product-grid-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.affiliate-product-grid-card__media a {
+  cursor: pointer;
+}
+
+.affiliate-product-grid-card__media img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s ease;
+}
+
+.affiliate-product-grid-card__media a:hover img,
+.affiliate-product-grid-card__media a:focus-visible img {
+  transform: scale(1.025);
+}
+
+.affiliate-product-grid-card__body {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 15px 14px 0;
+}
+
+.affiliate-product-grid-card h3 {
+  color: #181818;
+  font-size: 1rem;
+  line-height: 1.28;
+}
+
+.affiliate-product-grid-card h3 a {
+  color: inherit;
+}
+
+.affiliate-product-grid-card h3 a:hover,
+.affiliate-product-grid-card h3 a:focus-visible {
+  color: #23786f;
+}
+
+.affiliate-product-grid-card__body > p {
+  color: #5f6668;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.affiliate-product-grid-card dl {
+  display: grid;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.affiliate-product-grid-card dl div {
+  display: grid;
+  gap: 2px;
+}
+
+.affiliate-product-grid-card dt {
+  color: #23786f;
+  font-size: 0.69rem;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.affiliate-product-grid-card dd {
+  color: #535d5d;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.affiliate-product-grid-card__action {
+  margin-top: auto;
+  padding: 14px;
+}
+
+.affiliate-product-grid-card__pending {
+  display: block;
+  border: 1px solid #d9dfdd;
+  border-radius: 5px;
+  color: #687271;
+  font-size: 0.8rem;
+  font-weight: 750;
+  padding: 10px;
+  text-align: center;
+}
+
 .affiliate-article-page .inline-affiliate-product .button,
-.affiliate-article-page .article-sidebar-product .button {
+.affiliate-article-page .article-sidebar-product .button,
+.affiliate-article-page .affiliate-product-grid-card .button {
   min-height: 40px;
   width: 100%;
   border: 1px solid #efbb21;
@@ -4254,7 +4397,9 @@ body.affiliate-article-page {
 .affiliate-article-page .inline-affiliate-product .button:hover,
 .affiliate-article-page .inline-affiliate-product .button:focus-visible,
 .affiliate-article-page .article-sidebar-product .button:hover,
-.affiliate-article-page .article-sidebar-product .button:focus-visible {
+.affiliate-article-page .article-sidebar-product .button:focus-visible,
+.affiliate-article-page .affiliate-product-grid-card .button:hover,
+.affiliate-article-page .affiliate-product-grid-card .button:focus-visible {
   background: #f2bd21;
   box-shadow: none;
 }
@@ -4560,6 +4705,10 @@ body.affiliate-article-page {
     gap: 26px;
   }
 
+  .affiliate-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .affiliate-article-page .site-nav {
     gap: 16px;
   }
@@ -4732,6 +4881,19 @@ body.affiliate-article-page {
 
   .inline-affiliate-product__action {
     min-width: 0;
+  }
+
+  .affiliate-product-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .affiliate-product-grid-card {
+    min-height: 0;
+  }
+
+  .affiliate-product-grid-card__media {
+    aspect-ratio: 4 / 3;
   }
 
   .affiliate-banner {

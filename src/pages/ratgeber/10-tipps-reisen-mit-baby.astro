@@ -4,9 +4,10 @@ import AffiliateArticleLayout from '../../components/AffiliateArticleLayout.astr
 import ArticleQuickOverview from '../../components/ArticleQuickOverview.astro';
 import ArticleTableOfContents from '../../components/ArticleTableOfContents.astro';
 import InlineAffiliateProduct from '../../components/InlineAffiliateProduct.astro';
+import AffiliateProductGrid from '../../components/AffiliateProductGrid.astro';
 import AffiliateBanner from '../../components/AffiliateBanner.astro';
 import ArticleSidebar from '../../components/ArticleSidebar.astro';
-import { getTravelProductsByIds } from '../../data/travelProducts';
+import { getTravelProductsByIds, type TravelProduct } from '../../data/travelProducts';
 
 const canonical = '/ratgeber/10-tipps-reisen-mit-baby/';
 const heroImage = '/article-images/10-tipps-reisen-mit-baby-beach-hero.webp';
@@ -14,15 +15,58 @@ const productById = new Map(getTravelProductsByIds([
   'wickelrucksack-reise-handgepaeck',
   'reisebett-baby-kompakt',
   'reiseapotheke-organizer-baby',
-  'packwuerfel-familienurlaub-set'
+  'packwuerfel-familienurlaub-set',
+  'dokumententasche-familie-rfid',
+  'orzbow-wickelunterlage-reise',
+  'verdunkelungsrollo-reise-baby',
+  'zamboo-reisebett-moskitonetz',
+  'babymoov-babyphone-expert-care',
+  'babymoov-aquani-3in1',
+  'alpine-muffy-baby-classic',
+  'baby-sonnenhut-uv',
+  'laessig-buggy-organizer',
+  'buggy-reisen-handgepaeck',
+  'babytrage-urlaub-luftig',
+  'kofferwaage-digital'
 ]).map((product) => [product.id, product]));
 const backpack = productById.get('wickelrucksack-reise-handgepaeck');
-const travelCot = productById.get('reisebett-baby-kompakt');
 const firstAidOrganizer = productById.get('reiseapotheke-organizer-baby');
+
+type ArticleGridProduct = TravelProduct & { attention: string };
+
+const getGridProducts = (items: Array<{ id: string; attention: string }>) =>
+  items.reduce<ArticleGridProduct[]>((products, item) => {
+    const product = productById.get(item.id);
+    if (product) products.push({ ...product, attention: item.attention });
+    return products;
+  }, []);
+
+const carryOnProducts = getGridProducts([
+  { id: 'wickelrucksack-reise-handgepaeck', attention: 'Fächer und Packmaß vor der Reise prüfen.' },
+  { id: 'orzbow-wickelunterlage-reise', attention: 'Material und Fächeraufteilung müssen zu eurem Alltag passen.' },
+  { id: 'packwuerfel-familienurlaub-set', attention: 'Maße sollten zum eigenen Koffer passen.' },
+  { id: 'dokumententasche-familie-rfid', attention: 'Nur die wirklich nötigen Dokumente mitnehmen.' }
+]);
+
+const hotelSleepProducts = getGridProducts([
+  { id: 'reisebett-baby-kompakt', attention: 'Aufbau, Matratze und Sicherheit vor Ort prüfen.' },
+  { id: 'verdunkelungsrollo-reise-baby', attention: 'Fenstermaß und sichere Befestigung vorher prüfen.' },
+  { id: 'zamboo-reisebett-moskitonetz', attention: 'Passform und ausreichend Luftzirkulation beachten.' },
+  { id: 'babymoov-babyphone-expert-care', attention: 'Reichweite und Lautstärke in der Unterkunft testen.' }
+]);
+
+const outdoorProducts = getGridProducts([
+  { id: 'babymoov-aquani-3in1', attention: 'Aufbau, Schattenplatz und Aufsicht einplanen.' },
+  { id: 'alpine-muffy-baby-classic', attention: 'Passform und geeignete Einsatzdauer beachten.' },
+  { id: 'baby-sonnenhut-uv', attention: 'Größe und sicheren Sitz vor dem Ausflug prüfen.' },
+  { id: 'laessig-buggy-organizer', attention: 'Beladung und Befestigung am eigenen Buggy testen.' }
+]);
+
 const sidebarProducts = [
-  productById.get('wickelrucksack-reise-handgepaeck'),
-  productById.get('reisebett-baby-kompakt'),
-  productById.get('packwuerfel-familienurlaub-set')
+  productById.get('reiseapotheke-organizer-baby'),
+  productById.get('buggy-reisen-handgepaeck'),
+  productById.get('babytrage-urlaub-luftig'),
+  productById.get('kofferwaage-digital')
 ].filter(Boolean);
 
 const tips = [
@@ -233,7 +277,9 @@ const breadcrumbSchema = {
 
         {index === 0 && backpack && <InlineAffiliateProduct product={backpack} />}
 
-        {index === 1 && (
+        {index === 1 && <AffiliateProductGrid title="Praktische Helfer für Handgepäck und Ordnung" products={carryOnProducts} />}
+
+        {index === 2 && (
           <AffiliateBanner
             tone="coral"
             image="/article-images/reisehelfer-naechste-reise-banner.webp"
@@ -245,7 +291,7 @@ const breadcrumbSchema = {
           />
         )}
 
-        {index === 4 && travelCot && <InlineAffiliateProduct product={travelCot} label="Ein vertrauter Schlafplatz für unterwegs" />}
+        {index === 4 && <AffiliateProductGrid title="Für ruhigere Nächte im Hotel" products={hotelSleepProducts} />}
 
         {index === 5 && (
           <AffiliateBanner
@@ -258,6 +304,8 @@ const breadcrumbSchema = {
             buttonText="Empfehlungen ansehen"
           />
         )}
+
+        {index === 7 && <AffiliateProductGrid title="Schatten, Ruhe und Ordnung für unterwegs" products={outdoorProducts} />}
 
         {index === 8 && firstAidOrganizer && <InlineAffiliateProduct product={firstAidOrganizer} label="Kompakte Ordnung für die Reiseapotheke" />}
       </Fragment>

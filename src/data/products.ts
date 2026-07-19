@@ -315,8 +315,8 @@ export const products: Product[] = [
     title: 'hauck Dream N Play Plus Reisebett',
     category: 'hotel-mit-baby',
     amazonSearchTerm: 'hauck Dream N Play Plus Reisebett Baby Hotel',
-    amazonProductUrl: 'https://www.amazon.de/dp/B004AHLMF6',
-    affiliateUrl: 'https://www.amazon.de/dp/B004AHLMF6?tag=epic05e-21',
+    amazonProductUrl: 'https://www.amazon.de/dp/B0CT8Z1C43',
+    affiliateUrl: 'https://www.amazon.de/dp/B0CT8Z1C43?tag=epic05e-21',
     affiliateStatus: 'ready',
     shortDescription:
       'Faltbares Reisebett für Ferienwohnung, Familienbesuch oder Hotels, bei denen die Bettausstattung unklar ist.',
