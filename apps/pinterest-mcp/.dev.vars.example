@@ -1,0 +1,16 @@
+# Lokal niemals in Git einchecken: cp .dev.vars.example .dev.vars
+PUBLIC_SITE_URL=https://babyreisehelfer.pages.dev
+PINTEREST_API_BASE_URL=https://api.pinterest.com
+ENABLE_PINTEREST_POSTING=false
+PINTEREST_MAX_PINS_PER_CRON=1
+PINTEREST_MAX_PINS_PER_DAY=1
+PINTEREST_GRANTED_SCOPES=boards:read,pins:read,user_accounts:read
+ALLOWED_IMAGE_HOSTS=babyreisehelfer.pages.dev
+
+# In Cloudflare als Worker-Secrets setzen, nicht in wrangler.jsonc.
+PINTEREST_APP_ID=
+PINTEREST_APP_SECRET=
+PINTEREST_ACCESS_TOKEN=
+PINTEREST_REFRESH_TOKEN=
+PINTEREST_REDIRECT_URI=
+PINTEREST_TOKEN_ENCRYPTION_KEY=

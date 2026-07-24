@@ -24,6 +24,34 @@ npm run build
 
 Der fertige statische Build landet im Ordner `dist`.
 
+## Private ChatGPT-Pinterest-App
+
+Neben der bisherigen manuellen Pinterest-Planung gibt es jetzt eine private ChatGPT-Integration unter:
+
+```text
+apps/pinterest-mcp/
+```
+
+Sie verwendet die offizielle Pinterest API v5 direkt über einen Cloudflare Worker und speichert geplante Pins sowie verschluesselte Tokens in Cloudflare D1. Der MCP-Endpunkt verwendet eine eigene OAuth-2.1-Verbindung mit PKCE fuer ChatGPT und ist fuer den privaten Developer Mode gedacht, nicht fuer ein oeffentliches Verzeichnis.
+
+Die sechs Tools koennen Boards lesen, Pins nach ausdruecklicher Bestaetigung sofort veroeffentlichen, Pins einplanen sowie die Warteschlange anzeigen, aendern und loeschen. Als Pinterest-Ziel werden technisch nur interne BabyReiseHelfer-URLs akzeptiert, keine direkten Amazon-Affiliate-Links.
+
+```bash
+cd apps/pinterest-mcp
+npm install
+npm run typecheck
+npm test
+```
+
+Echtes Posting bleibt gesperrt, solange nicht **beides** gesetzt ist:
+
+```text
+ENABLE_PINTEREST_POSTING=true
+PINTEREST_GRANTED_SCOPES=...,pins:write,...
+```
+
+Die vollstaendige Cloudflare-, Pinterest-OAuth- und ChatGPT-Anleitung steht in [apps/pinterest-mcp/README.md](apps/pinterest-mcp/README.md). Setze nicht gleichzeitig die alte GitHub-Actions-Posting-Automation und den neuen Worker-Cron fuer dieselbe Pin-Warteschlange ein, sonst koennen doppelte Posts entstehen. Fuer den Worker sind D1 und die Cloudflare-Secrets die Quelle der Wahrheit.
+
 ## Vorschau nach dem Build
 
 ```bash

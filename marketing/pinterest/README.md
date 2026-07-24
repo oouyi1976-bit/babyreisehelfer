@@ -2,6 +2,12 @@
 
 Dieses System bereitet Pinterest-Pins vor, erzeugt öffentliche Pin-Bilder und kann später geprüfte Pins über die offizielle Pinterest API posten. Standardmäßig ist echtes Posting deaktiviert.
 
+## Private ChatGPT-Integration
+
+Fuer das direkte Arbeiten in ChatGPT gibt es zusaetzlich den separaten MCP-Worker unter `../../apps/pinterest-mcp/`. Er nutzt die offizielle Pinterest API v5 direkt, Cloudflare D1 als dauerhafte Warteschlange und verlangt vor jeder Veroeffentlichung oder Planung eine ausdrueckliche Bestaetigung.
+
+Die detaillierte Einrichtung steht in [../../apps/pinterest-mcp/README.md](../../apps/pinterest-mcp/README.md). Wichtig: Den neuen Worker-Cron nicht parallel zur GitHub-Actions-Automation fuer dieselben Inhalte aktivieren. Waehle vor echtem Posting genau einen Scheduler, damit keine doppelten Pins entstehen.
+
 ## Dateien
 
 - `pins.json`: Pin-Daten mit Status, Board-ID, Bild-URL, Ziel-URL und Posting-Status
